@@ -1,0 +1,16 @@
+name: deploy
+on:
+  push:
+    branches:
+      - main
+      - deployment-pipeline
+jobs:
+  heroku-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      env:
+        API_KEY: {{ secrets.HEROKU_API_KEY }}
+      run: |
+        sudo apt install ruby
+        gem install --user-install dpl-heroku
+        dpl --provider=heroku --app=nlp-timeline-gen --api-key="$API_KEY"
