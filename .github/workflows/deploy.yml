@@ -13,4 +13,4 @@ jobs:
           sudo apt install ruby
           sudo gem install dpl-heroku
       - name: deploy to Heroku
-        run: dpl --provider=heroku --app=nlp-timeline-gen --api-key={{ secrets.HEROKU_API_KEY }}
+        run: dpl --provider=heroku --app=nlp-timeline-gen --api-key=${{ secrets.HEROKU_API_KEY }}
