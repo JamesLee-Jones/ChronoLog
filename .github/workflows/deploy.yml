@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      - deployment-pipeline
 jobs:
   heroku-deploy:
     runs-on: ubuntu-latest
