@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Results for {{ result['title'] }} {% endblock %}</h1>
+
+    <p>
+        {{ result['text'] }}
+    </p>
+{% endblock %}
