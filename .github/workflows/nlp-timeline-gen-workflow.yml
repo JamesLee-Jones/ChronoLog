@@ -1,4 +1,4 @@
-name: nlp-timeline-gen-workflow
+name: check and deploy
 on: push
 jobs:
   test:
