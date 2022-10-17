@@ -1,0 +1,29 @@
+name: check and deploy
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: ./scripts/setup.sh
+      - name: Lint with flake8
+        run: ./scripts/check_py_format.sh
+      - name: Test with pytest
+        run: ./scripts/run_py_tests.sh
+  heroku-deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v3
+      - name: install dependencies
+        run: |
+          sudo apt install ruby
+          sudo gem install dpl-heroku
+      - name: deploy to Heroku
+        run: dpl --provider=heroku --app=nlp-timeline-gen --api-key=${{ secrets.HEROKU_API_KEY }}
