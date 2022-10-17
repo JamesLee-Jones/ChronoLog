@@ -8,7 +8,7 @@ result_params = {}
 
 
 @app.route('/', methods=('GET', 'POST'))
-def book_input():  # put application's code here
+def book_input():
     if request.method == 'POST':
         title = request.form['title'] or 'Untitled'
         text = request.form['text']
