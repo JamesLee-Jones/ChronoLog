@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, url_for, flash, redirect
+import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'ccb0ce4501150d103e1dae7b8431d6ab70c026903df97cbd'
+app.config['SECRET_KEY'] = os.environ.get("secretkey")
 
 result_params = {}
 
