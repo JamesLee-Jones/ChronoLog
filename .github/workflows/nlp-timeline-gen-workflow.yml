@@ -10,11 +10,11 @@ jobs:
         with:
           python-version: '3.x'
       - name: Install dependencies
-        run: scripts/setup.sh
+        run: ./scripts/setup.sh
       - name: Lint with flake8
-        run: scripts/check_py_format.sh
+        run: ./scripts/check_py_format.sh
       - name: Test with pytest
-        run: scripts/run_py_tests.sh
+        run: ./scripts/run_py_tests.sh
   heroku-deploy:
     needs: test
     runs-on: ubuntu-latest
