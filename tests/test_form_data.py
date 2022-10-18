@@ -3,11 +3,10 @@ import os
 from .constants import OK_RESPONSE_CODE
 import pytest
 
+directory = 'tests/books'
 
 
 def test_submit_data(client):
-    directory = 'tests/books'
-
     for filename in os.listdir(directory):
         book = json.load(open(os.path.join(directory, filename), "r"))
         response = client.post('/', data=book, follow_redirects=True)
