@@ -23,7 +23,7 @@ def book_input():
 
 @app.route('/result/')
 def result():
-    result_params = {"title": session['title'], 'test': session['test']}
+    result_params = {"title": session['title'], 'text': session['text']}
     return render_template('result.html', result=result_params)
 
 
