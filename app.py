@@ -1,10 +1,8 @@
 from flask import Flask, render_template, request, url_for, flash, redirect, session
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv("secretkey")
+app.config['SECRET_KEY'] = os.environ['secretkey']
 
 
 @app.route('/', methods=('GET', 'POST'))
