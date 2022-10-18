@@ -3,7 +3,6 @@ import spacy_transformers
 
 
 def process_data(text):
-    print(text)
     segments = text.split("\n\n")
     cleaned_data = []
     for segment in segments:
@@ -20,7 +19,6 @@ def extract_charcaters(text):
     nlp = spacy.load("en_core_web_trf")
 
     data = process_data(text) 
-    print(data)
     people = {}
 
     for item in data:
