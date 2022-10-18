@@ -25,6 +25,8 @@ jobs:
         run: |
           sudo apt install ruby
           sudo gem install dpl-heroku
+      - name: add Flask secret key
+        run: echo "secretkey = \"${{ secrets.FLASK_SECRET_KEY }}\"" > .env
       - name: staging deploy to Heroku
         run: dpl --provider=heroku --app=nlp-timeline-gen-staging --api-key=${{ secrets.HEROKU_API_KEY }}
   heroku-prod-deploy:
