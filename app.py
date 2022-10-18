@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, url_for, flash, redirect
 import os
+import nlp
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("secretkey")
@@ -17,7 +18,7 @@ def book_input():
             flash('Text is required!')
         else:
             result_params['title'] = title
-            result_params['text'] = text
+            result_params['text'] = nlp.extract_charcaters(text)
             return redirect(url_for('result'))
 
     return render_template('book_input.html')
