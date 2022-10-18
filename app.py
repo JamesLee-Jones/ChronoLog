@@ -1,8 +1,10 @@
-from flask import Flask, render_template, request, url_for, flash, redirect, session
+from flask import Flask, render_template, request, url_for, flash, redirect
 import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("secretkey")
+
+result_params = {}
 
 
 @app.route('/', methods=('GET', 'POST'))
@@ -14,8 +16,8 @@ def book_input():
         if not text:
             flash('Text is required!')
         else:
-            session['title'] = title
-            session['text'] = text
+            result_params['title'] = title
+            result_params['text'] = text
             return redirect(url_for('result'))
 
     return render_template('book_input.html')
@@ -23,7 +25,6 @@ def book_input():
 
 @app.route('/result/')
 def result():
-    result_params = {'title': session.pop('title'), 'text': session.pop('text')}
     return render_template('result.html', result=result_params)
 
 
