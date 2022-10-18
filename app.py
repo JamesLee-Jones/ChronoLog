@@ -26,7 +26,7 @@ def book_input():
             session['title'] = title
             session['text'] = nlp.extract_charcaters(text)
 
-            return redirect(url_for('result'))
+            return redirect(url_for('user.result'))
 
     return render_template('book_input.html')
 
