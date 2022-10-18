@@ -1,11 +1,9 @@
-from flask import Flask, render_template, request, url_for, flash, redirect
+from flask import Flask, render_template, request, url_for, flash, redirect, session
 import os
 import nlp
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get("secretkey")
-
-result_params = {}
+app.config['SECRET_KEY'] = os.environ['secretkey']
 
 
 @app.route('/', methods=('GET', 'POST'))
@@ -17,8 +15,9 @@ def book_input():
         if not text:
             flash('Text is required!')
         else:
-            result_params['title'] = title
-            result_params['text'] = nlp.extract_charcaters(text)
+            session['title'] = title
+            session['text'] = nlp.extract_charcaters(text)
+
             return redirect(url_for('result'))
 
     return render_template('book_input.html')
@@ -26,6 +25,7 @@ def book_input():
 
 @app.route('/result/')
 def result():
+    result_params = {"title": session['title'], 'text': session['text']}
     return render_template('result.html', result=result_params)
 
 
