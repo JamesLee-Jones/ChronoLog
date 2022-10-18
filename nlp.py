@@ -31,3 +31,4 @@ def extract_charcaters(text):
                     people[ent.text] = 1
 
     return people
+    

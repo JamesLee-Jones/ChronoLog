@@ -3,6 +3,8 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      secretkey: ${{ secrets.FLASK_SECRET_KEY }}
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
@@ -40,4 +42,4 @@ jobs:
           sudo apt install ruby
           sudo gem install dpl-heroku
       - name: production deploy to Heroku
-        run: dpl --provider=heroku --app=nlp-timeline-gen --api-key=${{ secrets.HEROKU_API_KEY }}
+        run: dpl --provider=heroku --app=nlp-timeline-gen-prod --api-key=${{ secrets.HEROKU_API_KEY }}
