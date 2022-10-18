@@ -15,7 +15,19 @@ jobs:
         run: ./scripts/check_py_format.sh
       - name: Test with pytest
         run: ./scripts/run_py_tests.sh
-  heroku-deploy:
+  heroku-staging-deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v3
+      - name: install dependencies
+        run: |
+          sudo apt install ruby
+          sudo gem install dpl-heroku
+      - name: staging deploy to Heroku
+        run: dpl --provider=heroku --app=nlp-timeline-gen-staging --api-key=${{ secrets.HEROKU_API_KEY }}
+  heroku-prod-deploy:
     needs: test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
@@ -25,5 +37,5 @@ jobs:
         run: |
           sudo apt install ruby
           sudo gem install dpl-heroku
-      - name: deploy to Heroku
+      - name: production deploy to Heroku
         run: dpl --provider=heroku --app=nlp-timeline-gen --api-key=${{ secrets.HEROKU_API_KEY }}
