@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for, flash, redirect, session, current_app, Blueprint
+from flask import Flask, render_template, request, url_for, flash, redirect, session, Blueprint
 import os
 
 user = Blueprint('user', __name__)
@@ -36,4 +36,4 @@ def result():
 
 
 if __name__ == '__main__':
-    current_app.run()
+    create_app().run()
