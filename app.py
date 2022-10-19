@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, url_for, flash, redirect, session, Blueprint
 import os
+import nlp
 
 user = Blueprint('user', __name__)
 
@@ -23,7 +24,8 @@ def book_input():
             flash('Text is required!')
         else:
             session['title'] = title
-            session['text'] = text
+            session['text'] = nlp.extract_characters(text)
+
             return redirect(url_for('user.result'))
 
     return render_template('book_input.html')
