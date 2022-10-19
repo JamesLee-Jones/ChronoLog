@@ -11,4 +11,4 @@ def test_submit_data(client):
         response = client.post('/', data=book, follow_redirects=True)
         assert response.status_code == OK_RESPONSE_CODE
         assert book['title'].encode() in response.data
-        assert book['text'].encode() in response.data
+        assert str(book['expected']).encode() in response.data
