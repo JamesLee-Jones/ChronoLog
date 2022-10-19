@@ -1,5 +1,4 @@
 import spacy
-import spacy_transformers
 
 
 def process_data(text):
@@ -18,12 +17,11 @@ def extract_characters(text):
 
     try:
         nlp = spacy.load("en_core_web_md")
-    except:
+    except OSError:
         spacy.cli.download("en_core_web_md")
         nlp = spacy.load("en_core_web_md")
 
-
-    data = process_data(text) 
+    data = process_data(text)
     people = {}
 
     for item in data:
