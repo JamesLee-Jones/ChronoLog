@@ -15,7 +15,13 @@ def process_data(text):
 
 
 def extract_charcaters(text):
-    nlp = spacy.load("en_core_web_trf")
+
+    try:
+        nlp = spacy.load("en_core_web_trf")
+    except:
+        spacy.cli.download("en_core_web_trf")
+        nlp = spacy.load("en_core_web_trf")
+
 
     data = process_data(text) 
     people = {}
