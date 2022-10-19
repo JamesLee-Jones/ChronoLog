@@ -17,10 +17,10 @@ def process_data(text):
 def extract_charcaters(text):
 
     try:
-        nlp = spacy.load("en_core_web_trf")
+        nlp = spacy.load("en_core_web_md")
     except:
-        spacy.cli.download("en_core_web_trf")
-        nlp = spacy.load("en_core_web_trf")
+        spacy.cli.download("en_core_web_md")
+        nlp = spacy.load("en_core_web_md")
 
 
     data = process_data(text) 
