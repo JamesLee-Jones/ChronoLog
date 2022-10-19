@@ -24,7 +24,7 @@ def book_input():
             flash('Text is required!')
         else:
             session['title'] = title
-            session['text'] = nlp.extract_charcaters(text)
+            session['text'] = nlp.extract_characters(text)
 
             return redirect(url_for('user.result'))
 

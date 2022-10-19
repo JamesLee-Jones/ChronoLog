@@ -14,7 +14,7 @@ def process_data(text):
     return cleaned_data
 
 
-def extract_charcaters(text):
+def extract_characters(text):
 
     try:
         nlp = spacy.load("en_core_web_md")
