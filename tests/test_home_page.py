@@ -1,5 +1,4 @@
 from .constants import OK_RESPONSE_CODE
-import pytest
 
 
 def test_submit_data(client):
