@@ -33,4 +33,4 @@ def extract_characters(text):
                 else:
                     people[ent.text] = 1
 
-    return
+    return people
