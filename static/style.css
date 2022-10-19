@@ -1,0 +1,11 @@
+body {
+    background-image: url("cloudy sky by zee.jpg");
+    background-size: cover;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+.content {
+    font-family: Tahoma, sans-serif;
+}
