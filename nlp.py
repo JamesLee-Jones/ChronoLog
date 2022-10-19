@@ -17,7 +17,7 @@ def extract_characters(text):
 
     try:
         nlp = spacy.load("en_core_web_md")
-    except Exception:
+    except OSError:
         spacy.cli.download("en_core_web_md")
         nlp = spacy.load("en_core_web_md")
 
