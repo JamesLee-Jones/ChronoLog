@@ -2,8 +2,9 @@
 
 {% block content %}
     <h1>{% block title %} Results for {{ result['title'] }} {% endblock %}</h1>
-
     <p>
-        {{ result['text'] }}
+        {%for key, value in result['text'].items()%}
+    <li>{{ key }} appears {{ value }} times.</li>
+    {%endfor%}
     </p>
 {% endblock %}
