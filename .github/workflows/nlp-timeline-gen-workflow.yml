@@ -13,8 +13,10 @@ jobs:
           python-version: '3.x'
       - name: Install dependencies
         run: ./scripts/setup.sh
-      - name: Lint with flake8
+      - name: Lint python files with flake8
         run: ./scripts/check_py_format.sh
+      - name: Validate JSON files
+        run: ./scripts/validate_json.sh
       - name: Test with pytest
         run: ./scripts/run_py_tests.sh
   heroku-staging-deploy:
