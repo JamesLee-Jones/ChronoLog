@@ -25,7 +25,7 @@ def book_input():
         else:
             session['title'] = title
             session['text'] = nlp.extract_characters(text)
-            nlp.generate_interactions_matrix(text, "test")
+            nlp.generate_interactions_matrix(text, title)
 
             return redirect(url_for('user.result'))
 
