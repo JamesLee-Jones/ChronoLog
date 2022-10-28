@@ -45,11 +45,14 @@ def generate_interactions_matrix(text, filename):
 
     doc = nlp(text)
 
-    characters = list(dict.fromkeys([ent.text for ent in doc.ents if ent.label_ == "PERSON"]))
-    interactions = {character: {character2: 0 for character2 in characters} for character in characters}
+    characters = list(dict.fromkeys(
+        [ent.text for ent in doc.ents if ent.label_ == "PERSON"]))
+    interactions = {character: {character2: 0 for character2 in characters}
+                    for character in characters}
 
     for sentence in doc.sents:
-        people = list(dict.fromkeys([ent.text for ent in sentence.ents if ent.label_ == "PERSON"]))
+        people = list(dict.fromkeys(
+            [ent.text for ent in sentence.ents if ent.label_ == "PERSON"]))
         for i in range(len(people)):
             for j in range(i + 1, len(people)):
                 interactions[people[i]][people[j]] += 1
@@ -60,9 +63,15 @@ def generate_interactions_matrix(text, filename):
     for (i, char_interactions) in enumerate(interactions.values()):
         row_sum = sum(char_interactions.values())
         for (j, num_interactions) in enumerate(char_interactions.values()):
-            interactions_matrix[i][j] = num_interactions / row_sum if row_sum != 0 else 0
+            interactions_matrix[i][j] = num_interactions / \
+                row_sum if row_sum != 0 else 0
 
     character_header = ', '.join(characters)
-    np.savetxt(filename + ".csv", interactions_matrix, delimiter=",", fmt="%.5f", header=character_header)
+    np.savetxt(
+        filename + ".csv",
+        interactions_matrix,
+        delimiter=",",
+        fmt="%.5f",
+        header=character_header)
 
     return interactions_matrix

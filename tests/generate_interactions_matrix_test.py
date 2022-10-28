@@ -1,6 +1,6 @@
-import nlp
-import os
 import pytest
+import os
+import nlp
 
 TEXT_DIRECTORY = 'tests/books/'
 CSV_DIRECTORY = 'tests/matrices/'
@@ -19,4 +19,3 @@ def test_interactions_matrix(test_name):
         expected = e.read()
     assert actual == expected
     os.remove('temp.csv')
-
