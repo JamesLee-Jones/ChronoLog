@@ -36,7 +36,7 @@ def extract_characters(text):
     return people
 
 
-def generate_interactions_matrix(text):
+def generate_interactions_matrix(text, filename):
     try:
         nlp = spacy.load("en_core_web_md")
     except OSError:
@@ -45,26 +45,24 @@ def generate_interactions_matrix(text):
 
     doc = nlp(text)
 
-    characters = set([ent.text for ent in doc.ents if ent.label_ == "PERSON"])
+    characters = list(dict.fromkeys([ent.text for ent in doc.ents if ent.label_ == "PERSON"]))
     interactions = {character: {character2: 0 for character2 in characters} for character in characters}
 
     for sentence in doc.sents:
-        people = list(set([ent.text for ent in sentence.ents if ent.label_ == "PERSON"]))
+        people = list(dict.fromkeys([ent.text for ent in sentence.ents if ent.label_ == "PERSON"]))
         for i in range(len(people)):
             for j in range(i + 1, len(people)):
                 interactions[people[i]][people[j]] += 1
                 interactions[people[j]][people[i]] += 1
 
     interactions_matrix = np.zeros((len(characters), len(characters)))
-    scaled_interactions_matrix = np.zeros((len(characters), len(characters)))
 
     for (i, char_interactions) in enumerate(interactions.values()):
         row_sum = sum(char_interactions.values())
         for (j, num_interactions) in enumerate(char_interactions.values()):
-            interactions_matrix[i][j] = num_interactions
-            scaled_interactions_matrix[i][j] = num_interactions / row_sum
+            interactions_matrix[i][j] = num_interactions / row_sum if row_sum != 0 else 0
 
-    np.savetxt("matrix.csv", interactions_matrix, delimiter=",")
-    np.savetxt("scaledMatrix.csv", scaled_interactions_matrix, delimiter=",")
+    character_header = ', '.join(characters)
+    np.savetxt(filename + ".csv", interactions_matrix, delimiter=",", fmt="%.5f", header=character_header)
 
     return interactions_matrix
