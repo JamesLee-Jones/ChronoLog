@@ -1,4 +1,3 @@
-import json
 import os
 from .constants import OK_RESPONSE_CODE
 
