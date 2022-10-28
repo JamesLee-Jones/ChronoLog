@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 return_code=0
-for FILE in `ls ./tests/books`
+for FILE in `ls ./tests/books/*.json`
 do
   jq . "tests/books/$FILE"
   exit_code=$?
