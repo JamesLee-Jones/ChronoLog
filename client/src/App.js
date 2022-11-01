@@ -4,11 +4,19 @@ import { ForceGraph2D } from 'react-force-graph';
 
 
 // Converts JSON data from backend into graph JSON data for react force graph
+
+function convert(data) {
+  let result = [...data["Sections"]]
+  return result.map(convertToGraph)
+
+}
+
+
 function convertToGraph(data){
   let nodes = []
   let links = []
-  let names = data["Sections"][0]["names"]
-  let matrix = data["Sections"][0]["matrix"]
+  let names = data["names"]
+  let matrix = data["matrix"]
   for (let i = 0; i < names.length; i++) {
     nodes.push({ id: "id" + String(i), name: names[i] })
   }
@@ -39,7 +47,8 @@ function App() {
             ]
     }
 
-  let mock_graph = convertToGraph(mock_data)
+  let mock_graph = convert(mock_data)[0]
+ // console.log(convert(mock_data))
 
   const [data, setData] = useState(mock_graph)
 
@@ -60,7 +69,7 @@ function App() {
 
     })
     .then(function (myJson) {
-      setData(convertToGraph(myJson))
+      setData(convert(myJson)[0])
       });
   }
 
