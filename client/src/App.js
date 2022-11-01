@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import './App.css';
 import { ForceGraph2D } from 'react-force-graph';
+import { Slider } from '@mui/material';
 
 
 // Converts JSON data from backend into graph JSON data for react force graph
@@ -22,7 +23,7 @@ function convertToGraph(data){
   }
   for (let j = 0; j < names.length; j++) {
     for (let k = 0; k < names.length; k++) {
-      if (j !== k) {
+      if (j !== k && matrix[j][k] !== 0) {
         links.push({ source: "id" + String(j), target: "id" + String(k), value: matrix[j][k] })
       }
     }
@@ -47,10 +48,10 @@ function App() {
             ]
     }
 
-  let mock_graph = convert(mock_data)[0]
- // console.log(convert(mock_data))
-
+  let mock_graph = convert(mock_data)
+  
   const [data, setData] = useState(mock_graph)
+  const [counter, setCounter] = useState(0)
 
   // Fetches data outputted by the backend 
 
@@ -69,7 +70,8 @@ function App() {
 
     })
     .then(function (myJson) {
-      setData(convert(myJson)[0])
+      let res = convert(myJson)
+      setData(res)
       });
   }
 
@@ -87,13 +89,25 @@ function App() {
   return (
     <div className="App">
        <ForceGraph2D
-          graphData={data}
+          graphData={data[counter]}
           nodeLabel="name"
           linkCurvature="curvature"
-          enablePointerInteraction={true}
           linkDirectionalParticleWidth={1}
           ref={forceRef}
-    />
+          centerAt={([500],[500])}
+          />
+      
+        <Slider
+          aria-label="Sections"
+          defaultValue={0}
+          valueLabelDisplay="auto"
+          onChange={(_, value) => {setCounter(value)}}
+          step={1}
+          marks
+          min={0}
+          max={data.length - 1}
+          />
+
     </div>
   );
 }
