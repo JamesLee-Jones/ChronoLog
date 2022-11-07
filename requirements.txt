@@ -50,8 +50,6 @@ tokenizers==0.12.1
 tomli==2.0.1
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==1.13.0+cpu
-torchaudio==0.13.0+cpu
-torchvision==0.14.0+cpu
 tqdm==4.64.1
 transformers==4.21.3
 typer==0.4.2
