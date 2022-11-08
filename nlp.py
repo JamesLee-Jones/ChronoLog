@@ -3,10 +3,10 @@ import spacy
 import json
 import sys
 
+# TODO: Determine and justify this value (currently a dummy value)
+NUM_SPLITS = 10
 
 def process_data(text, chapter_regex):
-    # TODO: Determine and justify this value (currently a dummy value)
-    NUM_SPLITS = 10
     """
     :param text: The full text to be analysed.
     :param chapter_regex: Regex by which chapters are determined. If chapter_regex=="", split into equal length sections.
@@ -15,7 +15,7 @@ def process_data(text, chapter_regex):
     if chapter_regex:
         timeline = text.split(chapter_regex)
     else:
-        # TODO: Figure out sensible split that preserves semantics of text i.e. by paragraph
+        # Splits by paragraph, then joins paragraphs back up into NUM_SPLITS sections
         paragraphs = text.split("\n")
         num_sections = min(NUM_SPLITS, len(paragraphs))
         per_section = len(paragraphs) // NUM_SPLITS
@@ -94,7 +94,3 @@ def main():
 
 if __name__ == '__main__':
     pass
-
-# sections = ["Harry and Sally went to the park.", "At the park, Harry saw John.", "John then called Margaret to join them."]
-# title = "example"
-# generate_timeline_json(sections, title)
