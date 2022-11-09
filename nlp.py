@@ -3,24 +3,25 @@ import spacy
 import json
 
 # TODO: Determine and justify this value (currently a dummy value)
-NUM_SPLITS = 10
 
 
-def process_data(text, chapter_regex):
+def process_data(text, chapter_regex, num_splits):
     """
     :param text: The full text to be analysed.
     :param chapter_regex: Regex by which chapters are determined. If chapter_regex=="", split into equal length sections.
     :return: Returns list of sections
     """
+    if not num_splits:
+        num_splits = 10
     if chapter_regex:
         timeline = text.split(chapter_regex)
     else:
         # Splits by paragraph, then joins paragraphs back up into NUM_SPLITS
         # sections
         paragraphs = text.split("\n")
-        num_sections = min(NUM_SPLITS, len(paragraphs))
+        num_sections = min(num_splits, len(paragraphs))
         # per_section = len(paragraphs) // NUM_SPLITS
-        k, m = divmod(len(paragraphs), NUM_SPLITS)
+        k, m = divmod(len(paragraphs), num_splits)
         # This combines paragraphs into NUM_SPLIT sections and then restores
         # the paragraph structure
         timeline = ["\n".join(paragraphs[i * k + min(i,
@@ -90,12 +91,3 @@ def generate_timeline_json(sections, title):
         })
     with open("{}_analysis.json".format(title), "w", newline='\r\n') as f:
         f.write(json.dumps(json_contents, indent=2))
-
-
-# TODO: Implement main function so script can be called from CLI
-def main():
-    pass
-
-
-if __name__ == '__main__':
-    pass
