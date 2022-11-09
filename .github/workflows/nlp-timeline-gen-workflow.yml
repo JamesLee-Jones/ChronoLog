@@ -20,9 +20,13 @@ jobs:
   prod-deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref != 'refs/heads/main'
     steps:
       - uses: actions/checkout@v3
+      - name: install dependencies
+        run: |
+          sudo apt install node npm
+          npm install gh-pages --save-dev
       - name: production deploy to Github pages
         run: |
           cd client
