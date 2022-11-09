@@ -1,7 +1,6 @@
 import numpy as np
 import spacy
 import json
-import sys
 
 # TODO: Determine and justify this value (currently a dummy value)
 NUM_SPLITS = 10
@@ -16,13 +15,17 @@ def process_data(text, chapter_regex):
     if chapter_regex:
         timeline = text.split(chapter_regex)
     else:
-        # Splits by paragraph, then joins paragraphs back up into NUM_SPLITS sections
+        # Splits by paragraph, then joins paragraphs back up into NUM_SPLITS
+        # sections
         paragraphs = text.split("\n")
         num_sections = min(NUM_SPLITS, len(paragraphs))
-        per_section = len(paragraphs) // NUM_SPLITS
+        # per_section = len(paragraphs) // NUM_SPLITS
         k, m = divmod(len(paragraphs), NUM_SPLITS)
-        # This combines paragraphs into NUM_SPLIT sections and then restores the paragraph structure
-        timeline = ["\n".join(paragraphs[i * k + min(i, m): (i + 1) * k + min(i + 1, m)]) for i in range(num_sections)]
+        # This combines paragraphs into NUM_SPLIT sections and then restores
+        # the paragraph structure
+        timeline = ["\n".join(paragraphs[i * k + min(i,
+                                                     m): (i + 1) * k + min(i + 1,
+                                                                           m)]) for i in range(num_sections)]
     cleaned_data = []
     for segment in timeline:
         segment = segment.rstrip()
@@ -41,8 +44,8 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters):
 
     doc = nlp(text)
 
-    characters = list(set(prev_characters + [ent.text for ent in doc.ents if ent.label_ == "PERSON"]))
-    characters.sort()
+    characters = sorted(
+        set(prev_characters + [ent.text for ent in doc.ents if ent.label_ == "PERSON"]))
     interactions = {character: {character2: 0.0 for character2 in characters}
                     for character in characters}
 
@@ -66,7 +69,8 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters):
         row_sum = sum(char_interactions.values())
         for (j, num_interactions) in enumerate(char_interactions.values()):
             interactions_matrix[i][j] = num_interactions
-            norm_interactions_matrix[i][j] = num_interactions / row_sum if row_sum != 0 else 0
+            norm_interactions_matrix[i][j] = num_interactions / \
+                row_sum if row_sum != 0 else 0
     return norm_interactions_matrix, interactions_matrix, characters
 
 
@@ -78,8 +82,8 @@ def generate_timeline_json(sections, title):
                      "sections": []
                      }
     for section in sections:
-        normalised_interactions, interactions, characters = generate_interactions_matrix(section, interactions,
-                                                                                         characters)
+        normalised_interactions, interactions, characters = generate_interactions_matrix(
+            section, interactions, characters)
         json_contents["sections"].append({
             "names": characters,
             "matrix": normalised_interactions.tolist()
