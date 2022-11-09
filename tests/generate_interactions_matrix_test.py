@@ -1,3 +1,4 @@
+import numpy as np
 import pytest
 import os
 import nlp
@@ -12,10 +13,6 @@ files = [filename.split('.')[0] for filename in os.listdir(TEXT_DIRECTORY)]
 def test_interactions_matrix(test_name):
     with open(os.path.join(TEXT_DIRECTORY, test_name + '.txt'), 'r') as f:
         text = f.read()
-    nlp.generate_interactions_matrix(text, 'temp')
-    with open('temp.csv', 'r') as a:
-        actual = a.read()
-    with open(os.path.join(CSV_DIRECTORY, test_name + '.output.csv')) as e:
-        expected = e.read()
-    assert actual == expected
-    os.remove('temp.csv')
+    actual = nlp.generate_interactions_matrix(text, [], [])[0]
+    expected = np.loadtxt(os.path.join(CSV_DIRECTORY, test_name + '.output.csv'), delimiter=',')
+    assert np.allclose(actual, expected)
