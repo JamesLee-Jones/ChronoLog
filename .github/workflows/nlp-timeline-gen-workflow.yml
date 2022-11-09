@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: install dependencies
         run: |
-          sudo apt install npm
+          sudo apt install react npm
           npm install gh-pages --save-dev
       - name: production deploy to Github pages
         run: |
