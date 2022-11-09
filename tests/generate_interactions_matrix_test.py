@@ -16,7 +16,7 @@ def test_interactions_matrix(test_name):
     matrix, _, characters = nlp.generate_interactions_matrix(text, 'temp', [])
     character_header = ', '.join(characters)
     np.savetxt(
-        os.path.join(CSV_DIRECTORY, test_name + '.output.csv'),
+        "temp.csv",
         matrix,
         delimiter=",",
         fmt="%.5f",
