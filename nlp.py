@@ -1,6 +1,8 @@
+import regex as re
 import numpy as np
 import spacy
 import json
+import pprint
 
 # TODO: Determine and justify this value (currently a dummy value)
 
@@ -11,6 +13,7 @@ def process_data(text, chapter_regex, num_splits):
     :param chapter_regex: Regex by which chapters are determined. If chapter_regex=="", split into equal length sections.
     :return: Returns list of sections
     """
+
     if not num_splits:
         num_splits = 10
     if chapter_regex:

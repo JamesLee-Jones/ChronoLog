@@ -1,9 +1,30 @@
 import os.path
+import regex as re
 
 import nlp
 import argparse
 
 DEFAULT_SPLITS = 10
+
+NUMERAL_PATTERN = re.compile(r"""   
+                                    ^M{0,3}
+                                    (CM|CD|D?C{0,3})?
+                                    (XC|XL|L?X{0,3})?
+                                    (IX|IV|V?I{0,3})?\n\n$
+                """, re.VERBOSE)
+CHAPTER_NUMERAL_PATTERN = re.compile(r"""
+                                    (Chapter) 
+                                    ^M{0,3}
+                                    (CM|CD|D?C{0,3})?
+                                    (XC|XL|L?X{0,3})?
+                                    (IX|IV|V?I{0,3})?$
+                """, re.IGNORECASE)
+DIGIT_PATTERN = re.compile(r"""
+                                    [0-9]+\n\n
+                """, re.VERBOSE)
+CHAPTER_DIGIT_PATTERN = re.compile(r"""
+                                    Chapter [0-9]+
+""", re.VERBOSE, re.IGNORECASE)
 
 
 def main():
