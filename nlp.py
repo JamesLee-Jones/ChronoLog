@@ -6,6 +6,7 @@ import sys
 # TODO: Determine and justify this value (currently a dummy value)
 NUM_SPLITS = 10
 
+
 def process_data(text, chapter_regex):
     """
     :param text: The full text to be analysed.
