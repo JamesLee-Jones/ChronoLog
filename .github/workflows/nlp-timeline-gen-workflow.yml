@@ -31,5 +31,5 @@ jobs:
       - name: production deploy to Github pages
         run: |
           cd client
-          unset NODE_OPTIONS 
+          export UNSET NODE_OPTIONS 
           npm run deploy
