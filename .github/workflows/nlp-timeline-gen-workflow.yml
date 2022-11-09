@@ -31,4 +31,5 @@ jobs:
           npm install gh-pages --save-dev
       - name: production deploy to Github pages
         run: |
+          cd client
           npm run deploy
