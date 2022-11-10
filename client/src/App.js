@@ -3,15 +3,12 @@ import './App.css';
 import { ForceGraph2D } from 'react-force-graph';
 import { Slider } from '@mui/material';
 
-
 // Converts JSON data from backend into graph JSON data for react force graph
-
 function convert(data) {
   let result = [...data["Sections"]]
   return result.map(convertToGraph)
 
 }
-
 
 function convertToGraph(data){
   let nodes = []
@@ -92,6 +89,7 @@ function App() {
           graphData={data[counter]}
           nodeLabel="name"
           linkCurvature="curvature"
+          linkWidth="value"
           linkDirectionalParticleWidth={1}
           ref={forceRef}
           centerAt={([500],[500])}
