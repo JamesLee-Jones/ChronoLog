@@ -80,8 +80,10 @@ function App() {
   // Rendering Graph 
 
   const forceRef = useRef(null);
+  let repelStrength = -400;
+
   useEffect(() => {
-    forceRef.current.d3Force("charge").strength(-400);  });
+    forceRef.current.d3Force("charge").strength(repelStrength);  });
 
   return (
     <div className="App">
