@@ -35,4 +35,5 @@ jobs:
           cd client
           git config --global user.email 'github-actions@github.com'
           git config --global user.name 'github-actions' 
+          git remote set-url origin https://${{ secrets.PAT }}@github.com/JamesLee-Jones/ChronoLog.git 
           npm run deploy
