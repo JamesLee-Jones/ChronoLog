@@ -1,30 +1,30 @@
-import regex as re
 import numpy as np
 import spacy
 import json
-import pprint
+
+JSON_DIRECTORY = "timelines/"
 
 
-# TODO: Determine and justify this value (currently a dummy value)
-
-
-def process_data(text, chapter_regex, num_splits):
+def process_data(text, chapter_regex, num_splits, quiet):
     """
     :param text: The full text to be analysed.
     :param chapter_regex: Regex by which chapters are determined. If chapter_regex=="", split into equal length sections.
+    :param quiet: Flag to silence print statements
     :return: Returns list of sections
     """
-    print("regex ", chapter_regex)
     if not num_splits:
         num_splits = 10
     if chapter_regex:
-        timeline = list(filter(lambda x: not(x.strip() is None), chapter_regex.split(text)))
+        if not quiet:
+            print("Splitting book into chapters...")
+        timeline = list(filter(lambda x: not (x.strip() is None), chapter_regex.split(text)))
     else:
         # Splits by paragraph, then joins paragraphs back up into NUM_SPLITS
         # sections
+        if not quiet:
+            print("Splitting book into {0} sections...".format(num_splits))
         paragraphs = text.split("\n")
         num_sections = min(num_splits, len(paragraphs))
-        # per_section = len(paragraphs) // NUM_SPLITS
         k, m = divmod(len(paragraphs), num_splits)
         # This combines paragraphs into NUM_SPLIT sections and then restores
         # the paragraph structure
@@ -32,20 +32,24 @@ def process_data(text, chapter_regex, num_splits):
                                                      m): (i + 1) * k + min(i + 1,
                                                                            m)]) for i in range(num_sections)]
     cleaned_data = []
+    if not quiet:
+        print("Cleaning text...")
     for segment in timeline:
         segment = segment.rstrip()
         segment = segment.replace("\n", " ")
         segment = segment.replace("\r", " ")
         cleaned_data.append(segment)
+    if not quiet:
+        print("Finished cleaning and splitting text...")
     return cleaned_data
 
 
 def generate_interactions_matrix(text, prev_matrix, prev_characters):
     try:
-        nlp = spacy.load("en_core_web_md")
+        nlp = spacy.load("en_core_web_lg")
     except OSError:
-        spacy.cli.download("en_core_web_md")
-        nlp = spacy.load("en_core_web_md")
+        spacy.cli.download("en_core_web_lg")
+        nlp = spacy.load("en_core_web_lg")
 
     doc = nlp(text)
 
@@ -79,19 +83,24 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters):
     return norm_interactions_matrix, interactions_matrix, characters
 
 
-def generate_timeline_json(sections, title):
+def generate_timeline_json(sections, title, quiet):
     interactions = []
     characters = []
+    file_path = JSON_DIRECTORY + "{}_analysis.json".format(title)
     json_contents = {"book": title,
                      "num_sections": len(sections),
                      "sections": []
                      }
-    for section in sections:
+    for (i, section) in enumerate(sections):
+        if not quiet:
+            print("Analysing section {} of {}...".format(i + 1, len(sections)))
         normalised_interactions, interactions, characters = generate_interactions_matrix(
             section, interactions, characters)
         json_contents["sections"].append({
             "names": characters,
             "matrix": normalised_interactions.tolist()
         })
-    with open("{}_analysis.json".format(title), "w", newline='\r\n') as f:
+    with open(file_path, "w", newline='\r\n') as f:
         f.write(json.dumps(json_contents, indent=2))
+    if not quiet:
+        print("Done! Analysis saved at {}.".format(file_path))

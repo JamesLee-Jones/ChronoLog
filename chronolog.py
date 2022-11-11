@@ -1,8 +1,9 @@
 import os.path
 import regex as re
 
-import nlp
+import ChronologBackend.nlp as nlp
 import argparse
+from argparse import RawTextHelpFormatter
 
 DEFAULT_SPLITS = 10
 
@@ -17,19 +18,35 @@ PATTERNS_DICT = {"numeral": NUMERAL_PATTERN, "chapter_digit": CHAPTER_DIGIT_PATT
 
 
 def main():
-    parser = argparse.ArgumentParser(prog='Chronolog', description="TBD")
+    parser = argparse.ArgumentParser(
+        formatter_class=RawTextHelpFormatter,
+        prog='Chronolog',
+        description="""Chronolog Book Processor Version 0.0.1"""
+    )
     parser.add_argument('filename', type=str)
     parser.add_argument(
         '--chapterRegex', '-c',
         required=False,
         type=str,
-        help="""Regex Examples:
-                - Chapter + number = chap_num
-                - """
+        metavar="CR",
+        help="""Regex Options:
+                - chapter_numeral   = Chapter + numeral 
+                - chapter_digit     = Chapter + digit
+                - digit             = Digit only
+                - numeral           = Numeral only
+                You may provide your own alternative chapter regex in the form of a regex string.
+                Please make sure your regex is well-formed to avoid undesirable results.
+                Note that in any user-defined regex, there must be NO capturing groups.
+                """
     )
-    parser.add_argument('--quiet', '-q', required=False, action='store_true')
-    parser.add_argument('--title', '-t', required=False, type=str)
-    parser.add_argument('--sections', '-s', required=False, type=int)
+    parser.add_argument('--quiet', '-q', required=False, action='store_true',
+                        help="Suppresses updates on progress of model.")
+    parser.add_argument('--title', '-t', required=False, type=str, metavar="T",
+                        help="Provide novel title, if it is not the same as the file name. " +
+                             "The analysis will be stored in {title}_analysis.json if this argument is given.")
+    parser.add_argument('--sections', '-s', required=False, type=int, metavar="N", default=10,
+                        help="Supply the number of sections you want to divide your book into. " +
+                             "The timeline will then be created in N similar sized sections. Default N = 10.")
 
     args = parser.parse_args()
     with open(args.filename, 'r') as f:
@@ -41,8 +58,8 @@ def main():
     else:
         pattern = None
 
-    sections = nlp.process_data(text, pattern, args.sections or DEFAULT_SPLITS)
-    nlp.generate_timeline_json(sections, args.title or os.path.split(args.filename)[-1].split(".")[0])
+    sections = nlp.process_data(text, pattern, args.sections or DEFAULT_SPLITS, args.quiet)
+    nlp.generate_timeline_json(sections, args.title or os.path.split(args.filename)[-1].split(".")[0], args.quiet)
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 import os
-import nlp
+from ChronologBackend import nlp
 
 TEXT_DIRECTORY = 'tests/books/'
 CSV_DIRECTORY = 'tests/matrices/'
