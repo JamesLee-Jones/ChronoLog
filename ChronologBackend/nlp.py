@@ -17,7 +17,11 @@ def process_data(text, chapter_regex, num_splits, quiet):
     if chapter_regex:
         if not quiet:
             print("Splitting book into chapters...")
-        timeline = list(filter(lambda x: not (x.strip() is None), chapter_regex.split(text)))
+        timeline = list(
+            filter(
+                lambda x: not (
+                    x.strip() is None),
+                chapter_regex.split(text)))
     else:
         # Splits by paragraph, then joins paragraphs back up into NUM_SPLITS
         # sections
@@ -79,7 +83,7 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters):
         for (j, num_interactions) in enumerate(char_interactions.values()):
             interactions_matrix[i][j] = num_interactions
             norm_interactions_matrix[i][j] = num_interactions / \
-                                             row_sum if row_sum != 0 else 0
+                row_sum if row_sum != 0 else 0
     return norm_interactions_matrix, interactions_matrix, characters
 
 
