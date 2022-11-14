@@ -75,17 +75,21 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters):
             for j in range(i + 1, len(people)):
                 interactions[people[i]][people[j]] += 1
                 interactions[people[j]][people[i]] += 1
-
     interactions_matrix = np.zeros((len(characters), len(characters)))
-    norm_interactions_matrix = np.zeros((len(characters), len(characters)))
 
     for (i, char_interactions) in enumerate(interactions.values()):
-        row_sum = sum(char_interactions.values())
         for (j, num_interactions) in enumerate(char_interactions.values()):
             interactions_matrix[i][j] = num_interactions
-            norm_interactions_matrix[i][j] = num_interactions / \
-                row_sum if row_sum != 0 else 0
-    return norm_interactions_matrix, interactions_matrix, characters
+
+    return interactions_matrix, characters
+
+
+def normalise_matrix(matrix):
+    for i in range(len(matrix)):
+        row_sum = sum(matrix[i])
+        for j in range(len(matrix[i])):
+            matrix[i][j] = (matrix[i][j] / row_sum) if row_sum != 0 else 0
+    return matrix
 
 
 def calculate_threshold(values):
@@ -128,17 +132,18 @@ def generate_timeline_json(sections, title, quiet):
                      "sections": []
                      }
 
-    normalised_matrices = []
+    unnormalised_matrices = []
     character_lists = []
     for (i, section) in enumerate(sections):
         if not quiet:
             print("Analysing section {} of {}...".format(i + 1, len(sections)))
-        normalised_interactions, interactions, characters = generate_interactions_matrix(
+        interactions, characters = generate_interactions_matrix(
             section, interactions, characters)
-        normalised_matrices.append(normalised_interactions)
+        unnormalised_matrices.append(interactions)
         character_lists.append(characters)
 
-    normalised_matrices, character_lists = prune_matrices(normalised_matrices, character_lists, quiet)
+    unnormalised_matrices, character_lists = prune_matrices(unnormalised_matrices, character_lists, quiet)
+    normalised_matrices = list(map(normalise_matrix, unnormalised_matrices))
     for i in range(len(character_lists)):
         json_contents["sections"].append({
             "names": character_lists[i],
