@@ -17,29 +17,24 @@ jobs:
         run: ./scripts/check_py_format.sh
       - name: Test with pytest
         run: ./scripts/run_py_tests.sh
-  heroku-staging-deploy:
+  prod-deploy:
     needs: test
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/main'
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
       - name: install dependencies
         run: |
-          sudo apt install ruby
-          sudo gem install dpl-heroku
-      - name: add Flask secret key
-        run: echo "secretkey = \"${{ secrets.FLASK_SECRET_KEY }}\"" > .env
-      - name: staging deploy to Heroku
-        run: dpl --provider=heroku --app=nlp-timeline-gen-staging --api-key=${{ secrets.HEROKU_API_KEY }}
-  heroku-prod-deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - uses: actions/checkout@v3
-      - name: install dependencies
+          cd client
+          sudo apt install npm
+          npm install
+      - name: build
         run: |
-          sudo apt install ruby
-          sudo gem install dpl-heroku
-      - name: production deploy to Heroku
-        run: dpl --provider=heroku --app=nlp-timeline-gen-prod --api-key=${{ secrets.HEROKU_API_KEY }}
+          cd client
+          npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: client/build # The folder the action should deploy.
