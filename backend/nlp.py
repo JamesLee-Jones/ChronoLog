@@ -87,6 +87,21 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters):
     return norm_interactions_matrix, interactions_matrix, characters
 
 
+def prune_matrices(matrices, characters_timeline, quiet):
+    if not quiet:
+        print("Pruning timeline matrices...")
+    character_importance = {ch: matrices[-1][:, characters_timeline[-1].index(ch)].sum() for ch in characters_timeline[-1]}
+    unimportant_characters = [ch for (ch, x) in character_importance.items() if x < 0.1]
+
+    for i in range(len(matrices)):
+        for character in [ch for ch in characters_timeline[i] if ch in unimportant_characters]:
+            j = characters_timeline[i].index(character)
+            matrices[i] = np.delete(np.delete(matrices[i], j, axis=0), j, axis=1)
+            characters_timeline[i].pop(j)
+
+    return matrices, characters_timeline
+
+
 def generate_timeline_json(sections, title, quiet):
     interactions = []
     characters = []
@@ -95,14 +110,22 @@ def generate_timeline_json(sections, title, quiet):
                      "num_sections": len(sections),
                      "sections": []
                      }
+
+    normalised_matrices = []
+    character_lists = []
     for (i, section) in enumerate(sections):
         if not quiet:
             print("Analysing section {} of {}...".format(i + 1, len(sections)))
         normalised_interactions, interactions, characters = generate_interactions_matrix(
             section, interactions, characters)
+        normalised_matrices.append(normalised_interactions)
+        character_lists.append(characters)
+
+    normalised_matrices, character_lists = prune_matrices(normalised_matrices, character_lists, quiet)
+    for i in range(len(character_lists)):
         json_contents["sections"].append({
-            "names": characters,
-            "matrix": normalised_interactions.tolist()
+            "names": character_lists[i],
+            "matrix": normalised_matrices[i].tolist()
         })
     with open(file_path, "w", newline='\r\n') as f:
         f.write(json.dumps(json_contents, indent=2))
