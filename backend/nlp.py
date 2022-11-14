@@ -3,6 +3,7 @@ import spacy
 import json
 
 JSON_DIRECTORY = "timelines/"
+PRUNING_PERCENTILE = 20
 
 
 def process_data(text, chapter_regex, num_splits, quiet):
@@ -87,11 +88,27 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters):
     return norm_interactions_matrix, interactions_matrix, characters
 
 
+def calculate_threshold(values):
+    # mean = np.mean(values[values > 0])
+    # std = np.std(values[values > 0])
+    # print(values[values > 0])
+    # print("mean ", mean)
+    # print("std" , std)
+    # return mean - std
+    values = values[values > 0]
+    return np.percentile(values, PRUNING_PERCENTILE)
+
+
 def prune_matrices(matrices, characters_timeline, quiet):
     if not quiet:
         print("Pruning timeline matrices...")
-    character_importance = {ch: matrices[-1][:, characters_timeline[-1].index(ch)].sum() for ch in characters_timeline[-1]}
-    unimportant_characters = [ch for (ch, x) in character_importance.items() if x < 0.1]
+    characters_interactions = {
+        ch: matrices[-1][:, characters_timeline[-1].index(ch)].sum() for ch in characters_timeline[-1]
+    }
+    threshold = calculate_threshold(np.fromiter(characters_interactions.values(), dtype=int))
+    # np.percentile(np.fromiter(characters_interactions.values(), dtype=int), PRUNING_PERCENTILE)
+    print("threshold ", threshold)
+    unimportant_characters = [ch for (ch, x) in characters_interactions.items() if x < threshold]
 
     for i in range(len(matrices)):
         for character in [ch for ch in characters_timeline[i] if ch in unimportant_characters]:
