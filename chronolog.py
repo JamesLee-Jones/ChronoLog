@@ -1,19 +1,22 @@
 import os.path
 import regex as re
 
-import ChronologBackend.nlp as nlp
-import argparse
-from argparse import RawTextHelpFormatter
+import backend.nlp as nlp
+from argparse import RawTextHelpFormatter, ArgumentParser
 
 DEFAULT_SPLITS = 10
 
+# Just chapter number as roman numeral, e.g. IX
 NUMERAL_PATTERN = re.compile(
     r"""M{0,3}(?:CM|CD|D?C{0,3})?(?:XC|XL|L?X{0,3})?(?:IX|IV|V?I{0,3})?\n\n$""",
     re.IGNORECASE)
+# Chapter with roman numeral, e.g. Chapter IX
 CHAPTER_NUMERAL_PATTERN = re.compile(
     r"""(?:Chapter M{0,3}(?:CM|CD|D?C{0,3})?(?:XC|XL|L?X{0,3})?(?:IX|IV|V?I{0,3})?)""",
     re.IGNORECASE)
+# Just chapter number, e.g. 9
 DIGIT_PATTERN = re.compile(r"""[0-9]+\n\n""", re.VERBOSE)
+# Chapter with number, e.g. Chapter 9
 CHAPTER_DIGIT_PATTERN = re.compile(r"""Chapter [0-9]+""", re.IGNORECASE)
 
 PATTERNS_DICT = {
@@ -24,7 +27,7 @@ PATTERNS_DICT = {
 
 
 def main():
-    parser = argparse.ArgumentParser(
+    parser = ArgumentParser(
         formatter_class=RawTextHelpFormatter,
         prog='Chronolog',
         description="""Chronolog Book Processor Version 0.0.1"""
@@ -61,9 +64,9 @@ def main():
         required=False,
         type=int,
         metavar="N",
-        default=10,
+        default=DEFAULT_SPLITS,
         help="Supply the number of sections you want to divide your book into. " +
-        "The timeline will then be created in N similar sized sections. Default N = 10.")
+        "The timeline will then be created in N similar sized sections. Default N = {}.".format(DEFAULT_SPLITS))
 
     args = parser.parse_args()
     with open(args.filename, 'r') as f:
@@ -75,13 +78,13 @@ def main():
     else:
         pattern = None
 
+    title = args.title or os.path.split(args.filename)[-1].split(".")[0]
     sections = nlp.process_data(
         text,
         pattern,
         args.sections or DEFAULT_SPLITS,
         args.quiet)
-    nlp.generate_timeline_json(sections, args.title or os.path.split(
-        args.filename)[-1].split(".")[0], args.quiet)
+    nlp.generate_timeline_json(sections, title, args.quiet)
 
 
 if __name__ == "__main__":

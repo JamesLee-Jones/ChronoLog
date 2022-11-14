@@ -9,11 +9,11 @@ def process_data(text, chapter_regex, num_splits, quiet):
     """
     :param text: The full text to be analysed.
     :param chapter_regex: Regex by which chapters are determined. If chapter_regex=="", split into equal length sections.
+    :param num_splits: The number of sections to split the text into if regex is not given
     :param quiet: Flag to silence print statements
     :return: Returns list of sections
     """
-    if not num_splits:
-        num_splits = 10
+
     if chapter_regex:
         if not quiet:
             print("Splitting book into chapters...")
@@ -90,7 +90,7 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters):
 def generate_timeline_json(sections, title, quiet):
     interactions = []
     characters = []
-    file_path = JSON_DIRECTORY + "{}_analysis.json".format(title)
+    file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
     json_contents = {"book": title,
                      "num_sections": len(sections),
                      "sections": []
