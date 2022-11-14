@@ -30,10 +30,10 @@ jobs:
           sudo apt install npm
           npm install
           npm install gh-pages --save-dev
-      - name: production deploy to Github pages
-        run: |
-          cd client
-          git config --global user.email 'github-actions@github.com'
-          git config --global user.name 'github-actions' 
-          git remote set-url origin https://${{ secrets.PAT }}@github.com/JamesLee-Jones/ChronoLog.git 
-          npm run deploy
+      - name: build
+        run: npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: client/build # The folder the action should deploy.
