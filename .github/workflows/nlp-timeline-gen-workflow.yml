@@ -29,9 +29,10 @@ jobs:
           cd client
           sudo apt install npm
           npm install
-          npm install gh-pages --save-dev
       - name: build
-        run: npm run build
+        run: |
+          cd client
+          npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
