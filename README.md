@@ -9,7 +9,7 @@ ChronoLog aims to make this easier by generating a timeline of where people are 
 
 ### Using ChronoLog to view pre-processed books
 
-ChronoLog can currently be found hosted [here](https://nlp-timeline-gen-prod.herokuapp.com/) and contains a set of
+ChronoLog can currently be found hosted [here](https://www.chronolog.co.uk) and contains a set of
 visualisations for books that we have pre-processed. For a guide on how to produce a graph from your own text, refer to
 the [Using ChronoLog to process and view your own text](#using-chronolog-to-process-and-view-your-own-text) section.
 
