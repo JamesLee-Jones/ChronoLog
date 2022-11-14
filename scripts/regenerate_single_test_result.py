@@ -4,7 +4,7 @@ import sys
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
-from nlp import generate_interactions_matrix  # noqa: E402
+from backend.nlp import generate_interactions_matrix  # noqa: E402
 
 INPUT_DIRECTORY = 'tests/books/'
 OUTPUT_DIRECTORY = 'tests/matrices/'
