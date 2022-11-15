@@ -1,5 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
+import ChronoLogNavBar from "./ChronoLogNavBar";
+import "bootstrap/dist/css/bootstrap.min.css"
 import { ForceGraph2D } from "react-force-graph";
 import { Slider, Box } from "@mui/material";
 
@@ -103,32 +105,38 @@ function App() {
   });
 
   return (
-    <div className="App">
-      <ForceGraph2D
-        graphData={data[counter]}
-        nodeLabel="name"
-        linkCurvature="curvature"
-        linkWidth="value"
-        linkDirectionalParticleWidth={1}
-        width={displayWidth - widthCentering}
-        height={displayHeight - heightCentering}
-        ref={forceRef}
-        nodeAutoColorBy={"name"}
-      />
-
-      <Slider
-        aria-label="Sections"
-        defaultValue={0}
-        valueLabelDisplay="auto"
-        onChange={(_, value) => {
-          setCounter(value);
-        }}
-        step={1}
-        marks
-        min={0}
-        max={data.length - 1}
-      />
+    <>
+    <ChronoLogNavBar />
+    <div class="chronolog-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <img src="../ChronoLogo.png" class="img-fluid" alt="Responsive image" />
+    <div class="about-chronolog">
+      <p>Beautiful data generation and visualization of .</p>
     </div>
+    </div>
+    <div className="App">
+       <ForceGraph2D
+          graphData={data[counter]}
+          nodeLabel="name"
+          linkCurvature="curvature"
+          linkWidth="value"
+          linkDirectionalParticleWidth={1}
+          ref={forceRef}
+          centerAt={([500],[500])}
+          />
+      
+        <Slider
+          aria-label="Sections"
+          defaultValue={0}
+          valueLabelDisplay="auto"
+          onChange={(_, value) => {setCounter(value)}}
+          step={1}
+          marks
+          min={0}
+          max={data.length - 1}
+          />
+
+    </div>
+    </>
   );
 }
 
