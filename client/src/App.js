@@ -1,5 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ChronoLogNavBar from './ChronoLogNavBar';
 import { ForceGraph2D } from 'react-force-graph';
 import { Slider } from '@mui/material';
 
@@ -86,6 +88,8 @@ function App() {
     forceRef.current.d3Force("charge").strength(repelStrength);  });
 
   return (
+    <>
+    <ChronoLogNavBar />
     <div className="App">
        <ForceGraph2D
           graphData={data[counter]}
@@ -109,6 +113,7 @@ function App() {
           />
 
     </div>
+    </>
   );
 }
 
