@@ -1,11 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
 import { ForceGraph2D } from "react-force-graph";
-import { Slider } from "@mui/material";
+import { Slider, Box } from "@mui/material";
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
-  let result = [...data["Sections"]];
+  let result = [...data["sections"]];
   return result.map(convertToGraph);
 }
 
@@ -14,6 +14,7 @@ function convertToGraph(data) {
   let links = [];
   let names = data["names"];
   let matrix = data["matrix"];
+  let scaleFactor = 10;
   for (let i = 0; i < names.length; i++) {
     nodes.push({ id: "id" + String(i), name: names[i] });
   }
@@ -23,7 +24,7 @@ function convertToGraph(data) {
         links.push({
           source: "id" + String(j),
           target: "id" + String(k),
-          value: matrix[j][k],
+          value: matrix[j][k] * scaleFactor,
         });
       }
     }
@@ -33,12 +34,20 @@ function convertToGraph(data) {
 }
 
 function App() {
+  const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
+  const [displayHeight, setDisplayHeight] = useState(window.innerHeight);
+
+  window.addEventListener("resize", () => {
+    setDisplayWidth(window.innerWidth);
+    setDisplayHeight(window.innerHeight);
+  });
+
   // Mock data needed to allow the convert graph function to run on first pass
   let mock_data = {
     basic: "Mock ",
     numberOfSections: 10,
     chapterWise: true,
-    Sections: [
+    sections: [
       {
         names: ["Bob", "Sam", "C"],
         matrix: [
@@ -80,10 +89,17 @@ function App() {
   // Rendering Graph
 
   const forceRef = useRef(null);
-  let repelStrength = -400;
+  let repelStrength = -10;
+  let centering = -120;
+  let zoomingTime = 50;
+  let padding = 130;
+  let widthCentering = 300;
+  let heightCentering = 100;
 
   useEffect(() => {
     forceRef.current.d3Force("charge").strength(repelStrength);
+    forceRef.current.d3Force("center").x(centering);
+    forceRef.current.zoomToFit(zoomingTime, padding);
   });
 
   return (
@@ -94,8 +110,10 @@ function App() {
         linkCurvature="curvature"
         linkWidth="value"
         linkDirectionalParticleWidth={1}
+        width={displayWidth - widthCentering}
+        height={displayHeight - heightCentering}
         ref={forceRef}
-        centerAt={([500], [500])}
+        nodeAutoColorBy={"name"}
       />
 
       <Slider
