@@ -6,7 +6,6 @@
   border-radius: 100px;
   max-width: 600px;
   margin: 30px auto;
-  
 }
 
 .App-logo {
@@ -34,8 +33,6 @@
 .App-link {
   color: #61dafb;
 }
-
-
 
 @keyframes App-logo-spin {
   from {
