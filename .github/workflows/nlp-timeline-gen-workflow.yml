@@ -15,6 +15,8 @@ jobs:
         run: ./scripts/setup.sh
       - name: Lint python files with flake8
         run: ./scripts/check_py_format.sh
+      - name: Lint web related files with prettier
+        run: ./scripts/check_web_formatting.sh
       - name: Test with pytest
         run: ./scripts/run_py_tests.sh
   prod-deploy:
