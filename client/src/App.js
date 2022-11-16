@@ -90,6 +90,13 @@ function App() {
   return (
     <>
     <ChronoLogNavBar />
+    <div class="chronolog-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <img src="../ChronoLogo.png" class="img-fluid" alt="Responsive image" />
+    <div class="about-chronolog">
+      <p>Beautiful data visualizations of the world's literature.</p>
+    </div>
+
+  </div>
     <div className="App">
        <ForceGraph2D
           graphData={data[counter]}
@@ -111,7 +118,6 @@ function App() {
           min={0}
           max={data.length - 1}
           />
-
     </div>
     </>
   );
