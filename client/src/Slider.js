@@ -25,6 +25,6 @@ const TimelineNavigaion = ({maxval,setCounter}) => {
 
     )
   
-
-    }
+}
 export default TimelineNavigaion
+
