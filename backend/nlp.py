@@ -3,7 +3,6 @@ import spacy
 import json
 
 JSON_DIRECTORY = "timelines/"
-PRUNING_PERCENTILE = 20
 
 
 def process_data(text, chapter_regex, num_splits, quiet):
@@ -92,7 +91,7 @@ def normalise_matrix(matrix):
     return matrix
 
 
-def calculate_threshold(values):
+def calculate_threshold(values, percentile):
     # mean = np.mean(values[values > 0])
     # std = np.std(values[values > 0])
     # print(values[values > 0])
@@ -100,16 +99,16 @@ def calculate_threshold(values):
     # print("std" , std)
     # return mean - std
     values = values[values > 0]
-    return np.percentile(values, PRUNING_PERCENTILE)
+    return np.percentile(values, percentile)
 
 
-def prune_matrices(matrices, characters_timeline, quiet):
+def prune_matrices(matrices, characters_timeline, quiet, percentile):
     if not quiet:
         print("Pruning timeline matrices...")
     characters_interactions = {
         ch: matrices[-1][:, characters_timeline[-1].index(ch)].sum() for ch in characters_timeline[-1]
     }
-    threshold = calculate_threshold(np.fromiter(characters_interactions.values(), dtype=int))
+    threshold = calculate_threshold(np.fromiter(characters_interactions.values(), dtype=int), percentile)
     # np.percentile(np.fromiter(characters_interactions.values(), dtype=int), PRUNING_PERCENTILE)
     print("threshold ", threshold)
     unimportant_characters = [ch for (ch, x) in characters_interactions.items() if x < threshold]
@@ -123,7 +122,7 @@ def prune_matrices(matrices, characters_timeline, quiet):
     return matrices, characters_timeline
 
 
-def generate_timeline_json(sections, title, quiet):
+def generate_timeline_json(sections, title, quiet, unpruned, percentile):
     interactions = []
     characters = []
     file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
@@ -141,8 +140,8 @@ def generate_timeline_json(sections, title, quiet):
             section, interactions, characters)
         unnormalised_matrices.append(interactions)
         character_lists.append(characters)
-
-    unnormalised_matrices, character_lists = prune_matrices(unnormalised_matrices, character_lists, quiet)
+    if not unpruned:
+        unnormalised_matrices, character_lists = prune_matrices(unnormalised_matrices, character_lists, quiet, percentile)
     normalised_matrices = list(map(normalise_matrix, unnormalised_matrices))
     for i in range(len(character_lists)):
         json_contents["sections"].append({
