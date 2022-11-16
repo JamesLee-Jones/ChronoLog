@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import './App.css';
 import { ForceGraph2D } from 'react-force-graph';
-import { Slider } from '@mui/material';
+import TimelineNavigaion from './Slider';
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
@@ -32,22 +32,7 @@ function convertToGraph(data){
 
 function App() {
   
-  // Mock data needed to allow the convert graph function to run on first pass 
-  let mock_data = {
-    "basic":"Mock ",
-    "numberOfSections":10,
-    "chapterWise": true,
-    "Sections":[
-        {"names":["Bob", "Sam", "C"], 
-    "matrix": [[0, 1, 1], 
-               [1, 0, 1], 
-               [1, 1, 0]]}
-            ]
-    }
-
-  let mock_graph = convert(mock_data)
-  
-  const [data, setData] = useState(mock_graph)
+  const [data, setData] = useState({nodes: {}, links: {}})
   const [counter, setCounter] = useState(0)
 
   // Fetches data outputted by the backend 
@@ -97,18 +82,17 @@ function App() {
           centerAt={([500],[500])}
           />
       
-        <Slider
-          aria-label="Sections"
-          defaultValue={0}
-          valueLabelDisplay="auto"
-          onChange={(_, value) => {setCounter(value)}}
-          step={1}
-          marks
-          min={0}
-          max={data.length - 1}
-          />
 
+          <TimelineNavigaion
+             maxval={data.length - 1} 
+             setCounter={setCounter} 
+
+          TimelineNavigaion/>
+
+           
     </div>
+
+
   );
 }
 
