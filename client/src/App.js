@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import './App.css';
 import { ForceGraph2D } from 'react-force-graph';
-import { Slider, Container } from '@mui/material';
+import { Slider, Box } from '@mui/material';
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
@@ -92,8 +92,9 @@ function App() {
   let repelStrength = -400;
 
   useEffect(() => {
-    forceRef.current.d3Force("charge").strength(-20);  
+    forceRef.current.d3Force("charge").strength(-10);  
     forceRef.current.d3Force("center").x(-120);  
+    forceRef.current.zoomToFit(50, 130);
   });
 
   return (
@@ -107,7 +108,7 @@ function App() {
           width={displayWidth - 300}
           height={displayHeight - 100}
           ref={forceRef}
-          centerAt={([500], [500])}
+          nodeAutoColorBy={"name"}
         />
 
         <Slider
