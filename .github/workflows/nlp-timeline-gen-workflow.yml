@@ -21,6 +21,7 @@ jobs:
         run: ./scripts/run_py_tests.sh
   prod-build:
     needs: test
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
@@ -32,7 +33,7 @@ jobs:
       - name: build
         run: |
           cd client
-          npm run build runs-on: ubuntu-latest
+          npm run build
   prod-deploy:
     needs: prod-build
     runs-on: ubuntu-latest
