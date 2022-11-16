@@ -67,7 +67,7 @@ function App() {
   // Fetches data outputted by the backend
 
   const getData = () => {
-    fetch("winnie_the_pooh_analysis.json", {
+    fetch("timeline.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
