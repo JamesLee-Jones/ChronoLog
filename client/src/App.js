@@ -1,11 +1,11 @@
 import React, { useRef, useEffect, useState } from 'react'
 import './App.css';
 import { ForceGraph2D } from 'react-force-graph';
-import { Slider } from '@mui/material';
+import { Slider, Container } from '@mui/material';
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
-  let result = [...data["Sections"]]
+  let result = [...data["sections"]]
   return result.map(convertToGraph)
 
 }
@@ -21,7 +21,7 @@ function convertToGraph(data){
   for (let j = 0; j < names.length; j++) {
     for (let k = 0; k < names.length; k++) {
       if (j !== k && matrix[j][k] !== 0) {
-        links.push({ source: "id" + String(j), target: "id" + String(k), value: matrix[j][k] })
+        links.push({ source: "id" + String(j), target: "id" + String(k), value: matrix[j][k] * 10 })
       }
     }
   }
@@ -31,13 +31,22 @@ function convertToGraph(data){
 }
 
 function App() {
+
+  const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
+  const [displayHeight, setDisplayHeight] = useState(window.innerHeight);
+
+  window.addEventListener('resize', () => {
+    setDisplayWidth(window.innerWidth);
+    setDisplayHeight(window.innerHeight);
+  });
+
   
   // Mock data needed to allow the convert graph function to run on first pass 
   let mock_data = {
     "basic":"Mock ",
     "numberOfSections":10,
     "chapterWise": true,
-    "Sections":[
+    "sections":[
         {"names":["Bob", "Sam", "C"], 
     "matrix": [[0, 1, 1], 
                [1, 0, 1], 
@@ -54,7 +63,7 @@ function App() {
 
   const getData=()=>{
 
-    fetch('timeline.json'
+    fetch('winnie_the_pooh_analysis.json'
     ,{
       headers : { 
         'Content-Type': 'application/json',
@@ -83,7 +92,9 @@ function App() {
   let repelStrength = -400;
 
   useEffect(() => {
-    forceRef.current.d3Force("charge").strength(repelStrength);  });
+    forceRef.current.d3Force("charge").strength(-20);  
+    forceRef.current.d3Force("center").x(-120);  
+  });
 
   return (
     <div className="App">
@@ -93,20 +104,23 @@ function App() {
           linkCurvature="curvature"
           linkWidth="value"
           linkDirectionalParticleWidth={1}
+          width={displayWidth - 300}
+          height={displayHeight - 100}
           ref={forceRef}
-          centerAt={([500],[500])}
-          />
-      
+          centerAt={([500], [500])}
+        />
+
         <Slider
           aria-label="Sections"
           defaultValue={0}
           valueLabelDisplay="auto"
-          onChange={(_, value) => {setCounter(value)}}
+          onChange={(_, value) => { setCounter(value) }}
           step={1}
           marks
           min={0}
           max={data.length - 1}
-          />
+        />
+      
 
     </div>
   );
