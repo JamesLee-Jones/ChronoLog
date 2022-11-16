@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
 import { ForceGraph2D } from "react-force-graph";
-import { Slider, Box } from "@mui/material";
+import { Slider } from "@mui/material";
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
