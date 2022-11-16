@@ -15,13 +15,14 @@ function convertToGraph(data){
   let links = []
   let names = data["names"]
   let matrix = data["matrix"]
+  let scaleFactor = 10;
   for (let i = 0; i < names.length; i++) {
     nodes.push({ id: "id" + String(i), name: names[i] })
   }
   for (let j = 0; j < names.length; j++) {
     for (let k = 0; k < names.length; k++) {
       if (j !== k && matrix[j][k] !== 0) {
-        links.push({ source: "id" + String(j), target: "id" + String(k), value: matrix[j][k] * 10 })
+        links.push({ source: "id" + String(j), target: "id" + String(k), value: matrix[j][k] * scaleFactor })
       }
     }
   }
@@ -89,12 +90,18 @@ function App() {
   // Rendering Graph 
 
   const forceRef = useRef(null);
-  let repelStrength = -400;
+  let repelStrength = -10;
+  let centering = -120;
+  let zoomingTime = 50;
+  let padding = 130;
+  let widthCentering = 300;
+  let heightCentering = 100;
+
 
   useEffect(() => {
-    forceRef.current.d3Force("charge").strength(-10);  
-    forceRef.current.d3Force("center").x(-120);  
-    forceRef.current.zoomToFit(50, 130);
+    forceRef.current.d3Force("charge").strength(repelStrength);  
+    forceRef.current.d3Force("center").x(centering);  
+    forceRef.current.zoomToFit(zoomingTime, padding);
   });
 
   return (
@@ -105,8 +112,8 @@ function App() {
           linkCurvature="curvature"
           linkWidth="value"
           linkDirectionalParticleWidth={1}
-          width={displayWidth - 300}
-          height={displayHeight - 100}
+          width={displayWidth - widthCentering}
+          height={displayHeight - heightCentering}
           ref={forceRef}
           nodeAutoColorBy={"name"}
         />
