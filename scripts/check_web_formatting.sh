@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-npx prettier --check "./client/**/*"
+npx prettier --check --ignore-unknown "./client/**/*"
