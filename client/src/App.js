@@ -62,25 +62,35 @@ function App() {
   },[])
 
 
-  // Rendering Graph 
+  // Rendering Graph
 
   const forceRef = useRef(null);
-  let repelStrength = -400;
+  let repelStrength = -10;
+  let centering = -120;
+  let zoomingTime = 50;
+  let padding = 130;
+  let widthCentering = 300;
+  let heightCentering = 100;
 
   useEffect(() => {
-    forceRef.current.d3Force("charge").strength(repelStrength);  });
+    forceRef.current.d3Force("charge").strength(repelStrength);
+    forceRef.current.d3Force("center").x(centering);
+    forceRef.current.zoomToFit(zoomingTime, padding);
+  });
 
   return (
     <div className="App">
-       <ForceGraph2D
-          graphData={data[counter]}
-          nodeLabel="name"
-          linkCurvature="curvature"
-          linkWidth="value"
-          linkDirectionalParticleWidth={1}
-          ref={forceRef}
-          centerAt={([500],[500])}
-          />
+      <ForceGraph2D
+        graphData={data[counter]}
+        nodeLabel="name"
+        linkCurvature="curvature"
+        linkWidth="value"
+        linkDirectionalParticleWidth={1}
+        width={displayWidth - widthCentering}
+        height={displayHeight - heightCentering}
+        ref={forceRef}
+        nodeAutoColorBy={"name"}
+      />
       
 
           <TimelineNavigaion

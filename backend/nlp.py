@@ -74,20 +74,49 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters):
             for j in range(i + 1, len(people)):
                 interactions[people[i]][people[j]] += 1
                 interactions[people[j]][people[i]] += 1
-
     interactions_matrix = np.zeros((len(characters), len(characters)))
-    norm_interactions_matrix = np.zeros((len(characters), len(characters)))
 
     for (i, char_interactions) in enumerate(interactions.values()):
-        row_sum = sum(char_interactions.values())
         for (j, num_interactions) in enumerate(char_interactions.values()):
             interactions_matrix[i][j] = num_interactions
-            norm_interactions_matrix[i][j] = num_interactions / \
-                row_sum if row_sum != 0 else 0
-    return norm_interactions_matrix, interactions_matrix, characters
+
+    return interactions_matrix, characters
 
 
-def generate_timeline_json(sections, title, quiet):
+def normalise_matrix(matrix):
+    for i in range(len(matrix)):
+        row_sum = sum(matrix[i])
+        for j in range(len(matrix[i])):
+            matrix[i][j] = (matrix[i][j] / row_sum) if row_sum != 0 else 0
+    return matrix
+
+
+def calculate_threshold(values, percentile):
+    values = values[values > 0]
+    return np.percentile(values, percentile)
+
+
+def prune_matrices(matrices, characters_timeline, quiet, percentile):
+    if not quiet:
+        print("Pruning timeline matrices...")
+    characters_interactions = {
+        ch: matrices[-1][:, characters_timeline[-1].index(ch)].sum() for ch in characters_timeline[-1]
+    }
+    threshold = calculate_threshold(np.fromiter(characters_interactions.values(), dtype=int), percentile)
+    if not quiet:
+        print("Threshold: ", threshold)
+    unimportant_characters = [ch for (ch, x) in characters_interactions.items() if x < threshold]
+
+    for i in range(len(matrices)):
+        for character in [ch for ch in characters_timeline[i] if ch in unimportant_characters]:
+            j = characters_timeline[i].index(character)
+            matrices[i] = np.delete(np.delete(matrices[i], j, axis=0), j, axis=1)
+            characters_timeline[i].pop(j)
+
+    return matrices, characters_timeline
+
+
+def generate_timeline_json(sections, title, quiet, unpruned, percentile):
     interactions = []
     characters = []
     file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
@@ -95,14 +124,23 @@ def generate_timeline_json(sections, title, quiet):
                      "num_sections": len(sections),
                      "sections": []
                      }
+
+    unnormalised_matrices = []
+    character_lists = []
     for (i, section) in enumerate(sections):
         if not quiet:
             print("Analysing section {} of {}...".format(i + 1, len(sections)))
-        normalised_interactions, interactions, characters = generate_interactions_matrix(
+        interactions, characters = generate_interactions_matrix(
             section, interactions, characters)
+        unnormalised_matrices.append(interactions)
+        character_lists.append(characters)
+    if not unpruned:
+        unnormalised_matrices, character_lists = prune_matrices(unnormalised_matrices, character_lists, quiet, percentile)
+    normalised_matrices = list(map(normalise_matrix, unnormalised_matrices))
+    for i in range(len(character_lists)):
         json_contents["sections"].append({
-            "names": characters,
-            "matrix": normalised_interactions.tolist()
+            "names": character_lists[i],
+            "matrix": normalised_matrices[i].tolist()
         })
     with open(file_path, "w", newline='\r\n') as f:
         f.write(json.dumps(json_contents, indent=2))
