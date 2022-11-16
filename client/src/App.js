@@ -1,66 +1,70 @@
-import React, { useRef, useEffect, useState } from 'react'
-import './App.css';
-import { ForceGraph2D } from 'react-force-graph';
-import TimelineNavigaion from './Slider';
+import React, { useRef, useEffect, useState } from "react";
+import "./App.css";
+import { ForceGraph2D } from "react-force-graph";
+import TimelineNavigaion from "./Slider";
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
-  let result = [...data["Sections"]]
-  return result.map(convertToGraph)
-
+  let result = [...data["Sections"]];
+  return result.map(convertToGraph);
 }
 
-function convertToGraph(data){
-  let nodes = []
-  let links = []
-  let names = data["names"]
-  let matrix = data["matrix"]
+function convertToGraph(data) {
+  let nodes = [];
+  let links = [];
+  let names = data["names"];
+  let matrix = data["matrix"];
   for (let i = 0; i < names.length; i++) {
-    nodes.push({ id: "id" + String(i), name: names[i] })
+    nodes.push({ id: "id" + String(i), name: names[i] });
   }
   for (let j = 0; j < names.length; j++) {
     for (let k = 0; k < names.length; k++) {
       if (j !== k && matrix[j][k] !== 0) {
-        links.push({ source: "id" + String(j), target: "id" + String(k), value: matrix[j][k] })
+        links.push({
+          source: "id" + String(j),
+          target: "id" + String(k),
+          value: matrix[j][k],
+        });
       }
     }
   }
-  const graph = { nodes: nodes, links: links }
-  return graph
-  
+  const graph = { nodes: nodes, links: links };
+  return graph;
 }
 
 function App() {
-  
-  const [data, setData] = useState({nodes: {}, links: {}})
-  const [counter, setCounter] = useState(0)
+  const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
+  const [displayHeight, setDisplayHeight] = useState(window.innerHeight);
 
-  // Fetches data outputted by the backend 
+  window.addEventListener("resize", () => {
+    setDisplayWidth(window.innerWidth);
+    setDisplayHeight(window.innerHeight);
+  });
 
-  const getData=()=>{
+  const [data, setData] = useState({ nodes: {}, links: {} });
+  const [counter, setCounter] = useState(0);
 
-    fetch('timeline.json'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
-    )
-    .then(function (response) {
-      return response.json();
+  // Fetches data outputted by the backend
 
+  const getData = () => {
+    fetch("timeline.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
     })
-    .then(function (myJson) {
-      let res = convert(myJson)
-      setData(res)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (myJson) {
+        let res = convert(myJson);
+        setData(res);
       });
-  }
+  };
 
-  useEffect(()=>{
-    getData()
-  },[])
-
+  useEffect(() => {
+    getData();
+  }, []);
 
   // Rendering Graph
 
@@ -91,18 +95,13 @@ function App() {
         ref={forceRef}
         nodeAutoColorBy={"name"}
       />
-      
 
-          <TimelineNavigaion
-             maxval={data.length - 1} 
-             setCounter={setCounter} 
-
-          TimelineNavigaion/>
-
-           
+      <TimelineNavigaion
+        maxval={data.length - 1}
+        setCounter={setCounter}
+        TimelineNavigaion
+      />
     </div>
-
-
   );
 }
 
