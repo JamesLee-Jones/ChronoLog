@@ -92,12 +92,6 @@ def normalise_matrix(matrix):
 
 
 def calculate_threshold(values, percentile):
-    # mean = np.mean(values[values > 0])
-    # std = np.std(values[values > 0])
-    # print(values[values > 0])
-    # print("mean ", mean)
-    # print("std" , std)
-    # return mean - std
     values = values[values > 0]
     return np.percentile(values, percentile)
 
@@ -109,8 +103,8 @@ def prune_matrices(matrices, characters_timeline, quiet, percentile):
         ch: matrices[-1][:, characters_timeline[-1].index(ch)].sum() for ch in characters_timeline[-1]
     }
     threshold = calculate_threshold(np.fromiter(characters_interactions.values(), dtype=int), percentile)
-    # np.percentile(np.fromiter(characters_interactions.values(), dtype=int), PRUNING_PERCENTILE)
-    print("threshold ", threshold)
+    if not quiet:
+        print("Threshold: ", threshold)
     unimportant_characters = [ch for (ch, x) in characters_interactions.items() if x < threshold]
 
     for i in range(len(matrices)):
