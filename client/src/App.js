@@ -1,11 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
 import { ForceGraph2D } from "react-force-graph";
-import { Slider, Box } from "@mui/material";
+import TimelineNavigaion from "./Slider";
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
-  let result = [...data["sections"]];
+  let result = [...data["Sections"]];
   return result.map(convertToGraph);
 }
 
@@ -14,7 +14,6 @@ function convertToGraph(data) {
   let links = [];
   let names = data["names"];
   let matrix = data["matrix"];
-  let scaleFactor = 10;
   for (let i = 0; i < names.length; i++) {
     nodes.push({ id: "id" + String(i), name: names[i] });
   }
@@ -24,7 +23,7 @@ function convertToGraph(data) {
         links.push({
           source: "id" + String(j),
           target: "id" + String(k),
-          value: matrix[j][k] * scaleFactor,
+          value: matrix[j][k],
         });
       }
     }
@@ -42,26 +41,7 @@ function App() {
     setDisplayHeight(window.innerHeight);
   });
 
-  // Mock data needed to allow the convert graph function to run on first pass
-  let mock_data = {
-    basic: "Mock ",
-    numberOfSections: 10,
-    chapterWise: true,
-    sections: [
-      {
-        names: ["Bob", "Sam", "C"],
-        matrix: [
-          [0, 1, 1],
-          [1, 0, 1],
-          [1, 1, 0],
-        ],
-      },
-    ],
-  };
-
-  let mock_graph = convert(mock_data);
-
-  const [data, setData] = useState(mock_graph);
+  const [data, setData] = useState({ nodes: {}, links: {} });
   const [counter, setCounter] = useState(0);
 
   // Fetches data outputted by the backend
@@ -116,17 +96,10 @@ function App() {
         nodeAutoColorBy={"name"}
       />
 
-      <Slider
-        aria-label="Sections"
-        defaultValue={0}
-        valueLabelDisplay="auto"
-        onChange={(_, value) => {
-          setCounter(value);
-        }}
-        step={1}
-        marks
-        min={0}
-        max={data.length - 1}
+      <TimelineNavigaion
+        maxval={data.length - 1}
+        setCounter={setCounter}
+        TimelineNavigaion
       />
     </div>
   );
