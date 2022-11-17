@@ -7,7 +7,7 @@ import TimelineNavigaion from "./Slider";
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
-  let result = [...data["Sections"]];
+  let result = [...data["sections"]];
   return result.map(convertToGraph);
 }
 
@@ -25,7 +25,7 @@ function convertToGraph(data) {
         links.push({
           source: "id" + String(j),
           target: "id" + String(k),
-          value: matrix[j][k],
+          value: matrix[j][k] * 10,
         });
       }
     }
@@ -49,7 +49,7 @@ function App() {
   // Fetches data outputted by the backend
 
   const getData = () => {
-    fetch("timeline.json", {
+    fetch("winnie_the_pooh_final_analysis.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
