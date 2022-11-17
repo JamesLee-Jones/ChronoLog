@@ -19,8 +19,23 @@ jobs:
         run: ./scripts/check_web_formatting.sh
       - name: Test with pytest
         run: ./scripts/run_py_tests.sh
-  prod-deploy:
+  prod-build:
     needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+      - name: install dependencies
+        run: |
+          cd client
+          sudo apt install npm
+          npm install
+      - name: build
+        run: |
+          cd client
+          npm run build
+  prod-deploy:
+    needs: prod-build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
