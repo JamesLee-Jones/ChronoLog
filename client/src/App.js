@@ -88,9 +88,9 @@ function App() {
     <>
       <ChronoLogNavBar />
       <div class="chronolog-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <img src="../ChronoLogo.png" class="img-fluid" alt="Responsive image" />
+        <img src="../ChronoLogo.png" class="img-fluid" alt="Responsive thing" />
         <div class="about-chronolog">
-          <p>Beautiful data generation and visualization of .</p>
+          <p>Beautiful data.</p>
         </div>
       </div>
       <div className="App">
