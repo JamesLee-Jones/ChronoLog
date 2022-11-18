@@ -1,11 +1,13 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
+import ChronoLogNavBar from "./ChronoLogNavBar";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { ForceGraph2D } from "react-force-graph";
 import TimelineNavigaion from "./Slider";
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
-  let result = [...data["Sections"]];
+  let result = [...data["sections"]];
   return result.map(convertToGraph);
 }
 
@@ -48,7 +50,7 @@ function App() {
   // Fetches data outputted by the backend
 
   const getData = () => {
-    fetch("timeline.json", {
+    fetch("winnie_the_pooh_final_analysis.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -81,28 +83,38 @@ function App() {
     forceRef.current.d3Force("charge").strength(repelStrength);
     forceRef.current.d3Force("center").x(centering);
     forceRef.current.zoomToFit(zoomingTime, padding);
+    document.body.style.backgroundColor = "#eae0d5";
   });
 
   return (
-    <div className="App">
-      <ForceGraph2D
-        graphData={data[counter]}
-        nodeLabel="name"
-        linkCurvature="curvature"
-        linkWidth="value"
-        linkDirectionalParticleWidth={1}
-        width={displayWidth - widthCentering}
-        height={displayHeight - heightCentering}
-        ref={forceRef}
-        nodeAutoColorBy={"name"}
-      />
+    <>
+      <ChronoLogNavBar />
+      <div class="chronolog-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <img src="../ChronoLogo.png" class="img-fluid" alt="ChronoLogo" />
+        <div class="about-chronolog">
+          <p>Beautiful data.</p>
+        </div>
+      </div>
+      <div className="App">
+        <ForceGraph2D
+          graphData={data[counter]}
+          nodeLabel="name"
+          linkCurvature="curvature"
+          linkWidth="value"
+          linkDirectionalParticleWidth={1}
+          width={displayWidth - widthCentering}
+          height={displayHeight - heightCentering}
+          ref={forceRef}
+          nodeAutoColorBy={"name"}
+        />
 
-      <TimelineNavigaion
-        maxval={data.length - 1}
-        setCounter={setCounter}
-        TimelineNavigaion
-      />
-    </div>
+        <TimelineNavigaion
+          maxval={data.length - 1}
+          setCounter={setCounter}
+          TimelineNavigaion
+        />
+      </div>
+    </>
   );
 }
 
