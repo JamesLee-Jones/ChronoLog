@@ -10,15 +10,19 @@ function Library() {
     document.body.style.backgroundColor = "#eae0d5";
   });
 
+  let files = require.context("../public/timelines/", false, /\.json$/);
+  files = files.keys().map((filename) => filename.slice(2, -5));
+  files = files.map((filename) => filename.replaceAll("_", " "))
+
   return (
     <div className="books">
       <Row xs={1} md={2} lg={4} className="g-4">
-        {Array.from({ length: 4 }).map((_, idx) => (
+        {files.map((filename) => (
           <Col>
             <Card>
               <Card.Img variant="top" src="holder.js/100px160" />
               <Card.Body>
-                <Card.Title>Book title</Card.Title>
+                <Card.Title>{filename}</Card.Title>
                 <Card.Text>
                   Give a short description of the data present for this text.
                 </Card.Text>
