@@ -6,7 +6,7 @@ const TimelineNavigaion = ({ maxval, setCounter }) => {
 
   return (
     <Slider
-      aria-label="Sections"
+      aria-label="Sections"s
       defaultValue={1}
       valueLabelDisplay="off"
       onChange={(_, value) => {

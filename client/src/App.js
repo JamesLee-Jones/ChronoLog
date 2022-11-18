@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 import "./App.css";
 import ChronoLogNavBar from "./ChronoLogNavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -27,6 +27,7 @@ function convertToGraph(data) {
           source: "id" + String(j),
           target: "id" + String(k),
           value: matrix[j][k] * scale,
+          linkVisibility: true,
         });
       }
     }
@@ -46,6 +47,7 @@ function App() {
 
   const [data, setData] = useState({ nodes: {}, links: {} });
   const [counter, setCounter] = useState(0);
+  const [activeNode, setActiveNode] = useState("");
 
   // Fetches data outputted by the backend
 
@@ -72,7 +74,7 @@ function App() {
   // Rendering Graph
 
   const forceRef = useRef(null);
-  let repelStrength = -10;
+  let repelStrength = -300;
   let centering = -120;
   let zoomingTime = 50;
   let padding = 130;
@@ -84,6 +86,24 @@ function App() {
     forceRef.current.d3Force("center").x(centering);
     forceRef.current.zoomToFit(zoomingTime, padding);
     document.body.style.backgroundColor = "#eae0d5";
+  }, []);
+
+  const handleClick = useCallback((node) => {
+    if (activeNode === "") {
+      setActiveNode(node["id"]);
+    } else if (activeNode === node["id"]) {
+      setActiveNode("");
+    } else {
+      return;
+    }
+
+    let links = data[counter]["links"];
+    console.log(links);
+    for (let i = 0; i < links.length; i++) {
+      if (links[i]["source"]["id"] !== node["id"]) {
+        links[i]["linkVisibility"] = !links[i]["linkVisibility"];
+      }
+    }
   });
 
   return (
@@ -101,11 +121,13 @@ function App() {
           nodeLabel="name"
           linkCurvature="curvature"
           linkWidth="value"
+          linkVisibility="linkVisibility"
           linkDirectionalParticleWidth={1}
           width={displayWidth - widthCentering}
           height={displayHeight - heightCentering}
           ref={forceRef}
           nodeAutoColorBy={"name"}
+          onNodeClick={handleClick}
         />
 
         <TimelineNavigaion
