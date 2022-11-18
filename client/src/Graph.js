@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ForceGraph2D } from "react-force-graph";
@@ -27,6 +27,7 @@ function convertToGraph(data) {
           source: "id" + String(j),
           target: "id" + String(k),
           value: matrix[j][k] * scale,
+          linkVisibility: true,
         });
       }
     }
@@ -45,6 +46,7 @@ function Graph() {
 
   const [data, setData] = useState({ nodes: {}, links: {} });
   const [counter, setCounter] = useState(0);
+  const [activeNode, setActiveNode] = useState("");
 
   // Fetches data outputted by the backend
   const params = useParams();
@@ -88,6 +90,24 @@ function Graph() {
 
   console.log(data);
 
+  const handleClick = useCallback((node) => {
+    if (activeNode === "") {
+      setActiveNode(node["id"]);
+    } else if (activeNode === node["id"]) {
+      setActiveNode("");
+    } else {
+      return;
+    }
+
+    let links = data[counter]["links"];
+    console.log(links);
+    for (let i = 0; i < links.length; i++) {
+      if (links[i]["source"]["id"] !== node["id"]) {
+        links[i]["linkVisibility"] = !links[i]["linkVisibility"];
+      }
+    }
+  });
+
   return (
     <>
       <div className="App">
@@ -96,16 +116,19 @@ function Graph() {
           nodeLabel="name"
           linkCurvature="curvature"
           linkWidth="value"
+          linkVisibility="linkVisibility"
           linkDirectionalParticleWidth={1}
           width={displayWidth - widthCentering}
           height={displayHeight - heightCentering}
           ref={forceRef}
           nodeAutoColorBy={"name"}
+          onNodeClick={handleClick}
         />
 
         <TimelineNavigation
-          maxval={data.length - 1}
+          maxval={data.length ? data.length - 1 : 0}
           setCounter={setCounter}
+          counter={counter}
           TimelineNavigation
         />
       </div>
