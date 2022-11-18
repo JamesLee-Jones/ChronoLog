@@ -15,10 +15,10 @@ function ChronoLogNavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className="nav-link" href="about">
+            <Nav.Link className="nav-link" href="/about">
               About
             </Nav.Link>
-            <Nav.Link className="nav-link" href="library">
+            <Nav.Link className="nav-link" href="/library">
               Library
             </Nav.Link>
             <NavDropdown title="Developers" id="basic-nav-dropdown">
