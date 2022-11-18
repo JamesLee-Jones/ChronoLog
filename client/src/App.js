@@ -14,6 +14,7 @@ function convert(data) {
 function convertToGraph(data) {
   let nodes = [];
   let links = [];
+  let scale = 10;
   let names = data["names"];
   let matrix = data["matrix"];
   for (let i = 0; i < names.length; i++) {
@@ -25,7 +26,7 @@ function convertToGraph(data) {
         links.push({
           source: "id" + String(j),
           target: "id" + String(k),
-          value: matrix[j][k] * 10,
+          value: matrix[j][k] * scale,
         });
       }
     }
