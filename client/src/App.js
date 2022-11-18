@@ -82,6 +82,7 @@ function App() {
     forceRef.current.d3Force("charge").strength(repelStrength);
     forceRef.current.d3Force("center").x(centering);
     forceRef.current.zoomToFit(zoomingTime, padding);
+    document.body.style.backgroundColor = "#eae0d5";
   });
 
   return (

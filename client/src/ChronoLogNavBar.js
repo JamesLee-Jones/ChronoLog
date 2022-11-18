@@ -20,7 +20,7 @@ function ChronoLogNavBar() {
             </Nav.Link>
             <NavDropdown title="Library" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/2.1">
-                Winne The Pooh
+                Winnie The Pooh
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/2.2">
                 Little Women
