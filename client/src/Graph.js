@@ -1,9 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ForceGraph2D } from "react-force-graph";
 import TimelineNavigaion from "./Slider";
-import { useParams } from "react-router-dom";
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
@@ -31,7 +30,8 @@ function convertToGraph(data) {
       }
     }
   }
-  return { nodes: nodes, links: links };
+  const graph = { nodes: nodes, links: links };
+  return graph;
 }
 
 function Graph() {
@@ -47,10 +47,9 @@ function Graph() {
   const [counter, setCounter] = useState(0);
 
   // Fetches data outputted by the backend
-  const params = useParams();
 
   const getData = () => {
-    fetch("timelines/" + params.book + ".json", {
+    fetch("timelines/winnie_the_pooh_final_analysis.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -87,25 +86,27 @@ function Graph() {
   });
 
   return (
-    <div className="App">
-      <ForceGraph2D
-        graphData={data[counter]}
-        nodeLabel="name"
-        linkCurvature="curvature"
-        linkWidth="value"
-        linkDirectionalParticleWidth={1}
-        width={displayWidth - widthCentering}
-        height={displayHeight - heightCentering}
-        ref={forceRef}
-        nodeAutoColorBy={"name"}
-      />
+    <>
+      <div className="App">
+        <ForceGraph2D
+          graphData={data[counter]}
+          nodeLabel="name"
+          linkCurvature="curvature"
+          linkWidth="value"
+          linkDirectionalParticleWidth={1}
+          width={displayWidth - widthCentering}
+          height={displayHeight - heightCentering}
+          ref={forceRef}
+          nodeAutoColorBy={"name"}
+        />
 
-      <TimelineNavigaion
-        maxval={data.length - 1}
-        setCounter={setCounter}
-        TimelineNavigaion
-      />
-    </div>
+        <TimelineNavigaion
+          maxval={data.length - 1}
+          setCounter={setCounter}
+          TimelineNavigaion
+        />
+      </div>
+    </>
   );
 }
 
