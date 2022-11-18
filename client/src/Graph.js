@@ -86,7 +86,6 @@ function Graph() {
     document.body.style.backgroundColor = "#eae0d5";
   });
 
-  console.log(data);
 
   return (
     <>
