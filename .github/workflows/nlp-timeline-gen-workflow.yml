@@ -11,8 +11,8 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      - name: Install dependencies
-        run: ./scripts/setup.sh
+      - name: Install backend dependencies
+        run: ./scripts/install_backend_dependencies.sh
       - name: Lint python files with flake8
         run: ./scripts/check_py_format.sh
       - name: Lint web related files with prettier
@@ -26,11 +26,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - name: Install dependencies
+      - name: Install frontend dependencies
         run: |
-          cd client
-          sudo apt install npm
-          npm install
+          ./scripts/install_frontend_dependencies.sh
       - name: Build
         run: |
           cd client
