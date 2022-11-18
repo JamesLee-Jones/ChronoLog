@@ -1,4 +1,4 @@
-name: check and deploy
+name: Check and deploy
 on: push
 jobs:
   test:
@@ -19,37 +19,39 @@ jobs:
         run: ./scripts/check_web_formatting.sh
       - name: Test with pytest
         run: ./scripts/run_py_tests.sh
+
   prod-build:
     needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
-      - name: install dependencies
+      - uses: actions/setup-node@v3
+      - name: Install dependencies
         run: |
           cd client
           sudo apt install npm
           npm install
-      - name: build
+      - name: Build
         run: |
           cd client
           npm run build
+      - name: Temporarily save build
+        uses: actions/upload-artifact@v3
+        with:
+          name: client-build
+          path: client/build
+          retention-days: 1
+
   prod-deploy:
     needs: prod-build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
-      - name: install dependencies
-        run: |
-          cd client
-          sudo apt install npm
-          npm install
-      - name: build
-        run: |
-          cd client
-          npm run build
+      - name: Retrieve saved build
+        uses: actions/download-artifact@v3
+        with:
+          name: client-build
+          path: client/build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
