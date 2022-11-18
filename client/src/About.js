@@ -7,10 +7,7 @@ function About() {
     document.body.style.backgroundColor = "#eae0d5";
   });
 
-  return (
-    <div className="about">
-    </div>
-  );
+  return <div className="about"></div>;
 }
 
 export default About;
