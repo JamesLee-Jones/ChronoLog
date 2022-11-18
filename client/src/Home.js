@@ -1,7 +1,7 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {ForceGraph2D} from "react-force-graph";
+import { ForceGraph2D } from "react-force-graph";
 import TimelineNavigation from "./Slider";
 
 // Converts JSON data from backend into graph JSON data for react force graph
@@ -30,7 +30,7 @@ function convertToGraph(data) {
       }
     }
   }
-  return {nodes: nodes, links: links};
+  return { nodes: nodes, links: links };
 }
 
 function Home() {
