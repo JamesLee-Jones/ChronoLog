@@ -26,7 +26,6 @@ function useInterval(callback, delay) {
     }
   }, [delay]);
 }
-s;
 
 const TimelineNavigaion = ({ maxval, setCounter }) => {
   const [mark, setMark] = useState([]);
