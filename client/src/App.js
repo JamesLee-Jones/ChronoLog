@@ -131,7 +131,7 @@ function App() {
         />
 
         <TimelineNavigaion
-          maxval={data.length - 1}
+          maxval={data.length ? data.length - 1 : 0}
           setCounter={setCounter}
           TimelineNavigaion
         />
