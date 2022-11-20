@@ -27,7 +27,7 @@ function useInterval(callback, delay) {
   }, [delay]);
 }
 
-const TimelineNavigaion = ({ maxval, setCounter }) => {
+const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
   const [mark, setMark] = useState([]);
   const [run, setRun] = useState(false);
   const [sliderVal, setSliderVal] = useState(0);
@@ -50,6 +50,30 @@ const TimelineNavigaion = ({ maxval, setCounter }) => {
     setMark(generate_markers(maxval, scale));
   }, [maxval]);
 
+  useEffect(() => {
+    setSliderVal(counter * scale);
+  }, [counter]);
+
+  const onNext = () => {
+    if (counter === maxval) {
+      return;
+    }
+
+    console.log(counter);
+    setCounter(counter + 1);
+    console.log(counter);
+  };
+
+  const onPrev = () => {
+    if (counter === 0) {
+      return;
+    }
+
+    console.log(counter);
+    setCounter(counter - 1);
+    console.log(counter);
+  };
+
   return (
     <div>
       <Slider
@@ -57,7 +81,7 @@ const TimelineNavigaion = ({ maxval, setCounter }) => {
         defaultValue={0}
         marks={mark}
         value={sliderVal}
-        valueLabelDisplay="false"
+        valueLabelDisplay="off"
         onChange={(_, value) => {
           let val = Math.floor(value / scale);
           setCounter(val);
@@ -81,28 +105,33 @@ const TimelineNavigaion = ({ maxval, setCounter }) => {
         max={maxval * scale}
       />
 
-      {/*TODO: Complete onClick */}
-      {/* <button
+      <button
         style={{ backgroundColor: "#0A0908", color: "white" }}
         className="btn"
+        onClick={onPrev}
       >
         {"Previous"}
-      </button> */}
+      </button>
       <button
         onClick={() => {
           setRun(!run);
+          if (sliderVal > maxval * scale && !run) {
+            setCounter(0);
+            setSliderVal(0);
+          }
         }}
         style={{ backgroundColor: "#0A0908", color: "white" }}
         className="btn"
       >
-        {!run ? "Play" : "Pause"}
+        {run ? "Pause" : "Play"}
       </button>
-      {/* <button
+      <button
         style={{ backgroundColor: "#0A0908", color: "white" }}
         className="btn"
+        onClick={onNext}
       >
         {"Next"}
-      </button> */}
+      </button>
     </div>
   );
 };

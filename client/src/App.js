@@ -133,6 +133,7 @@ function App() {
         <TimelineNavigaion
           maxval={data.length ? data.length - 1 : 0}
           setCounter={setCounter}
+          counter={counter}
           TimelineNavigaion
         />
       </div>
