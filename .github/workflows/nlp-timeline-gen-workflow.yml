@@ -1,4 +1,4 @@
-name: check and deploy
+name: Check and deploy
 on: push
 jobs:
   test:
@@ -11,30 +11,47 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      - name: Install dependencies
-        run: ./scripts/setup.sh
+      - name: Install backend dependencies
+        run: ./scripts/install_backend_dependencies.sh
       - name: Lint python files with flake8
         run: ./scripts/check_py_format.sh
       - name: Lint web related files with prettier
         run: ./scripts/check_web_formatting.sh
       - name: Test with pytest
         run: ./scripts/run_py_tests.sh
-  prod-deploy:
+
+  prod-build:
     needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
-      - name: install dependencies
+      - uses: actions/setup-node@v3
+      - name: Install frontend dependencies
         run: |
-          cd client
-          sudo apt install npm
-          npm install
-      - name: build
+          ./scripts/install_frontend_dependencies.sh
+      - name: Build
         run: |
           cd client
           npm run build
+      - name: Temporarily save build
+        uses: actions/upload-artifact@v3
+        with:
+          name: client-build
+          path: client/build
+          retention-days: 1
+
+  prod-deploy:
+    needs: prod-build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+
+      - uses: actions/checkout@v3
+      - name: Retrieve saved build
+        uses: actions/download-artifact@v3
+        with:
+          name: client-build
+          path: client/build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:

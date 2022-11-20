@@ -1,7 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
+import ChronoLogNavBar from "./ChronoLogNavBar";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { ForceGraph2D } from "react-force-graph";
-import { Slider, Box } from "@mui/material";
+import TimelineNavigaion from "./Slider";
+
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
@@ -12,6 +15,7 @@ function convert(data) {
 function convertToGraph(data) {
   let nodes = [];
   let links = [];
+  let scale = 10;
   let names = data["names"];
   let matrix = data["matrix"];
   let scaleFactor = 10;
@@ -24,7 +28,7 @@ function convertToGraph(data) {
         links.push({
           source: "id" + String(j),
           target: "id" + String(k),
-          value: matrix[j][k] * scaleFactor,
+          value: matrix[j][k] * scale,
         });
       }
     }
@@ -42,32 +46,13 @@ function App() {
     setDisplayHeight(window.innerHeight);
   });
 
-  // Mock data needed to allow the convert graph function to run on first pass
-  let mock_data = {
-    basic: "Mock ",
-    numberOfSections: 10,
-    chapterWise: true,
-    sections: [
-      {
-        names: ["Bob", "Sam", "C"],
-        matrix: [
-          [0, 1, 1],
-          [1, 0, 1],
-          [1, 1, 0],
-        ],
-      },
-    ],
-  };
-
-  let mock_graph = convert(mock_data);
-
-  const [data, setData] = useState(mock_graph);
+  const [data, setData] = useState({ nodes: {}, links: {} });
   const [counter, setCounter] = useState(0);
 
   // Fetches data outputted by the backend
 
   const getData = () => {
-    fetch("timeline.json", {
+    fetch("winnie_the_pooh_final_analysis.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -99,36 +84,37 @@ function App() {
   useEffect(() => {
     forceRef.current.d3Force("charge").strength(repelStrength);
     forceRef.current.d3Force("center").x(centering);
-    forceRef.current.zoomToFit(zoomingTime, padding);
-  });
+    forceRef.current.zoomToFit(zoomingTime, padding);})
 
   return (
-    <div className="App">
-      <ForceGraph2D
-        graphData={data[counter]}
-        nodeLabel="name"
-        linkCurvature="curvature"
-        linkWidth="value"
-        linkDirectionalParticleWidth={1}
-        width={displayWidth - widthCentering}
-        height={displayHeight - heightCentering}
-        ref={forceRef}
-        nodeAutoColorBy={"name"}
-      />
-
-      <Slider
-        aria-label="Sections"
-        defaultValue={0}
-        valueLabelDisplay="auto"
-        onChange={(_, value) => {
-          setCounter(value);
-        }}
-        step={1}
-        marks
-        min={0}
-        max={data.length - 1}
-      />
-    </div>
+    <>
+      <ChronoLogNavBar />
+      <div class="chronolog-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <img src="../ChronoLogo.png" class="img-fluid" alt="ChronoLogo" />
+        <div class="about-chronolog">
+          <p>Beautiful data.</p>
+        </div>
+      </div>
+      <div className="App">
+        <ForceGraph2D
+          graphData={data[counter]}
+          nodeLabel="name"
+          linkCurvature="curvature"
+          linkWidth="value"
+          linkDirectionalParticleWidth={1}
+          width={displayWidth - widthCentering}
+          height={displayHeight - heightCentering}
+          ref={forceRef}
+          nodeAutoColorBy={"name"}
+        />
+        
+        <TimelineNavigaion
+          maxval={data.length - 1}
+          setCounter={setCounter}
+          TimelineNavigaion
+        />
+      </div>
+    </>
   );
 }
 
