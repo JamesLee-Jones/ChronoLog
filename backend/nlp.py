@@ -1,5 +1,4 @@
 import pprint
-
 import numpy as np
 import spacy
 import json
@@ -10,7 +9,7 @@ JSON_DIRECTORY = "timelines/"
 def process_data(text, chapter_regex, num_splits, quiet):
     """
     :param text: The full text to be analysed.
-    :param chapter_regex: Regex by which chapters are determined. If chapter_regex=="", split into equal length sections.
+    :param chapter_regex: Regex by which chapters are determined. If chapter_regex="", split into equal length sections.
     :param num_splits: The number of sections to split the text into if regex is not given
     :param quiet: Flag to silence print statements
     :return: Returns list of sections
@@ -19,11 +18,8 @@ def process_data(text, chapter_regex, num_splits, quiet):
     if chapter_regex:
         if not quiet:
             print("Splitting book into chapters...")
-        timeline = list(
-            filter(
-                lambda x: not (
-                        x.strip() is None),
-                chapter_regex.split(text)))
+        timeline = list(chapter_regex.split(text))
+        timeline.pop(0)
     else:
         # Splits by paragraph, then joins paragraphs back up into NUM_SPLITS
         # sections
@@ -37,6 +33,7 @@ def process_data(text, chapter_regex, num_splits, quiet):
         timeline = ["\n".join(paragraphs[i * k + min(i,
                                                      m): (i + 1) * k + min(i + 1,
                                                                            m)]) for i in range(num_sections)]
+        filter(lambda ps: ("".join(ps).strip() != ""), timeline)
     cleaned_data = []
     if not quiet:
         print("Cleaning text...")
@@ -61,7 +58,7 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters, first_inter
     doc = nlp(text)
 
     characters = sorted(
-        set(prev_characters + [ent.text for ent in doc.ents if ent.label_ == "PERSON"]))
+        set(prev_characters + [ent.text.title() for ent in doc.ents if ent.label_ == "PERSON"]))
     interactions = {character: {character2: 0.0 for character2 in characters}
                     for character in characters}
 
@@ -76,8 +73,8 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters, first_inter
         for i in range(len(people)):
             for j in range(i + 1, len(people)):
                 # Track first interactions
-                first_char = min(people[i], people[j])
-                second_char = max(people[i], people[j])
+                first_char = min(people[i], people[j]).title()
+                second_char = max(people[i], people[j]).title()
                 update_interactions_records(first_interactions_per_char, first_interactions_overall, interactions,
                                             sentence, first_char, second_char)
                 # Increment interactions
@@ -88,7 +85,8 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters, first_inter
     for (i, char_interactions) in enumerate(interactions.values()):
         for (j, num_interactions) in enumerate(char_interactions.values()):
             interactions_matrix[i][j] = num_interactions
-
+    print(interactions_matrix.shape)
+    print(characters)
     return interactions_matrix, characters
 
 
