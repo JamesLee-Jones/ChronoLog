@@ -1,9 +1,9 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {ForceGraph2D} from "react-force-graph";
+import { ForceGraph2D } from "react-force-graph";
 import TimelineNavigation from "./Slider";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
@@ -31,7 +31,7 @@ function convertToGraph(data) {
       }
     }
   }
-  return {nodes: nodes, links: links};
+  return { nodes: nodes, links: links };
 }
 
 function Graph() {
@@ -47,7 +47,7 @@ function Graph() {
   const [counter, setCounter] = useState(0);
 
   // Fetches data outputted by the backend
-  const params = useParams()
+  const params = useParams();
 
   const getData = () => {
     fetch(params.book + ".json", {
