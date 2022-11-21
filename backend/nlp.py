@@ -1,3 +1,5 @@
+import pprint
+
 import numpy as np
 import spacy
 import json
@@ -48,7 +50,7 @@ def process_data(text, chapter_regex, num_splits, quiet):
     return cleaned_data
 
 
-def generate_interactions_matrix(text, prev_matrix, prev_characters):
+def generate_interactions_matrix(text, prev_matrix, prev_characters, first_interactions_overall, first_interactions_per_char):
     try:
         nlp = spacy.load("en_core_web_lg")
     except OSError:
@@ -72,8 +74,20 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters):
             [ent.text for ent in sentence.ents if ent.label_ == "PERSON"]))
         for i in range(len(people)):
             for j in range(i + 1, len(people)):
-                interactions[people[i]][people[j]] += 1
-                interactions[people[j]][people[i]] += 1
+                # Track first interactions
+                first_char = min(people[i], people[j])
+                second_char = max(people[i], people[j])
+                if first_interactions_per_char.get(first_char) is None:
+                    first_interactions_per_char[first_char] = {}
+                if first_interactions_per_char.get(first_char).get(second_char) is None:
+                    first_interactions_per_char[first_char].update({second_char: sentence})
+                if not sum(interactions[first_char].values()):
+                    first_interactions_overall[first_char] = sentence
+                if not sum(interactions[second_char].values()):
+                    first_interactions_overall[second_char] = sentence
+                # Increment interactions
+                interactions[first_char][second_char] += 1
+                interactions[first_char][second_char] += 1
     interactions_matrix = np.zeros((len(characters), len(characters)))
 
     for (i, char_interactions) in enumerate(interactions.values()):
@@ -127,11 +141,13 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
 
     unnormalised_matrices = []
     character_lists = []
+    first_interactions_overall = {}
+    first_interactions_per_char = {}
     for (i, section) in enumerate(sections):
         if not quiet:
             print("Analysing section {} of {}...".format(i + 1, len(sections)))
         interactions, characters = generate_interactions_matrix(
-            section, interactions, characters)
+            section, interactions, characters, first_interactions_overall, first_interactions_per_char)
         unnormalised_matrices.append(interactions)
         character_lists.append(characters)
     if not unpruned:
@@ -142,6 +158,9 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
             "names": character_lists[i],
             "matrix": normalised_matrices[i].tolist()
         })
+    pprint.pprint(first_interactions_per_char)
+    print("---------------")
+    pprint.pprint(first_interactions_overall)
     with open(file_path, "w", newline='\r\n') as f:
         f.write(json.dumps(json_contents, indent=2))
     if not quiet:
