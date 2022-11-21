@@ -50,8 +50,8 @@ def process_data(text, chapter_regex, num_splits, quiet):
     return cleaned_data
 
 
-def generate_interactions_matrix(text, prev_matrix, prev_characters, first_interactions_overall,
-                                 first_interactions_per_char):
+def generate_interactions_matrix(text, prev_matrix, prev_characters, first_interactions_overall={},
+                                 first_interactions_per_char={}):
     try:
         nlp = spacy.load("en_core_web_lg")
     except OSError:
@@ -82,7 +82,7 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters, first_inter
                                             sentence, first_char, second_char)
                 # Increment interactions
                 interactions[first_char][second_char] += 1
-                interactions[first_char][second_char] += 1
+                interactions[second_char][first_char] += 1
     interactions_matrix = np.zeros((len(characters), len(characters)))
 
     for (i, char_interactions) in enumerate(interactions.values()):
