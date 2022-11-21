@@ -22,7 +22,7 @@ def process_data(text, chapter_regex, num_splits, quiet):
         timeline = list(
             filter(
                 lambda x: not (
-                    x.strip() is None),
+                        x.strip() is None),
                 chapter_regex.split(text)))
     else:
         # Splits by paragraph, then joins paragraphs back up into NUM_SPLITS
@@ -50,7 +50,8 @@ def process_data(text, chapter_regex, num_splits, quiet):
     return cleaned_data
 
 
-def generate_interactions_matrix(text, prev_matrix, prev_characters, first_interactions_overall, first_interactions_per_char):
+def generate_interactions_matrix(text, prev_matrix, prev_characters, first_interactions_overall,
+                                 first_interactions_per_char):
     try:
         nlp = spacy.load("en_core_web_lg")
     except OSError:
@@ -77,14 +78,8 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters, first_inter
                 # Track first interactions
                 first_char = min(people[i], people[j])
                 second_char = max(people[i], people[j])
-                if first_interactions_per_char.get(first_char) is None:
-                    first_interactions_per_char[first_char] = {}
-                if first_interactions_per_char.get(first_char).get(second_char) is None:
-                    first_interactions_per_char[first_char].update({second_char: sentence})
-                if not sum(interactions[first_char].values()):
-                    first_interactions_overall[first_char] = sentence
-                if not sum(interactions[second_char].values()):
-                    first_interactions_overall[second_char] = sentence
+                update_interactions_records(first_interactions_per_char, first_interactions_overall, interactions,
+                                            sentence, first_char, second_char)
                 # Increment interactions
                 interactions[first_char][second_char] += 1
                 interactions[first_char][second_char] += 1
@@ -95,6 +90,18 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters, first_inter
             interactions_matrix[i][j] = num_interactions
 
     return interactions_matrix, characters
+
+
+def update_interactions_records(first_interactions_per_char, first_interactions_overall, interactions, sentence,
+                                first_char, second_char):
+    if first_interactions_per_char.get(first_char) is None:
+        first_interactions_per_char[first_char] = {}
+    if first_interactions_per_char.get(first_char).get(second_char) is None:
+        first_interactions_per_char[first_char].update({second_char: sentence})
+    if not sum(interactions[first_char].values()):
+        first_interactions_overall[first_char] = sentence
+    if not sum(interactions[second_char].values()):
+        first_interactions_overall[second_char] = sentence
 
 
 def normalise_matrix(matrix):
@@ -151,7 +158,8 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
         unnormalised_matrices.append(interactions)
         character_lists.append(characters)
     if not unpruned:
-        unnormalised_matrices, character_lists = prune_matrices(unnormalised_matrices, character_lists, quiet, percentile)
+        unnormalised_matrices, character_lists = prune_matrices(unnormalised_matrices, character_lists, quiet,
+                                                                percentile)
     normalised_matrices = list(map(normalise_matrix, unnormalised_matrices))
     for i in range(len(character_lists)):
         json_contents["sections"].append({
