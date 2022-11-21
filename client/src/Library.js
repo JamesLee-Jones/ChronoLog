@@ -10,7 +10,7 @@ function Library() {
     document.body.style.backgroundColor = "#eae0d5";
   });
 
-  let files = require.context("../public/timelines/", false, /\.json$/);
+  let files = require.context("../public/library/", false, /\.json$/);
   files = files.keys().map((filename) => filename.slice(2, -5));
 
   return (
@@ -22,7 +22,7 @@ function Library() {
               <Card.Img variant="top" src="holder.js/100px160" />
               <Card.Body>
                 <Card.Title>{filename.replaceAll("_", " ")}</Card.Title>
-                <a href={"library/" + filename} class="btn stretched-link">
+                <a href={filename} class="btn stretched-link">
                   View graph
                 </a>
               </Card.Body>

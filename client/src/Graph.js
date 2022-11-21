@@ -1,8 +1,9 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, {useEffect, useRef, useState} from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { ForceGraph2D } from "react-force-graph";
-import TimelineNavigaion from "./Slider";
+import {ForceGraph2D} from "react-force-graph";
+import TimelineNavigation from "./Slider";
+import {useParams} from "react-router-dom";
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
@@ -30,8 +31,7 @@ function convertToGraph(data) {
       }
     }
   }
-  const graph = { nodes: nodes, links: links };
-  return graph;
+  return {nodes: nodes, links: links};
 }
 
 function Graph() {
@@ -47,9 +47,10 @@ function Graph() {
   const [counter, setCounter] = useState(0);
 
   // Fetches data outputted by the backend
+  const params = useParams()
 
   const getData = () => {
-    fetch("timelines/winnie_the_pooh_final_analysis.json", {
+    fetch(params.book + ".json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -85,6 +86,8 @@ function Graph() {
     document.body.style.backgroundColor = "#eae0d5";
   });
 
+  console.log(data);
+
   return (
     <>
       <div className="App">
@@ -100,10 +103,10 @@ function Graph() {
           nodeAutoColorBy={"name"}
         />
 
-        <TimelineNavigaion
+        <TimelineNavigation
           maxval={data.length - 1}
           setCounter={setCounter}
-          TimelineNavigaion
+          TimelineNavigation
         />
       </div>
     </>

@@ -9,7 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
-/client/public/timelines
+/client/public/library
 develop-eggs/
 dist/
 downloads/

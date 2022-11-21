@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-cp -r timelines client/public
+cp -R timelines client/public/library
 cd client
 npm install
