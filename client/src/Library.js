@@ -19,7 +19,7 @@ function Library() {
         {files.map((filename) => (
           <Col>
             <Card className="text-center">
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="../ChronoLogoMini.png" />
               <Card.Body>
                 <Card.Title>{filename.replaceAll("_", " ")}</Card.Title>
                 <a href={filename} class="btn stretched-link">
