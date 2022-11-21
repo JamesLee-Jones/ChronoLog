@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, {useEffect, useRef, useState} from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ForceGraph2D } from "react-force-graph";
@@ -31,8 +31,7 @@ function convertToGraph(data) {
       }
     }
   }
-  const graph = { nodes: nodes, links: links };
-  return graph;
+  return {nodes: nodes, links: links};
 }
 
 function Graph() {
@@ -48,6 +47,7 @@ function Graph() {
   const [counter, setCounter] = useState(0);
 
   // Fetches data outputted by the backend
+  const params = useParams()
 
   const getData = () => {
     fetch(params.book + ".json", {
@@ -85,6 +85,8 @@ function Graph() {
     forceRef.current.zoomToFit(zoomingTime, padding);
     document.body.style.backgroundColor = "#eae0d5";
   });
+
+  console.log(data);
 
   return (
     <>
