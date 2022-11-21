@@ -12,7 +12,6 @@ function Home() {
           <p>Beautiful data.</p>
         </div>
       </div>
-      <Graph />
     </>
   );
 }
