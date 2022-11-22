@@ -1,7 +1,7 @@
 import React from "react";
 import { Slider } from "@mui/material";
 
-const TimelineNavigaion = ({ maxval, setCounter }) => {
+const TimelineNavigation = ({ maxval, setCounter }) => {
   let scale = 100;
 
   return (
@@ -23,4 +23,4 @@ const TimelineNavigaion = ({ maxval, setCounter }) => {
     />
   );
 };
-export default TimelineNavigaion;
+export default TimelineNavigation;
