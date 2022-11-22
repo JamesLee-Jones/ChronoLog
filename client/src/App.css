@@ -8,6 +8,17 @@
   margin: 30px auto;
 }
 
+.Graph {
+  position: relative;
+  right: 425px;
+  top: 40px
+}
+
+.Timeline {
+  position: relative;
+  top: 50px;
+}
+
 h1 {
   font-family: "EB Garamond", serif;
   color: #22333b;

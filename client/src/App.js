@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { ForceGraph2D } from "react-force-graph";
 import TimelineNavigaion from "./Slider";
 
-
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
   let result = [...data["sections"]];
@@ -18,7 +17,6 @@ function convertToGraph(data) {
   let scale = 10;
   let names = data["names"];
   let matrix = data["matrix"];
-  let scaleFactor = 10;
   for (let i = 0; i < names.length; i++) {
     nodes.push({ id: "id" + String(i), name: names[i] });
   }
@@ -75,16 +73,13 @@ function App() {
 
   const forceRef = useRef(null);
   let repelStrength = -10;
-  let centering = -120;
-  let zoomingTime = 50;
-  let padding = 130;
-  let widthCentering = 300;
-  let heightCentering = 100;
+  let padding = 30;
+
 
   useEffect(() => {
     forceRef.current.d3Force("charge").strength(repelStrength);
-    forceRef.current.d3Force("center").x(centering);
-    forceRef.current.zoomToFit(zoomingTime, padding);})
+    forceRef.current.d3Force("center");
+  });
 
   return (
     <>
@@ -96,23 +91,31 @@ function App() {
         </div>
       </div>
       <div className="App">
+        <div className="Graph">
         <ForceGraph2D
           graphData={data[counter]}
+          minZoom={5}
+          maxZoom={10}
           nodeLabel="name"
           linkCurvature="curvature"
           linkWidth="value"
           linkDirectionalParticleWidth={1}
-          width={displayWidth - widthCentering}
-          height={displayHeight - heightCentering}
+          width={displayWidth}
+          height={displayHeight}
+          onEngineStop={() => {
+            forceRef.current.zoomToFit(0, padding);          }
+          }
           ref={forceRef}
           nodeAutoColorBy={"name"}
         />
-        
+        </div>
+        <div className="Timeline">
         <TimelineNavigaion
           maxval={data.length - 1}
           setCounter={setCounter}
           TimelineNavigaion
         />
+        </div>
       </div>
     </>
   );
