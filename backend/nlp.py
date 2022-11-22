@@ -58,7 +58,7 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters, first_inter
     doc = nlp(text)
 
     characters = sorted(
-        set(prev_characters + [ent.text.title() for ent in doc.ents if ent.label_ == "PERSON"]))
+        set(prev_characters + [ent.text.title().removesuffix("'S") for ent in doc.ents if ent.label_ == "PERSON"]))
     interactions = {character: {character2: 0.0 for character2 in characters}
                     for character in characters}
 
@@ -73,10 +73,10 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters, first_inter
         for i in range(len(people)):
             for j in range(i + 1, len(people)):
                 # Track first interactions
-                first_char = min(people[i], people[j]).title()
-                second_char = max(people[i], people[j]).title()
+                first_char = min(people[i], people[j]).title().removesuffix("'S")
+                second_char = max(people[i], people[j]).title().removesuffix("'S")
                 update_interactions_records(first_interactions_per_char, first_interactions_overall, interactions,
-                                            sentence, first_char, second_char)
+                                            sentence.text, first_char, second_char)
                 # Increment interactions
                 interactions[first_char][second_char] += 1
                 interactions[second_char][first_char] += 1
@@ -85,8 +85,6 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters, first_inter
     for (i, char_interactions) in enumerate(interactions.values()):
         for (j, num_interactions) in enumerate(char_interactions.values()):
             interactions_matrix[i][j] = num_interactions
-    print(interactions_matrix.shape)
-    print(characters)
     return interactions_matrix, characters
 
 
@@ -97,9 +95,9 @@ def update_interactions_records(first_interactions_per_char, first_interactions_
     if first_interactions_per_char.get(first_char).get(second_char) is None:
         first_interactions_per_char[first_char].update({second_char: sentence})
     if not sum(interactions[first_char].values()):
-        first_interactions_overall[first_char] = sentence
+        first_interactions_overall[first_char] = {"with": second_char, "context": sentence}
     if not sum(interactions[second_char].values()):
-        first_interactions_overall[second_char] = sentence
+        first_interactions_overall[second_char] = {"with": first_char, "context": sentence}
 
 
 def normalise_matrix(matrix):
@@ -164,9 +162,8 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
             "names": character_lists[i],
             "matrix": normalised_matrices[i].tolist()
         })
-    pprint.pprint(first_interactions_per_char)
-    print("---------------")
-    pprint.pprint(first_interactions_overall)
+    json_contents["first_interactions_between_characters"] = first_interactions_per_char
+    json_contents["first_interactions_overall"] = first_interactions_overall
     with open(file_path, "w", newline='\r\n') as f:
         f.write(json.dumps(json_contents, indent=2))
     if not quiet:
