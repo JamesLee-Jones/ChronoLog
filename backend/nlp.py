@@ -164,7 +164,6 @@ def prune_matrices(matrices, characters_timeline, quiet, percentile, interaction
                 if c in interactions_per_character[key]:
                     del interactions_per_character[key][c]
 
-
     return matrices, characters_timeline, interactions_overall, interactions_per_character
 
 
