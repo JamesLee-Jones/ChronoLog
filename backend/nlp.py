@@ -182,7 +182,7 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
     interactions = []
     characters = []
     file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
-    json_contents = {"book": title,
+    json_contents = {"book": title.replace('_', ' ').title(),
                      "num_sections": len(sections),
                      "sections": []
                      }
