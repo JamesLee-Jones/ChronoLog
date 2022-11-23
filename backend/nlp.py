@@ -49,7 +49,6 @@ def process_data(text, chapter_regex, num_splits, quiet):
 
 def pool_characters(all_characters: list[str], character_dict: dict[str, str]) -> list[str]:
     character_matches = {ch: [ch2 for ch2 in all_characters if ch in re.split(" |-", ch2)] for ch in all_characters}
-    # print(character_matches)
     full_names = set()
     for name in character_matches:
         full_name = str(max(character_matches[name], key=len)) if character_matches[name] else name
@@ -161,11 +160,12 @@ def prune_matrices(matrices, characters_timeline, quiet, percentile, interaction
         if c in interactions_per_character:
             del interactions_per_character[c]
         else:
-            for c2 in interactions_per_character.values():
-                if c in c2:
-                    del c2[c]
+            for key in interactions_per_character.keys():
+                if c in interactions_per_character[key]:
+                    del interactions_per_character[key][c]
 
-    return matrices, characters_timeline, interactions_per_character, interactions_overall
+
+    return matrices, characters_timeline, interactions_overall, interactions_per_character
 
 
 def generate_timeline_json(sections, title, quiet, unpruned, percentile):
