@@ -75,7 +75,6 @@ function App() {
   let repelStrength = -10;
   let padding = 30;
 
-
   useEffect(() => {
     forceRef.current.d3Force("charge").strength(repelStrength);
     forceRef.current.d3Force("center");
@@ -92,29 +91,29 @@ function App() {
       </div>
       <div className="App">
         <div className="Graph">
-        <ForceGraph2D
-          graphData={data[counter]}
-          minZoom={5}
-          maxZoom={10}
-          nodeLabel="name"
-          linkCurvature="curvature"
-          linkWidth="value"
-          linkDirectionalParticleWidth={1}
-          width={displayWidth}
-          height={displayHeight}
-          onEngineStop={() => {
-            forceRef.current.zoomToFit(0, padding);          }
-          }
-          ref={forceRef}
-          nodeAutoColorBy={"name"}
-        />
+          <ForceGraph2D
+            graphData={data[counter]}
+            minZoom={5}
+            maxZoom={10}
+            nodeLabel="name"
+            linkCurvature="curvature"
+            linkWidth="value"
+            linkDirectionalParticleWidth={1}
+            width={displayWidth}
+            height={displayHeight}
+            onEngineStop={() => {
+              forceRef.current.zoomToFit(0, padding);
+            }}
+            ref={forceRef}
+            nodeAutoColorBy={"name"}
+          />
         </div>
         <div className="Timeline">
-        <TimelineNavigaion
-          maxval={data.length - 1}
-          setCounter={setCounter}
-          TimelineNavigaion
-        />
+          <TimelineNavigaion
+            maxval={data.length - 1}
+            setCounter={setCounter}
+            TimelineNavigaion
+          />
         </div>
       </div>
     </>
