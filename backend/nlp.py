@@ -200,7 +200,7 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
         character_lists.append(characters)
     if not unpruned:
         unnormalised_matrices, character_lists, first_interactions_overall, first_interactions_per_char = \
-            prune_matrices(unnormalised_matrices, character_lists, quiet, percentile, first_interactions_overall,
+            prune(unnormalised_matrices, character_lists, quiet, percentile, first_interactions_overall,
                            first_interactions_per_char)
     normalised_matrices = list(map(normalise_matrix, unnormalised_matrices))
     for i in range(len(character_lists)):
