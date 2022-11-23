@@ -48,7 +48,19 @@ def process_data(text, chapter_regex, num_splits, quiet):
     return cleaned_data
 
 
-def generate_interactions_matrix(text, prev_matrix, prev_characters):
+def pool_characters(all_characters: list[str], character_dict: dict[str, str]) -> list[str]:
+    character_matches = {ch: [ch2 for ch2 in all_characters if ch in ch2.split(' ')] for ch in all_characters}
+    # print(character_matches)
+    full_names = set()
+    for name in character_matches:
+        full_name = str(max(character_matches[name], key=len)) if character_matches[name] else name
+        character_dict[name] = full_name
+        full_names.add(full_name)
+
+    return list(full_names)
+
+
+def generate_interactions_matrix(text, prev_matrix, prev_characters, character_dict):
     try:
         nlp = spacy.load("en_core_web_lg")
     except OSError:
@@ -57,23 +69,25 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters):
 
     doc = nlp(text)
 
-    characters = sorted(
+    all_characters = sorted(
         set(prev_characters + [ent.text for ent in doc.ents if ent.label_ == "PERSON"]))
+    characters = sorted(pool_characters(all_characters, character_dict))
     interactions = {character: {character2: 0.0 for character2 in characters}
                     for character in characters}
 
     for i in range(len(prev_characters)):
         for j in range(i + 1, len(prev_characters)):
             char1, char2 = prev_characters[i], prev_characters[j]
-            interactions[char1][char2] = prev_matrix[i][j]
-            interactions[char2][char1] = prev_matrix[j][i]
+            interactions[character_dict[char1]][character_dict[char2]] = prev_matrix[i][j]
+            interactions[character_dict[char2]][character_dict[char1]] = prev_matrix[j][i]
+
     for sentence in doc.sents:
         people = list(dict.fromkeys(
             [ent.text for ent in sentence.ents if ent.label_ == "PERSON"]))
         for i in range(len(people)):
             for j in range(i + 1, len(people)):
-                interactions[people[i]][people[j]] += 1
-                interactions[people[j]][people[i]] += 1
+                interactions[character_dict[people[i]]][character_dict[people[j]]] += 1
+                interactions[character_dict[people[j]]][character_dict[people[i]]] += 1
     interactions_matrix = np.zeros((len(characters), len(characters)))
 
     for (i, char_interactions) in enumerate(interactions.values()):
@@ -131,7 +145,7 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
         if not quiet:
             print("Analysing section {} of {}...".format(i + 1, len(sections)))
         interactions, characters = generate_interactions_matrix(
-            section, interactions, characters)
+            section, interactions, characters, {})
         unnormalised_matrices.append(interactions)
         character_lists.append(characters)
     if not unpruned:
