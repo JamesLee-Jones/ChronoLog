@@ -18,9 +18,9 @@ function App() {
       <ChronoLogNavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/library" element={<Library />} />
-        <Route path="/library/:book" element={<Graph />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/library/" element={<Library />} />
+        <Route path="/library/:book/" element={<Graph />} />
+        <Route path="/about/" element={<About />} />
       </Routes>
     </BrowserRouter>
   );
