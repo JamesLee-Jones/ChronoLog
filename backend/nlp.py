@@ -137,7 +137,7 @@ def calculate_threshold(values, percentile):
     return np.percentile(values, percentile)
 
 
-def prune_matrices(matrices, characters_timeline, quiet, percentile, interactions_overall, interactions_per_character):
+def prune(matrices, characters_timeline, quiet, percentile, interactions_overall, interactions_per_character):
     if not quiet:
         print("Pruning timeline matrices...")
     characters_interactions = {
@@ -148,12 +148,23 @@ def prune_matrices(matrices, characters_timeline, quiet, percentile, interaction
         print("Threshold: ", threshold)
     unimportant_characters = [ch for (ch, x) in characters_interactions.items() if x < threshold]
 
+    matrices, characters_timeline = prune_matrices(matrices, characters_timeline, unimportant_characters)
+    interactions_overall, interactions_per_character = prune_metadata(unimportant_characters, interactions_overall,
+                                                                      interactions_per_character)
+
+    return matrices, characters_timeline, interactions_overall, interactions_per_character
+
+
+def prune_matrices(matrices, characters_timeline, unimportant_characters):
     for i in range(len(matrices)):
         for character in [ch for ch in characters_timeline[i] if ch in unimportant_characters]:
             j = characters_timeline[i].index(character)
             matrices[i] = np.delete(np.delete(matrices[i], j, axis=0), j, axis=1)
             characters_timeline[i].pop(j)
+    return matrices, characters_timeline
 
+
+def prune_metadata(unimportant_characters, interactions_overall, interactions_per_character):
     for c in unimportant_characters:
         if c in interactions_overall:
             del interactions_overall[c]
@@ -162,10 +173,9 @@ def prune_matrices(matrices, characters_timeline, quiet, percentile, interaction
         for key in list(interactions_per_character.keys()):
             if c in interactions_per_character[key]:
                 del interactions_per_character[key][c]
-            if not interactions_per_character[key]:
-                del interactions_per_character[key]
-
-    return matrices, characters_timeline, interactions_overall, interactions_per_character
+                if not interactions_per_character[key]:
+                    del interactions_per_character[key]
+    return interactions_overall, interactions_per_character
 
 
 def generate_timeline_json(sections, title, quiet, unpruned, percentile):
