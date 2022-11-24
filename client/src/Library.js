@@ -108,8 +108,8 @@ function Library() {
     document.body.style.backgroundColor = "#eae0d5";
   });
 
+
   return (
-<<<<<<< HEAD
       <div className="books">
         <Row xs={1} md={2} lg={4} className="g-4">
           {bookTitles.map((bookTitle, index) => (
