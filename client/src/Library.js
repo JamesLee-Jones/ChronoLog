@@ -5,20 +5,26 @@ import Row from "react-bootstrap/Row";
 import "./App.css";
 import "./Library.css";
 
-function convert(data) {
+function convertGutendexJSON(data) {
   let bookName = data["results"][0]["title"]
   let bookAuthor = data["results"][0]["authors"][0]["name"]
   let bookCoverUrl = data["results"][0]["formats"]["image/jpeg"]
-  console.log(bookCoverUrl);
   return {id : 1, title : bookName, authors : bookAuthor, cover: bookCoverUrl};
+}
+
+function convertBookData(data) {
+  let bookTitle = data["book"]
+  console.log(bookTitle)
+  return {title : bookTitle};
 }
 
 function Library() {
 
-  const [data, setData] = useState({ id: {}, title: {}, authors: {}, cover: {}});
+  const [gutendexData, setGutendexData] = useState({ id: {}, title: {}, authors: {}, cover: {}});
+  const [bookTitle, setBookTitle] = useState({ title: {}});
 
   const getData = () => {
-    fetch("https://gutendex.com/books?search=little women", {
+    fetch("https://gutendex.com/books?search="+bookTitle, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -28,14 +34,14 @@ function Library() {
         return response.json();
       })
       .then(function (myJson) {
-        let res = convert(myJson)
-        setData(res);
+        let res = convertGutendexJSON(myJson)
+        setGutendexData(res);
       });
   };
 
   useEffect(() => {
     getData();
-    console.log(data)
+    console.log(gutendexData)
   }, []);
 
   useEffect(() => {
@@ -80,6 +86,28 @@ function Library() {
     });
   }, []);
 
+  const getBookTitle = () => {
+    fetch("library/the_hobbit_sample.json", {
+    })
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (myJson) {
+        let res = convertBookData(myJson)
+        setBookTitle(res);
+        console.log(bookTitle)
+      });
+  };
+
+  useEffect(() => {
+    getBookTitle();
+    console.log(bookTitle["title"])
+  }, []);
+
+  useEffect(() => {
+    document.body.style.backgroundColor = "#eae0d5";
+  });
+
   return (
 <<<<<<< HEAD
       <div className="books">
@@ -108,7 +136,7 @@ function Library() {
         {files.map((filename) => (
           <Col>
             <Card className="text-center">
-              <Card.Img variant="top" src={data.cover} />
+              <Card.Img variant="top" src={gutendexData.cover} />
               <Card.Body>
                 <Card.Title>{filename.replaceAll("_", " ")}</Card.Title>
                 <a href={filename} class="btn stretched-link">
