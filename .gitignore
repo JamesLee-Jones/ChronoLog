@@ -10,6 +10,7 @@ __pycache__/
 .Python
 build/
 /client/public/library
+node_modules
 develop-eggs/
 dist/
 downloads/
