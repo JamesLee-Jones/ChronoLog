@@ -191,11 +191,12 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
     character_lists = []
     first_interactions_overall = {}
     first_interactions_per_char = {}
+    character_dict = {}
     for (i, section) in enumerate(sections):
         if not quiet:
             print("Analysing section {} of {}...".format(i + 1, len(sections)))
         interactions, characters = generate_interactions_matrix(
-            section, interactions, characters, {}, first_interactions_overall, first_interactions_per_char)
+            section, interactions, characters, character_dict, first_interactions_overall, first_interactions_per_char)
         unnormalised_matrices.append(interactions)
         character_lists.append(characters)
     if not unpruned:
@@ -204,6 +205,8 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
                   first_interactions_per_char)
     normalised_matrices = list(map(normalise_matrix, unnormalised_matrices))
     for i in range(len(character_lists)):
+        for j in range(len(character_lists[i])):
+            character_lists[i][j] = character_dict[character_lists[i][j]]
         json_contents["sections"].append({
             "names": character_lists[i],
             "matrix": normalised_matrices[i].tolist()
