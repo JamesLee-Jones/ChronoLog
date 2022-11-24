@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "papaparse": "^5.3.2",
+    "react-force-graph": "^1.41.15",
+    "react-force-graph-2d": "^1.23.12"
+  }
+}
