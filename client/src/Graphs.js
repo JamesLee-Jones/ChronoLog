@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import { ForceGraph2D } from "react-force-graph";
 import * as d3 from "d3";
+import "./Graphs.css";
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
@@ -33,16 +34,10 @@ function convertToGraph(data) {
 }
 
 const Graphs = ({ graphData, counter }) => {
-  const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
-  const [displayHeight, setDisplayHeight] = useState(window.innerHeight);
-
-  const [graphs, setGraphs] = useState({ nodes: {}, links: {} });
-  const [activeNode, setActiveNode] = useState(false);
-
-  window.addEventListener("resize", () => {
-    setDisplayWidth(window.innerWidth);
-    setDisplayHeight(window.innerHeight);
-  });
+  const [graphs, setGraphs] = useState([{ nodes: [], links: [] }]);
+  const [activeNode, setActiveNode] = useState("");
+  const width = 550;
+  const height = 550;
 
   useEffect(() => {
     setGraphs(convert(graphData));
@@ -65,34 +60,31 @@ const Graphs = ({ graphData, counter }) => {
     }
   });
 
-  const forceRef = useRef(null);
-  let padding = 30;
+  const forceRef = useRef();
 
   useEffect(() => {
-    forceRef.current.d3Force("charge", d3.forceManyBody().strength(-200));
-    forceRef.current.d3Force("center", d3.forceCenter(20, 20));
+    forceRef.current.d3Force("charge", d3.forceManyBody().strength(-150));
+    forceRef.current.d3Force("center", d3.forceCenter(0, 0));
     forceRef.current.d3Force("collide", d3.forceCollide());
     forceRef.current.d3Force("y", d3.forceY(10));
     forceRef.current.d3Force("x", d3.forceX(10));
-  });
+  }, []);
 
   return (
-    <div>
+    <div className="graph">
       <ForceGraph2D
         graphData={graphs[counter]}
         nodeLabel="name"
-        linkCurvature="curvature"
         linkWidth="value"
         linkVisibility="linkVisibility"
-        linkDirectionalParticleWidth={1}
-        width={displayWidth / 2}
-        height={displayHeight / 2}
-        onEngineStop={() => {
-          forceRef.current.zoomToFit(0, padding);
-        }}
+        linkDirectionalParticleWidth={4}
+        width={width}
+        height={height}
         ref={forceRef}
         nodeAutoColorBy={"name"}
         onNodeClick={handleClick}
+        enablePanInteraction={false}
+        enableZoomInteraction={true}
       />
     </div>
   );

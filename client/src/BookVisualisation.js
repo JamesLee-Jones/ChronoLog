@@ -31,7 +31,6 @@ function BookVisualisation() {
         return response.json();
       })
       .then(function (myJson) {
-        console.log(myJson);
         let res = convertData(myJson);
         setData(res);
       });
