@@ -59,9 +59,7 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
       return;
     }
 
-    console.log(counter);
     setCounter(counter + 1);
-    console.log(counter);
   };
 
   const onPrev = () => {
@@ -69,9 +67,7 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
       return;
     }
 
-    console.log(counter);
     setCounter(counter - 1);
-    console.log(counter);
   };
 
   return (
@@ -89,7 +85,7 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
         }}
         step={1}
         sx={{
-          width: 700,
+          width: 500,
           height: 20,
           color: "#C6AC8F",
           ".MuiSlider-mark": {

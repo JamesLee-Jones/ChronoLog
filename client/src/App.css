@@ -3,9 +3,12 @@
   align-items: center;
   min-height: 300px;
   padding: 30px;
-  border-radius: 100px;
+  border-radius: 20px;
   max-width: 600px;
   margin: 30px auto;
+  border: #22333b;
+  border-width: 5x;
+  border-style: solid;
 }
 
 h1 {
