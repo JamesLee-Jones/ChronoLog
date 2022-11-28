@@ -178,6 +178,18 @@ def prune_metadata(unimportant_characters, interactions_overall, interactions_pe
     return interactions_overall, interactions_per_character
 
 
+def sort_matrices(normalised_matrices, characters):
+    for (i, matrix) in enumerate(normalised_matrices):
+        matrix = np.array(matrix)
+        np_chars = np.array(characters[i])
+        indices = np.argsort(-np.sum(matrix, 0))
+        ordered_matrix = matrix[:, indices]
+        ordered_characters = np_chars[indices]
+        normalised_matrices[i] = ordered_matrix
+        characters[i] = list(ordered_characters)
+    return normalised_matrices, characters
+
+
 def generate_timeline_json(sections, title, quiet, unpruned, percentile):
     interactions = []
     characters = []
@@ -203,6 +215,7 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
             prune(unnormalised_matrices, character_lists, quiet, percentile, first_interactions_overall,
                   first_interactions_per_char)
     normalised_matrices = list(map(normalise_matrix, unnormalised_matrices))
+    normalised_matrices, characters = sort_matrices(normalised_matrices, character_lists)
     for i in range(len(character_lists)):
         json_contents["sections"].append({
             "names": character_lists[i],
