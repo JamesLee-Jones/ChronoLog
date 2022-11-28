@@ -4,7 +4,7 @@ from unidecode import unidecode
 import os.path
 import regex as re
 
-import backend.nlp as nlp
+import backend.character_interactions_processor as cip
 from argparse import RawTextHelpFormatter, ArgumentParser
 
 DEFAULT_SPLITS = 10
@@ -100,12 +100,15 @@ def main():
         pattern = None
 
     title = args.title or os.path.split(args.filename)[-1].split(".")[0]
-    sections = nlp.process_data(
-        text,
-        pattern,
-        args.sections or DEFAULT_SPLITS,
-        args.quiet)
-    nlp.generate_timeline_json(sections, title, args.quiet, args.unpruned, args.percentile, args.narrator)
+
+    cip.CharacterInteractionsProcessor(
+        chapter_regex=pattern,
+        nb_sections=args.sections or DEFAULT_SPLITS,
+        percentile=args.percentile,
+        narrator=args.narrator,
+        quiet=args.quiet,
+        pruned=not args.unpruned
+    ).process(title, text)
 
 
 if __name__ == "__main__":
