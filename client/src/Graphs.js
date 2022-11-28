@@ -3,61 +3,94 @@ import { ForceGraph2D } from "react-force-graph";
 import * as d3 from "d3";
 import "./Graphs.css";
 
-// Converts JSON data from backend into graph JSON data for react force graph
-function convert(data) {
-  let result = [...data];
-  return result.map(convertToGraph);
+function addNodeMetadata(node, metaData) {
+  let data = Object.keys(metaData);
+
+  for (let i = 0; i < data.length; i++) {
+    let metric = cleanString(data[i]);
+    node[metric] = metaData[data[i]][node.name];
+  }
+
+  return node;
 }
 
-function convertToGraph(data) {
-  let nodes = [];
-  let links = [];
-  let scale = 10;
-  let names = data["names"];
-  let matrix = data["matrix"];
-  for (let i = 0; i < names.length; i++) {
-    nodes.push({ id: "id" + String(i), name: names[i] });
-  }
-  for (let j = 0; j < names.length; j++) {
-    for (let k = 0; k < names.length; k++) {
-      if (j !== k && matrix[j][k] !== 0) {
-        links.push({
-          source: "id" + String(j),
-          target: "id" + String(k),
-          value: matrix[j][k] * scale,
-          linkVisibility: true,
-        });
-      }
+function cleanString(str) {
+  const titleCase = str
+    .toLowerCase()
+    .split("_")
+    .map((word) => {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join("_");
+
+  return titleCase;
+}
+
+function hideLinks(links, id) {
+  for (let i = 0; i < links.length; i++) {
+    if (links[i]["source"]["id"] !== id) {
+      links[i]["linkVisibility"] = !links[i]["linkVisibility"];
     }
   }
-  return { nodes: nodes, links: links };
 }
 
-const Graphs = ({ graphData, counter }) => {
+const Graphs = ({ graphData, nodeMetadata, counter, setNode, setLink }) => {
   const [graphs, setGraphs] = useState([{ nodes: [], links: [] }]);
   const [activeNode, setActiveNode] = useState("");
   const width = 550;
   const height = 550;
+
+  // Converts JSON data from backend into graph JSON data for react force graph
+  function convert(data) {
+    let result = [...data];
+    return result.map(convertToGraph);
+  }
+
+  function convertToGraph(data) {
+    let nodes = [];
+    let links = [];
+    let scale = 10;
+    let names = data["names"];
+    let matrix = data["matrix"];
+    for (let i = 0; i < names.length; i++) {
+      let curNode = { id: "id" + String(i), name: names[i] };
+      curNode = addNodeMetadata(curNode, nodeMetadata);
+      nodes.push(curNode);
+    }
+    for (let j = 0; j < names.length; j++) {
+      for (let k = 0; k < names.length; k++) {
+        if (j !== k && matrix[j][k] !== 0) {
+          links.push({
+            source: "id" + String(j),
+            target: "id" + String(k),
+            value: matrix[j][k] * scale,
+            linkVisibility: true,
+          });
+        }
+      }
+    }
+    return { nodes: nodes, links: links };
+  }
 
   useEffect(() => {
     setGraphs(convert(graphData));
   }, [graphData]);
 
   const handleClick = useCallback((node) => {
+    let links = graphs[counter]["links"];
+
     if (activeNode === "") {
       setActiveNode(node["id"]);
     } else if (activeNode === node["id"]) {
       setActiveNode("");
     } else {
-      return;
+      hideLinks(links, activeNode);
+      setActiveNode(node["id"]);
     }
 
-    let links = graphs[counter]["links"];
-    for (let i = 0; i < links.length; i++) {
-      if (links[i]["source"]["id"] !== node["id"]) {
-        links[i]["linkVisibility"] = !links[i]["linkVisibility"];
-      }
-    }
+    hideLinks(links, node["id"]);
+
+    setNode(node);
   });
 
   const forceRef = useRef();
@@ -84,7 +117,7 @@ const Graphs = ({ graphData, counter }) => {
         nodeAutoColorBy={"name"}
         onNodeClick={handleClick}
         enablePanInteraction={false}
-        enableZoomInteraction={true}
+        enableZoomInteraction={false}
       />
     </div>
   );
