@@ -77,7 +77,7 @@ def setup_interactions(characters, prev_characters, character_dict, prev_matrix)
 
 
 def generate_interactions_matrix(text, prev_matrix, prev_characters, character_dict, first_interactions_overall={},
-                                 first_interactions_per_char={}):
+                                 first_interactions_per_char={}, first_person=False):
     try:
         nlp = spacy.load("en_core_web_lg")
     except OSError:
@@ -91,6 +91,9 @@ def generate_interactions_matrix(text, prev_matrix, prev_characters, character_d
     for sentence in doc.sents:
         people = list(dict.fromkeys(
             [ent.text.title().replace("_", "").removesuffix("'S") for ent in sentence.ents if ent.label_ == "PERSON"]))
+        pronouns = list(set([pn.text.title() for pn in sentence if pn.pos_ == "PRON" and pn.text == "I"]))
+        if first_person:
+            people.extend(pronouns)
         for i in range(len(people)):
             for j in range(i + 1, len(people)):
                 # Track first interactions
@@ -178,7 +181,7 @@ def prune_metadata(unimportant_characters, interactions_overall, interactions_pe
     return interactions_overall, interactions_per_character
 
 
-def generate_timeline_json(sections, title, quiet, unpruned, percentile):
+def generate_timeline_json(sections, title, quiet, unpruned, percentile, narrator):
     interactions = []
     characters = []
     file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
@@ -191,12 +194,14 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
     character_lists = []
     first_interactions_overall = {}
     first_interactions_per_char = {}
-    character_dict = {}
+    character_dict = {} if not narrator else {"I": narrator}
+
     for (i, section) in enumerate(sections):
         if not quiet:
             print("Analysing section {} of {}...".format(i + 1, len(sections)))
         interactions, characters = generate_interactions_matrix(
-            section, interactions, characters, character_dict, first_interactions_overall, first_interactions_per_char)
+            section, interactions, characters, character_dict,
+            first_interactions_overall, first_interactions_per_char, narrator is not None)
         unnormalised_matrices.append(interactions)
         character_lists.append(characters)
     if not unpruned:
