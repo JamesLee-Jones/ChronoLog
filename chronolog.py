@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+from unidecode import unidecode
 import os.path
 import regex as re
 
@@ -76,8 +79,9 @@ def main():
              "The timeline will then be created in N similar sized sections. Default N = {}.".format(DEFAULT_SPLITS))
 
     args = parser.parse_args()
-    with open(args.filename, 'r') as f:
+    with open(args.filename, 'r', encoding="utf-8") as f:
         text = f.read()
+    text = unidecode(text)
     if args.chapterRegex in PATTERNS_DICT:
         pattern = PATTERNS_DICT[args.chapterRegex]
     elif args.chapterRegex:
