@@ -22,7 +22,7 @@ function BookVisualisation() {
     book: "",
     num_sections: 0,
     sections: [],
-    first_interactions_between_character: {},
+    first_interactions_between_characters: {},
     first_interaction: {},
   });
   const [counter, setCounter] = useState(0);
@@ -44,7 +44,6 @@ function BookVisualisation() {
       })
       .then(function (myJson) {
         let res = convertData(myJson);
-        console.log(myJson);
         setData(res);
       });
   };
@@ -69,6 +68,7 @@ function BookVisualisation() {
         <Graphs
           graphData={data["sections"]}
           nodeMetadata={{ first_interaction: data["first_interaction"] }}
+          linkMetadata={{ first_interactions_between_characters: data["first_interactions_between_characters"]}}
           counter={counter}
           setNode={setNode}
           setLink={setLink}

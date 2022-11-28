@@ -14,6 +14,33 @@ function addNodeMetadata(node, metaData) {
   return node;
 }
 
+function addLinkMetaData(link,metaData,nodes){
+    let data = Object.keys(metaData)
+
+    for (let i = 0; i < data.length; i++) {
+        let metric = cleanString(data[i]);
+
+        if (metaData[data[i]][idToName(nodes,link.source)] == undefined){
+            return link
+        }
+
+        link[metric] = metaData[data[i]][idToName(nodes,link.source)][idToName(nodes,link.target)];
+
+      }
+
+    return link
+}
+
+
+function idToName(nodes,id){
+    for (let i = 0; i < nodes.length; i++) {
+        if (nodes[i]["id"] === id){
+            return nodes[i]["name"]
+        }
+      }
+
+}
+
 function cleanString(str) {
   const titleCase = str
     .toLowerCase()
@@ -28,13 +55,28 @@ function cleanString(str) {
 
 function hideLinks(links, id) {
   for (let i = 0; i < links.length; i++) {
-    if (links[i]["source"]["id"] !== id) {
+    if (links[i]["source"]["id"] !== id && links[i]["target"]["id"] !== id) {
       links[i]["linkVisibility"] = !links[i]["linkVisibility"];
     }
+
+    // if(links[i]["source"]["id"] === id){
+    //     links[i]["value"] = links[i]["valSource"]
+    // }else if (links[i]["target"]["id"] === id){
+    //     links[i]["value"] = links[i]["valTarget"]
+    // }
   }
 }
 
-const Graphs = ({ graphData, nodeMetadata, counter, setNode, setLink }) => {
+// function revertLinks(links){
+
+//     for (let i = 0; i < links.length; i++) {
+//         console.log(links[i])
+//         links[2]["value"] = 100
+//     }
+//     console.log(links)
+// }
+
+const Graphs = ({ graphData, nodeMetadata, linkMetadata, counter, setNode, setLink }) => {
   const [graphs, setGraphs] = useState([{ nodes: [], links: [] }]);
   const [activeNode, setActiveNode] = useState("");
   const width = 550;
@@ -49,6 +91,7 @@ const Graphs = ({ graphData, nodeMetadata, counter, setNode, setLink }) => {
   function convertToGraph(data) {
     let nodes = [];
     let links = [];
+    let ids = []
     let scale = 10;
     let names = data["names"];
     let matrix = data["matrix"];
@@ -56,19 +99,33 @@ const Graphs = ({ graphData, nodeMetadata, counter, setNode, setLink }) => {
       let curNode = { id: "id" + String(i), name: names[i] };
       curNode = addNodeMetadata(curNode, nodeMetadata);
       nodes.push(curNode);
+      ids.push(i)
     }
-    for (let j = 0; j < names.length; j++) {
-      for (let k = 0; k < names.length; k++) {
-        if (j !== k && matrix[j][k] !== 0) {
-          links.push({
-            source: "id" + String(j),
-            target: "id" + String(k),
-            value: matrix[j][k] * scale,
-            linkVisibility: true,
-          });
+
+
+    while (ids.length !== 1) { 
+        let i = ids[0]
+        for (let j = i; j < names.length; j++ ){
+            if(matrix[i][j] !== 0 && j !== i){
+                let curLink = {
+                    source: "id" + String(i),
+                    target: "id" + String(j),
+                    value: matrix[i][j] + matrix[j][i] * scale,
+                    valSource: matrix[i][j] ,
+                    valTarget: matrix[j][i],
+                    valTotal: matrix[i][j] + matrix[j][i] * scale,
+                    linkVisibility: true,
+                }
+
+                curLink = addLinkMetaData(curLink,linkMetadata,nodes)
+                links.push(curLink)
+
+            }
         }
-      }
+
+        ids.shift()
     }
+
     return { nodes: nodes, links: links };
   }
 
@@ -76,13 +133,14 @@ const Graphs = ({ graphData, nodeMetadata, counter, setNode, setLink }) => {
     setGraphs(convert(graphData));
   }, [graphData]);
 
-  const handleClick = useCallback((node) => {
+  const handleNodeClick = useCallback((node) => {
     let links = graphs[counter]["links"];
 
     if (activeNode === "") {
       setActiveNode(node["id"]);
     } else if (activeNode === node["id"]) {
       setActiveNode("");
+      //revertLinks(links)
     } else {
       hideLinks(links, activeNode);
       setActiveNode(node["id"]);
@@ -91,6 +149,12 @@ const Graphs = ({ graphData, nodeMetadata, counter, setNode, setLink }) => {
     hideLinks(links, node["id"]);
 
     setNode(node);
+  });
+
+  const handleLinkClick = useCallback((link) => {
+
+    setLink(link)
+    
   });
 
   const forceRef = useRef();
@@ -115,9 +179,10 @@ const Graphs = ({ graphData, nodeMetadata, counter, setNode, setLink }) => {
         height={height}
         ref={forceRef}
         nodeAutoColorBy={"name"}
-        onNodeClick={handleClick}
+        onNodeClick={handleNodeClick}
+        onLinkClick={handleLinkClick}
         enablePanInteraction={false}
-        enableZoomInteraction={false}
+        enableZoomInteraction={true}
       />
     </div>
   );
