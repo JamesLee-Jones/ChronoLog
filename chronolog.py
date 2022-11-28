@@ -77,11 +77,21 @@ def main():
         default=DEFAULT_SPLITS,
         help="Supply the number of sections you want to divide your book into. " +
              "The timeline will then be created in N similar sized sections. Default N = {}.".format(DEFAULT_SPLITS))
+    parser.add_argument(
+        "--narrator",
+        "-n",
+        required=False,
+        type=str,
+        default=None,
+        help="If the book is in first person, enter the full name of the character. " +
+             "We assume the book is written in third person otherwise."
+    )
 
     args = parser.parse_args()
     with open(args.filename, 'r', encoding="utf-8") as f:
         text = f.read()
     text = unidecode(text)
+
     if args.chapterRegex in PATTERNS_DICT:
         pattern = PATTERNS_DICT[args.chapterRegex]
     elif args.chapterRegex:
@@ -95,7 +105,7 @@ def main():
         pattern,
         args.sections or DEFAULT_SPLITS,
         args.quiet)
-    nlp.generate_timeline_json(sections, title, args.quiet, args.unpruned, args.percentile)
+    nlp.generate_timeline_json(sections, title, args.quiet, args.unpruned, args.percentile, args.narrator)
 
 
 if __name__ == "__main__":
