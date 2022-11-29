@@ -143,8 +143,8 @@
         "Rachel Lynde",
         "Marilla Cuthbert",
         "Matthew Cuthbert",
-        "Jane",
-        "Mary",
+        "Jane Andrews",
+        "Mary Alice Bell",
         "Peter Morrison",
         "Matthew Helplessly",
         "Carmody",
@@ -152,12 +152,12 @@
         "Avonlea",
         "Thomas Lynde",
         "Alexander Spencer",
-        "Diana",
+        "Diana Goodbye-E-E--",
         "Newbridge",
-        "Barry",
+        "Josephine Barry",
         "Rapt",
         "Robert Bell",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -526,10 +526,10 @@
       "names": [
         "Marilla Cuthbert",
         "Rachel Lynde",
-        "Cordelia",
+        "Cordelia Montmorency",
         "Matthew Cuthbert",
-        "Mary",
-        "Jane",
+        "Mary Alice Bell",
+        "Jane Andrews",
         "Peter Morrison",
         "Matthew Helplessly",
         "Anne Spiritlessly",
@@ -538,14 +538,14 @@
         "Avonlea",
         "Thomas Lynde",
         "Alexander Spencer",
-        "Geraldine",
+        "Geraldine Seymour",
         "Anne Shirley",
-        "Diana",
-        "Barry",
+        "Diana Goodbye-E-E--",
+        "Josephine Barry",
         "Newbridge",
         "Rapt",
         "Robert Bell",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -1082,11 +1082,11 @@
       "names": [
         "Marilla Cuthbert",
         "Rachel Lynde",
-        "Cordelia",
+        "Cordelia Montmorency",
         "Matthew Cuthbert",
         "Anne Spiritlessly",
-        "Mary",
-        "Jane",
+        "Mary Alice Bell",
+        "Jane Andrews",
         "Matthew Helplessly",
         "Peter Morrison",
         "Carmody",
@@ -1094,14 +1094,14 @@
         "Avonlea",
         "Thomas Lynde",
         "Alexander Spencer",
-        "Geraldine",
+        "Geraldine Seymour",
         "Anne Shirley",
-        "Diana",
-        "Barry",
+        "Diana Goodbye-E-E--",
+        "Josephine Barry",
         "Newbridge",
         "Rapt",
         "Robert Bell",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -1637,12 +1637,12 @@
     {
       "names": [
         "Marilla Cuthbert",
-        "Cordelia",
+        "Cordelia Montmorency",
         "Rachel Lynde",
         "Matthew Cuthbert",
         "Thomas Lynde",
-        "Jane",
-        "Mary",
+        "Jane Andrews",
+        "Mary Alice Bell",
         "Anne Spiritlessly",
         "Matthew Helplessly",
         "Peter Morrison",
@@ -1651,15 +1651,15 @@
         "Anne Confidentially",
         "Hammond",
         "Avonlea",
-        "Geraldine",
+        "Geraldine Seymour",
         "Anne Shirley",
         "Alexander Spencer",
-        "Diana",
-        "Barry",
+        "Diana Goodbye-E-E--",
+        "Josephine Barry",
         "Newbridge",
         "Rapt",
         "Robert Bell",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -2291,7 +2291,7 @@
     {
       "names": [
         "Marilla Cuthbert",
-        "Cordelia",
+        "Cordelia Montmorency",
         "Rachel Lynde",
         "Matthew Cuthbert",
         "Anne Confidentially",
@@ -2306,14 +2306,14 @@
         "Hammond",
         "Blewett Ungraciously",
         "Anne Shirley",
-        "Geraldine",
-        "Diana",
-        "Mary",
-        "Barry",
+        "Geraldine Seymour",
+        "Diana Goodbye-E-E--",
+        "Mary Alice Bell",
+        "Josephine Barry",
         "Newbridge",
         "Rapt",
         "Robert Bell",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -2945,7 +2945,7 @@
     {
       "names": [
         "Marilla Cuthbert",
-        "Cordelia",
+        "Cordelia Montmorency",
         "Rachel Lynde",
         "Matthew Cuthbert",
         "Anne Confidentially",
@@ -2958,16 +2958,16 @@
         "Carmody",
         "Avonlea",
         "Anne Shirley",
-        "Geraldine",
+        "Geraldine Seymour",
         "Hammond",
         "Blewett Ungraciously",
-        "Diana",
-        "Mary",
-        "Barry",
+        "Diana Goodbye-E-E--",
+        "Mary Alice Bell",
+        "Josephine Barry",
         "Newbridge",
         "Rapt",
         "Robert Bell",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -3614,14 +3614,14 @@
         "Katie Maurice",
         "Avonlea",
         "Anne Shirley",
-        "Geraldine",
+        "Geraldine Seymour",
         "Blewett Ungraciously",
         "Diana Barry",
-        "Mary",
+        "Mary Alice Bell",
         "Newbridge",
         "Rapt",
         "Robert Bell",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -4268,14 +4268,14 @@
         "Katie Maurice",
         "Avonlea",
         "Anne Shirley",
-        "Geraldine",
+        "Geraldine Seymour",
         "Blewett Ungraciously",
         "Diana Barry",
-        "Mary",
+        "Mary Alice Bell",
         "Newbridge",
         "Rapt",
         "Robert Bell",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -4924,14 +4924,14 @@
         "Katie Maurice",
         "Avonlea",
         "Anne Shirley",
-        "Geraldine",
+        "Geraldine Seymour",
         "Rapt",
         "Blewett Ungraciously",
-        "Mary",
+        "Mary Alice Bell",
         "Diana Barry",
         "Newbridge",
         "Robert Bell",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -5685,15 +5685,15 @@
         "Katie Maurice",
         "Miss Rogerson",
         "Avonlea",
-        "Geraldine",
+        "Geraldine Seymour",
         "Anne Shirley",
         "Blewett Ungraciously",
         "Rapt",
         "Jerry Buote",
-        "Mary",
+        "Mary Alice Bell",
         "Diana Barry",
         "Newbridge",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -6561,15 +6561,15 @@
         "Miss Rogerson",
         "Anne Shirley",
         "Avonlea",
-        "Geraldine",
+        "Geraldine Seymour",
         "Blewett Ungraciously",
         "Rapt",
         "Jerry Buote",
         "William Bell",
-        "Mary",
+        "Mary Alice Bell",
         "Dryad",
         "Newbridge",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -7556,7 +7556,7 @@
         "Katie Maurice",
         "Miss Rogerson",
         "Anne Shirley",
-        "Geraldine",
+        "Geraldine Seymour",
         "Avonlea",
         "Blewett Ungraciously",
         "William Bell",
@@ -7566,8 +7566,8 @@
         "Harmon Andrews",
         "Newbridge",
         "Dryad",
-        "Shyly",
-        "Mary"
+        "Matthew Shyly",
+        "Mary Alice Bell"
       ],
       "matrix": [
         [
@@ -8682,7 +8682,7 @@
         "Robert Bell",
         "Miss Rogerson",
         "Anne Shirley",
-        "Geraldine",
+        "Geraldine Seymour",
         "Avonlea",
         "Blewett Ungraciously",
         "William Bell",
@@ -8694,7 +8694,7 @@
         "Mary Alice Bell",
         "Dryad",
         "Newbridge",
-        "Shyly"
+        "Matthew Shyly"
       ],
       "matrix": [
         [
@@ -9861,7 +9861,7 @@
         "Marilla Cuthbert",
         "Diana Gasped",
         "Rachel Lynde",
-        "Phillips",
+        "Teddy Phillips",
         "Diana Barry",
         "Cordelia Fitzgerald",
         "Avonlea",
@@ -9887,20 +9887,20 @@
         "Robert Bell",
         "Miss Rogerson",
         "Ruby Gillis",
-        "Geraldine",
+        "Geraldine Seymour",
         "Mary Alice Bell",
         "Blewett Ungraciously",
         "Willowmere",
         "William Bell",
         "Rapt",
         "Jerry Buote",
-        "Priscilla",
+        "Priscilla Grant",
         "Gertie Pye",
         "Julia Bell",
         "Harmon Andrews",
         "Jimmy Glover",
         "Gil",
-        "Shyly",
+        "Matthew Shyly",
         "Dryad",
         "Newbridge"
       ],
@@ -12217,7 +12217,7 @@
         "Marilla Cuthbert",
         "Diana Gasped",
         "Rachel Lynde",
-        "Phillips",
+        "Teddy Phillips",
         "Diana Barry",
         "Gilbert Blythe",
         "Cordelia Fitzgerald",
@@ -12242,7 +12242,7 @@
         "Katie Maurice",
         "Robert Bell",
         "Miss Rogerson",
-        "Geraldine",
+        "Geraldine Seymour",
         "Mary Alice Bell",
         "Ruby Gillis",
         "Blewett Ungraciously",
@@ -12251,16 +12251,16 @@
         "Diana Goodbye-E-E--",
         "Rapt",
         "Jerry Buote",
-        "Priscilla",
+        "Priscilla Grant",
         "Gertie Pye",
         "Julia Bell",
         "Rachel Nodded",
         "Harmon Andrews",
         "Jimmy Glover",
-        "Queen",
+        "Snow Queen",
         "Gil",
         "Dryad",
-        "Shyly",
+        "Matthew Shyly",
         "Newbridge"
       ],
       "matrix": [
@@ -14873,7 +14873,7 @@
         "Marilla Cuthbert",
         "Diana Gasped",
         "Rachel Lynde",
-        "Phillips",
+        "Teddy Phillips",
         "Diana Barry",
         "Sam Boulter",
         "Cordelia Fitzgerald",
@@ -14908,7 +14908,7 @@
         "Robert Bell",
         "Miss Rogerson",
         "Mary Alice Bell",
-        "Geraldine",
+        "Geraldine Seymour",
         "Blewett Ungraciously",
         "Josie Pye",
         "Jerry Buote",
@@ -14917,14 +14917,14 @@
         "Harmon Andrews",
         "Rapt",
         "Dryad",
-        "Priscilla",
+        "Priscilla Grant",
         "Julia Bell",
         "Rachel Nodded",
         "Gil",
         "Jimmy Glover",
         "Newbridge",
-        "Shyly",
-        "Queen"
+        "Matthew Shyly",
+        "Snow Queen"
       ],
       "matrix": [
         [
@@ -18298,7 +18298,7 @@
         "Matthew And Marilla",
         "Marilla Cuthbert",
         "Diana Barry",
-        "Phillips",
+        "Teddy Phillips",
         "Diana Gasped",
         "Rachel Lynde",
         "Gertie Pye",
@@ -18336,7 +18336,7 @@
         "Robert Bell",
         "Miss Rogerson",
         "Mary Alice Bell",
-        "Geraldine",
+        "Geraldine Seymour",
         "Blewett Ungraciously",
         "Minnie Andrews",
         "Josie Pye",
@@ -18347,12 +18347,12 @@
         "Rapt",
         "Harmon Andrews",
         "Julia Bell",
-        "Priscilla",
+        "Priscilla Grant",
         "Rachel Nodded",
         "Newbridge",
         "Jimmy Glover",
-        "Queen",
-        "Shyly",
+        "Snow Queen",
+        "Matthew Shyly",
         "Timothy Andrews",
         "Gil"
       ],
@@ -22247,7 +22247,7 @@
         "Caesar",
         "Robert Bell",
         "Miss Rogerson",
-        "Geraldine",
+        "Geraldine Seymour",
         "Mary Alice Bell",
         "Minnie Andrews",
         "Blewett Ungraciously",
@@ -22261,11 +22261,11 @@
         "Harmon Andrews",
         "Julia Bell",
         "Rachel Nodded",
-        "Priscilla",
+        "Priscilla Grant",
         "Gil",
         "Newbridge",
-        "Queen",
-        "Shyly",
+        "Snow Queen",
+        "Matthew Shyly",
         "Jimmy Glover"
       ],
       "matrix": [
@@ -26414,7 +26414,7 @@
         "Robert Bell",
         "Josephine Barry",
         "Miss Rogerson",
-        "Geraldine",
+        "Geraldine Seymour",
         "Mary Alice Bell",
         "Brutus",
         "Minnie Andrews",
@@ -26429,10 +26429,10 @@
         "Julia Bell",
         "Harmon Andrews",
         "Rachel Nodded",
-        "Priscilla",
+        "Priscilla Grant",
         "Carrie Sloane",
-        "Shyly",
-        "Queen",
+        "Matthew Shyly",
+        "Snow Queen",
         "Newbridge",
         "Gil",
         "Jimmy Glover"
@@ -31249,7 +31249,7 @@
         "Mary Joe",
         "Miss Rogerson",
         "Mary Alice Bell",
-        "Geraldine",
+        "Geraldine Seymour",
         "Brutus",
         "Minnie Andrews",
         "Blewett Ungraciously",
@@ -31263,11 +31263,11 @@
         "Julia Bell",
         "Harmon Andrews",
         "Rachel Nodded",
-        "Priscilla",
+        "Priscilla Grant",
         "Gil",
         "Carrie Sloane",
-        "Shyly",
-        "Queen",
+        "Matthew Shyly",
+        "Snow Queen",
         "Newbridge",
         "Jimmy Glover"
       ],
@@ -36083,7 +36083,7 @@
         "Mary Joe",
         "Miss Rogerson",
         "Mary Alice Bell",
-        "Geraldine",
+        "Geraldine Seymour",
         "Brutus",
         "Minnie Andrews",
         "Blewett Ungraciously",
@@ -36100,10 +36100,10 @@
         "Harmon Andrews",
         "Newbridge",
         "Rachel Nodded",
-        "Priscilla",
+        "Priscilla Grant",
         "Carrie Sloane",
-        "Shyly",
-        "Queen",
+        "Matthew Shyly",
+        "Snow Queen",
         "Jimmy Glover"
       ],
       "matrix": [
@@ -41057,7 +41057,7 @@
         "Mary Joe",
         "Miss Rogerson",
         "Mary Alice Bell",
-        "Geraldine",
+        "Geraldine Seymour",
         "Brutus",
         "Minnie Andrews",
         "Allan Anne",
@@ -41074,10 +41074,10 @@
         "Harmon Andrews",
         "Newbridge",
         "Rachel Nodded",
-        "Priscilla",
+        "Priscilla Grant",
         "Carrie Sloane",
-        "Queen",
-        "Shyly",
+        "Snow Queen",
+        "Matthew Shyly",
         "Muriel Stacy",
         "Jimmy Glover"
       ],
@@ -46175,7 +46175,7 @@
         "Miss Rogerson",
         "Mary Alice Bell",
         "Carrie Sloane",
-        "Geraldine",
+        "Geraldine Seymour",
         "Brutus",
         "Minnie Andrews",
         "Blewett Ungraciously",
@@ -46191,11 +46191,11 @@
         "Newbridge",
         "Rachel Nodded",
         "Harmon Andrews",
-        "Priscilla",
+        "Priscilla Grant",
         "Muriel Stacy",
         "Jimmy Glover",
-        "Shyly",
-        "Queen"
+        "Matthew Shyly",
+        "Snow Queen"
       ],
       "matrix": [
         [
@@ -51291,7 +51291,7 @@
         "Mary Joe",
         "Miss Rogerson",
         "Mary Alice Bell",
-        "Geraldine",
+        "Geraldine Seymour",
         "Brutus",
         "Julia Bell",
         "Minnie Andrews",
@@ -51307,10 +51307,10 @@
         "Newbridge",
         "Rachel Nodded",
         "Harmon Andrews",
-        "Priscilla",
+        "Priscilla Grant",
         "Muriel Stacy",
-        "Shyly",
-        "Queen",
+        "Matthew Shyly",
+        "Snow Queen",
         "Jimmy Glover"
       ],
       "matrix": [
@@ -56409,7 +56409,7 @@
         "Miss Rogerson",
         "Samuel Lawson",
         "Mary Alice Bell",
-        "Geraldine",
+        "Geraldine Seymour",
         "Brutus",
         "Julia Bell",
         "Minnie Andrews",
@@ -56423,12 +56423,12 @@
         "Dryad",
         "Rapt",
         "Rachel Nodded",
-        "Priscilla",
+        "Priscilla Grant",
         "Newbridge",
         "Harmon Andrews",
         "Muriel Stacy",
         "Jimmy Glover",
-        "Queen"
+        "Snow Queen"
       ],
       "matrix": [
         [
@@ -61690,11 +61690,11 @@
         "Dryad",
         "Rapt",
         "Rachel Nodded",
-        "Priscilla",
+        "Priscilla Grant",
         "Muriel Stacy",
         "Newbridge",
         "Harmon Andrews",
-        "Queen",
+        "Snow Queen",
         "Jimmy Glover"
       ],
       "matrix": [
@@ -68014,11 +68014,11 @@
         "Jerry Buote",
         "Dryad",
         "Rapt",
-        "Priscilla",
+        "Priscilla Grant",
         "Rachel Nodded",
         "Newbridge",
         "Harmon Andrews",
-        "Queen",
+        "Snow Queen",
         "Jimmy Glover"
       ],
       "matrix": [
@@ -74342,10 +74342,10 @@
         "Jerry Buote",
         "Rapt",
         "Dryad",
-        "Priscilla",
+        "Priscilla Grant",
         "Rachel Nodded",
         "Newbridge",
-        "Queen",
+        "Snow Queen",
         "Jimmy Glover"
       ],
       "matrix": [
@@ -81152,10 +81152,10 @@
         "Jerry Buote",
         "Rapt",
         "Dryad",
-        "Priscilla",
+        "Priscilla Grant",
         "Newbridge",
         "Rachel Nodded",
-        "Queen",
+        "Snow Queen",
         "Jimmy Glover"
       ],
       "matrix": [
@@ -87955,7 +87955,7 @@
         "Minnie Andrews",
         "Blewett Ungraciously",
         "Ben Hur",
-        "Queen",
+        "Snow Queen",
         "William Bell",
         "Timothy Andrews",
         "Josie Pye.",
@@ -87966,7 +87966,7 @@
         "Jerry Buote",
         "Rapt",
         "Dryad",
-        "Priscilla",
+        "Priscilla Grant",
         "Newbridge",
         "Jimmy Glover"
       ],
@@ -95100,7 +95100,7 @@
         "Blewett Ungraciously",
         "Josie Pye.",
         "Ben Hur",
-        "Queen",
+        "Snow Queen",
         "William Bell",
         "Timothy Andrews",
         "Willowmere",
@@ -95110,7 +95110,7 @@
         "Dryad",
         "Jerry Buote",
         "Rapt",
-        "Priscilla",
+        "Priscilla Grant",
         "Newbridge",
         "Jimmy Glover"
       ],
@@ -102247,7 +102247,7 @@
         "Josie Pye.",
         "William Bell",
         "Josie Pye!",
-        "Queen",
+        "Snow Queen",
         "Ben Hur",
         "Timothy Andrews",
         "Willowmere",
@@ -102257,7 +102257,7 @@
         "Gil",
         "Dryad",
         "Jerry Buote",
-        "Priscilla",
+        "Priscilla Grant",
         "Newbridge"
       ],
       "matrix": [
@@ -109740,7 +109740,7 @@
         "William Bell",
         "Billy Andrews",
         "Josie Pye!",
-        "Queen",
+        "Snow Queen",
         "Ben Hur",
         "Timothy Andrews",
         "Willowmere",
@@ -109750,7 +109750,7 @@
         "Gil",
         "Dryad",
         "Jerry Buote",
-        "Priscilla"
+        "Priscilla Grant"
       ],
       "matrix": [
         [
@@ -118296,7 +118296,7 @@
         "Carrie Sloane",
         "Minnie Andrews",
         "Blewett Ungraciously",
-        "Queen",
+        "Snow Queen",
         "Josie Pye!",
         "Josie Pye.",
         "William Bell",
@@ -118310,7 +118310,7 @@
         "Elaine",
         "Dryad",
         "Jerry Buote",
-        "Priscilla",
+        "Priscilla Grant",
         "Frank Stockley"
       ],
       "matrix": [
@@ -127048,7 +127048,7 @@
         "Minnie Andrews",
         "Josie Pye!",
         "Blewett Ungraciously",
-        "Queen",
+        "Snow Queen",
         "Josie Pye.",
         "William Bell",
         "Ben Hur",
