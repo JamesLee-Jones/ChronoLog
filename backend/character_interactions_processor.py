@@ -90,6 +90,7 @@ class CharacterInteractionsProcessor:
         np_chars = np.array(self.characters_timeline[i])
         indices = np.argsort(-np.sum(matrix, 0))
         ordered_matrix = matrix[:, indices]
+        ordered_matrix = ordered_matrix[indices, :]
         ordered_characters = np_chars[indices]
         self.normalised_matrices[i] = ordered_matrix
         self.characters_timeline[i] = list(ordered_characters)
