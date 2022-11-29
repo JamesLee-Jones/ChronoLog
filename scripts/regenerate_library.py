@@ -15,7 +15,7 @@ chapter_regex = {
     "a_christmas_carol.txt": ['-c', 'STAVE'],
     "dr_jekyll_and_mr_hyde.txt": ['-s', '10'],
     "jane_eyre.txt": ['-c', 'chapter_numeral'],
-    "littlewomen.txt": ['-c', 'CHAPTER '],
+    "little_women.txt": ['-c', 'CHAPTER '],
     "pride_and_prejudice.txt": ['-c', 'chapter_numeral'],
     "winnie_the_pooh.txt": ['-c', 'chapter_numeral']
 }
