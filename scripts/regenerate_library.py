@@ -24,9 +24,13 @@ if __name__ == '__main__':
     env = os.environ.copy()
     env['PYTHONPATH'] = os.pathsep.join(sys.path)
     for file in os.listdir(INPUT_DIRECTORY):
-        print(file)
         try:
-            sb = subprocess.run(["python", ".\\chronolog.py", "texts\\" + file] + chapter_regex[file], env=env,
+            if file in chapter_regex:
+                cr = chapter_regex[file]
+            else:
+                print("No chapter regex found for {}. Defaulting to 'CHAPTER'.".format(file))
+                cr = ['-c', 'CHAPTER ']
+            sb = subprocess.run(["python", ".\\chronolog.py", "texts\\" + file] + cr, env=env,
                                 check=True)
         except subprocess.CalledProcessError:
             print("Error occured whilst processing {}.".format(file))
