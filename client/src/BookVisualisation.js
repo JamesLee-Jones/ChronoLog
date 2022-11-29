@@ -42,7 +42,7 @@ function BookVisualisation() {
 
   return (
     <>
-      <div className="App">
+      <div className="graphDiv">
         <Graphs
           graphData={data["sections"]}
           counter={counter}
