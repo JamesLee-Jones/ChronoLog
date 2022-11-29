@@ -19,6 +19,7 @@ class CharacterInteractionsProcessor:
 
         self.sections = []
         self.unnormalised_matrices = []
+        self.normalised_matrices = []
         self.characters_timeline = []
         self.metadata = {}
 
@@ -84,6 +85,16 @@ class CharacterInteractionsProcessor:
                 )
                 self.characters_timeline[i].pop(j)
 
+    def sort_matrix(self, i):
+        matrix = np.array(self.normalised_matrices[i])
+        np_chars = np.array(self.characters_timeline[i])
+        indices = np.argsort(-np.sum(matrix, 0))
+        ordered_matrix = matrix[:, indices]
+        ordered_matrix = ordered_matrix[indices, :]
+        ordered_characters = np_chars[indices]
+        self.normalised_matrices[i] = ordered_matrix
+        self.characters_timeline[i] = list(ordered_characters)
+
     def _prune_metadata(self, unimportant_characters: list[str]):
         interactions_overall = self.metadata["first interactions overall"]
         interactions_per_character = self.metadata["first interactions per char"]
@@ -126,13 +137,14 @@ class CharacterInteractionsProcessor:
         if self.pruned:
             self.prune()
 
-        normalised_matrices = list(map(self.normalise_matrix, self.unnormalised_matrices))
+        self.normalised_matrices = list(map(self.normalise_matrix, self.unnormalised_matrices))
         for i in range(len(self.characters_timeline)):
             for j in range(len(self.characters_timeline[i])):
                 self.characters_timeline[i][j] = matrix_generator.character_dict[self.characters_timeline[i][j]]
+            self.sort_matrix(i)
             json_contents["sections"].append({
                 "names": self.characters_timeline[i],
-                "matrix": normalised_matrices[i].tolist()
+                "matrix": self.normalised_matrices[i].tolist()
             })
         json_contents["first_interactions_between_characters"] = self.metadata["first interactions per char"]
         json_contents["first_interactions_overall"] = self.metadata["first interactions overall"]
