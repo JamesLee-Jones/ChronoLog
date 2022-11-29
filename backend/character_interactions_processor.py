@@ -7,14 +7,6 @@ import backend.nlp as nlp
 JSON_DIRECTORY = "timelines/"
 
 
-def normalise_matrix(matrix: np.ndarray):
-    for i in range(len(matrix)):
-        row_sum = sum(matrix[i])
-        for j in range(len(matrix[i])):
-            matrix[i][j] = (matrix[i][j] / row_sum) if row_sum != 0 else 0
-    return matrix
-
-
 class CharacterInteractionsProcessor:
 
     def __init__(self, chapter_regex: str, nb_sections: int, percentile: int, narrator: str, quiet: bool, pruned: bool):
@@ -106,6 +98,14 @@ class CharacterInteractionsProcessor:
                         del interactions_per_character[key]
         return interactions_overall, interactions_per_character
 
+    @staticmethod
+    def normalise_matrix(matrix: np.ndarray):
+        for i in range(len(matrix)):
+            row_sum = sum(matrix[i])
+            for j in range(len(matrix[i])):
+                matrix[i][j] = (matrix[i][j] / row_sum) if row_sum != 0 else 0
+        return matrix
+
     def generate_timeline_json(self, title: str):
         file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
         json_contents = {"book": title.replace('_', ' ').title(),
@@ -125,7 +125,7 @@ class CharacterInteractionsProcessor:
         if self.pruned:
             self.prune()
 
-        normalised_matrices = list(map(normalise_matrix, self.unnormalised_matrices))
+        normalised_matrices = list(map(self.normalise_matrix, self.unnormalised_matrices))
         for i in range(len(self.characters_timeline)):
             for j in range(len(self.characters_timeline[i])):
                 self.characters_timeline[i][j] = matrix_generator.character_dict[self.characters_timeline[i][j]]
