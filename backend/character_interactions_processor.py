@@ -53,7 +53,7 @@ class CharacterInteractionsProcessor:
         if not self.quiet:
             print("Finished cleaning and splitting text...")
 
-    def calculate_threshold(self, values: np.ndarray) -> float:
+    def _calculate_threshold(self, values: np.ndarray) -> float:
         values = values[values > 0]
         return np.percentile(values, self.percentile)
 
@@ -64,16 +64,17 @@ class CharacterInteractionsProcessor:
             ch: self.unnormalised_matrices[-1][:, self.characters_timeline[-1].index(ch)].sum()
             for ch in self.characters_timeline[-1]
         }
-        threshold = self.calculate_threshold(np.fromiter(characters_interactions.values(), dtype=int))
+        threshold = self._calculate_threshold(np.fromiter(characters_interactions.values(), dtype=int))
         if not self.quiet:
             print("Threshold: ", threshold)
         unimportant_characters = [ch for (ch, x) in characters_interactions.items() if x < threshold]
 
-        interactions_overall, interactions_per_character = self.prune_metadata(unimportant_characters)
+        self._prune_matrices(unimportant_characters)
+        interactions_overall, interactions_per_character = self._prune_metadata(unimportant_characters)
 
         return interactions_overall, interactions_per_character
 
-    def prune_matrices(self, unimportant_characters: list[str]):
+    def _prune_matrices(self, unimportant_characters: list[str]):
         for i in range(len(self.unnormalised_matrices)):
             for character in [ch for ch in self.characters_timeline[i] if ch in unimportant_characters]:
                 j = self.characters_timeline[i].index(character)
@@ -83,7 +84,7 @@ class CharacterInteractionsProcessor:
                 )
                 self.characters_timeline[i].pop(j)
 
-    def prune_metadata(self, unimportant_characters: list[str]):
+    def _prune_metadata(self, unimportant_characters: list[str]):
         interactions_overall = self.metadata["first interactions overall"]
         interactions_per_character = self.metadata["first interactions per char"]
         for c in unimportant_characters:
