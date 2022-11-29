@@ -140,7 +140,7 @@ class CharacterInteractionsProcessor:
         for i in range(len(self.characters_timeline)):
             for j in range(len(self.characters_timeline[i])):
                 self.characters_timeline[i][j] = matrix_generator.character_dict[self.characters_timeline[i][j]]
-            self.sort_matrix()
+            self.sort_matrix(i)
             json_contents["sections"].append({
                 "names": self.characters_timeline[i],
                 "matrix": self.normalised_matrices[i].tolist()
