@@ -11,12 +11,23 @@ function convertData(data) {
     book: data["book"],
     num_sections: data["num_sections"],
     sections: data["sections"],
+    first_interactions_between_characters:
+      data["first_interactions_between_characters"],
+    first_interaction: data["first_interactions_overall"],
   };
 }
 
 function BookVisualisation() {
-  const [data, setData] = useState({ book: "", num_sections: 0, sections: [] });
+  const [data, setData] = useState({
+    book: "",
+    num_sections: 0,
+    sections: [],
+    first_interactions_between_character: {},
+    first_interaction: {},
+  });
   const [counter, setCounter] = useState(0);
+  const [node, setNode] = useState({});
+  const [link, setLink] = useState({});
 
   // Fetches data outputted by the backend
   const params = useParams();
@@ -33,6 +44,7 @@ function BookVisualisation() {
       })
       .then(function (myJson) {
         let res = convertData(myJson);
+        console.log(myJson);
         setData(res);
       });
   };
@@ -43,11 +55,23 @@ function BookVisualisation() {
 
   return (
     <>
-      <div className="graphDiv">
+    <div className="bookViz">
+      <h1>
+        {data.book
+          .toLowerCase()
+          .split("_")
+          .map((word) => {
+            return word.charAt(0).toUpperCase() + word.slice(1);
+          })
+          .join(" ")}
+      </h1>
+      <div className="App">
         <Graphs
           graphData={data["sections"]}
+          nodeMetadata={{ first_interaction: data["first_interaction"] }}
           counter={counter}
-          setCounter={setCounter}
+          setNode={setNode}
+          setLink={setLink}
         ></Graphs>
 
         <TimelineNavigation
@@ -57,6 +81,7 @@ function BookVisualisation() {
           TimelineNavigation
         />
       </div>
+    </div>
       <div className="metadata">
         <MetadataCard />
       </div>
