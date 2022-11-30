@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './App.css'
-import {CardHeader, Collapse, IconButton, styled} from "@mui/material";
+import {Avatar, CardHeader, Collapse, IconButton, styled} from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import CircleIcon from '@mui/icons-material/Circle';
 
 const ExpandMore = styled((props) => {
-    const { expand, ...other } = props;
+    const {expand, ...other} = props;
     return <IconButton {...other} />;
-})(({ theme, expand }) => ({
+})(({theme, expand}) => ({
     transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
     marginLeft: 'auto',
     transition: theme.transitions.create('transform', {
@@ -19,7 +20,7 @@ const ExpandMore = styled((props) => {
     }),
 }));
 
-function MetadataCard() {
+function MetadataCard({node, firstInteraction}) {
 
     const [expanded, setExpanded] = React.useState(false);
 
@@ -28,14 +29,12 @@ function MetadataCard() {
     };
 
     return (
-        <Card sx={{ maxWidth: 345 }} variant="outlined">
+        <Card sx={{maxWidth: 345}} variant="outlined">
             <CardHeader
-             title={<Typography sx={{ fontSize: 20}} color="text.primary" gutterBottom>
-Ebeneezer Scrooge</Typography>}
-             subheader={<Typography sx={{fontSize: 14}} color="text.secondary" gutterBottom>Main Character</Typography>}></CardHeader>
-            <CardContent>
-
-            </CardContent>
+                title={<><Typography sx={{fontSize: 20}} color="text.primary" gutterBottom>{node ? node.name : "\n"}
+                    <CircleIcon sx={{color: node.color}}></CircleIcon></Typography></>}
+                subheader={<Typography sx={{fontSize: 14}} color="text.secondary"
+                                       gutterBottom>{firstInteraction ? firstInteraction.with : "No Interactions."}</Typography>}></CardHeader>
             <CardActions>
                 <ExpandMore
                     expand={expanded}
@@ -43,7 +42,7 @@ Ebeneezer Scrooge</Typography>}
                     aria-expanded={expanded}
                     aria-label="show more"
                 >
-                    <ExpandMoreIcon />
+                    <ExpandMoreIcon/>
                 </ExpandMore>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
