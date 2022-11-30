@@ -2,6 +2,8 @@ import numpy as np
 import spacy
 import regex as re
 import json
+import networkx as nx
+from networkx.algorithms import approximation
 
 JSON_DIRECTORY = "timelines/"
 
@@ -47,7 +49,7 @@ def process_data(text, chapter_regex, num_splits, quiet):
     return cleaned_data
 
 
-def pool_characters(all_characters: list[str], character_dict: dict[str, str]) -> list[str]:
+def pool_characters(all_characters: list, character_dict: dict) -> list:
     character_matches = {ch: [ch2 for ch2 in all_characters if ch in re.split(" |-", ch2)] for ch in all_characters}
     full_names = set()
     for name in character_matches:
@@ -204,9 +206,17 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
                   first_interactions_per_char)
     normalised_matrices = list(map(normalise_matrix, unnormalised_matrices))
     for i in range(len(character_lists)):
+        analysis = network_analysis(normalised_matrices[i], character_lists[i])
         json_contents["sections"].append({
             "names": character_lists[i],
-            "matrix": normalised_matrices[i].tolist()
+            "matrix": normalised_matrices[i].tolist(),
+            "node_connectivity": analysis[0],
+            "average_clustering": analysis[1],
+            "no_of_cliques": analysis[2],
+            "most_important_character": analysis[3][0],
+            "degree_of_mic": analysis[3][1],
+            "degree_centrality_mic": analysis[3][2],
+            "avg_degree_centrality": analysis[4]
         })
     json_contents["first_interactions_between_characters"] = first_interactions_per_char
     json_contents["first_interactions_overall"] = first_interactions_overall
@@ -214,3 +224,41 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
         f.write(json.dumps(json_contents, indent=2))
     if not quiet:
         print("Done! Analysis saved at {}.".format(file_path))
+
+def network_analysis(matrix, character_list):
+    scale_factor = 10
+    G = nx.from_numpy_matrix(matrix * 10)
+    # Create a list of graphs
+    characters_to_nodes = {}
+    for i in range(len(character_list)):
+        characters_to_nodes[i] = character_list[i]
+    graph = nx.relabel_nodes(G, characters_to_nodes)
+    avg_node_connectivity = []
+    avg_clustering = []
+
+    # The most important character and how many characters they are connected to 
+    centrality = nx.degree_centrality(graph)
+    centrality_values = centrality.values()
+    degrees = sorted([(d, n) for n, d in graph.degree()])
+    most_important_node = degrees[-1][1]
+    degree_of_node = degrees[-1][0]
+    centrality_of_node = centrality[most_important_node]
+    avg_centrality = 0 if len(centrality_values) == 0 else sum(centrality_values) / len(centrality_values)
+
+
+    # The clique involving that character and it's size
+    # The number of cliques
+    for C in (graph.subgraph(c).copy() for c in nx.connected_components(graph)):
+        if not nx.is_empty(C):
+            avg_node_connectivity.append(nx.average_node_connectivity(C))
+            avg_clustering.append(nx.average_clustering(C, weight="weight"))
+    centrality = nx.degree_centrality(graph)
+
+            
+    
+
+    return 0 if len(avg_node_connectivity) == 0 else sum(avg_node_connectivity) / len(avg_node_connectivity), \
+0 if len(avg_clustering) == 0 else sum(avg_clustering) / len(avg_clustering), nx.number_connected_components(graph), (most_important_node, degree_of_node, centrality_of_node), avg_centrality
+    # Add all of the nodes from the characters as a mapping {i: characters[i]}
+    # For matrx[i][j] add an edge (character_list[i], character_list[j, {'weight': matrix[i][j]]))
+    # For each graph apply the networkX functions and return them as apart of the section
