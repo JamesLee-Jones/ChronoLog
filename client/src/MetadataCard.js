@@ -29,10 +29,14 @@ function MetadataCard({node, firstInteraction}) {
     };
 
     return (
-        <Card sx={{maxWidth: 345}} variant="outlined">
+        <Card sx={{maxWidth: 200, bgcolor: 'background.paper',
+            boxShadow: 1,
+            borderRadius: 2,
+            p: 2,
+            minWidth: 300,}} variant="outlined">
             <CardHeader
-                title={<><Typography sx={{fontSize: 20}} color="text.primary" gutterBottom>{node ? node.name : "\n"}
-                    <CircleIcon sx={{color: node.color}}></CircleIcon></Typography></>}
+                title={<><Typography sx={{fontSize: 24}} color="text.primary" gutterBottom>{node ? node.name : "\n"}<span>  </span>
+                    <CircleIcon sx={{color: node.color, alignContent : "right"}}></CircleIcon></Typography></>}
                 subheader={<Typography sx={{fontSize: 14}} color="text.secondary"
                                        gutterBottom>{firstInteraction ? firstInteraction.with : "No Interactions."}</Typography>}></CardHeader>
             <CardActions>

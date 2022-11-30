@@ -5,6 +5,9 @@ import TimelineNavigation from "./Slider";
 import {useParams} from "react-router-dom";
 import Graphs from "./Graphs";
 import MetadataCard from "./MetadataCard";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 function convertData(data) {
     return {
@@ -55,35 +58,41 @@ function BookVisualisation() {
     return (
         <>
             <div className="bookViz">
-                <h1>
-                    {data.book
-                        .toLowerCase()
-                        .split("_")
-                        .map((word) => {
-                            return word.charAt(0).toUpperCase() + word.slice(1);
-                        })
-                        .join(" ")}
+                <h1>{data.book
+                    .toLowerCase()
+                    .split("_")
+                    .map((word) => {
+                        return word.charAt(0).toUpperCase() + word.slice(1);
+                    })
+                    .join(" ")}
                 </h1>
                 <div className="App">
-                    <Graphs
-                        graphData={data["sections"]}
-                        nodeMetadata={{first_interaction: data["first_interaction"]}}
-                        linkMetadata={{first_interactions_between_characters: data["first_interactions_between_characters"]}}
-                        counter={counter}
-                        setNode={setNode}
-                        setLink={setLink}
-                    ></Graphs>
-
-                    <TimelineNavigation
-                        maxval={data["sections"].length ? data["sections"].length - 1 : 0}
-                        setCounter={setCounter}
-                        counter={counter}
-                        TimelineNavigation
-                    />
+                    <Container fluid={"md"}>
+                        <Row>
+                            <Col sm={8}>
+                                <Graphs
+                                    graphData={data["sections"]}
+                                    nodeMetadata={{first_interaction: data["first_interaction"]}}
+                                    linkMetadata={{first_interactions_between_characters: data["first_interactions_between_characters"]}}
+                                    counter={counter}
+                                    setNode={setNode}
+                                    setLink={setLink}
+                                ></Graphs>
+                                <TimelineNavigation
+                                    maxval={data["sections"].length ? data["sections"].length - 1 : 0}
+                                    setCounter={setCounter}
+                                    counter={counter}
+                                    TimelineNavigation
+                                />
+                            </Col>
+                            <Col sm={4}>
+                                <div className="metadata">
+                                    <MetadataCard node={node} firstInteraction={node.First_Interaction}/>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
-            </div>
-            <div className="metadata">
-                <MetadataCard node={node} firstInteraction={node.First_Interaction}/>
             </div>
         </>
     );

@@ -1,5 +1,6 @@
 .graph {
-  position: relative;
-  right: 2%;
+  position: center;
+  /*right: 2%;*/
   top: 10%;
+  margin: auto;
 }
