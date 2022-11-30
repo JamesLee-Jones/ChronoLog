@@ -645,19 +645,19 @@
   ],
   "first_interactions_between_characters": {
     "Richard Enfield": {
-      "Utterson": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield."
+      "Gabriel John Utterson": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield."
     },
     "Henry Jekyll": {
-      "Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
+      "Gabriel John Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
     "Edward Hyde": {
-      "Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
       "Henry Jekyll": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
       "Harry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
-      "G. J. Utterson": "Utterson was amazed; the dark influence of Hyde had been withdrawn, the doctor had returned to his old tasks and amities; a week ago, the prospect had smiled with every promise of a cheerful and an honoured age; and now in a moment, friendship, and peace of mind, and the whole tenor of his life were wrecked."
+      "G. J. Utterson": "Utterson was amazed; the dark influence of Hyde had been withdrawn, the doctor had returned to his old tasks and amities; a week ago, the prospect had smiled with every promise of a cheerful and an honoured age; and now in a moment, friendship, and peace of mind, and the whole tenor of his life were wrecked.",
+      "Gabriel John Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
     "Harry Jekyll": {
-      "Utterson": "INCIDENT OF THE LETTER  It was late in the afternoon, when Mr. Utterson found his way to Dr. Jekyll's door, where he was at once admitted by Poole, and carried down by the kitchen offices and across a yard which had once been a garden, to the building which was indifferently known as the laboratory or dissecting rooms."
+      "Gabriel John Utterson": "INCIDENT OF THE LETTER  It was late in the afternoon, when Mr. Utterson found his way to Dr. Jekyll's door, where he was at once admitted by Poole, and carried down by the kitchen offices and across a yard which had once been a garden, to the building which was indifferently known as the laboratory or dissecting rooms."
     },
     "Danvers Carew": {
       "Edward Hyde": "LANYON  Time ran on; thousands of pounds were offered in reward, for the death of Sir Danvers was resented as a public injury; but Mr. Hyde had disappeared out of the ken of the police as though he had never existed."
@@ -672,19 +672,19 @@
   },
   "first_interactions_overall": {
     "Richard Enfield": {
-      "with": "Utterson",
+      "with": "Gabriel John Utterson",
       "context": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield."
     },
-    "Utterson": {
+    "Gabriel John Utterson": {
       "with": "Richard Enfield",
       "context": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield."
     },
     "Henry Jekyll": {
-      "with": "Utterson",
+      "with": "Gabriel John Utterson",
       "context": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
     "Edward Hyde": {
-      "with": "Utterson",
+      "with": "Gabriel John Utterson",
       "context": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
     "Harry Jekyll": {
