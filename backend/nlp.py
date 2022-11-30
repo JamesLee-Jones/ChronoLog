@@ -3,7 +3,6 @@ import spacy
 import regex as re
 import json
 import networkx as nx
-from networkx.algorithms import approximation
 
 JSON_DIRECTORY = "timelines/"
 
@@ -225,9 +224,10 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
     if not quiet:
         print("Done! Analysis saved at {}.".format(file_path))
 
+
 def network_analysis(matrix, character_list):
     scale_factor = 10
-    G = nx.from_numpy_matrix(matrix * 10)
+    G = nx.from_numpy_matrix(matrix * scale_factor)
     # Create a list of graphs
     characters_to_nodes = {}
     for i in range(len(character_list)):
@@ -245,20 +245,17 @@ def network_analysis(matrix, character_list):
     centrality_of_node = centrality[most_important_node]
     avg_centrality = 0 if len(centrality_values) == 0 else sum(centrality_values) / len(centrality_values)
 
-
     # The clique involving that character and it's size
     # The number of cliques
-    for C in (graph.subgraph(c).copy() for c in nx.connected_components(graph)):
+    for C in (graph.subgraph(c).copy() for c in nx.strongly_connected_components(graph)):
         if not nx.is_empty(C):
             avg_node_connectivity.append(nx.average_node_connectivity(C))
             avg_clustering.append(nx.average_clustering(C, weight="weight"))
     centrality = nx.degree_centrality(graph)
 
-            
-    
-
     return 0 if len(avg_node_connectivity) == 0 else sum(avg_node_connectivity) / len(avg_node_connectivity), \
-0 if len(avg_clustering) == 0 else sum(avg_clustering) / len(avg_clustering), nx.number_connected_components(graph), (most_important_node, degree_of_node, centrality_of_node), avg_centrality
+           0 if len(avg_clustering) == 0 else sum(avg_clustering) / len(avg_clustering), nx.number_connected_components(
+        graph), (most_important_node, degree_of_node, centrality_of_node), avg_centrality
     # Add all of the nodes from the characters as a mapping {i: characters[i]}
     # For matrx[i][j] add an edge (character_list[i], character_list[j, {'weight': matrix[i][j]]))
     # For each graph apply the networkX functions and return them as apart of the section
