@@ -227,27 +227,31 @@ def generate_timeline_json(sections, title, quiet, unpruned, percentile):
 
 def network_analysis(matrix, character_list):
     scale_factor = 10
-    G = nx.from_numpy_matrix(matrix * scale_factor)
     # Create a list of graphs
+    G = nx.Graph()
     characters_to_nodes = {}
     for i in range(len(character_list)):
-        characters_to_nodes[i] = character_list[i]
-    graph = nx.relabel_nodes(G, characters_to_nodes)
+        G.add_node(character_list[i])
+    for j in range(len(character_list) - 1):
+        for k in range(j, len(character_list)):
+            G.add_edge(character_list[j], character_list[k], weight=(matrix[i][j] + matrix[j][k]) * 10)
+
+    graph = G
     avg_node_connectivity = []
     avg_clustering = []
 
     # The most important character and how many characters they are connected to 
     centrality = nx.degree_centrality(graph)
     centrality_values = centrality.values()
-    degrees = sorted([(d, n) for n, d in graph.degree()])
+    degrees = sorted([(d, n) for n, d in graph.degree(weight="weight")])
     most_important_node = degrees[-1][1]
-    degree_of_node = degrees[-1][0]
+    degree_of_node = graph.degree(most_important_node)
     centrality_of_node = centrality[most_important_node]
     avg_centrality = 0 if len(centrality_values) == 0 else sum(centrality_values) / len(centrality_values)
 
     # The clique involving that character and it's size
     # The number of cliques
-    for C in (graph.subgraph(c).copy() for c in nx.strongly_connected_components(graph)):
+    for C in (graph.subgraph(c).copy() for c in nx.connected_components(graph)):
         if not nx.is_empty(C):
             avg_node_connectivity.append(nx.average_node_connectivity(C))
             avg_clustering.append(nx.average_clustering(C, weight="weight"))
