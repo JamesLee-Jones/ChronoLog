@@ -239,7 +239,7 @@ def network_analysis(matrix, character_list):
     avg_node_connectivity = []
     avg_clustering = []
 
-    # The most important character and how many characters they are connected to 
+    # The most important character and how many characters they are connected to
     centrality = nx.degree_centrality(graph)
     centrality_values = centrality.values()
     degrees = sorted([(d, n) for n, d in graph.degree(weight="weight")])
