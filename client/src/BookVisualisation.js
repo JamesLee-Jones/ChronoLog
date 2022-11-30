@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import TimelineNavigation from "./Slider";
 import { useParams } from "react-router-dom";
 import Graphs from "./Graphs";
+import MetadataCard from "./MetadataCard";
 
 function convertData(data) {
   return {
@@ -55,6 +56,9 @@ function BookVisualisation() {
           counter={counter}
           TimelineNavigation
         />
+      </div>
+      <div className="metadata">
+        <MetadataCard />
       </div>
     </>
   );
