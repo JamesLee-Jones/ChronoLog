@@ -4,7 +4,7 @@ from unidecode import unidecode
 import os.path
 import regex as re
 
-import backend.nlp as nlp
+import backend.character_interactions_processor as cip
 from argparse import RawTextHelpFormatter, ArgumentParser
 
 DEFAULT_SPLITS = 10
@@ -77,11 +77,21 @@ def main():
         default=DEFAULT_SPLITS,
         help="Supply the number of sections you want to divide your book into. " +
              "The timeline will then be created in N similar sized sections. Default N = {}.".format(DEFAULT_SPLITS))
+    parser.add_argument(
+        "--narrator",
+        "-n",
+        required=False,
+        type=str,
+        default=None,
+        help="If the book is in first person, enter the full name of the character. " +
+             "We assume the book is written in third person otherwise."
+    )
 
     args = parser.parse_args()
     with open(args.filename, 'r', encoding="utf-8") as f:
         text = f.read()
     text = unidecode(text)
+
     if args.chapterRegex in PATTERNS_DICT:
         pattern = PATTERNS_DICT[args.chapterRegex]
     elif args.chapterRegex:
@@ -90,12 +100,15 @@ def main():
         pattern = None
 
     title = args.title or os.path.split(args.filename)[-1].split(".")[0]
-    sections = nlp.process_data(
-        text,
-        pattern,
-        args.sections or DEFAULT_SPLITS,
-        args.quiet)
-    nlp.generate_timeline_json(sections, title, args.quiet, args.unpruned, args.percentile)
+
+    cip.CharacterInteractionsProcessor(
+        chapter_regex=pattern,
+        nb_sections=args.sections or DEFAULT_SPLITS,
+        percentile=args.percentile,
+        narrator=args.narrator,
+        quiet=args.quiet,
+        pruned=not args.unpruned
+    ).process(title, text)
 
 
 if __name__ == "__main__":

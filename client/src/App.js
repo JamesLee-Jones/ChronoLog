@@ -10,7 +10,7 @@ import {
 import Home from "./Home";
 import Library from "./Library";
 import About from "./About";
-import Graph from "./Graph";
+import BookVisualisation from "./BookVisualisation";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/library/" element={<Library />} />
-        <Route path="/library/:book/" element={<Graph />} />
+        <Route path="/library/:book/" element={<BookVisualisation />} />
         <Route path="/about/" element={<About />} />
       </Routes>
     </BrowserRouter>
