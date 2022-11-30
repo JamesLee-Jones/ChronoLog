@@ -34,7 +34,14 @@
           0.5,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 3.0,
+      "average_clustering": 0.13090185512875083,
+      "no_of_cliques": 1,
+      "most_important_character": "Jacob Marley",
+      "degree_of_mic": 5,
+      "degree_centrality_mic": 1.6666666666666665,
+      "avg_degree_centrality": 1.5
     },
     {
       "names": [
@@ -110,7 +117,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 6.0,
+      "average_clustering": 0.045792206268131894,
+      "no_of_cliques": 1,
+      "most_important_character": "Ebenezer Scrooge",
+      "degree_of_mic": 8,
+      "degree_centrality_mic": 1.3333333333333333,
+      "avg_degree_centrality": 1.2857142857142858
     },
     {
       "names": [
@@ -386,7 +400,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 14.0,
+      "average_clustering": 0.018024346770319197,
+      "no_of_cliques": 1,
+      "most_important_character": "Ebenezer Scrooge",
+      "degree_of_mic": 16,
+      "degree_centrality_mic": 1.1428571428571428,
+      "avg_degree_centrality": 1.1333333333333329
     },
     {
       "names": [
@@ -696,7 +717,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 15.0,
+      "average_clustering": 0.00861011575587225,
+      "no_of_cliques": 1,
+      "most_important_character": "Bob Cratchit",
+      "degree_of_mic": 17,
+      "degree_centrality_mic": 1.1333333333333333,
+      "avg_degree_centrality": 1.1249999999999998
     },
     {
       "names": [
@@ -1006,7 +1034,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 15.0,
+      "average_clustering": 0.014554348074373984,
+      "no_of_cliques": 1,
+      "most_important_character": "Bob Cratchit",
+      "degree_of_mic": 17,
+      "degree_centrality_mic": 1.1333333333333333,
+      "avg_degree_centrality": 1.1249999999999998
     }
   ],
   "first_interactions_between_characters": {

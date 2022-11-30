@@ -136,7 +136,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.026178398579699596,
+      "no_of_cliques": 1,
+      "most_important_character": "Rachel Lynde",
+      "degree_of_mic": 11,
+      "degree_centrality_mic": 1.222222222222222,
+      "avg_degree_centrality": 1.1999999999999997
     },
     {
       "names": [
@@ -520,7 +527,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0020027519883766332,
+      "no_of_cliques": 1,
+      "most_important_character": "Rachel Lynde",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
     },
     {
       "names": [
@@ -1076,7 +1090,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0010404054210215142,
+      "no_of_cliques": 1,
+      "most_important_character": "Mary Alice Bell",
+      "degree_of_mic": 23,
+      "degree_centrality_mic": 1.0952380952380951,
+      "avg_degree_centrality": 1.0909090909090908
     },
     {
       "names": [
@@ -1632,7 +1653,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0012430088199831696,
+      "no_of_cliques": 1,
+      "most_important_character": "Mary Alice Bell",
+      "degree_of_mic": 23,
+      "degree_centrality_mic": 1.0952380952380951,
+      "avg_degree_centrality": 1.0909090909090908
     },
     {
       "names": [
@@ -2286,7 +2314,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.001128914138720829,
+      "no_of_cliques": 1,
+      "most_important_character": "Mary Alice Bell",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -2940,7 +2975,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0024843281906591374,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -3594,7 +3636,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002394897909851077,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -4248,7 +4297,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00256925256244854,
+      "no_of_cliques": 1,
+      "most_important_character": "Cordelia Fitzgerald",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -4902,7 +4958,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002716421044718432,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -5662,7 +5725,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002230496693334028,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 27,
+      "degree_centrality_mic": 1.08,
+      "avg_degree_centrality": 1.0769230769230764
     },
     {
       "names": [
@@ -6536,7 +6606,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0018648966972862086,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 29,
+      "degree_centrality_mic": 1.074074074074074,
+      "avg_degree_centrality": 1.071428571428571
     },
     {
       "names": [
@@ -7532,7 +7609,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0015331907217292873,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 31,
+      "degree_centrality_mic": 1.0689655172413792,
+      "avg_degree_centrality": 1.066666666666667
     },
     {
       "names": [
@@ -8658,7 +8742,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0012727832794630829,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 33,
+      "degree_centrality_mic": 1.064516129032258,
+      "avg_degree_centrality": 1.0624999999999991
     },
     {
       "names": [
@@ -9852,7 +9943,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0008206747426719103,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 34,
+      "degree_centrality_mic": 1.0625,
+      "avg_degree_centrality": 1.0606060606060606
     },
     {
       "names": [
@@ -12208,7 +12306,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0006390615765998198,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 48,
+      "degree_centrality_mic": 1.0434782608695652,
+      "avg_degree_centrality": 1.042553191489361
     },
     {
       "names": [
@@ -14864,7 +14969,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005359068429653342,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 51,
+      "degree_centrality_mic": 1.040816326530612,
+      "avg_degree_centrality": 1.0399999999999996
     },
     {
       "names": [
@@ -18290,7 +18402,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0007930299384828337,
+      "no_of_cliques": 1,
+      "most_important_character": "Cordelia Fitzgerald",
+      "degree_of_mic": 58,
+      "degree_centrality_mic": 1.0357142857142856,
+      "avg_degree_centrality": 1.0350877192982448
     },
     {
       "names": [
@@ -22200,7 +22319,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0006279642839104247,
+      "no_of_cliques": 1,
+      "most_important_character": "Cordelia Fitzgerald",
+      "degree_of_mic": 62,
+      "degree_centrality_mic": 1.0333333333333332,
+      "avg_degree_centrality": 1.0327868852459003
     },
     {
       "names": [
@@ -26364,7 +26490,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005690461455421751,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 64,
+      "degree_centrality_mic": 1.032258064516129,
+      "avg_degree_centrality": 1.0317460317460307
     },
     {
       "names": [
@@ -31198,7 +31331,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00052198714324859,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 69,
+      "degree_centrality_mic": 1.0298507462686568,
+      "avg_degree_centrality": 1.0294117647058822
     },
     {
       "names": [
@@ -36032,7 +36172,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005220909639840948,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 69,
+      "degree_centrality_mic": 1.0298507462686568,
+      "avg_degree_centrality": 1.0294117647058822
     },
     {
       "names": [
@@ -41006,7 +41153,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0004974118449190419,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 70,
+      "degree_centrality_mic": 1.0294117647058822,
+      "avg_degree_centrality": 1.028985507246378
     },
     {
       "names": [
@@ -46122,7 +46276,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0004761905537622141,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 71,
+      "degree_centrality_mic": 1.0289855072463767,
+      "avg_degree_centrality": 1.0285714285714274
     },
     {
       "names": [
@@ -51238,7 +51399,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005206009926639565,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 71,
+      "degree_centrality_mic": 1.0289855072463767,
+      "avg_degree_centrality": 1.0285714285714274
     },
     {
       "names": [
@@ -56354,7 +56522,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005251413198945203,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 71,
+      "degree_centrality_mic": 1.0289855072463767,
+      "avg_degree_centrality": 1.0285714285714274
     },
     {
       "names": [
@@ -61614,7 +61789,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005026635865356278,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 72,
+      "degree_centrality_mic": 1.0285714285714285,
+      "avg_degree_centrality": 1.028169014084505
     },
     {
       "names": [
@@ -67938,7 +68120,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00030498772187650123,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 79,
+      "degree_centrality_mic": 1.025974025974026,
+      "avg_degree_centrality": 1.0256410256410238
     },
     {
       "names": [
@@ -74262,7 +74451,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0003073811856814216,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 79,
+      "degree_centrality_mic": 1.025974025974026,
+      "avg_degree_centrality": 1.0256410256410238
     },
     {
       "names": [
@@ -81072,7 +81268,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0002779796561099715,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 82,
+      "degree_centrality_mic": 1.0250000000000001,
+      "avg_degree_centrality": 1.024691358024692
     },
     {
       "names": [
@@ -87882,7 +88085,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00027634626839701453,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 82,
+      "degree_centrality_mic": 1.0250000000000001,
+      "avg_degree_centrality": 1.024691358024692
     },
     {
       "names": [
@@ -95026,7 +95236,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0002890133508015987,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 84,
+      "degree_centrality_mic": 1.024390243902439,
+      "avg_degree_centrality": 1.0240963855421696
     },
     {
       "names": [
@@ -102170,7 +102387,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00028837438338017715,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 84,
+      "degree_centrality_mic": 1.024390243902439,
+      "avg_degree_centrality": 1.0240963855421696
     },
     {
       "names": [
@@ -109656,7 +109880,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0007912260539663752,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Mrs. Lynde",
+      "degree_of_mic": 86,
+      "degree_centrality_mic": 1.0238095238095237,
+      "avg_degree_centrality": 1.0235294117647054
     },
     {
       "names": [
@@ -118216,7 +118447,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0021434324487776585,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 92,
+      "degree_centrality_mic": 1.0222222222222224,
+      "avg_degree_centrality": 1.0219780219780241
     },
     {
       "names": [
@@ -126962,7 +127200,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0002735058507285155,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 93,
+      "degree_centrality_mic": 1.0219780219780221,
+      "avg_degree_centrality": 1.0217391304347847
     },
     {
       "names": [
@@ -136278,7 +136523,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0013495289185699653,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 96,
+      "degree_centrality_mic": 1.0212765957446808,
+      "avg_degree_centrality": 1.0210526315789472
     },
     {
       "names": [
@@ -145594,7 +145846,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0013670110255777693,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 96,
+      "degree_centrality_mic": 1.0212765957446808,
+      "avg_degree_centrality": 1.0210526315789472
     },
     {
       "names": [
@@ -154910,7 +155169,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.001382165916352937,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 96,
+      "degree_centrality_mic": 1.0212765957446808,
+      "avg_degree_centrality": 1.0210526315789472
     },
     {
       "names": [
@@ -164226,7 +164492,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0014037889861822873,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 96,
+      "degree_centrality_mic": 1.0212765957446808,
+      "avg_degree_centrality": 1.0210526315789472
     }
   ],
   "first_interactions_between_characters": {

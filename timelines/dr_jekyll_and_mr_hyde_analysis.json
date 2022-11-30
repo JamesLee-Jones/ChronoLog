@@ -34,7 +34,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 3.0,
+      "average_clustering": 0.16311948504870263,
+      "no_of_cliques": 1,
+      "most_important_character": "Gabriel John Utterson",
+      "degree_of_mic": 5,
+      "degree_centrality_mic": 1.6666666666666665,
+      "avg_degree_centrality": 1.5
     },
     {
       "names": [
@@ -80,7 +87,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 4.0,
+      "average_clustering": 0.07415748088439351,
+      "no_of_cliques": 1,
+      "most_important_character": "Gabriel John Utterson",
+      "degree_of_mic": 6,
+      "degree_centrality_mic": 1.5,
+      "avg_degree_centrality": 1.4
     },
     {
       "names": [
@@ -140,7 +154,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 5.0,
+      "average_clustering": 0.05000000000000001,
+      "no_of_cliques": 1,
+      "most_important_character": "Gabriel John Utterson",
+      "degree_of_mic": 7,
+      "degree_centrality_mic": 1.4000000000000001,
+      "avg_degree_centrality": 1.3333333333333333
     },
     {
       "names": [
@@ -200,7 +221,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 5.0,
+      "average_clustering": 0.047162805574997115,
+      "no_of_cliques": 1,
+      "most_important_character": "Gabriel John Utterson",
+      "degree_of_mic": 7,
+      "degree_centrality_mic": 1.4000000000000001,
+      "avg_degree_centrality": 1.3333333333333333
     },
     {
       "names": [
@@ -260,7 +288,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 5.0,
+      "average_clustering": 0.07322971778539364,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 7,
+      "degree_centrality_mic": 1.4000000000000001,
+      "avg_degree_centrality": 1.3333333333333333
     },
     {
       "names": [
@@ -336,7 +371,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 6.0,
+      "average_clustering": 0.026730592823887598,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 8,
+      "degree_centrality_mic": 1.3333333333333333,
+      "avg_degree_centrality": 1.2857142857142858
     },
     {
       "names": [
@@ -412,7 +454,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 6.0,
+      "average_clustering": 0.026730592823887598,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 8,
+      "degree_centrality_mic": 1.3333333333333333,
+      "avg_degree_centrality": 1.2857142857142858
     },
     {
       "names": [
@@ -488,7 +537,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 6.0,
+      "average_clustering": 0.027352456224754223,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 8,
+      "degree_centrality_mic": 1.3333333333333333,
+      "avg_degree_centrality": 1.2857142857142858
     },
     {
       "names": [
@@ -564,7 +620,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 6.0,
+      "average_clustering": 0.05097649996472968,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 8,
+      "degree_centrality_mic": 1.3333333333333333,
+      "avg_degree_centrality": 1.2857142857142858
     },
     {
       "names": [
@@ -640,7 +703,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 6.0,
+      "average_clustering": 0.05097649996472968,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 8,
+      "degree_centrality_mic": 1.3333333333333333,
+      "avg_degree_centrality": 1.2857142857142858
     }
   ],
   "first_interactions_between_characters": {

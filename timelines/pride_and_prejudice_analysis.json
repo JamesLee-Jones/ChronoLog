@@ -94,7 +94,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.006813775253293641,
+      "no_of_cliques": 1,
+      "most_important_character": "William Goulding",
+      "degree_of_mic": 9,
+      "degree_centrality_mic": 1.2857142857142856,
+      "avg_degree_centrality": 1.25
     },
     {
       "names": [
@@ -254,7 +261,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.02184209427112555,
+      "no_of_cliques": 1,
+      "most_important_character": "Caroline Bingley",
+      "degree_of_mic": 12,
+      "degree_centrality_mic": 1.2000000000000002,
+      "avg_degree_centrality": 1.1818181818181819
     },
     {
       "names": [
@@ -564,7 +578,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.007294551576055664,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 17,
+      "degree_centrality_mic": 1.1333333333333333,
+      "avg_degree_centrality": 1.1249999999999998
     },
     {
       "names": [
@@ -910,7 +931,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.006480754741534852,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 18,
+      "degree_centrality_mic": 1.125,
+      "avg_degree_centrality": 1.1176470588235294
     },
     {
       "names": [
@@ -1376,7 +1404,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004222399567055601,
+      "no_of_cliques": 1,
+      "most_important_character": "Elizabeth Bennet",
+      "degree_of_mic": 21,
+      "degree_centrality_mic": 1.1052631578947367,
+      "avg_degree_centrality": 1.0999999999999996
     },
     {
       "names": [
@@ -1932,7 +1967,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.003555903569928838,
+      "no_of_cliques": 1,
+      "most_important_character": "Elizabeth Bennet",
+      "degree_of_mic": 23,
+      "degree_centrality_mic": 1.0952380952380951,
+      "avg_degree_centrality": 1.0909090909090908
     },
     {
       "names": [
@@ -2692,7 +2734,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0037621689053844573,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 27,
+      "degree_centrality_mic": 1.08,
+      "avg_degree_centrality": 1.0769230769230764
     },
     {
       "names": [
@@ -3626,7 +3675,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0026894432785835023,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Darcy",
+      "degree_of_mic": 30,
+      "degree_centrality_mic": 1.0714285714285714,
+      "avg_degree_centrality": 1.06896551724138
     },
     {
       "names": [
@@ -4622,7 +4678,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004978738795931391,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 31,
+      "degree_centrality_mic": 1.0689655172413792,
+      "avg_degree_centrality": 1.066666666666667
     },
     {
       "names": [
@@ -5618,7 +5681,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00472998951216583,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 31,
+      "degree_centrality_mic": 1.0689655172413792,
+      "avg_degree_centrality": 1.066666666666667
     },
     {
       "names": [
@@ -6614,7 +6684,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004721655743709365,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 31,
+      "degree_centrality_mic": 1.0689655172413792,
+      "avg_degree_centrality": 1.066666666666667
     },
     {
       "names": [
@@ -7610,7 +7687,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0047034186050056125,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 31,
+      "degree_centrality_mic": 1.0689655172413792,
+      "avg_degree_centrality": 1.066666666666667
     },
     {
       "names": [
@@ -8874,7 +8958,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002615034312801511,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 35,
+      "degree_centrality_mic": 1.0606060606060606,
+      "avg_degree_centrality": 1.0588235294117656
     },
     {
       "names": [
@@ -10284,7 +10375,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0024214269653253305,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 37,
+      "degree_centrality_mic": 1.0571428571428572,
+      "avg_degree_centrality": 1.0555555555555556
     },
     {
       "names": [
@@ -11848,7 +11946,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0031577146014429317,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 39,
+      "degree_centrality_mic": 1.0540540540540542,
+      "avg_degree_centrality": 1.0526315789473681
     },
     {
       "names": [
@@ -13574,7 +13679,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0032372993804810125,
+      "no_of_cliques": 1,
+      "most_important_character": "Energy.--Though Lydia",
+      "degree_of_mic": 41,
+      "degree_centrality_mic": 1.0512820512820513,
+      "avg_degree_centrality": 1.05
     },
     {
       "names": [
@@ -15300,7 +15412,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0035967562427697934,
+      "no_of_cliques": 1,
+      "most_important_character": "Energy.--Though Lydia",
+      "degree_of_mic": 41,
+      "degree_centrality_mic": 1.0512820512820513,
+      "avg_degree_centrality": 1.05
     },
     {
       "names": [
@@ -17196,7 +17315,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.003592574024060218,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 43,
+      "degree_centrality_mic": 1.048780487804878,
+      "avg_degree_centrality": 1.0476190476190466
     },
     {
       "names": [
@@ -19180,7 +19306,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0035198987738891403,
+      "no_of_cliques": 1,
+      "most_important_character": "Miss Bingley",
+      "degree_of_mic": 44,
+      "degree_centrality_mic": 1.0476190476190474,
+      "avg_degree_centrality": 1.0465116279069775
     },
     {
       "names": [
@@ -21164,7 +21297,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.003793542795161589,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 44,
+      "degree_centrality_mic": 1.0476190476190474,
+      "avg_degree_centrality": 1.0465116279069775
     },
     {
       "names": [
@@ -23238,7 +23378,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0035408620817950973,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 45,
+      "degree_centrality_mic": 1.0465116279069768,
+      "avg_degree_centrality": 1.0454545454545465
     },
     {
       "names": [
@@ -25312,7 +25459,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.003706111750118318,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 45,
+      "degree_centrality_mic": 1.0465116279069768,
+      "avg_degree_centrality": 1.0454545454545465
     },
     {
       "names": [
@@ -27386,7 +27540,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00394145423845415,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 45,
+      "degree_centrality_mic": 1.0465116279069768,
+      "avg_degree_centrality": 1.0454545454545465
     },
     {
       "names": [
@@ -29460,7 +29621,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.003913625106132322,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 45,
+      "degree_centrality_mic": 1.0465116279069768,
+      "avg_degree_centrality": 1.0454545454545465
     },
     {
       "names": [
@@ -31720,7 +31888,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0034356119103792757,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 47,
+      "degree_centrality_mic": 1.0444444444444445,
+      "avg_degree_centrality": 1.0434782608695652
     },
     {
       "names": [
@@ -34076,7 +34251,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004372110680331559,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 48,
+      "degree_centrality_mic": 1.0434782608695652,
+      "avg_degree_centrality": 1.042553191489361
     },
     {
       "names": [
@@ -36336,7 +36518,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004696821036255144,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 47,
+      "degree_centrality_mic": 1.0444444444444445,
+      "avg_degree_centrality": 1.0434782608695652
     },
     {
       "names": [
@@ -38596,7 +38785,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004646180508842479,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 47,
+      "degree_centrality_mic": 1.0444444444444445,
+      "avg_degree_centrality": 1.0434782608695652
     },
     {
       "names": [
@@ -40856,7 +41052,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.003344203745760557,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 47,
+      "degree_centrality_mic": 1.0444444444444445,
+      "avg_degree_centrality": 1.0434782608695652
     },
     {
       "names": [
@@ -43116,7 +43319,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.003459904701141857,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 47,
+      "degree_centrality_mic": 1.0444444444444445,
+      "avg_degree_centrality": 1.0434782608695652
     },
     {
       "names": [
@@ -45376,7 +45586,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004273263782207278,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 47,
+      "degree_centrality_mic": 1.0444444444444445,
+      "avg_degree_centrality": 1.0434782608695652
     },
     {
       "names": [
@@ -47636,7 +47853,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004296683820472726,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 47,
+      "degree_centrality_mic": 1.0444444444444445,
+      "avg_degree_centrality": 1.0434782608695652
     },
     {
       "names": [
@@ -49992,7 +50216,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004091626931213862,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 48,
+      "degree_centrality_mic": 1.0434782608695652,
+      "avg_degree_centrality": 1.042553191489361
     },
     {
       "names": [
@@ -52348,7 +52579,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004063462246557995,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 48,
+      "degree_centrality_mic": 1.0434782608695652,
+      "avg_degree_centrality": 1.042553191489361
     },
     {
       "names": [
@@ -54704,7 +54942,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004106302202320739,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 48,
+      "degree_centrality_mic": 1.0434782608695652,
+      "avg_degree_centrality": 1.042553191489361
     },
     {
       "names": [
@@ -57060,7 +57305,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004137971561940987,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 48,
+      "degree_centrality_mic": 1.0434782608695652,
+      "avg_degree_centrality": 1.042553191489361
     },
     {
       "names": [
@@ -59416,7 +59668,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004237153203402713,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 48,
+      "degree_centrality_mic": 1.0434782608695652,
+      "avg_degree_centrality": 1.042553191489361
     },
     {
       "names": [
@@ -61772,7 +62031,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0043875545825830965,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 48,
+      "degree_centrality_mic": 1.0434782608695652,
+      "avg_degree_centrality": 1.042553191489361
     },
     {
       "names": [
@@ -64128,7 +64394,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004812387876535622,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 48,
+      "degree_centrality_mic": 1.0434782608695652,
+      "avg_degree_centrality": 1.042553191489361
     },
     {
       "names": [
@@ -66582,7 +66855,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004520611628564262,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 49,
+      "degree_centrality_mic": 1.0425531914893618,
+      "avg_degree_centrality": 1.0416666666666663
     },
     {
       "names": [
@@ -69036,7 +69316,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00457293496712101,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 49,
+      "degree_centrality_mic": 1.0425531914893618,
+      "avg_degree_centrality": 1.0416666666666663
     },
     {
       "names": [
@@ -71490,7 +71777,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004638922420769358,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 49,
+      "degree_centrality_mic": 1.0425531914893618,
+      "avg_degree_centrality": 1.0416666666666663
     },
     {
       "names": [
@@ -74044,7 +74338,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004462158060423397,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 50,
+      "degree_centrality_mic": 1.0416666666666665,
+      "avg_degree_centrality": 1.0408163265306116
     },
     {
       "names": [
@@ -76598,7 +76899,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004466027623204824,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 50,
+      "degree_centrality_mic": 1.0416666666666665,
+      "avg_degree_centrality": 1.0408163265306116
     },
     {
       "names": [
@@ -79254,7 +79562,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.004272881276879958,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 51,
+      "degree_centrality_mic": 1.040816326530612,
+      "avg_degree_centrality": 1.0399999999999996
     },
     {
       "names": [
@@ -82228,7 +82543,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0028885878474142813,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 54,
+      "degree_centrality_mic": 1.0384615384615385,
+      "avg_degree_centrality": 1.0377358490566049
     },
     {
       "names": [
@@ -85424,7 +85746,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0026294785894622357,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 56,
+      "degree_centrality_mic": 1.037037037037037,
+      "avg_degree_centrality": 1.036363636363637
     },
     {
       "names": [
@@ -88620,7 +88949,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002687356620156816,
+      "no_of_cliques": 1,
+      "most_important_character": "Lydia.--Elizabeth",
+      "degree_of_mic": 56,
+      "degree_centrality_mic": 1.037037037037037,
+      "avg_degree_centrality": 1.036363636363637
     },
     {
       "names": [
@@ -91816,7 +92152,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0026853562758841986,
+      "no_of_cliques": 1,
+      "most_important_character": "Gardiner",
+      "degree_of_mic": 56,
+      "degree_centrality_mic": 1.037037037037037,
+      "avg_degree_centrality": 1.036363636363637
     },
     {
       "names": [
@@ -95012,7 +95355,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0027138582167444913,
+      "no_of_cliques": 1,
+      "most_important_character": "Gardiner",
+      "degree_of_mic": 56,
+      "degree_centrality_mic": 1.037037037037037,
+      "avg_degree_centrality": 1.036363636363637
     },
     {
       "names": [
@@ -98208,7 +98558,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0027655971158394876,
+      "no_of_cliques": 1,
+      "most_important_character": "Lizzy",
+      "degree_of_mic": 56,
+      "degree_centrality_mic": 1.037037037037037,
+      "avg_degree_centrality": 1.036363636363637
     },
     {
       "names": [
@@ -101404,7 +101761,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0027895204813232705,
+      "no_of_cliques": 1,
+      "most_important_character": "Lizzy",
+      "degree_of_mic": 56,
+      "degree_centrality_mic": 1.037037037037037,
+      "avg_degree_centrality": 1.036363636363637
     },
     {
       "names": [
@@ -104600,7 +104964,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0027947513026786697,
+      "no_of_cliques": 1,
+      "most_important_character": "Lizzy",
+      "degree_of_mic": 56,
+      "degree_centrality_mic": 1.037037037037037,
+      "avg_degree_centrality": 1.036363636363637
     },
     {
       "names": [
@@ -107796,7 +108167,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002792782526021118,
+      "no_of_cliques": 1,
+      "most_important_character": "Lizzy",
+      "degree_of_mic": 56,
+      "degree_centrality_mic": 1.037037037037037,
+      "avg_degree_centrality": 1.036363636363637
     },
     {
       "names": [
@@ -110992,7 +111370,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0028084923550691816,
+      "no_of_cliques": 1,
+      "most_important_character": "Lizzy",
+      "degree_of_mic": 56,
+      "degree_centrality_mic": 1.037037037037037,
+      "avg_degree_centrality": 1.036363636363637
     },
     {
       "names": [
@@ -114188,7 +114573,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002763531715635881,
+      "no_of_cliques": 1,
+      "most_important_character": "Lizzy",
+      "degree_of_mic": 56,
+      "degree_centrality_mic": 1.037037037037037,
+      "avg_degree_centrality": 1.036363636363637
     },
     {
       "names": [
@@ -117384,7 +117776,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002764732517845423,
+      "no_of_cliques": 1,
+      "most_important_character": "Lizzy",
+      "degree_of_mic": 56,
+      "degree_centrality_mic": 1.037037037037037,
+      "avg_degree_centrality": 1.036363636363637
     },
     {
       "names": [
@@ -120694,7 +121093,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002663638745571275,
+      "no_of_cliques": 1,
+      "most_important_character": "Lizzy",
+      "degree_of_mic": 57,
+      "degree_centrality_mic": 1.0363636363636364,
+      "avg_degree_centrality": 1.0357142857142867
     },
     {
       "names": [
@@ -124004,7 +124410,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0027040037592527765,
+      "no_of_cliques": 1,
+      "most_important_character": "Lizzy",
+      "degree_of_mic": 57,
+      "degree_centrality_mic": 1.0363636363636364,
+      "avg_degree_centrality": 1.0357142857142867
     },
     {
       "names": [
@@ -127314,7 +127727,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.01713912593910399,
+      "no_of_cliques": 1,
+      "most_important_character": "Elizabeth Bennet",
+      "degree_of_mic": 57,
+      "degree_centrality_mic": 1.0363636363636364,
+      "avg_degree_centrality": 1.0357142857142867
     },
     {
       "names": [
@@ -130624,7 +131044,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.017198295529082176,
+      "no_of_cliques": 1,
+      "most_important_character": "Elizabeth Bennet",
+      "degree_of_mic": 57,
+      "degree_centrality_mic": 1.0363636363636364,
+      "avg_degree_centrality": 1.0357142857142867
     }
   ],
   "first_interactions_between_characters": {

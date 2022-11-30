@@ -60,7 +60,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 5.0,
+      "average_clustering": 0.0,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 7,
+      "degree_centrality_mic": 1.4000000000000001,
+      "avg_degree_centrality": 1.3333333333333333
     },
     {
       "names": [
@@ -196,7 +203,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 9.0,
+      "average_clustering": 0.012838668144869184,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 11,
+      "degree_centrality_mic": 1.222222222222222,
+      "avg_degree_centrality": 1.1999999999999997
     },
     {
       "names": [
@@ -506,7 +520,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 15.0,
+      "average_clustering": 0.007737424223284815,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 17,
+      "degree_centrality_mic": 1.1333333333333333,
+      "avg_degree_centrality": 1.1249999999999998
     },
     {
       "names": [
@@ -890,7 +911,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 17.0,
+      "average_clustering": 0.005166718247340806,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
     },
     {
       "names": [
@@ -1236,7 +1264,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 16.0,
+      "average_clustering": 0.005780126397193887,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 18,
+      "degree_centrality_mic": 1.125,
+      "avg_degree_centrality": 1.1176470588235294
     },
     {
       "names": [
@@ -1660,7 +1695,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 18.0,
+      "average_clustering": 0.004563699235036426,
+      "no_of_cliques": 1,
+      "most_important_character": "Tra-La-La",
+      "degree_of_mic": 20,
+      "degree_centrality_mic": 1.1111111111111112,
+      "avg_degree_centrality": 1.1052631578947367
     },
     {
       "names": [
@@ -2216,7 +2258,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 21.0,
+      "average_clustering": 0.0028471451358569847,
+      "no_of_cliques": 1,
+      "most_important_character": "Tra-La-La",
+      "degree_of_mic": 23,
+      "degree_centrality_mic": 1.0952380952380951,
+      "avg_degree_centrality": 1.0909090909090908
     },
     {
       "names": [
@@ -2870,7 +2919,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 23.0,
+      "average_clustering": 0.005229281743988238,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -3744,7 +3800,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 27.0,
+      "average_clustering": 0.005118384030358895,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 29,
+      "degree_centrality_mic": 1.074074074074074,
+      "avg_degree_centrality": 1.071428571428571
     },
     {
       "names": [
@@ -4618,7 +4681,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 27.0,
+      "average_clustering": 0.005406166347106685,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 29,
+      "degree_centrality_mic": 1.074074074074074,
+      "avg_degree_centrality": 1.071428571428571
     }
   ],
   "first_interactions_between_characters": {

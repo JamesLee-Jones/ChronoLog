@@ -148,7 +148,7 @@ class CharacterInteractionsProcessor:
         # The number of cliques
         for C in (graph.subgraph(c).copy() for c in nx.connected_components(graph)):
             if not nx.is_empty(C):
-                avg_node_connectivity.append(nx.average_node_connectivity(C))
+                # avg_node_connectivity.append(nx.average_node_connectivity(C))
                 avg_clustering.append(nx.average_clustering(C, weight="weight"))
         centrality = nx.degree_centrality(graph)
 
@@ -158,6 +158,7 @@ class CharacterInteractionsProcessor:
         # Add all of the nodes from the characters as a mapping {i: characters[i]}
         # For matrx[i][j] add an edge (character_list[i], character_list[j, {'weight': matrix[i][j]]))
         # For each graph apply the networkX functions and return them as apart of the section
+
     def generate_timeline_json(self, title: str):
         file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
         json_contents = {"book": title.replace('_', ' ').title(),
@@ -182,7 +183,7 @@ class CharacterInteractionsProcessor:
             for j in range(len(self.characters_timeline[i])):
                 self.characters_timeline[i][j] = matrix_generator.character_dict[self.characters_timeline[i][j]]
             self.sort_matrix(i)
-            analysis = network_analysis(self.normalised_matrices[i], self.characters_timeline[i])
+            analysis = self.network_analysis(self.normalised_matrices[i], self.characters_timeline[i])
             json_contents["sections"].append({
                 "names": self.characters_timeline[i],
                 "matrix": self.normalised_matrices[i].tolist(),
@@ -204,4 +205,3 @@ class CharacterInteractionsProcessor:
     def process(self, title: str, text: str):
         self.preprocess_text(text)
         self.generate_timeline_json(title)
-
