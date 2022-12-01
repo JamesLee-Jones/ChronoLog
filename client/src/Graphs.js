@@ -5,7 +5,7 @@ import * as d3 from "d3";
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data) {
   let result = [...data];
-  return result.map(convertToGraph);
+  return result.map(d => convertToGraph(d));
 }
 
 function convertToGraph(data) {
@@ -32,11 +32,11 @@ function convertToGraph(data) {
   return { nodes: nodes, links: links };
 }
 
-const Graphs = ({ graphData, counter }) => {
+const Graphs = ({ graphData, counter, characters }) => {
   const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
   const [displayHeight, setDisplayHeight] = useState(window.innerHeight);
 
-  const [graphs, setGraphs] = useState({ nodes: {}, links: {} });
+  const [graphs, setGraphs] = useState([{ nodes: [], links: [] }]);
   const [activeNode, setActiveNode] = useState(false);
 
   window.addEventListener("resize", () => {
@@ -45,7 +45,8 @@ const Graphs = ({ graphData, counter }) => {
   });
 
   useEffect(() => {
-    setGraphs(convert(graphData));
+    let convertedGraphData = convert(graphData)
+    setGraphs(convertedGraphData);
   }, [graphData]);
 
   const handleClick = useCallback((node) => {
@@ -63,7 +64,7 @@ const Graphs = ({ graphData, counter }) => {
         links[i]["linkVisibility"] = !links[i]["linkVisibility"];
       }
     }
-  });
+  }, []);
 
   const forceRef = useRef(null);
   let padding = 30;
@@ -76,10 +77,20 @@ const Graphs = ({ graphData, counter }) => {
     forceRef.current.d3Force("x", d3.forceX(10));
   });
 
+  let currGraph = {nodes: [], links: []}
+  useEffect(() => {
+    // setFilteredGraphs(graphs.map((graph) => {return {nodes: graph["nodes"].slice(0, characters), links: graph["links"]}})
+    //     .filter(l => parseInt(l["links"]["source"].substr(2)) < characters && parseInt(l["links"]["target"].substr(2)) < characters))
+    currGraph["nodes"] = graphs[counter]["nodes"].slice(0, characters)
+    currGraph["links"] = graphs[counter]["links"].filter(l => parseInt(l["source"].toString().slice(2)) < characters && parseInt(l["target"].toString().slice(2)) < characters)
+    },
+      [characters, counter]
+  )
+
   return (
     <div>
       <ForceGraph2D
-        graphData={graphs[counter]}
+        graphData={currGraph}
         nodeLabel="name"
         linkCurvature="curvature"
         linkWidth="value"

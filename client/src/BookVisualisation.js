@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TimelineNavigation from "./Slider";
+import CharacterSlider from "./CharacterSlider";
 import { useParams } from "react-router-dom";
 import Graphs from "./Graphs";
 
@@ -16,6 +17,7 @@ function convertData(data) {
 function BookVisualisation() {
   const [data, setData] = useState({ book: "", num_sections: 0, sections: [] });
   const [counter, setCounter] = useState(0);
+  const [numCharacters, setNumCharacters] = useState(10);
 
   // Fetches data outputted by the backend
   const params = useParams();
@@ -41,13 +43,14 @@ function BookVisualisation() {
     getData();
   }, []);
 
+  // data["sections"] ? data["sections"][data["sections"].length - 1]["names"].length : 0
   return (
     <>
       <div className="App">
         <Graphs
           graphData={data["sections"]}
           counter={counter}
-          setCounter={setCounter}
+          characters={numCharacters}
         ></Graphs>
 
         <TimelineNavigation
@@ -56,6 +59,13 @@ function BookVisualisation() {
           counter={counter}
           TimelineNavigation
         />
+
+        <CharacterSlider
+          maxval={10}
+          setCounter={setNumCharacters}
+          counter={numCharacters}
+          CharacterSlider
+          />
       </div>
     </>
   );
