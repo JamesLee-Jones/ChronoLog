@@ -40,13 +40,16 @@ class InteractionsCounter:
         return list(full_names)
 
     def _update_interactions_records(self, interactions: dict, sentence: str, first_char: str, second_char: str):
+        # If first char not in dict, add to dict
         if self.first_interactions_per_char.get(first_char) is None:
             self.first_interactions_per_char[first_char] = {}
+        # If they have not interacted before
         if self.first_interactions_per_char.get(first_char).get(second_char) is None:
             self.first_interactions_per_char[first_char].update({second_char: sentence})
+        # If this is their first overall interaction
         if not sum(interactions[first_char].values()):
             self.first_interactions_overall[first_char] = {"with": second_char, "context": sentence}
-        if not sum(interactions[second_char].values()):
+        if second_char in interactions and not sum(interactions[second_char].values()):
             self.first_interactions_overall[second_char] = {"with": first_char, "context": sentence}
 
     def generate_interactions_matrix(self, text: str) -> tuple[np.ndarray, list[str]]:

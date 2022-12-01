@@ -1,10 +1,9 @@
 import json
-
+import jsbeautifier
 import numpy as np
+import networkx as nx
 
 import backend.nlp as nlp
-
-import networkx as nx
 
 JSON_DIRECTORY = "timelines/"
 
@@ -112,13 +111,33 @@ class CharacterInteractionsProcessor:
                         del interactions_per_character[key]
         return interactions_overall, interactions_per_character
 
+    def update_names_metadata(self, mg):
+        curr_metadata = "first interactions per char"
+        for (name, value) in self.metadata["first interactions per char"].copy().items():
+            new_name = mg.character_dict[name]
+            if new_name != name:
+                self.metadata[curr_metadata][new_name] = self.metadata[curr_metadata].pop(name)
+            for (name2, interaction) in value.copy().items():
+                new_name2 = mg.character_dict[name2]
+                if new_name2 != name2 and name2 in self.metadata[curr_metadata][new_name]:
+                    self.metadata[curr_metadata][new_name][new_name2] = self.metadata[curr_metadata][new_name].pop(
+                        name2)
+
+        curr_metadata = "first interactions overall"
+        for (name, interaction) in self.metadata[curr_metadata].copy().items():
+            new_name = mg.character_dict[name]
+            self.metadata[curr_metadata][new_name] = self.metadata[curr_metadata].pop(name)
+            int_with = self.metadata[curr_metadata][new_name]["with"]
+            self.metadata[curr_metadata][new_name]["with"] = mg.character_dict[int_with]
+
     @staticmethod
     def normalise_matrix(matrix: np.ndarray):
+        DECIMAL_PLACES = 5
         for i in range(len(matrix)):
             row_sum = sum(matrix[i])
             for j in range(len(matrix[i])):
                 matrix[i][j] = (matrix[i][j] / row_sum) if row_sum != 0 else 0
-        return matrix
+        return np.round(matrix, decimals=DECIMAL_PLACES)
 
     @staticmethod
     def network_analysis(matrix, character_list):
@@ -195,10 +214,13 @@ class CharacterInteractionsProcessor:
                     "avg_degree_centrality": analysis[3]
                 }
             })
+        self.update_names_metadata(matrix_generator)
         json_contents["first_interactions_between_characters"] = self.metadata["first interactions per char"]
         json_contents["first_interactions_overall"] = self.metadata["first interactions overall"]
         with open(file_path, "w", newline='\r\n') as f:
-            f.write(json.dumps(json_contents, indent=2))
+            opts = jsbeautifier.default_options()
+            opts.indent_size = 2
+            f.write(jsbeautifier.beautify(json.dumps(json_contents), opts))
         if not self.quiet:
             print("Done! Analysis saved at {}.".format(file_path))
 
