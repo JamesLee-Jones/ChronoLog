@@ -3,13 +3,9 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import "./App.css";
-import {
-  CardHeader,
-  Divider,
-} from "@mui/material";
+import { CardHeader, Divider } from "@mui/material";
 
 function MetadataAnalysisCard({ graphAttributes }) {
-
   return (
     <Card
       sx={{ bgcolor: "background.paper", boxShadow: 1, borderRadius: 2, p: 1 }}
