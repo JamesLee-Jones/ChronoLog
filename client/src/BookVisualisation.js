@@ -60,7 +60,7 @@ function BookVisualisation() {
         />
 
         <CharacterSlider
-          maxval={10}
+          maxval={30}
           setCounter={setNumCharacters}
           counter={numCharacters}
           CharacterSlider
