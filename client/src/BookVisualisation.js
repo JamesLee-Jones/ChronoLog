@@ -17,7 +17,7 @@ function convertData(data) {
 function BookVisualisation() {
   const [data, setData] = useState({ book: "", num_sections: 0, sections: [] });
   const [counter, setCounter] = useState(0);
-  const [numCharacters, setNumCharacters] = useState(10);
+  const [numCharacters, setNumCharacters] = useState(30);
 
   // Fetches data outputted by the backend
   const params = useParams();
