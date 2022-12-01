@@ -27,7 +27,7 @@ function useInterval(callback, delay) {
   }, [delay]);
 }
 
-const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
+const CharacterSlider = ({ maxval, setCounter, counter }) => {
   const [mark, setMark] = useState([]);
   const [run, setRun] = useState(false);
   const [sliderVal, setSliderVal] = useState(0);
@@ -53,26 +53,6 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
   useEffect(() => {
     setSliderVal(counter * scale);
   }, [counter]);
-
-  const onNext = () => {
-    if (counter === maxval) {
-      return;
-    }
-
-    console.log(counter);
-    setCounter(counter + 1);
-    console.log(counter);
-  };
-
-  const onPrev = () => {
-    if (counter === 0) {
-      return;
-    }
-
-    console.log(counter);
-    setCounter(counter - 1);
-    console.log(counter);
-  };
 
   return (
     <div>
@@ -104,35 +84,7 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
         min={1}
         max={maxval * scale}
       />
-
-      <button
-        style={{ backgroundColor: "#0A0908", color: "white" }}
-        className="btn"
-        onClick={onPrev}
-      >
-        {"Previous"}
-      </button>
-      <button
-        onClick={() => {
-          setRun(!run);
-          if (sliderVal > maxval * scale && !run) {
-            setCounter(0);
-            setSliderVal(0);
-          }
-        }}
-        style={{ backgroundColor: "#0A0908", color: "white" }}
-        className="btn"
-      >
-        {run ? "Pause" : "Play"}
-      </button>
-      <button
-        style={{ backgroundColor: "#0A0908", color: "white" }}
-        className="btn"
-        onClick={onNext}
-      >
-        {"Next"}
-      </button>
     </div>
   );
 };
-export default TimelineNavigaion;
+export default CharacterSlider;

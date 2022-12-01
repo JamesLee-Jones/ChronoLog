@@ -3,22 +3,23 @@ import { ForceGraph2D } from "react-force-graph";
 import * as d3 from "d3";
 
 // Converts JSON data from backend into graph JSON data for react force graph
-function convert(data) {
+function convert(data, characters) {
   let result = [...data];
-  return result.map(convertToGraph);
+  return result.map((d) => convertToGraph(d, characters));
 }
 
-function convertToGraph(data) {
+function convertToGraph(data, characters) {
   let nodes = [];
   let links = [];
   let scale = 10;
   let names = data["names"];
   let matrix = data["matrix"];
-  for (let i = 0; i < names.length; i++) {
+  let numNodes = Math.min(names.length, characters);
+  for (let i = 0; i < numNodes; i++) {
     nodes.push({ id: "id" + String(i), name: names[i] });
   }
-  for (let j = 0; j < names.length; j++) {
-    for (let k = 0; k < names.length; k++) {
+  for (let j = 0; j < numNodes; j++) {
+    for (let k = 0; k < numNodes; k++) {
       if (j !== k && matrix[j][k] !== 0) {
         links.push({
           source: "id" + String(j),
@@ -32,11 +33,11 @@ function convertToGraph(data) {
   return { nodes: nodes, links: links };
 }
 
-const Graphs = ({ graphData, counter }) => {
+const Graphs = ({ graphData, counter, characters }) => {
   const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
   const [displayHeight, setDisplayHeight] = useState(window.innerHeight);
 
-  const [graphs, setGraphs] = useState({ nodes: {}, links: {} });
+  const [graphs, setGraphs] = useState([{ nodes: [], links: [] }]);
   const [activeNode, setActiveNode] = useState(false);
 
   window.addEventListener("resize", () => {
@@ -45,8 +46,9 @@ const Graphs = ({ graphData, counter }) => {
   });
 
   useEffect(() => {
-    setGraphs(convert(graphData));
-  }, [graphData]);
+    let convertedGraphData = convert(graphData, characters);
+    setGraphs(convertedGraphData);
+  }, [graphData, characters]);
 
   const handleClick = useCallback((node) => {
     if (activeNode === "") {
@@ -63,7 +65,7 @@ const Graphs = ({ graphData, counter }) => {
         links[i]["linkVisibility"] = !links[i]["linkVisibility"];
       }
     }
-  });
+  }, []);
 
   const forceRef = useRef(null);
   let padding = 30;
