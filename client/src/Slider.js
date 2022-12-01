@@ -20,6 +20,7 @@ function useInterval(callback, delay) {
     function tick() {
       savedCallback.current();
     }
+
     if (delay !== null) {
       let id = setInterval(tick, delay);
       return () => clearInterval(id);
@@ -85,7 +86,7 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
         }}
         step={1}
         sx={{
-          width: 500,
+          width: window.width * 0.5,
           height: 20,
           color: "#C6AC8F",
           ".MuiSlider-mark": {
