@@ -14,7 +14,7 @@ chapter_regex = {
     "anne_of_green_gables.txt": ['-c', 'chapter_numeral'],
     "a_christmas_carol.txt": ['-c', 'STAVE'],
     "dr_jekyll_and_mr_hyde.txt": ['-s', '10'],
-    "jane_eyre.txt": ['-c', 'chapter_numeral'],
+    "jane_eyre.txt": ['-c', 'chapter_numeral', "-n", "Jane Eyre"],
     "little_women.txt": ['-c', 'CHAPTER '],
     "pride_and_prejudice.txt": ['-c', 'chapter_numeral'],
     "winnie_the_pooh.txt": ['-c', 'chapter_numeral']
@@ -33,4 +33,6 @@ if __name__ == '__main__':
             sb = subprocess.run(["python", ".\\chronolog.py", "texts\\" + file] + cr, env=env,
                                 check=True)
         except subprocess.CalledProcessError:
-            print("Error occured whilst processing {}.".format(file))
+            print("Error occurred whilst processing {}.".format(file))
+    subprocess.run(["python", ".\\chronolog.py", "texts\\" + "little_women.txt", "-s 20", "-t little_women_sectioned"],
+                   env=env)

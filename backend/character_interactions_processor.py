@@ -110,6 +110,25 @@ class CharacterInteractionsProcessor:
                         del interactions_per_character[key]
         return interactions_overall, interactions_per_character
 
+    def update_names_metadata(self, mg):
+        curr_metadata = "first interactions per char"
+        for (name, value) in self.metadata["first interactions per char"].copy().items():
+            new_name = mg.character_dict[name]
+            if new_name != name:
+                self.metadata[curr_metadata][new_name] = self.metadata[curr_metadata].pop(name)
+            for (name2, interaction) in value.copy().items():
+                new_name2 = mg.character_dict[name2]
+                if new_name2 != name2 and name2 in self.metadata[curr_metadata][new_name]:
+                    self.metadata[curr_metadata][new_name][new_name2] = self.metadata[curr_metadata][new_name].pop(
+                        name2)
+
+        curr_metadata = "first interactions overall"
+        for (name, interaction) in self.metadata[curr_metadata].copy().items():
+            new_name = mg.character_dict[name]
+            self.metadata[curr_metadata][new_name] = self.metadata[curr_metadata].pop(name)
+            int_with = self.metadata[curr_metadata][new_name]["with"]
+            self.metadata[curr_metadata][new_name]["with"] = mg.character_dict[int_with]
+
     @staticmethod
     def normalise_matrix(matrix: np.ndarray):
         for i in range(len(matrix)):
@@ -146,6 +165,7 @@ class CharacterInteractionsProcessor:
                 "names": self.characters_timeline[i],
                 "matrix": self.normalised_matrices[i].tolist()
             })
+        self.update_names_metadata(matrix_generator)
         json_contents["first_interactions_between_characters"] = self.metadata["first interactions per char"]
         json_contents["first_interactions_overall"] = self.metadata["first interactions overall"]
         with open(file_path, "w", newline='\r\n') as f:
