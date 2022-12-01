@@ -152,8 +152,8 @@ class CharacterInteractionsProcessor:
 
         clustering_average = 0 if len(avg_clusterings) == 0 else sum(avg_clusterings) / len(avg_clusterings)
 
-        return clustering_average, number_of_cliques, (
-        most_important_node, degree_of_node, centrality_of_node), avg_centrality
+        return clustering_average, number_of_cliques, (most_important_node, degree_of_node, centrality_of_node), \
+               avg_centrality
         # Add all of the nodes from the characters as a mapping {i: characters[i]}
         # For matrx[i][j] add an edge (character_list[i], character_list[j, {'weight': matrix[i][j]]))
         # For each graph apply the networkX functions and return them as apart of the section
