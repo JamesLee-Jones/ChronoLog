@@ -60,7 +60,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 5.0,
+      "average_clustering": 0.0,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 7,
+      "degree_centrality_mic": 1.4000000000000001,
+      "avg_degree_centrality": 1.3333333333333333
     },
     {
       "names": [
@@ -196,7 +203,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 9.0,
+      "average_clustering": 0.012838668144869184,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 11,
+      "degree_centrality_mic": 1.222222222222222,
+      "avg_degree_centrality": 1.1999999999999997
     },
     {
       "names": [
@@ -506,7 +520,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 15.0,
+      "average_clustering": 0.007737424223284815,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 17,
+      "degree_centrality_mic": 1.1333333333333333,
+      "avg_degree_centrality": 1.1249999999999998
     },
     {
       "names": [
@@ -890,7 +911,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 17.0,
+      "average_clustering": 0.005166718247340806,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
     },
     {
       "names": [
@@ -1236,7 +1264,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 16.0,
+      "average_clustering": 0.005780126397193887,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 18,
+      "degree_centrality_mic": 1.125,
+      "avg_degree_centrality": 1.1176470588235294
     },
     {
       "names": [
@@ -1660,7 +1695,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 18.0,
+      "average_clustering": 0.004563699235036426,
+      "no_of_cliques": 1,
+      "most_important_character": "Tra-La-La",
+      "degree_of_mic": 20,
+      "degree_centrality_mic": 1.1111111111111112,
+      "avg_degree_centrality": 1.1052631578947367
     },
     {
       "names": [
@@ -2216,7 +2258,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 21.0,
+      "average_clustering": 0.0028471451358569847,
+      "no_of_cliques": 1,
+      "most_important_character": "Tra-La-La",
+      "degree_of_mic": 23,
+      "degree_centrality_mic": 1.0952380952380951,
+      "avg_degree_centrality": 1.0909090909090908
     },
     {
       "names": [
@@ -2870,7 +2919,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 23.0,
+      "average_clustering": 0.005229281743988238,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -3744,7 +3800,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 27.0,
+      "average_clustering": 0.005118384030358895,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 29,
+      "degree_centrality_mic": 1.074074074074074,
+      "avg_degree_centrality": 1.071428571428571
     },
     {
       "names": [
@@ -4618,13 +4681,21 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 27.0,
+      "average_clustering": 0.005406166347106685,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 29,
+      "degree_centrality_mic": 1.074074074074074,
+      "avg_degree_centrality": 1.071428571428571
     }
   ],
   "first_interactions_between_characters": {
     "Christopher Robin": {
       "Edward Bear": "Here is Edward Bear, coming downstairs now, bump, bump, bump, on the back of his head, behind Christopher Robin.",
       "Winnie-The-Pooh": "Christopher Robin gave a deep sigh, picked his Bear up by the leg, and walked off to the door, trailing Pooh behind him.",
+      "Piglet": "When Christopher Robin asked the Piglet what it meant, he said it was his grandfather's name, and had been in the family for a long time, Christopher Robin said you _couldn't_ be called Trespassers W, and Piglet said yes, you could, because his grandfather was, and it was short for Trespassers Will, which was short for Trespassers William.",
       "William": "When Christopher Robin asked the Piglet what it meant, he said it was his grandfather's name, and had been in the family for a long time, Christopher Robin said you _couldn't_ be called Trespassers W, and Piglet said yes, you could, because his grandfather was, and it was short for Trespassers Will, which was short for Trespassers William.",
       "Spinney": "There was a small spinney of larch trees just here, and it seemed as if the two Woozles, if that is what they were, had been going round this spinney; so round this spinney went Pooh and Piglet after them; Piglet passing the time by telling Pooh what his Grandfather Trespassers W had done to Remove Stiffness after Tracking, and how his Grandfather Trespassers W had suffered in his later years from Shortness of Breath, and other matters of interest, and Pooh wondering what a Grandfather was like, and if perhaps this was Two Grandfathers they were after now, and, if so, whether he would be allowed to take one home and keep it, and what Christopher Robin would say.",
       "W": "There was a small spinney of larch trees just here, and it seemed as if the two Woozles, if that is what they were, had been going round this spinney; so round this spinney went Pooh and Piglet after them; Piglet passing the time by telling Pooh what his Grandfather Trespassers W had done to Remove Stiffness after Tracking, and how his Grandfather Trespassers W had suffered in his later years from Shortness of Breath, and other matters of interest, and Pooh wondering what a Grandfather was like, and if perhaps this was Two Grandfathers they were after now, and, if so, whether he would be allowed to take one home and keep it, and what Christopher Robin would say.",
@@ -4632,7 +4703,7 @@
       "Eeyore": "So with these words he unhooked it, and carried it back to Eeyore; and when Christopher Robin had nailed it on in its right place again, Eeyore frisked about the forest, waving his tail so happily that Winnie-the-Pooh came over all funny, and had to hurry home for a little snack of something to sustain him.",
       "Kanga": "\"Come in,\" said Kanga, and in came Christopher Robin.  ",
       "The Brain Of Pooh": "\"If only,\" he thought, as he looked out of the window, \"I had been in Pooh's house, or Christopher Robin's house, or Rabbit's house when it began to rain, then I should have had Company all this time, instead of being here all alone, with nothing to do except wonder when it will stop.\"",
-      "Henry Pootel Piglet": "When Christopher Robin asked the Piglet what it meant, he said it was his grandfather's name, and had been in the family for a long time, Christopher Robin said you _couldn't_ be called Trespassers W, and Piglet said yes, you could, because his grandfather was, and it was short for Trespassers Will, which was short for Trespassers William.",
+      "Henry Pootel Piglet": "and Piglet saying, \"I wonder how it is over Christopher Robin's way\" and Pooh saying, \"I should think poor old Rabbit is about flooded out by this time.\"",
       "F.O.P.": "And then this Bear, Pooh Bear, Winnie-the-Pooh, F.O.P. (Friend of Piglet's), R.C. (Rabbit's Companion), P.D. (Pole Discoverer), E.C. and T.F. (Eeyore's Comforter and Tail-finder)--in fact, Pooh himself--said something so clever that Christopher Robin could only look at him with mouth open and eyes staring, wondering if this was really the Bear of Very Little Brain whom he had known and loved so long.  ",
       "R.C. (Rabbit'S Companion": "And then this Bear, Pooh Bear, Winnie-the-Pooh, F.O.P. (Friend of Piglet's), R.C. (Rabbit's Companion), P.D. (Pole Discoverer), E.C. and T.F. (Eeyore's Comforter and Tail-finder)--in fact, Pooh himself--said something so clever that Christopher Robin could only look at him with mouth open and eyes staring, wondering if this was really the Bear of Very Little Brain whom he had known and loved so long.  ",
       "E.C.": "And then this Bear, Pooh Bear, Winnie-the-Pooh, F.O.P. (Friend of Piglet's), R.C. (Rabbit's Companion), P.D. (Pole Discoverer), E.C. and T.F. (Eeyore's Comforter and Tail-finder)--in fact, Pooh himself--said something so clever that Christopher Robin could only look at him with mouth open and eyes staring, wondering if this was really the Bear of Very Little Brain whom he had known and loved so long.  ",
@@ -4640,6 +4711,12 @@
     },
     "Pooh Bear": {
       "Winnie-The-Pooh": "Well, you both went out with the blue balloon, and you took your gun with you, just in case, as you always did, and Winnie-the-Pooh went to a very muddy place that he knew of, and rolled and rolled until he was black all over; and then, when the balloon was blown up as big as big, and you and Pooh were both holding on to the string, you let go suddenly, and Pooh Bear floated gracefully up into the sky, and stayed there--level with the top of the tree and about twenty feet away from it.  "
+    },
+    "Piglet": {
+      "Winnie-The-Pooh": "\"That day when Pooh and Piglet tried to catch the Heffalump----\"  \"They didn't catch it, did they?\"  \"No.\"  ",
+      "William": "When Christopher Robin asked the Piglet what it meant, he said it was his grandfather's name, and had been in the family for a long time, Christopher Robin said you _couldn't_ be called Trespassers W, and Piglet said yes, you could, because his grandfather was, and it was short for Trespassers Will, which was short for Trespassers William.",
+      "Spinney": "There was a small spinney of larch trees just here, and it seemed as if the two Woozles, if that is what they were, had been going round this spinney; so round this spinney went Pooh and Piglet after them; Piglet passing the time by telling Pooh what his Grandfather Trespassers W had done to Remove Stiffness after Tracking, and how his Grandfather Trespassers W had suffered in his later years from Shortness of Breath, and other matters of interest, and Pooh wondering what a Grandfather was like, and if perhaps this was Two Grandfathers they were after now, and, if so, whether he would be allowed to take one home and keep it, and what Christopher Robin would say.",
+      "W": "There was a small spinney of larch trees just here, and it seemed as if the two Woozles, if that is what they were, had been going round this spinney; so round this spinney went Pooh and Piglet after them; Piglet passing the time by telling Pooh what his Grandfather Trespassers W had done to Remove Stiffness after Tracking, and how his Grandfather Trespassers W had suffered in his later years from Shortness of Breath, and other matters of interest, and Pooh wondering what a Grandfather was like, and if perhaps this was Two Grandfathers they were after now, and, if so, whether he would be allowed to take one home and keep it, and what Christopher Robin would say."
     },
     "Edward Bear": {
       "Winnie-The-Pooh": "                       IN WHICH POOH GOES VISITING AND                          GETS INTO A TIGHT PLACE   Edward Bear, known to his friends as Winnie-the-Pooh, or Pooh for short, was walking through the forest one day, humming proudly to himself."
@@ -4698,10 +4775,9 @@
       "The Brain Of Pooh": "Pooh was very excited when he heard this, and suggested that they should have an Expotition to discover the East Pole, but Christopher Robin had thought of something else to do with Kanga; so Pooh went out to discover the East Pole by himself."
     },
     "Henry Pootel Piglet": {
-      "Winnie-The-Pooh": "\"That day when Pooh and Piglet tried to catch the Heffalump----\"  \"They didn't catch it, did they?\"  \"No.\"  ",
-      "William": "When Christopher Robin asked the Piglet what it meant, he said it was his grandfather's name, and had been in the family for a long time, Christopher Robin said you _couldn't_ be called Trespassers W, and Piglet said yes, you could, because his grandfather was, and it was short for Trespassers Will, which was short for Trespassers William.",
-      "Spinney": "There was a small spinney of larch trees just here, and it seemed as if the two Woozles, if that is what they were, had been going round this spinney; so round this spinney went Pooh and Piglet after them; Piglet passing the time by telling Pooh what his Grandfather Trespassers W had done to Remove Stiffness after Tracking, and how his Grandfather Trespassers W had suffered in his later years from Shortness of Breath, and other matters of interest, and Pooh wondering what a Grandfather was like, and if perhaps this was Two Grandfathers they were after now, and, if so, whether he would be allowed to take one home and keep it, and what Christopher Robin would say.",
-      "W": "There was a small spinney of larch trees just here, and it seemed as if the two Woozles, if that is what they were, had been going round this spinney; so round this spinney went Pooh and Piglet after them; Piglet passing the time by telling Pooh what his Grandfather Trespassers W had done to Remove Stiffness after Tracking, and how his Grandfather Trespassers W had suffered in his later years from Shortness of Breath, and other matters of interest, and Pooh wondering what a Grandfather was like, and if perhaps this was Two Grandfathers they were after now, and, if so, whether he would be allowed to take one home and keep it, and what Christopher Robin would say."
+      "Kanga": "Before he knew where he was, Piglet was in the bath, and Kanga was scrubbing him firmly with a large lathery flannel.  ",
+      "Winnie-The-Pooh": "\"An Ambush, as I was about to explain to Pooh,\" said Piglet, \"is a sort of Surprise.\"  ",
+      "The Brain Of Pooh": "and Piglet saying, \"I wonder how it is over Christopher Robin's way\" and Pooh saying, \"I should think poor old Rabbit is about flooded out by this time.\""
     },
     "Christopher Robin And Rabbit": {
       "Winnie-The-Pooh": "First came Christopher Robin and Rabbit, then Piglet and Pooh; then Kanga, with Roo in her pocket, and Owl; then Eeyore; and, at the end, in a long line, all Rabbit's friends-and-relations.  ",
@@ -4749,6 +4825,10 @@
     "Winnie-The-Pooh": {
       "with": "Pooh Bear",
       "context": "Well, you both went out with the blue balloon, and you took your gun with you, just in case, as you always did, and Winnie-the-Pooh went to a very muddy place that he knew of, and rolled and rolled until he was black all over; and then, when the balloon was blown up as big as big, and you and Pooh were both holding on to the string, you let go suddenly, and Pooh Bear floated gracefully up into the sky, and stayed there--level with the top of the tree and about twenty feet away from it.  "
+    },
+    "Piglet": {
+      "with": "Winnie-The-Pooh",
+      "context": "\"That day when Pooh and Piglet tried to catch the Heffalump----\"  \"They didn't catch it, did they?\"  \"No.\"  "
     },
     "Stoutness Exercises": {
       "with": "Tra-La-La",
@@ -4811,8 +4891,8 @@
       "context": "                      IN WHICH KANGA AND BABY ROO COME                   TO THE FOREST, AND PIGLET HAS A BATH   Nobody seemed to know where they came from, but there they were in the Forest: Kanga and Baby Roo."
     },
     "Henry Pootel Piglet": {
-      "with": "Winnie-The-Pooh",
-      "context": "\"That day when Pooh and Piglet tried to catch the Heffalump----\"  \"They didn't catch it, did they?\"  \"No.\"  "
+      "with": "Kanga",
+      "context": "Before he knew where he was, Piglet was in the bath, and Kanga was scrubbing him firmly with a large lathery flannel.  "
     },
     "Christopher Robin And Rabbit": {
       "with": "Winnie-The-Pooh",
