@@ -1,6 +1,7 @@
 import json
 import jsbeautifier
 import numpy as np
+import networkx as nx
 
 import backend.nlp as nlp
 
@@ -138,6 +139,44 @@ class CharacterInteractionsProcessor:
                 matrix[i][j] = (matrix[i][j] / row_sum) if row_sum != 0 else 0
         return np.round(matrix, decimals=DECIMAL_PLACES)
 
+    @staticmethod
+    def network_analysis(matrix, character_list):
+        scale_factor = 10
+        G = nx.Graph()
+        for i in range(len(character_list)):
+            G.add_node(character_list[i])
+        for j in range(len(character_list) - 1):
+            for k in range(j, len(character_list)):
+                G.add_edge(character_list[j], character_list[k], weight=(matrix[k][j] + matrix[j][k]) * scale_factor)
+
+        graph = G
+        avg_clusterings = []
+
+        # The most important character and how many characters they are connected to
+        centrality = nx.degree_centrality(graph)
+        centrality_values = centrality.values()
+        degrees = sorted([(d, n) for n, d in graph.degree(weight="weight")])
+        most_important_node = degrees[-1][1]
+        degree_of_node = graph.degree(most_important_node)
+        centrality_of_node = centrality[most_important_node]
+        avg_centrality = 0 if len(centrality_values) == 0 else sum(centrality_values) / len(centrality_values)
+
+        # The clique involving that character and it's size
+        # The number of cliques
+        number_of_cliques = 0
+        for C in (graph.subgraph(c).copy() for c in nx.connected_components(graph)):
+            if not nx.is_empty(C):
+                number_of_cliques += 1
+                avg_clusterings.append(nx.average_clustering(C, weight="weight"))
+
+        clustering_average = 0 if len(avg_clusterings) == 0 else sum(avg_clusterings) / len(avg_clusterings)
+        mc_stats = (most_important_node, degree_of_node, centrality_of_node)
+
+        return clustering_average, number_of_cliques, mc_stats, avg_centrality
+        # Add all of the nodes from the characters as a mapping {i: characters[i]}
+        # For matrx[i][j] add an edge (character_list[i], character_list[j, {'weight': matrix[i][j]]))
+        # For each graph apply the networkX functions and return them as apart of the section
+
     def generate_timeline_json(self, title: str):
         file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
         json_contents = {"book": title.replace('_', ' ').title(),
@@ -162,9 +201,18 @@ class CharacterInteractionsProcessor:
             for j in range(len(self.characters_timeline[i])):
                 self.characters_timeline[i][j] = matrix_generator.character_dict[self.characters_timeline[i][j]]
             self.sort_matrix(i)
+            analysis = self.network_analysis(self.normalised_matrices[i], self.characters_timeline[i])
             json_contents["sections"].append({
                 "names": self.characters_timeline[i],
-                "matrix": self.normalised_matrices[i].tolist()
+                "matrix": self.normalised_matrices[i].tolist(),
+                "graph_attributes": {
+                    "average_clustering": analysis[0],
+                    "no_of_cliques": analysis[1],
+                    "most_important_character": analysis[2][0],
+                    "degree_of_mic": analysis[2][1],
+                    "degree_centrality_mic": analysis[2][2],
+                    "avg_degree_centrality": analysis[3]
+                }
             })
         self.update_names_metadata(matrix_generator)
         json_contents["first_interactions_between_characters"] = self.metadata["first interactions per char"]
@@ -179,3 +227,4 @@ class CharacterInteractionsProcessor:
     def process(self, title: str, text: str):
         self.preprocess_text(text)
         self.generate_timeline_json(title)
+
