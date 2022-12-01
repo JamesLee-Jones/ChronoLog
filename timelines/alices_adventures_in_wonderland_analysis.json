@@ -5,7 +5,15 @@
     "names": ["Alice"],
     "matrix": [
       [0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0,
+      "no_of_cliques": 0,
+      "most_important_character": "Alice",
+      "degree_of_mic": 0,
+      "degree_centrality_mic": 1,
+      "avg_degree_centrality": 1.0
+    }
   }, {
     "names": ["Alice", "Mabel", "Ada", "Mouse", "Latin Grammar", "William The Conqueror"],
     "matrix": [
@@ -15,7 +23,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 7,
+      "degree_centrality_mic": 1.4000000000000001,
+      "avg_degree_centrality": 1.3333333333333333
+    }
   }, {
     "names": ["Alice", "Mabel", "William The Conqueror", "Mouse", "Ada", "Edgar Atheling", "Latin Grammar"],
     "matrix": [
@@ -26,7 +42,15 @@
       [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 8,
+      "degree_centrality_mic": 1.3333333333333333,
+      "avg_degree_centrality": 1.2857142857142858
+    }
   }, {
     "names": ["Alice", "Bill", "Mabel", "William The Conqueror", "Ada", "Edgar Atheling", "Mouse", "That?--It", "Latin Grammar", "Mary Ann"],
     "matrix": [
@@ -40,7 +64,15 @@
       [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 11,
+      "degree_centrality_mic": 1.222222222222222,
+      "avg_degree_centrality": 1.1999999999999997
+    }
   }, {
     "names": ["Alice", "Bill", "William The Conqueror", "Mabel", "Ada", "Mouse", "Edgar Atheling", "That?--It", "Latin Grammar", "Mary Ann", "Shyly"],
     "matrix": [
@@ -55,7 +87,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 12,
+      "degree_centrality_mic": 1.2000000000000002,
+      "avg_degree_centrality": 1.1818181818181819
+    }
   }, {
     "names": ["Alice", "Bill", "William The Conqueror", "Mabel", "Ada", "Mouse", "Edgar Atheling", "That?--It", "Latin Grammar", "Mary Ann", "Shyly", "Hatter", "Queen"],
     "matrix": [
@@ -72,7 +112,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 14,
+      "degree_centrality_mic": 1.1666666666666665,
+      "avg_degree_centrality": 1.1538461538461535
+    }
   }, {
     "names": ["Alice", "Hatter", "Bill", "William The Conqueror", "Mabel", "Ada", "Edgar Atheling", "That?--It", "Mouse", "Dormouse", "Queen", "Latin Grammar", "Mary Ann", "Shyly", "Tillie"],
     "matrix": [
@@ -91,7 +139,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 16,
+      "degree_centrality_mic": 1.1428571428571428,
+      "avg_degree_centrality": 1.1333333333333329
+    }
   }, {
     "names": ["Alice", "Hatter", "Bill", "William The Conqueror", "Mabel", "Ada", "Edgar Atheling", "That?--It", "Queen", "Mouse", "Dormouse", "Latin Grammar", "Mary Ann", "Shyly", "Tillie"],
     "matrix": [
@@ -110,7 +166,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0010045320942512243,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 16,
+      "degree_centrality_mic": 1.1428571428571428,
+      "avg_degree_centrality": 1.1333333333333329
+    }
   }, {
     "names": ["Alice", "Hatter", "Bill", "William The Conqueror", "Mabel", "Ada", "Edgar Atheling", "That?--It", "Queen", "Mouse", "Dormouse", "Latin Grammar", "Mary Ann", "Shyly", "Tillie", "Washing--Extra"],
     "matrix": [
@@ -130,7 +194,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0007977706510317228,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 17,
+      "degree_centrality_mic": 1.1333333333333333,
+      "avg_degree_centrality": 1.1249999999999998
+    }
   }, {
     "names": ["Alice", "Hatter", "William The Conqueror", "Bill", "Mabel", "Ada", "Edgar Atheling", "That?--It", "Queen", "Mouse", "Dormouse", "Latin Grammar", "Washing--Extra", "Mary Ann", "Panther", "Shyly", "Tillie", "A Lobster Quadrille"],
     "matrix": [
@@ -152,7 +224,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0005422676659510158,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
+    }
   }, {
     "names": ["Alice", "Hatter", "William The Conqueror", "Bill", "Mabel", "Ada", "Queen", "Edgar Atheling", "That?--It", "Mouse", "Dormouse", "Latin Grammar", "Washing--Extra", "Mary Ann", "Panther", "Shyly", "Tillie", "A Lobster Quadrille"],
     "matrix": [
@@ -174,7 +254,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0005675934995618717,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
+    }
   }, {
     "names": ["Alice", "Hatter", "William The Conqueror", "Bill", "Mabel", "Queen", "Ada", "Mouse", "Edgar Atheling", "That?--It", "Dormouse", "Latin Grammar", "Washing--Extra", "Mary Ann", "Panther", "Shyly", "Tillie", "A Lobster Quadrille"],
     "matrix": [
@@ -196,7 +284,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.00102316074183791,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
+    }
   }],
   "first_interactions_between_characters": {
     "Ada": {

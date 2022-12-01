@@ -31,13 +31,11 @@ class InteractionsCounter:
 
     def _pool_characters(self, all_characters: list[str]) -> list[str]:
         character_matches = {ch: [ch2 for ch2 in all_characters if ch in re.split(" |-", ch2)] for ch in all_characters}
-        full_names = set()
         for name in character_matches:
             full_name = str(max(character_matches[name], key=len)) if character_matches[name] else name
             self.character_dict[name] = full_name
-            full_names.add(full_name)
 
-        return list(full_names)
+        return list(set(self.character_dict.values()))
 
     def _update_interactions_records(self, interactions: dict, sentence: str, first_char: str, second_char: str):
         # If first char not in dict, add to dict

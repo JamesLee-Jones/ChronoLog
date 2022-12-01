@@ -10,7 +10,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 7,
+      "degree_centrality_mic": 1.4000000000000001,
+      "avg_degree_centrality": 1.3333333333333333
+    }
   }, {
     "names": ["Winnie-The-Pooh", "Help!--La", "Stoutness Exercises", "Tra-La-La", "Christopher Robin", "Edward Bear", "Pooh Bear", "Henry Pootel Piglet", "Christopher Robin And Rabbit", "Gorse-Bush"],
     "matrix": [
@@ -24,7 +32,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.01231275885648182,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 11,
+      "degree_centrality_mic": 1.222222222222222,
+      "avg_degree_centrality": 1.1999999999999997
+    }
   }, {
     "names": ["Winnie-The-Pooh", "Christopher Robin", "Henry Pootel Piglet", "Help!--La", "Stoutness Exercises", "Tra-La-La", "Spinney", "W", "Edward Bear", "William", "T. W.", "Pooh Bear", "Woozle", "Christopher Robin And Rabbit", "Foolish Piglet", "Gorse-Bush"],
     "matrix": [
@@ -44,7 +60,15 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.011179711269025883,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 17,
+      "degree_centrality_mic": 1.1333333333333333,
+      "avg_degree_centrality": 1.1249999999999998
+    }
   }, {
     "names": ["Winnie-The-Pooh", "Christopher Robin", "Henry Pootel Piglet", "Help!--La", "Stoutness Exercises", "Tra-La-La", "Spinney", "W", "Eeyore", "William", "Edward Bear", "T. W.", "Pooh Bear", "Gorse-Bush", "Woozle", "Foolish Piglet", "Owl", "Christopher Robin And Rabbit"],
     "matrix": [
@@ -66,7 +90,15 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.008298956887801974,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
+    }
   }, {
     "names": ["Winnie-The-Pooh", "Christopher Robin", "Foolish Piglet", "Help!--La", "Tra-La-La", "Stoutness Exercises", "Spinney", "W", "Eeyore", "William", "Edward Bear", "T. W.", "Pooh Bear", "Gorse-Bush", "Woozle", "Christopher Robin And Rabbit", "Owl"],
     "matrix": [
@@ -87,7 +119,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.010097833848468915,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 18,
+      "degree_centrality_mic": 1.125,
+      "avg_degree_centrality": 1.1176470588235294
+    }
   }, {
     "names": ["Winnie-The-Pooh", "Eeyore", "Christopher Robin", "Foolish Piglet", "Help!--La", "Stoutness Exercises", "Tra-La-La", "Spinney", "W", "William", "Edward Bear", "Pooh Bear", "T. W.", "Cottleston Pie", "Mulberry Bush", "Owl", "Gorse-Bush", "Woozle", "Christopher Robin And Rabbit"],
     "matrix": [
@@ -110,7 +150,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.008779347014280677,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 20,
+      "degree_centrality_mic": 1.1111111111111112,
+      "avg_degree_centrality": 1.1052631578947367
+    }
   }, {
     "names": ["Winnie-The-Pooh", "Christopher Robin", "Eeyore", "Kanga", "Foolish Piglet", "Tra-La-La", "Stoutness Exercises", "Help!--La", "Baby Roo", "Spinney", "W", "William", "Pooh Bear", "Henry Pootel Piglet", "Edward Bear", "Cottleston Pie", "T. W.", "Mulberry Bush", "Owl", "Gorse-Bush", "Woozle", "Christopher Robin And Rabbit"],
     "matrix": [
@@ -136,7 +184,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.004742618342215733,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 23,
+      "degree_centrality_mic": 1.0952380952380951,
+      "avg_degree_centrality": 1.0909090909090908
+    }
   }, {
     "names": ["Winnie-The-Pooh", "Christopher Robin", "Eeyore", "Kanga", "Foolish Piglet", "Tra-La-La", "Stoutness Exercises", "Help!--La", "Gorse-Bush", "Spinney", "Baby Roo", "Ambush", "W", "Christopher Robin And Rabbit", "Henry Pootel Piglet", "William", "Pooh Bear", "Edward Bear", "Cottleston Pie", "Mulberry Bush", "A Dangerous Place", "T. W.", "Owl", "Woozle"],
     "matrix": [
@@ -164,7 +220,15 @@
       [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0051894792902873335,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
+    }
   }, {
     "names": ["Winnie-The-Pooh", "Christopher Robin", "Eeyore", "Kanga", "Foolish Piglet", "The Brain Of Pooh", "Tra-La-La", "Stoutness Exercises", "Help!--La", "Gorse-Bush", "E.C.", "R.C. (Rabbit'S Companion", "F.O.P.", "Spinney", "Baby Roo", "Ambush", "W", "Henry Pootel Piglet", "Christopher Robin And Rabbit", "William", "Pooh Bear", "Edward Bear", "Cottleston Pie", "Mulberry Bush", "A Dangerous Place", "T. W.", "Owl", "Woozle"],
     "matrix": [
@@ -196,7 +260,15 @@
       [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.004914247577030476,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 29,
+      "degree_centrality_mic": 1.074074074074074,
+      "avg_degree_centrality": 1.071428571428571
+    }
   }, {
     "names": ["Winnie-The-Pooh", "Christopher Robin", "Eeyore", "Kanga", "The Brain Of Pooh", "Foolish Piglet", "Help!--La", "Stoutness Exercises", "Tra-La-La", "Gorse-Bush", "E.C.", "R.C. (Rabbit'S Companion", "F.O.P.", "Spinney", "Ambush", "Henry Pootel Piglet", "Baby Roo", "W", "Christopher Robin And Rabbit", "William", "Owl", "Pooh Bear", "Edward Bear", "Cottleston Pie", "Mulberry Bush", "A Dangerous Place", "T. W.", "Woozle"],
     "matrix": [
@@ -228,7 +300,15 @@
       [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.005740052655633242,
+      "no_of_cliques": 1,
+      "most_important_character": "Winnie-The-Pooh",
+      "degree_of_mic": 29,
+      "degree_centrality_mic": 1.074074074074074,
+      "avg_degree_centrality": 1.071428571428571
+    }
   }],
   "first_interactions_between_characters": {
     "Christopher Robin": {
