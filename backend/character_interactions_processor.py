@@ -1,5 +1,5 @@
 import json
-
+import jsbeautifier
 import numpy as np
 
 import backend.nlp as nlp
@@ -131,11 +131,12 @@ class CharacterInteractionsProcessor:
 
     @staticmethod
     def normalise_matrix(matrix: np.ndarray):
+        DECIMAL_PLACES = 5
         for i in range(len(matrix)):
             row_sum = sum(matrix[i])
             for j in range(len(matrix[i])):
                 matrix[i][j] = (matrix[i][j] / row_sum) if row_sum != 0 else 0
-        return matrix
+        return np.round(matrix, decimals=DECIMAL_PLACES)
 
     def generate_timeline_json(self, title: str):
         file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
@@ -169,7 +170,9 @@ class CharacterInteractionsProcessor:
         json_contents["first_interactions_between_characters"] = self.metadata["first interactions per char"]
         json_contents["first_interactions_overall"] = self.metadata["first interactions overall"]
         with open(file_path, "w", newline='\r\n') as f:
-            f.write(json.dumps(json_contents, indent=2))
+            opts = jsbeautifier.default_options()
+            opts.indent_size = 2
+            f.write(jsbeautifier.beautify(json.dumps(json_contents), opts))
         if not self.quiet:
             print("Done! Analysis saved at {}.".format(file_path))
 
