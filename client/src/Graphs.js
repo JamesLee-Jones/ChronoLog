@@ -1,24 +1,25 @@
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import React, {useEffect, useRef, useState, useCallback} from "react";
 import { ForceGraph2D } from "react-force-graph";
 import * as d3 from "d3";
 
 // Converts JSON data from backend into graph JSON data for react force graph
-function convert(data) {
+function convert(data, characters) {
   let result = [...data];
-  return result.map(d => convertToGraph(d));
+  return result.map(d => convertToGraph(d, characters));
 }
 
-function convertToGraph(data) {
+function convertToGraph(data, characters) {
   let nodes = [];
   let links = [];
   let scale = 10;
   let names = data["names"];
   let matrix = data["matrix"];
-  for (let i = 0; i < names.length; i++) {
+  let numNodes = Math.min(names.length, characters)
+  for (let i = 0; i < numNodes; i++) {
     nodes.push({ id: "id" + String(i), name: names[i] });
   }
-  for (let j = 0; j < names.length; j++) {
-    for (let k = 0; k < names.length; k++) {
+  for (let j = 0; j < numNodes; j++) {
+    for (let k = 0; k < numNodes; k++) {
       if (j !== k && matrix[j][k] !== 0) {
         links.push({
           source: "id" + String(j),
@@ -45,9 +46,9 @@ const Graphs = ({ graphData, counter, characters }) => {
   });
 
   useEffect(() => {
-    let convertedGraphData = convert(graphData)
+    let convertedGraphData = convert(graphData, characters)
     setGraphs(convertedGraphData);
-  }, [graphData]);
+  }, [graphData, characters]);
 
   const handleClick = useCallback((node) => {
     if (activeNode === "") {
@@ -77,20 +78,10 @@ const Graphs = ({ graphData, counter, characters }) => {
     forceRef.current.d3Force("x", d3.forceX(10));
   });
 
-  let currGraph = {nodes: [], links: []}
-  useEffect(() => {
-    // setFilteredGraphs(graphs.map((graph) => {return {nodes: graph["nodes"].slice(0, characters), links: graph["links"]}})
-    //     .filter(l => parseInt(l["links"]["source"].substr(2)) < characters && parseInt(l["links"]["target"].substr(2)) < characters))
-    currGraph["nodes"] = graphs[counter]["nodes"].slice(0, characters)
-    currGraph["links"] = graphs[counter]["links"].filter(l => parseInt(l["source"].toString().slice(2)) < characters && parseInt(l["target"].toString().slice(2)) < characters)
-    },
-      [characters, counter]
-  )
-
   return (
     <div>
       <ForceGraph2D
-        graphData={currGraph}
+        graphData={graphs[counter]}
         nodeLabel="name"
         linkCurvature="curvature"
         linkWidth="value"
