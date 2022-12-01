@@ -2,10 +2,6 @@ import React, {useEffect, useRef, useState, useCallback} from "react";
 import {ForceGraph2D} from "react-force-graph";
 import * as d3 from "d3";
 import "./Graphs.css";
-import MetadataNodeCard from "./MetadataNodeCard";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 function addNodeMetadata(node, metaData) {
     let data = Object.keys(metaData);
@@ -83,7 +79,7 @@ function hideLinks(links, id) {
 const Graphs = ({graphData, nodeMetadata, linkMetadata, counter, setNode, setLink}) => {
     const [graphs, setGraphs] = useState([{nodes: [], links: []}]);
     const [activeNode, setActiveNode] = useState("");
-    const width = 550;
+    const width = 800;
     const height = 550;
 
     // Converts JSON data from backend into graph JSON data for react force graph

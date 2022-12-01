@@ -20,7 +20,7 @@ const ExpandMore = styled((props) => {
     }),
 }));
 
-function MetadataNodeCard({node, firstInteraction}) {
+function MetadataLinkCard({link, source, target, firstInteraction}) {
 
     const [expanded, setExpanded] = React.useState(false);
     const [expanded2, setExpanded2] = React.useState(false);
@@ -34,19 +34,30 @@ function MetadataNodeCard({node, firstInteraction}) {
     };
 
     return (
-        <Card sx={{bgcolor: 'background.paper',
+        <Card sx={{
+            bgcolor: 'background.paper',
             boxShadow: 1,
             borderRadius: 2,
             p: 1,
         }} variant="outlined">
             <CardHeader
-                title={<><Typography sx={{fontSize: 20, textAlign : "left"}} color="text.primary"
-                                     gutterBottom>{node.name ? node.name : "Select a Character"}<span>   </span>
-                    <CircleIcon sx={{color: node.color, textAlign: "right", fontSize: 25}}></CircleIcon></Typography></>}
-                ></CardHeader>
+                title={<><Typography sx={{fontSize: 20, textAlign: "left"}} color="text.primary"
+                                     gutterBottom>{source && target ? source.name : "Select a Link"}<span>   </span>
+                    <CircleIcon
+                        sx={{color: source ? source.color : "#FFFFFF", textAlign: "right", fontSize: 25}}></CircleIcon>
+                </Typography>
+                    <Typography sx={{fontSize: 20, textAlign: "left"}} color="text.primary"
+                                gutterBottom>{target ? target.name : ""}<span>   </span>
+                        <CircleIcon sx={{
+                            color: target ? target.color : "#FFFFFF",
+                            textAlign: "right",
+                            fontSize: 25
+                        }}></CircleIcon>
+                    </Typography></>}
+            ></CardHeader>
             <Divider></Divider>
             <CardActions>
-                <Typography sx={{fontSize: 18, textAlign : "left", p: 1}}>First Interaction</Typography>
+                <Typography sx={{fontSize: 18, textAlign: "left", p: 1}}>First Interaction</Typography>
                 <ExpandMore
                     expand={expanded}
                     onClick={handleExpandClick}
@@ -58,13 +69,13 @@ function MetadataNodeCard({node, firstInteraction}) {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography sx={{fontSize: 14, textAlign : "left"}} color="text.secondary"
-                                gutterBottom>{firstInteraction && node.name ? node.name + " interacts first with " + firstInteraction.with : "No interactions to display"}</Typography>
-                    <Typography sx={{fontSize: 14, fontStyle: "italic"}}>{firstInteraction ? "\"" + firstInteraction.context + "\"": ""}</Typography>
+                    <Typography sx={{fontSize: 14, textAlign: "left"}} color="text.secondary"
+                                gutterBottom>{firstInteraction ? firstInteraction : "No interaction to show"}</Typography>
+                    <Typography sx={{fontSize: 14, fontStyle: "italic"}}>{}</Typography>
                 </CardContent>
             </Collapse>
             <CardActions>
-                <Typography sx={{fontSize: 18, textAlign : "left", p: 1}}>Details</Typography>
+                <Typography sx={{fontSize: 18, textAlign: "left", p: 1}}>Details</Typography>
                 <ExpandMore
                     expand={expanded2}
                     onClick={handleExpandClick2}
@@ -76,9 +87,9 @@ function MetadataNodeCard({node, firstInteraction}) {
             </CardActions>
             <Collapse in={expanded2} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography sx={{fontSize: 14, textAlign : "left"}} color="text.secondary"
+                    <Typography sx={{fontSize: 14, textAlign: "left"}} color="text.secondary"
                                 gutterBottom>{"WAH"}</Typography>
-                    <Typography sx={{fontSize: 14, fontStyle: "italic"}}>{firstInteraction ? "\"" + firstInteraction.context + "\"": ""}</Typography>
+                    <Typography sx={{fontSize: 14, fontStyle: "italic"}}></Typography>
                 </CardContent>
             </Collapse>
 
@@ -86,4 +97,4 @@ function MetadataNodeCard({node, firstInteraction}) {
     );
 }
 
-export default MetadataNodeCard;
+export default MetadataLinkCard;

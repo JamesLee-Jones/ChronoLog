@@ -8,6 +8,7 @@ import MetadataNodeCard from "./MetadataNodeCard";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import MetadataLinkCard from "./MetadataLinkCard";
 
 function convertData(data) {
     return {
@@ -84,7 +85,8 @@ function BookVisualisation() {
                             </Col>
                             <Col sm={4}>
                                 <div className="metadata">
-                                    <MetadataNodeCard node={node} firstInteraction={node.First_Interaction}/>
+                                    <MetadataNodeCard node={node} firstInteraction={node.First_Interaction} />
+                                    <MetadataLinkCard link={link} source={link.source} target={link.target} firstInteraction={link.First_Interactions_Between_Characters}/>
                                 </div>
                             </Col>
                         </Row>

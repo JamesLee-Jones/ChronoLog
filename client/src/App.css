@@ -25,7 +25,8 @@ h1 {
   max-width: 500px;
 }
 
-.bookViz {
+.bookViz h1 {
   text-align: center;
-  padding: 100px;
+  padding: 20px;
+  font-size: 40pt;
   }
