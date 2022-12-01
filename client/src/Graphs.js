@@ -15,35 +15,35 @@ function addNodeMetadata(node, metaData) {
 }
 
 // Converts JSON data from backend into graph JSON data for react force graph
-function convert(data, characters) {
-  let result = [...data];
-  return result.map((d) => convertToGraph(d, characters));
-}
+// function convert(data, characters) {
+//   let result = [...data];
+//   return result.map((d) => convertToGraph(d, characters));
+// }
 
-function convertToGraph(data, characters) {
-  let nodes = [];
-  let links = [];
-  let scale = 10;
-  let names = data["names"];
-  let matrix = data["matrix"];
-  let numNodes = Math.min(names.length, characters);
-  for (let i = 0; i < numNodes; i++) {
-    nodes.push({ id: "id" + String(i), name: names[i] });
-  }
-  for (let j = 0; j < numNodes; j++) {
-    for (let k = 0; k < numNodes; k++) {
-      if (j !== k && matrix[j][k] !== 0) {
-        links.push({
-          source: "id" + String(j),
-          target: "id" + String(k),
-          value: matrix[j][k] * scale,
-          linkVisibility: true,
-        });
-      }
-    }
-  }
-  return { nodes: nodes, links: links };
-}
+// function convertToGraph(data, characters) {
+//   let nodes = [];
+//   let links = [];
+//   let scale = 10;
+//   let names = data["names"];
+//   let matrix = data["matrix"];
+//   let numNodes = Math.min(names.length, characters);
+//   for (let i = 0; i < numNodes; i++) {
+//     nodes.push({ id: "id" + String(i), name: names[i] });
+//   }
+//   for (let j = 0; j < numNodes; j++) {
+//     for (let k = 0; k < numNodes; k++) {
+//       if (j !== k && matrix[j][k] !== 0) {
+//         links.push({
+//           source: "id" + String(j),
+//           target: "id" + String(k),
+//           value: matrix[j][k] * scale,
+//           linkVisibility: true,
+//         });
+//       }
+//     }
+//   }
+//   return { nodes: nodes, links: links };
+// }
 
 function addLinkMetaData(link, metaData, nodes) {
   let data = Object.keys(metaData);
@@ -51,7 +51,7 @@ function addLinkMetaData(link, metaData, nodes) {
   for (let i = 0; i < data.length; i++) {
     let metric = cleanString(data[i]);
 
-    if (metaData[data[i]][idToName(nodes, link.source)] == undefined) {
+    if (metaData[data[i]][idToName(nodes, link.source)] === undefined) {
       return link;
     }
 

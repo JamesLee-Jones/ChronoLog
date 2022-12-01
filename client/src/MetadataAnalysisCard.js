@@ -1,43 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "./App.css";
 import {
-  Avatar,
   CardHeader,
-  Collapse,
   Divider,
-  IconButton,
-  styled,
 } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import CircleIcon from "@mui/icons-material/Circle";
-
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
-  marginLeft: "auto",
-  transition: theme.transitions.create("transform", {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
 
 function MetadataAnalysisCard({ graphAttributes }) {
-  const [expanded, setExpanded] = React.useState(false);
-  const [expanded2, setExpanded2] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
-
-  const handleExpandClick2 = () => {
-    setExpanded2(!expanded2);
-  };
 
   return (
     <Card
