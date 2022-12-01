@@ -227,4 +227,3 @@ class CharacterInteractionsProcessor:
     def process(self, title: str, text: str):
         self.preprocess_text(text)
         self.generate_timeline_json(title)
-
