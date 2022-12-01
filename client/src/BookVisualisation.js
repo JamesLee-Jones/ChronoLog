@@ -43,7 +43,6 @@ function BookVisualisation() {
     getData();
   }, []);
 
-  // data["sections"] ? data["sections"][data["sections"].length - 1]["names"].length : 0
   return (
     <>
       <div className="App">
@@ -65,7 +64,7 @@ function BookVisualisation() {
           setCounter={setNumCharacters}
           counter={numCharacters}
           CharacterSlider
-          />
+        />
       </div>
     </>
   );

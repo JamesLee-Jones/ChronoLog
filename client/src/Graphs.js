@@ -1,11 +1,11 @@
-import React, {useEffect, useRef, useState, useCallback} from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import { ForceGraph2D } from "react-force-graph";
 import * as d3 from "d3";
 
 // Converts JSON data from backend into graph JSON data for react force graph
 function convert(data, characters) {
   let result = [...data];
-  return result.map(d => convertToGraph(d, characters));
+  return result.map((d) => convertToGraph(d, characters));
 }
 
 function convertToGraph(data, characters) {
@@ -14,7 +14,7 @@ function convertToGraph(data, characters) {
   let scale = 10;
   let names = data["names"];
   let matrix = data["matrix"];
-  let numNodes = Math.min(names.length, characters)
+  let numNodes = Math.min(names.length, characters);
   for (let i = 0; i < numNodes; i++) {
     nodes.push({ id: "id" + String(i), name: names[i] });
   }
@@ -46,7 +46,7 @@ const Graphs = ({ graphData, counter, characters }) => {
   });
 
   useEffect(() => {
-    let convertedGraphData = convert(graphData, characters)
+    let convertedGraphData = convert(graphData, characters);
     setGraphs(convertedGraphData);
   }, [graphData, characters]);
 
