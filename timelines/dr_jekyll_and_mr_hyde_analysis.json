@@ -8,101 +8,223 @@
       [0.5, 0.0, 0.5, 0.0],
       [0.33333, 0.66667, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.17592090205180977,
+      "no_of_cliques": 1,
+      "most_important_character": "Gabriel John Utterson",
+      "degree_of_mic": 5,
+      "degree_centrality_mic": 1.6666666666666665,
+      "avg_degree_centrality": 1.5
+    }
   }, {
-    "names": ["Edward Hyde", "Gabriel John Utterson", "Henry Jekyll", "Harry Jekyll", "Richard Enfield"],
+    "names": ["Edward Hyde", "Gabriel John Utterson", "Damon", "Pythias", "Henry Jekyll", "Richard Enfield", "Harry Jekyll", "Seek"],
     "matrix": [
-      [0.0, 0.4, 0.4, 0.2, 0.0],
-      [0.4, 0.0, 0.4, 0.0, 0.2],
-      [0.5, 0.5, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 1.0, 0.0, 0.0, 0.0]
-    ]
+      [0.0, 0.33333, 0.0, 0.0, 0.33333, 0.0, 0.16667, 0.16667],
+      [0.4, 0.0, 0.0, 0.0, 0.4, 0.2, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.007315347649774447,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 9,
+      "degree_centrality_mic": 1.2857142857142856,
+      "avg_degree_centrality": 1.25
+    }
   }, {
-    "names": ["Edward Hyde", "Gabriel John Utterson", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew"],
+    "names": ["Edward Hyde", "Gabriel John Utterson", "Damon", "Pythias", "Henry Jekyll", "Richard Enfield", "Harry Jekyll", "Seek", "Danvers Carew"],
     "matrix": [
-      [0.0, 0.42857, 0.42857, 0.14286, 0.0, 0.0],
-      [0.42857, 0.0, 0.42857, 0.0, 0.14286, 0.0],
-      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+      [0.0, 0.375, 0.0, 0.0, 0.375, 0.0, 0.125, 0.125, 0.0],
+      [0.42857, 0.0, 0.0, 0.0, 0.42857, 0.14286, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.005163840947459608,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 10,
+      "degree_centrality_mic": 1.25,
+      "avg_degree_centrality": 1.2222222222222223
+    }
   }, {
-    "names": ["Edward Hyde", "Gabriel John Utterson", "Henry Jekyll", "Harry Jekyll", "Danvers Carew", "Richard Enfield"],
+    "names": ["Edward Hyde", "Gabriel John Utterson", "Damon", "Pythias", "Henry Jekyll", "Harry Jekyll", "Danvers Carew", "Richard Enfield", "Seek"],
     "matrix": [
-      [0.0, 0.3, 0.3, 0.2, 0.2, 0.0],
-      [0.375, 0.0, 0.375, 0.125, 0.0, 0.125],
-      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0],
-      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+      [0.0, 0.27273, 0.0, 0.0, 0.27273, 0.18182, 0.18182, 0.0, 0.09091],
+      [0.375, 0.0, 0.0, 0.0, 0.375, 0.125, 0.0, 0.125, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.008279514845586894,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 10,
+      "degree_centrality_mic": 1.25,
+      "avg_degree_centrality": 1.2222222222222223
+    }
   }, {
-    "names": ["Edward Hyde", "G. J. Utterson", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew"],
+    "names": ["Edward Hyde", "G. J. Utterson", "Damon", "Pythias", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew", "Mien", "Seek"],
     "matrix": [
-      [0.0, 0.36364, 0.27273, 0.18182, 0.0, 0.18182],
-      [0.4, 0.0, 0.3, 0.1, 0.2, 0.0],
-      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0],
-      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+      [0.0, 0.33333, 0.0, 0.0, 0.25, 0.16667, 0.0, 0.16667, 0.0, 0.08333],
+      [0.36364, 0.0, 0.0, 0.0, 0.27273, 0.09091, 0.18182, 0.0, 0.09091, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.00569223060086505,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 11,
+      "degree_centrality_mic": 1.222222222222222,
+      "avg_degree_centrality": 1.1999999999999997
+    }
   }, {
-    "names": ["Edward Hyde", "G. J. Utterson", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew", "Bradshaw"],
+    "names": ["G. J. Utterson", "Edward Hyde", "Damon", "Pythias", "Henry Jekyll", "Harry Jekyll", "Danvers Carew", "Richard Enfield", "M.", "Mien", "Seek", "Bradshaw"],
     "matrix": [
-      [0.0, 0.5, 0.21429, 0.14286, 0.0, 0.14286, 0.0],
-      [0.53846, 0.0, 0.23077, 0.07692, 0.15385, 0.0, 0.0],
-      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+      [0.0, 0.46667, 0.0, 0.0, 0.2, 0.06667, 0.0, 0.13333, 0.06667, 0.06667, 0.0, 0.0],
+      [0.46667, 0.0, 0.0, 0.0, 0.2, 0.13333, 0.13333, 0.0, 0.0, 0.0, 0.06667, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.33333, 0.66667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.003270211004522079,
+      "no_of_cliques": 1,
+      "most_important_character": "G. J. Utterson",
+      "degree_of_mic": 13,
+      "degree_centrality_mic": 1.1818181818181819,
+      "avg_degree_centrality": 1.1666666666666667
+    }
   }, {
-    "names": ["Edward Hyde", "G. J. Utterson", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew", "Bradshaw"],
+    "names": ["Edward Hyde", "G. J. Utterson", "Damon", "Pythias", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew", "M.", "Mien", "Gabriel John Utterson", "Seek", "Bradshaw"],
     "matrix": [
-      [0.0, 0.5, 0.21429, 0.14286, 0.0, 0.14286, 0.0],
-      [0.53846, 0.0, 0.23077, 0.07692, 0.15385, 0.0, 0.0],
-      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+      [0.0, 0.4375, 0.0, 0.0, 0.1875, 0.125, 0.0, 0.125, 0.0, 0.0, 0.0625, 0.0625, 0.0],
+      [0.46667, 0.0, 0.0, 0.0, 0.2, 0.06667, 0.13333, 0.0, 0.06667, 0.06667, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.002477054510594929,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 14,
+      "degree_centrality_mic": 1.1666666666666665,
+      "avg_degree_centrality": 1.1538461538461535
+    }
   }, {
-    "names": ["Edward Hyde", "G. J. Utterson", "Henry Jekyll", "Harry Jekyll", "Danvers Carew", "Richard Enfield", "Bradshaw"],
+    "names": ["Edward Hyde", "G. J. Utterson", "Damon", "Pythias", "Henry Jekyll", "Harry Jekyll", "Danvers Carew", "Richard Enfield", "M.", "Mien", "Gabriel John Utterson", "Seek", "Bradshaw"],
     "matrix": [
-      [0.0, 0.46667, 0.2, 0.13333, 0.2, 0.0, 0.0],
-      [0.53846, 0.0, 0.23077, 0.07692, 0.0, 0.15385, 0.0],
-      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+      [0.0, 0.41176, 0.0, 0.0, 0.17647, 0.11765, 0.17647, 0.0, 0.0, 0.0, 0.05882, 0.05882, 0.0],
+      [0.46667, 0.0, 0.0, 0.0, 0.2, 0.06667, 0.0, 0.13333, 0.06667, 0.06667, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0024427246392695217,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 14,
+      "degree_centrality_mic": 1.1666666666666665,
+      "avg_degree_centrality": 1.1538461538461535
+    }
   }, {
-    "names": ["Edward Hyde", "G. J. Utterson", "Harry Jekyll", "Henry Jekyll", "Bradshaw", "Richard Enfield", "Danvers Carew"],
+    "names": ["Edward Hyde", "G. J. Utterson", "Damon", "Pythias", "Harry Jekyll", "Henry Jekyll", "Bradshaw", "Richard Enfield", "Danvers Carew", "M.", "Mien", "Gabriel John Utterson", "Seek"],
     "matrix": [
-      [0.0, 0.30435, 0.17391, 0.34783, 0.04348, 0.0, 0.13043],
-      [0.53846, 0.0, 0.07692, 0.23077, 0.0, 0.15385, 0.0],
-      [0.66667, 0.16667, 0.0, 0.0, 0.16667, 0.0, 0.0],
-      [0.72727, 0.27273, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+      [0.0, 0.28, 0.0, 0.0, 0.16, 0.32, 0.04, 0.0, 0.12, 0.0, 0.0, 0.04, 0.04],
+      [0.46667, 0.0, 0.0, 0.0, 0.06667, 0.2, 0.0, 0.13333, 0.0, 0.06667, 0.06667, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.72727, 0.27273, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.003338309341997849,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 14,
+      "degree_centrality_mic": 1.1666666666666665,
+      "avg_degree_centrality": 1.1538461538461535
+    }
   }, {
-    "names": ["Edward Hyde", "G. J. Utterson", "Harry Jekyll", "Henry Jekyll", "Bradshaw", "Richard Enfield", "Danvers Carew"],
+    "names": ["Edward Hyde", "G. J. Utterson", "Damon", "Pythias", "Harry Jekyll", "Henry Jekyll", "Bradshaw", "Richard Enfield", "Danvers Carew", "M.", "Mien", "Gabriel John Utterson", "Seek"],
     "matrix": [
-      [0.0, 0.30435, 0.17391, 0.34783, 0.04348, 0.0, 0.13043],
-      [0.53846, 0.0, 0.07692, 0.23077, 0.0, 0.15385, 0.0],
-      [0.66667, 0.16667, 0.0, 0.0, 0.16667, 0.0, 0.0],
-      [0.72727, 0.27273, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+      [0.0, 0.28, 0.0, 0.0, 0.16, 0.32, 0.04, 0.0, 0.12, 0.0, 0.0, 0.04, 0.04],
+      [0.46667, 0.0, 0.0, 0.0, 0.06667, 0.2, 0.0, 0.13333, 0.0, 0.06667, 0.06667, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.72727, 0.27273, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.003338309341997849,
+      "no_of_cliques": 1,
+      "most_important_character": "Edward Hyde",
+      "degree_of_mic": 14,
+      "degree_centrality_mic": 1.1666666666666665,
+      "avg_degree_centrality": 1.1538461538461535
+    }
   }],
   "first_interactions_between_characters": {
     "Richard Enfield": {
@@ -113,9 +235,13 @@
     },
     "Edward Hyde": {
       "Henry Jekyll": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
+      "Seek": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
       "Harry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
       "G. J. Utterson": "Utterson was amazed; the dark influence of Hyde had been withdrawn, the doctor had returned to his old tasks and amities; a week ago, the prospect had smiled with every promise of a cheerful and an honoured age; and now in a moment, friendship, and peace of mind, and the whole tenor of his life were wrecked.",
       "Gabriel John Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
+    },
+    "Damon": {
+      "Pythias": "Such unscientific balderdash,\" added the doctor, flushing suddenly purple, \"would have estranged Damon and Pythias.\"  "
     },
     "Harry Jekyll": {
       "Gabriel John Utterson": "INCIDENT OF THE LETTER  It was late in the afternoon, when Mr. Utterson found his way to Dr. Jekyll's door, where he was at once admitted by Poole, and carried down by the kitchen offices and across a yard which had once been a garden, to the building which was indifferently known as the laboratory or dissecting rooms."
@@ -124,7 +250,9 @@
       "Edward Hyde": "LANYON  Time ran on; thousands of pounds were offered in reward, for the death of Sir Danvers was resented as a public injury; but Mr. Hyde had disappeared out of the ken of the police as though he had never existed."
     },
     "G. J. Utterson": {
-      "Richard Enfield": "THE WINDOW  It chanced on Sunday, when Mr. Utterson was on his usual walk with Mr. Enfield, that their way lay once again through the by-street; and that when they came in front of the door, both stopped to gaze on it.  "
+      "Richard Enfield": "THE WINDOW  It chanced on Sunday, when Mr. Utterson was on his usual walk with Mr. Enfield, that their way lay once again through the by-street; and that when they came in front of the door, both stopped to gaze on it.  ",
+      "Mien": "The middle one of the three windows was half-way open; and sitting close beside it, taking the air with an infinite sadness of mien, like some disconsolate prisoner, Utterson saw Dr. Jekyll.  ",
+      "M.": "In the year 18--, Dr. J. purchased a somewhat large quantity from Messrs. M. He now begs them to search with most sedulous care, and should any of the same quality be left, forward it to him at once."
     },
     "Bradshaw": {
       "Edward Hyde": "I had soon dressed, as well as I was able, in clothes of my own size: had soon passed through the house, where Bradshaw stared and drew back at seeing Mr. Hyde at such an hour and in such a strange array; and ten minutes later, Dr. Jekyll had returned to his own shape and was sitting down, with a darkened brow, to make a feint of breakfasting.  ",
@@ -136,10 +264,6 @@
       "with": "Gabriel John Utterson",
       "context": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield."
     },
-    "Gabriel John Utterson": {
-      "with": "Richard Enfield",
-      "context": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield."
-    },
     "Henry Jekyll": {
       "with": "Gabriel John Utterson",
       "context": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
@@ -148,6 +272,18 @@
       "with": "Gabriel John Utterson",
       "context": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
+    "Damon": {
+      "with": "Pythias",
+      "context": "Such unscientific balderdash,\" added the doctor, flushing suddenly purple, \"would have estranged Damon and Pythias.\"  "
+    },
+    "Pythias": {
+      "with": "Damon",
+      "context": "Such unscientific balderdash,\" added the doctor, flushing suddenly purple, \"would have estranged Damon and Pythias.\"  "
+    },
+    "Seek": {
+      "with": "Edward Hyde",
+      "context": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  "
+    },
     "Harry Jekyll": {
       "with": "Edward Hyde",
       "context": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key."
@@ -155,6 +291,18 @@
     "Danvers Carew": {
       "with": "Edward Hyde",
       "context": "LANYON  Time ran on; thousands of pounds were offered in reward, for the death of Sir Danvers was resented as a public injury; but Mr. Hyde had disappeared out of the ken of the police as though he had never existed."
+    },
+    "Mien": {
+      "with": "G. J. Utterson",
+      "context": "The middle one of the three windows was half-way open; and sitting close beside it, taking the air with an infinite sadness of mien, like some disconsolate prisoner, Utterson saw Dr. Jekyll.  "
+    },
+    "M.": {
+      "with": "G. J. Utterson",
+      "context": "In the year 18--, Dr. J. purchased a somewhat large quantity from Messrs. M. He now begs them to search with most sedulous care, and should any of the same quality be left, forward it to him at once."
+    },
+    "Gabriel John Utterson": {
+      "with": "Richard Enfield",
+      "context": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield."
     },
     "Bradshaw": {
       "with": "Edward Hyde",

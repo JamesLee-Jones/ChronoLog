@@ -17,7 +17,15 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.00787746249806977,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 14,
+      "degree_centrality_mic": 1.1666666666666665,
+      "avg_degree_centrality": 1.1538461538461535
+    }
   }, {
     "names": ["Little Beth  Ma Chere Mamma", "March Gratefully", "Roderigo", "Jo Wrathfully", "Meg Reprovingly", "Zara", "Amy Consolingly", "Sallie Gardiner", "Miss Josephine", "Don Pedro", "Hannah Mullet", "Hagar", "Theodore Laurence", "M.M.", "Elizabeth", "Margaret", "Shakespeare", "Marmee"],
     "matrix": [
@@ -39,7 +47,15 @@
       [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.005521664923285008,
+      "no_of_cliques": 1,
+      "most_important_character": "Little Beth  Ma Chere Mamma",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Little Beth  Ma Chere Mamma", "Roderigo", "Laurie Laurence", "Sallie Gardiner", "Zara", "March Gratefully", "Amy Consolingly", "Dora", "Don Pedro", "Theodore Laurence", "Sallie Gardiner", "Miss Josephine", "Marmee", "Spandy Nice", "Annie Moffat", "Hannah Mullet", "Hagar", "Vevay", "M.M.", "Elizabeth", "Arnica", "Margaret", "Shakespeare"],
     "matrix": [
@@ -68,7 +84,15 @@
       [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.004220389920997945,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Laurie Laurence", "Little Beth  Ma Chere Mamma", "Roderigo", "Sallie Gardiner", "Zara", "Hattie King", "Grace", "Ellen Tree", "March Gratefully", "Amy Consolingly", "Hannah Mullet", "Don Pedro", "Dora", "Theodore Laurence", "Sallie Gardiner", "Miss Josephine", "Marmee", "Annie Moffat", "Spandy Nice", "Hagar", "Cutter", "Vevay", "M.M.", "Aunt", "Arnica", "Elizabeth", "Margaret", "Davis", "Brooke", "Shakespeare"],
     "matrix": [
@@ -104,7 +128,15 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0023571817163368955,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 32,
+      "degree_centrality_mic": 1.0666666666666667,
+      "avg_degree_centrality": 1.064516129032258
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Little Beth  Ma Chere Mamma", "Laurie Laurence", "Roderigo", "Sallie Gardiner", "Hattie King", "Grace", "Ellen Tree", "Zara", "March Gratefully", "Theodore Laurence", "Amy Consolingly", "Don Pedro", "Hannah Mullet", "Sallie Gardiner", "Laurie Gratefully", "Marmee", "Miss Josephine", "Annie Moffat", "Hagar", "Cutter", "Spandy Nice", "Dora", "Vevay", "M.M.", "Aunt", "Arnica", "Elizabeth", "Hummels", "Margaret", "Brooke", "John Bull", "Shakespeare", "Davis"],
     "matrix": [
@@ -143,7 +175,15 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.002012952589095525,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 35,
+      "degree_centrality_mic": 1.0606060606060606,
+      "avg_degree_centrality": 1.0588235294117656
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Amy Consolingly", "Little Beth  Ma Chere Mamma", "Roderigo", "Laurie Laurence", "March Gratefully", "Laurie Mount Guard", "Sallie Gardiner", "Hattie King", "Grace", "Zara", "Ellen Tree", "Theodore Laurence", "Jenny Snow", "Hannah Mullet", "Don Pedro", "Davis", "Sallie Gardiner", "Marmee", "Annie Moffat", "Miss Josephine", "Laurie Gratefully", "Hagar", "Spandy Nice", "Cutter", "Mary Kingsley", "Dora", "Brooke", "Miss Snow", "Vevay", "Elizabeth", "M.M.", "Aunt", "Arnica", "Margaret", "Hummels", "Katy Brown", "Shakespeare", "Joanna", "John Bull"],
     "matrix": [
@@ -188,7 +228,15 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.00173168754099178,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 41,
+      "degree_centrality_mic": 1.0512820512820513,
+      "avg_degree_centrality": 1.05
+    }
   }, {
     "names": ["Jo Wrathfully", "Amy Consolingly", "Meg Reprovingly", "Little Beth  Ma Chere Mamma", "Roderigo", "Laurie Laurence", "Jo March", "Laurie Mount Guard", "Sallie Gardiner", "Hattie King", "Grace", "Zara", "Ellen Tree", "Theodore Laurence", "Jenny Snow", "Hannah Mullet", "Don Pedro", "Sallie Gardiner", "Davis", "Marmee", "Annie Moffat", "Miss Josephine", "Laurie Gratefully", "Hagar", "Spandy Nice", "Cutter", "Mary Kingsley", "Dora", "Vevay", "Miss Snow", "Brooke", "Elizabeth", "M.M.", "Aunt", "Arnica", "Hummels", "Margaret", "Katy Brown", "John Bull", "Shakespeare", "Joanna"],
     "matrix": [
@@ -233,7 +281,15 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0018859575316279378,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 41,
+      "degree_centrality_mic": 1.0512820512820513,
+      "avg_degree_centrality": 1.05
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Amy Consolingly", "Little Beth  Ma Chere Mamma", "Laurie Mount Guard", "Roderigo", "Laurie Laurence", "Jo March", "Miss Belle", "Hattie King", "Grace", "Ellen Tree", "Zara", "Theodore Laurence", "Annie Moffat", "Jenny Snow", "Hannah Mullet", "Don Pedro", "Fisher", "Ned Moffat", "Sallie Gardiner", "Margaret", "Davis", "Marmee", "Moffats", "Clara", "Miss Josephine", "Sallie Gardiner", "Hagar", "Laurie Gratefully", "Spandy Nice", "Cutter", "Mary Kingsley", "Dora", "Vevay", "Miss Snow", "Brooke", "Elizabeth", "M.M.", "Aunt", "Arnica", "Hortense", "Hummels", "Katy Brown", "John Bull", "Shakespeare", "Joanna"],
     "matrix": [
@@ -284,7 +340,15 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0012616959545480209,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 47,
+      "degree_centrality_mic": 1.0444444444444445,
+      "avg_degree_centrality": 1.0434782608695652
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Amy Consolingly", "Little Beth  Ma Chere Mamma", "Laurie Mount Guard", "Roderigo", "Laurie Laurence", "Jo March", "Samuel Pickwick", "Miss Belle", "Nathaniel Winkle", "Hattie King", "Viola", "Grace", "Zara", "Ellen Tree", "Ferdinand Devereux", "Theodore Laurence", "Annie Moffat", "Jenny Snow", "Hannah Mullet", "Don Pedro", "Fisher", "Ned Moffat", "Augustus Snodgrass", "Sallie Gardiner", "Tracy Tupman", "Marmee", "Davis", "Clara", "Miss Josephine", "Margaret", "Hagar", "Laurie Gratefully", "Moffats", "Sallie Gardiner", "Spandy Nice", "T. Tupman", "Cutter", "Mary Kingsley", "Dora", "Vevay", "Miss Snow", "Brooke", "Elizabeth", "M.M.", "Aunt", "Arnica", "Hortense", "Hummels", "Katy Brown", "Joanna", "Shakespeare", "John Bull"],
     "matrix": [
@@ -342,7 +406,15 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0008035958089067552,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 54,
+      "degree_centrality_mic": 1.0384615384615385,
+      "avg_degree_centrality": 1.0377358490566049
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Amy Consolingly", "Little Beth  Ma Chere Mamma", "Laurie Mount Guard", "Roderigo", "Laurie Laurence", "Jo March", "Miss Belle", "Nathaniel Winkle", "Hattie King", "Viola", "Grace", "Ferdinand Devereux", "Zara", "Ellen Tree", "Samuel Pickwick", "Theodore Laurence", "Annie Moffat", "Jenny Snow", "Hannah Brown", "Don Pedro", "Fisher", "Ned Moffat", "Augustus Snodgrass", "Tracy Tupman", "Marmee", "Katy Brown", "Flora Mcflimsey", "Clara", "Davis", "Hagar", "Margaret", "Sallie Gardiner", "Moffats", "Laurie Gratefully", "Spandy Nice", "T. Tupman", "Mary Kingsley", "Cutter", "Dora", "Crocker", "Vevay", "Miss Snow", "Miss Josephine", "Brooke", "Elizabeth", "M.M.", "Aunt", "Arnica", "Hortense", "Mother", "Hummels", "Shakespeare", "Sam Weller", "John Bull", "Joanna"],
     "matrix": [
@@ -403,7 +475,15 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0007096408665472307,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 58,
+      "degree_centrality_mic": 1.0357142857142856,
+      "avg_degree_centrality": 1.0350877192982448
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Little Beth  Ma Chere Mamma", "Amy Consolingly", "Roderigo", "Laurie Mount Guard", "Laurie Laurence", "Jo March", "Grace", "Miss Belle", "Nathaniel Winkle", "Viola", "Ferdinand Devereux", "Zara", "Samuel Pickwick", "Goodbye, Kate", "Fred Vaughn", "Theodore Laurence", "Ned Moffat", "Ellen Tree", "Hattie King", "Jenny Snow", "Annie Moffat", "Hannah Brown", "Don Pedro", "Augustus Snodgrass", "Brooke", "Frank", "Tracy Tupman", "Marmee", "Katy Brown", "Flora Mcflimsey", "Clara", "Davis", "Sallie Gardiner", "Hagar", "Margaret", "Moffats", "Spandy Nice", "Fisher", "Laurie Gratefully", "T. Tupman", "Mary Kingsley", "Cutter", "Dora", "Crocker", "Vevay", "Miss Snow", "Miss Josephine", "Joanna", "Elizabeth", "M.M.", "Aunt", "Arnica", "Mother", "Hortense", "Shakespeare", "Hummels", "Sam Weller", "John Bull"],
     "matrix": [
@@ -467,7 +547,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.000755997783734849,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 61,
+      "degree_centrality_mic": 1.0338983050847457,
+      "avg_degree_centrality": 1.0333333333333345
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Amy Consolingly", "Little Beth  Ma Chere Mamma", "Roderigo", "Laurie Mount Guard", "Laurie Laurence", "Jo March", "Miss Belle", "Grace", "Nathaniel Winkle", "Ned Moffat", "Brooke", "Viola", "Ferdinand Devereux", "Zara", "Samuel Pickwick", "Goodbye, Kate", "Fred Vaughn", "Theodore Laurence", "Ellen Tree", "Annie Moffat", "Hannah Brown", "Don Pedro", "Augustus Snodgrass", "Jenny Snow", "Frank", "Margaret", "Tracy Tupman", "Marmee", "Flora Mcflimsey", "Katy Brown", "Sallie Gardiner", "Clara", "Davis", "Hattie King", "Hagar", "Mary Kingsley", "Spandy Nice", "Laurie Gratefully", "T. Tupman", "Cutter", "Moffats", "Dora", "Fisher", "Crocker", "Vevay", "Miss Snow", "Miss Josephine", "Joanna", "Elizabeth", "M.M.", "Aunt", "Arnica", "Mother", "Hortense", "Shakespeare", "Hummels", "Sam Weller", "John Bull"],
     "matrix": [
@@ -531,7 +619,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0008196052799794958,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 61,
+      "degree_centrality_mic": 1.0338983050847457,
+      "avg_degree_centrality": 1.0333333333333345
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Beth Twenty-Four", "Amy Consolingly", "Roderigo", "Laurie Mount Guard", "Laurie Laurence", "Jo March", "Miss Belle", "Grace", "Nathaniel Winkle", "Ned Moffat", "Brooke", "Viola", "Ferdinand Devereux", "Zara", "Samuel Pickwick", "Goodbye, Kate", "Fred Vaughn", "Theodore Laurence", "Ellen Tree", "Annie Moffat", "Hannah Brown", "Don Pedro", "Amy Twenty-Two", "Teddy", "Augustus Snodgrass", "Jenny Snow", "Frank", "Margaret", "Tracy Tupman", "Marmee", "Katy Brown", "Flora Mcflimsey", "Clara", "Sallie Gardiner", "Davis", "Hattie King", "Hagar", "Mary Kingsley", "Spandy Nice", "Laurie Gratefully", "T. Tupman", "Cutter", "Moffats", "Dora", "Fisher", "Crocker", "Vevay", "Miss Snow", "Miss Josephine", "Joanna", "Elizabeth", "M.M.", "Aunt", "Arnica", "Mother", "Hortense", "Shakespeare", "Hummels", "John Bull", "Sam Weller"],
     "matrix": [
@@ -597,7 +693,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0007488521143256356,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 63,
+      "degree_centrality_mic": 1.0327868852459017,
+      "avg_degree_centrality": 1.0322580645161303
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Beth Twenty-Four", "Amy Consolingly", "Laurie Mount Guard", "Roderigo", "Laurie Laurence", "Jo March", "Theodore Laurence", "Miss Belle", "Grace", "Nathaniel Winkle", "Ned Moffat", "Brooke", "Viola", "Ferdinand Devereux", "Zara", "Samuel Pickwick", "Goodbye, Kate", "Fred Vaughn", "Ellen Tree", "Annie Moffat", "Don Pedro", "Hannah Brown", "Teddy", "Amy Twenty-Two", "Augustus Snodgrass", "Jenny Snow", "Frank", "Margaret", "Tracy Tupman", "Marmee", "Flora Mcflimsey", "Katy Brown", "Clara", "Sallie Gardiner", "Davis", "Hattie King", "Hagar", "Mary Kingsley", "Spandy Nice", "T. Tupman", "Cutter", "Laurie Gratefully", "Moffats", "Fisher", "Dora", "David", "Crocker", "Vevay", "Miss Snow", "Miss Josephine", "Joanna", "Bent", "Elizabeth", "M.M.", "Aunt", "Arnica", "Shakespeare", "Hortense", "Mother", "Hummels", "Sam Weller", "John Bull"],
     "matrix": [
@@ -665,7 +769,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0007084183960349813,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 65,
+      "degree_centrality_mic": 1.0317460317460316,
+      "avg_degree_centrality": 1.03125
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Beth Twenty-Four", "Amy Consolingly", "Laurie Mount Guard", "Roderigo", "Jo March", "Laurie Laurence", "Viola", "Brooke", "Theodore Laurence", "Miss Belle", "Nathaniel Winkle", "Ned Moffat", "Zara", "Samuel Pickwick", "Grace", "Goodbye, Kate", "Fred Vaughn", "Hannah Brown", "Don Pedro", "Annie Moffat", "Amy Twenty-Two", "Teddy", "Augustus Snodgrass", "Jenny Snow", "Ellen Tree", "Frank", "Margaret", "Tracy Tupman", "Marmee", "Katy Brown", "Flora Mcflimsey", "Angelo", "Clara", "Ferdinand Devereux", "Sallie Gardiner", "Hattie King", "Davis", "Hagar", "Mary Kingsley", "T. Tupman", "Spandy Nice", "Laurie Gratefully", "Cutter", "Fisher", "Moffats", "Dora", "David", "Crocker", "Vevay", "Down", "Mother", "Miss Snow", "Miss Josephine", "Bent", "Joanna", "Elizabeth", "M.M.", "Aunt", "The Brown Bush", "Arnica", "Shakespeare", "Hortense", "Hummels", "Sam Weller", "John Bull"],
     "matrix": [
@@ -736,7 +848,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0010110704914216174,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 68,
+      "degree_centrality_mic": 1.0303030303030303,
+      "avg_degree_centrality": 1.0298507462686572
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Beth Twenty-Four", "Amy Consolingly", "Laurie Mount Guard", "Roderigo", "Jo March", "Brooke", "Theodore Laurence", "Laurie Laurence", "Viola", "Miss Belle", "Nathaniel Winkle", "Zara", "Ned Moffat", "Samuel Pickwick", "Teddy", "Hannah Mullet", "Grace", "Hattie King", "Goodbye, Kate", "Little Beth  Ma Chere Mamma", "Fred Vaughn", "Hannah Brown", "Don Pedro", "Annie Moffat", "Augustus Snodgrass", "Jenny Snow", "Frank", "Margaret", "Tracy Tupman", "Marmee", "Flora Mcflimsey", "Katy Brown", "Angelo", "Clara", "Ferdinand Devereux", "Sallie Gardiner", "Lion", "Ellen Tree", "Davis", "Hagar", "Chick", "Amy Twenty-Two", "Mary Kingsley", "T. Tupman", "Spandy Nice", "Cutter", "Fisher", "Moffats", "Laurie Gratefully", "Dora", "Crocker", "Hummels", "Vevay", "David", "Greatheart", "Mother", "Down", "Miss Snow", "Miss Josephine", "Joanna", "Bent", "Elizabeth", "M.M.", "The Brown Bush", "Aunt", "Arnica", "Shakespeare", "Hortense", "John Bull", "Hummel", "Sam Weller"],
     "matrix": [
@@ -813,7 +933,15 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0008473297706963185,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 74,
+      "degree_centrality_mic": 1.0277777777777777,
+      "avg_degree_centrality": 1.0273972602739725
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Beth Twenty-Four", "Amy Consolingly", "Laurie Mount Guard", "Little Beth  Ma Chere Mamma", "Roderigo", "Jo March", "Theodore Laurence", "Brooke", "Laurie Laurence", "Viola", "Hannah Mullet", "Miss Belle", "Nathaniel Winkle", "Zara", "Samuel Pickwick", "Ned Moffat", "Teddy", "Hummel", "Grace", "Hattie King", "Goodbye, Kate", "Fred Vaughn", "Baker", "Minna", "Milkman", "Hannah Brown", "Don Pedro", "Annie Moffat", "Augustus Snodgrass", "Jenny Snow", "Bangs", "Frank", "Tracy Tupman", "Margaret", "Marmee", "Flora Mcflimsey", "Katy Brown", "Angelo", "Clara", "Ferdinand Devereux", "Sallie Gardiner", "Ellen Tree", "Davis", "Lion", "Hagar", "Chick", "Amy Twenty-Two", "Mary Kingsley", "T. Tupman", "Spandy Nice", "Cutter", "Fisher", "Moffats", "Laurie Gratefully", "Dora", "Crocker", "Vevay", "Mother", "David", "Greatheart", "Down", "The Brown Bush", "Squalled Polly", "Miss Snow", "Miss Josephine", "Hummels", "Beth Day", "Joanna", "Bent", "Elizabeth", "M.M.", "Aunt", "Arnica", "Shakespeare", "Hortense", "John Bull", "Sam Weller"],
     "matrix": [
@@ -896,7 +1024,15 @@
       [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0007575578746391344,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 80,
+      "degree_centrality_mic": 1.0256410256410255,
+      "avg_degree_centrality": 1.0253164556962004
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Amy Consolingly", "Beth Twenty-Four", "Laurie Mount Guard", "Little Beth  Ma Chere Mamma", "Theodore Laurence", "Brooke", "Jo March", "Roderigo", "Laurie Laurence", "Viola", "Hannah Mullet", "Miss Belle", "Nathaniel Winkle", "Zara", "Samuel Pickwick", "Ned Moffat", "Teddy", "Hummel", "Grace", "Hattie King", "Goodbye, Kate", "Fred Vaughn", "Milkman", "Minna", "Baker", "Hannah Brown", "Annie Moffat", "Don Pedro", "Estelle Valnor", "Amy Curtis", "Augustus Snodgrass", "Jenny Snow", "Frank", "Tracy Tupman", "Bangs", "Margaret", "Marmee", "Katy Brown", "Flora Mcflimsey", "Angelo", "Clara", "Ferdinand Devereux", "Ellen Tree", "Sallie Gardiner", "Davis", "Squalled Polly", "Aunt", "Hagar", "Chick", "Mary Kingsley", "Lion", "T. Tupman", "Spandy Nice", "Amy Twenty-Two", "Cutter", "Fisher", "Moffats", "Laurie Gratefully", "Dora", "Jo Fed", "Vevay", "Crocker", "Mother", "David", "Greatheart", "Down", "The Brown Bush", "Esther", "Miss Snow", "Miss Josephine", "Laurie Soberly", "Joanna", "Bent", "Hummels", "Beth Day", "Elizabeth", "M.M.", "Arnica", "Shakespeare", "John Bull", "Hortense", "Sam Weller"],
     "matrix": [
@@ -984,7 +1120,15 @@
       [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0006799586507146856,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 85,
+      "degree_centrality_mic": 1.0240963855421688,
+      "avg_degree_centrality": 1.023809523809522
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Amy Consolingly", "Beth Twenty-Four", "Laurie Mount Guard", "Little Beth  Ma Chere Mamma", "Jo March", "Theodore Laurence", "Brooke", "Roderigo", "Laurie Laurence", "Viola", "Hannah Mullet", "Miss Belle", "Nathaniel Winkle", "Zara", "Samuel Pickwick", "Ned Moffat", "Teddy", "Hummel", "Grace", "Hattie King", "Goodbye, Kate", "Fred Vaughn", "Milkman", "Minna", "Baker", "Hannah Brown", "Don Pedro", "Annie Moffat", "Estelle Valnor", "Amy Curtis", "Augustus Snodgrass", "Jenny Snow", "Frank", "Margaret", "Tracy Tupman", "Bangs", "Marmee", "Flora Mcflimsey", "Katy Brown", "Angelo", "Clara", "Ferdinand Devereux", "Ellen Tree", "Sallie Gardiner", "Davis", "Squalled Polly", "Aunt", "Hagar", "Chick", "Mary Kingsley", "T. Tupman", "Spandy Nice", "Lion", "Cutter", "Fisher", "Amy Twenty-Two", "Moffats", "John Bull", "Laurie Gratefully", "Dora", "Vevay", "Jo Fed", "Crocker", "David", "Mother", "Greatheart", "Down", "The Brown Bush", "Esther", "Laurie Soberly", "Bent", "Joanna", "Miss Snow", "Beth Day", "Hummels", "Caroline Percy", "Miss Josephine", "Elizabeth", "M.M.", "Arnica", "Shakespeare", "Hortense", "Sam Weller"],
     "matrix": [
@@ -1073,7 +1217,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0006822370681229558,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 86,
+      "degree_centrality_mic": 1.0238095238095237,
+      "avg_degree_centrality": 1.0235294117647054
+    }
   }, {
     "names": ["Jo Wrathfully", "Meg Reprovingly", "Amy Consolingly", "Beth Twenty-Four", "Laurie Mount Guard", "Little Beth  Ma Chere Mamma", "Theodore Laurence", "Jo March", "Brooke", "Roderigo", "Laurie Laurence", "Viola", "Hannah Mullet", "Miss Belle", "Nathaniel Winkle", "Zara", "Samuel Pickwick", "Ned Moffat", "Teddy", "Laurie Insinuatingly", "Hummel", "Grace", "Hattie King", "Goodbye, Kate", "Fred Vaughn", "Milkman", "Baker", "Minna", "Hannah Brown", "Don Pedro", "Annie Moffat", "Estelle Valnor", "Amy Curtis", "Johnson", "Sam Weller", "Augustus Snodgrass", "Jenny Snow", "Frank", "Tracy Tupman", "Margaret", "Marmee", "Flora Mcflimsey", "Katy Brown", "Bangs", "Angelo", "Clara", "Ferdinand Devereux", "Ellen Tree", "Sallie Gardiner", "Davis", "Squalled Polly", "Aunt", "Hagar", "Chick", "Mary Kingsley", "T. Tupman", "Spandy Nice", "March Gratefully", "Cutter", "Lion", "Fisher", "Amy Twenty-Two", "Moffats", "John Bull", "Dora", "Laurie Gratefully", "Vevay", "John Brooke'", "Jo Fed", "Crocker", "Mother", "David", "The Brown Bush", "Greatheart", "Down", "Esther", "Joanna", "Bent", "Miss Snow", "Laurie Soberly", "Caroline Percy", "Miss Josephine", "Hummels", "Beth Day", "Elizabeth", "M.M.", "Arnica", "Shakespeare", "Hortense"],
     "matrix": [
@@ -1166,7 +1318,15 @@
       [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.0006259573761016012,
+      "no_of_cliques": 1,
+      "most_important_character": "Jo Wrathfully",
+      "degree_of_mic": 90,
+      "degree_centrality_mic": 1.0227272727272727,
+      "avg_degree_centrality": 1.022471910112358
+    }
   }],
   "first_interactions_between_characters": {
     "M.M.": {

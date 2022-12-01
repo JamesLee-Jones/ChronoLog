@@ -8,7 +8,7 @@ import backend.character_interactions_processor as cip
 from argparse import RawTextHelpFormatter, ArgumentParser
 
 DEFAULT_SPLITS = 10
-DEFAULT_PERCENTILE = 50
+DEFAULT_PERCENTILE = 40
 
 # Just chapter number as roman numeral, e.g. IX \n\n
 NUMERAL_PATTERN = re.compile(
