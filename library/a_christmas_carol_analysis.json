@@ -8,7 +8,15 @@
       [1.0, 0.0, 0.0, 0.0],
       [0.5, 0.0, 0.0, 0.5],
       [0.5, 0.0, 0.5, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.09520115960541173,
+      "no_of_cliques": 1,
+      "most_important_character": "Jacob Marley",
+      "degree_of_mic": 5,
+      "degree_centrality_mic": 1.6666666666666665,
+      "avg_degree_centrality": 1.5
+    }
   }, {
     "names": ["Ebenezer Scrooge", "Jacob Marley", "Pharaoh", "Prophet", "Orson", "Valentine", "Dick Wilkins"],
     "matrix": [
@@ -19,7 +27,15 @@
       [0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0],
       [0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.024802411056464347,
+      "no_of_cliques": 1,
+      "most_important_character": "Ebenezer Scrooge",
+      "degree_of_mic": 8,
+      "degree_centrality_mic": 1.3333333333333333,
+      "avg_degree_centrality": 1.2857142857142858
+    }
   }, {
     "names": ["Ebenezer Scrooge", "Belinda Cratchit", "Bob Cratchit", "Tiny Tim", "Jacob Marley", "Peter Cratchit", "Pharaoh", "Prophet", "Orson", "Valentine", "Martha", "Parks", "Fred", "Hurrah", "Dick Wilkins"],
     "matrix": [
@@ -38,7 +54,15 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.012491337011206593,
+      "no_of_cliques": 1,
+      "most_important_character": "Ebenezer Scrooge",
+      "degree_of_mic": 16,
+      "degree_centrality_mic": 1.1428571428571428,
+      "avg_degree_centrality": 1.1333333333333329
+    }
   }, {
     "names": ["Ebenezer Scrooge", "Belinda Cratchit", "Bob Cratchit", "Tiny Tim", "Jacob Marley", "Peter Cratchit", "Pharaoh", "Prophet", "Orson", "Valentine", "Martha", "Parks", "Fred", "Hurrah", "Dick Wilkins", "Joe Miller"],
     "matrix": [
@@ -58,7 +82,15 @@
       [0.0, 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.010265569324087473,
+      "no_of_cliques": 1,
+      "most_important_character": "Ebenezer Scrooge",
+      "degree_of_mic": 17,
+      "degree_centrality_mic": 1.1333333333333333,
+      "avg_degree_centrality": 1.1249999999999998
+    }
   }, {
     "names": ["Ebenezer Scrooge", "Bob Cratchit", "Belinda Cratchit", "Tiny Tim", "Jacob Marley", "Peter Cratchit", "Pharaoh", "Prophet", "Orson", "Valentine", "Martha", "Parks", "Fred", "Hurrah", "Dick Wilkins", "Joe Miller"],
     "matrix": [
@@ -78,7 +110,15 @@
       [0.0, 0.0, 0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
       [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    ]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.010238890596159136,
+      "no_of_cliques": 1,
+      "most_important_character": "Ebenezer Scrooge",
+      "degree_of_mic": 17,
+      "degree_centrality_mic": 1.1333333333333333,
+      "avg_degree_centrality": 1.1249999999999998
+    }
   }],
   "first_interactions_between_characters": {
     "Ebenezer Scrooge": {
