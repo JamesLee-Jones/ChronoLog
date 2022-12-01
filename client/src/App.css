@@ -1,11 +1,15 @@
-.App {
+.graph {
   text-align: center;
   align-items: center;
-  min-height: 300px;
+  align-content: center;
+  /*min-height: 300px;*/
   padding: 30px;
-  border-radius: 100px;
-  max-width: 600px;
-  margin: 30px auto;
+  border-radius: 10px;
+  /*max-width: 600px;*/
+  /*margin: 30px auto;*/
+  border: 1px solid #22333b;
+  justify-content: center;
+  display: flex;
 }
 
 h1 {
@@ -19,4 +23,10 @@ h1 {
 
 .chronolog-header {
   max-width: 500px;
+}
+
+.bookViz h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 40pt;
 }

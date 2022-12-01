@@ -20,6 +20,7 @@ function useInterval(callback, delay) {
     function tick() {
       savedCallback.current();
     }
+
     if (delay !== null) {
       let id = setInterval(tick, delay);
       return () => clearInterval(id);
@@ -59,9 +60,7 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
       return;
     }
 
-    console.log(counter);
     setCounter(counter + 1);
-    console.log(counter);
   };
 
   const onPrev = () => {
@@ -69,9 +68,7 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
       return;
     }
 
-    console.log(counter);
     setCounter(counter - 1);
-    console.log(counter);
   };
 
   return (
