@@ -123,17 +123,15 @@ class CharacterInteractionsProcessor:
     @staticmethod
     def network_analysis(matrix, character_list):
         scale_factor = 10
-        # Create a list of graphs
         G = nx.Graph()
         for i in range(len(character_list)):
             G.add_node(character_list[i])
         for j in range(len(character_list) - 1):
             for k in range(j, len(character_list)):
-                G.add_edge(character_list[j], character_list[k], weight=(matrix[i][j] + matrix[j][k]) * scale_factor)
+                G.add_edge(character_list[j], character_list[k], weight=(matrix[k][j] + matrix[j][k]) * scale_factor)
 
         graph = G
-        avg_node_connectivity = []
-        avg_clustering = []
+        avg_clusterings = []
 
         # The most important character and how many characters they are connected to
         centrality = nx.degree_centrality(graph)
@@ -146,15 +144,16 @@ class CharacterInteractionsProcessor:
 
         # The clique involving that character and it's size
         # The number of cliques
+        number_of_cliques = 0
         for C in (graph.subgraph(c).copy() for c in nx.connected_components(graph)):
             if not nx.is_empty(C):
-                # avg_node_connectivity.append(nx.average_node_connectivity(C))
-                avg_clustering.append(nx.average_clustering(C, weight="weight"))
-        centrality = nx.degree_centrality(graph)
+                number_of_cliques += 1
+                avg_clusterings.append(nx.average_clustering(C, weight="weight"))
 
-        return 0 if len(avg_node_connectivity) == 0 else sum(avg_node_connectivity) / len(avg_node_connectivity), 0 \
-            if len(avg_clustering) == 0 else sum(avg_clustering) / len(avg_clustering), nx.number_connected_components(
-            graph), (most_important_node, degree_of_node, centrality_of_node), avg_centrality
+        clustering_average = 0 if len(avg_clusterings) == 0 else sum(avg_clusterings) / len(avg_clusterings)
+
+        return clustering_average, number_of_cliques, (
+        most_important_node, degree_of_node, centrality_of_node), avg_centrality
         # Add all of the nodes from the characters as a mapping {i: characters[i]}
         # For matrx[i][j] add an edge (character_list[i], character_list[j, {'weight': matrix[i][j]]))
         # For each graph apply the networkX functions and return them as apart of the section
@@ -187,13 +186,14 @@ class CharacterInteractionsProcessor:
             json_contents["sections"].append({
                 "names": self.characters_timeline[i],
                 "matrix": self.normalised_matrices[i].tolist(),
-                "node_connectivity": analysis[0],
-                "average_clustering": analysis[1],
-                "no_of_cliques": analysis[2],
-                "most_important_character": analysis[3][0],
-                "degree_of_mic": analysis[3][1],
-                "degree_centrality_mic": analysis[3][2],
-                "avg_degree_centrality": analysis[4]
+                "graph_attributes": {
+                    "average_clustering": analysis[0],
+                    "no_of_cliques": analysis[1],
+                    "most_important_character": analysis[2][0],
+                    "degree_of_mic": analysis[2][1],
+                    "degree_centrality_mic": analysis[2][2],
+                    "avg_degree_centrality": analysis[3]
+                }
             })
         json_contents["first_interactions_between_characters"] = self.metadata["first interactions per char"]
         json_contents["first_interactions_overall"] = self.metadata["first interactions overall"]
