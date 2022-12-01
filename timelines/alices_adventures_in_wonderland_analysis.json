@@ -10,7 +10,14 @@
         [
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 0,
+      "degree_centrality_mic": 1,
+      "avg_degree_centrality": 1.0
     },
     {
       "names": [
@@ -70,7 +77,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 5.0,
+      "average_clustering": 0.027851655194247694,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 7,
+      "degree_centrality_mic": 1.4000000000000001,
+      "avg_degree_centrality": 1.3333333333333333
     },
     {
       "names": [
@@ -146,7 +160,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 6.0,
+      "average_clustering": 0.028185280849491092,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 8,
+      "degree_centrality_mic": 1.3333333333333333,
+      "avg_degree_centrality": 1.2857142857142858
     },
     {
       "names": [
@@ -282,7 +303,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 9.0,
+      "average_clustering": 0.0131124681786161,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 11,
+      "degree_centrality_mic": 1.222222222222222,
+      "avg_degree_centrality": 1.1999999999999997
     },
     {
       "names": [
@@ -442,7 +470,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 10.0,
+      "average_clustering": 0.009596388064886847,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 12,
+      "degree_centrality_mic": 1.2000000000000002,
+      "avg_degree_centrality": 1.1818181818181819
     },
     {
       "names": [
@@ -656,7 +691,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 12.0,
+      "average_clustering": 0.0,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 14,
+      "degree_centrality_mic": 1.1666666666666665,
+      "avg_degree_centrality": 1.1538461538461535
     },
     {
       "names": [
@@ -932,7 +974,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 14.0,
+      "average_clustering": 0.005687993771995219,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 16,
+      "degree_centrality_mic": 1.1428571428571428,
+      "avg_degree_centrality": 1.1333333333333329
     },
     {
       "names": [
@@ -1208,7 +1257,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 14.0,
+      "average_clustering": 0.005875063323896206,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 16,
+      "degree_centrality_mic": 1.1428571428571428,
+      "avg_degree_centrality": 1.1333333333333329
     },
     {
       "names": [
@@ -1518,7 +1574,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 15.0,
+      "average_clustering": 0.004847498855742006,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 17,
+      "degree_centrality_mic": 1.1333333333333333,
+      "avg_degree_centrality": 1.1249999999999998
     },
     {
       "names": [
@@ -1902,7 +1965,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 17.0,
+      "average_clustering": 0.0033650112614791927,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
     },
     {
       "names": [
@@ -2286,7 +2356,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 17.0,
+      "average_clustering": 0.0035451928838382265,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
     },
     {
       "names": [
@@ -2670,7 +2747,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 17.0,
+      "average_clustering": 0.004132019342991523,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
     }
   ],
   "first_interactions_between_characters": {

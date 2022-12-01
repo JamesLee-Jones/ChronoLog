@@ -136,7 +136,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.026178398579699596,
+      "no_of_cliques": 1,
+      "most_important_character": "Rachel Lynde",
+      "degree_of_mic": 11,
+      "degree_centrality_mic": 1.222222222222222,
+      "avg_degree_centrality": 1.1999999999999997
     },
     {
       "names": [
@@ -520,7 +527,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0020027519883766332,
+      "no_of_cliques": 1,
+      "most_important_character": "Rachel Lynde",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 1.1176470588235294,
+      "avg_degree_centrality": 1.111111111111111
     },
     {
       "names": [
@@ -1076,7 +1090,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0010404054210215142,
+      "no_of_cliques": 1,
+      "most_important_character": "Mary Alice Bell",
+      "degree_of_mic": 23,
+      "degree_centrality_mic": 1.0952380952380951,
+      "avg_degree_centrality": 1.0909090909090908
     },
     {
       "names": [
@@ -1632,7 +1653,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0012430088199831696,
+      "no_of_cliques": 1,
+      "most_important_character": "Mary Alice Bell",
+      "degree_of_mic": 23,
+      "degree_centrality_mic": 1.0952380952380951,
+      "avg_degree_centrality": 1.0909090909090908
     },
     {
       "names": [
@@ -2286,7 +2314,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.001128914138720829,
+      "no_of_cliques": 1,
+      "most_important_character": "Mary Alice Bell",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -2940,7 +2975,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0024843281906591374,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -3594,7 +3636,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002394897909851077,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -4248,7 +4297,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00256925256244854,
+      "no_of_cliques": 1,
+      "most_important_character": "Cordelia Fitzgerald",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -4902,7 +4958,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002716421044718432,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 25,
+      "degree_centrality_mic": 1.0869565217391304,
+      "avg_degree_centrality": 1.083333333333333
     },
     {
       "names": [
@@ -5662,7 +5725,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.002230496693334028,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 27,
+      "degree_centrality_mic": 1.08,
+      "avg_degree_centrality": 1.0769230769230764
     },
     {
       "names": [
@@ -6536,7 +6606,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0018648966972862086,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 29,
+      "degree_centrality_mic": 1.074074074074074,
+      "avg_degree_centrality": 1.071428571428571
     },
     {
       "names": [
@@ -7532,7 +7609,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0015331907217292873,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 31,
+      "degree_centrality_mic": 1.0689655172413792,
+      "avg_degree_centrality": 1.066666666666667
     },
     {
       "names": [
@@ -8658,7 +8742,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0012727832794630829,
+      "no_of_cliques": 1,
+      "most_important_character": "Marilla Cuthbert",
+      "degree_of_mic": 33,
+      "degree_centrality_mic": 1.064516129032258,
+      "avg_degree_centrality": 1.0624999999999991
     },
     {
       "names": [
@@ -9852,7 +9943,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0008206747426719103,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 34,
+      "degree_centrality_mic": 1.0625,
+      "avg_degree_centrality": 1.0606060606060606
     },
     {
       "names": [
@@ -12208,7 +12306,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0006390615765998198,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 48,
+      "degree_centrality_mic": 1.0434782608695652,
+      "avg_degree_centrality": 1.042553191489361
     },
     {
       "names": [
@@ -14864,7 +14969,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005359068429653342,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 51,
+      "degree_centrality_mic": 1.040816326530612,
+      "avg_degree_centrality": 1.0399999999999996
     },
     {
       "names": [
@@ -18290,7 +18402,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0007930299384828337,
+      "no_of_cliques": 1,
+      "most_important_character": "Cordelia Fitzgerald",
+      "degree_of_mic": 58,
+      "degree_centrality_mic": 1.0357142857142856,
+      "avg_degree_centrality": 1.0350877192982448
     },
     {
       "names": [
@@ -22200,7 +22319,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0006279642839104247,
+      "no_of_cliques": 1,
+      "most_important_character": "Cordelia Fitzgerald",
+      "degree_of_mic": 62,
+      "degree_centrality_mic": 1.0333333333333332,
+      "avg_degree_centrality": 1.0327868852459003
     },
     {
       "names": [
@@ -26364,7 +26490,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005690461455421751,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 64,
+      "degree_centrality_mic": 1.032258064516129,
+      "avg_degree_centrality": 1.0317460317460307
     },
     {
       "names": [
@@ -31198,7 +31331,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00052198714324859,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 69,
+      "degree_centrality_mic": 1.0298507462686568,
+      "avg_degree_centrality": 1.0294117647058822
     },
     {
       "names": [
@@ -36032,7 +36172,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005220909639840948,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 69,
+      "degree_centrality_mic": 1.0298507462686568,
+      "avg_degree_centrality": 1.0294117647058822
     },
     {
       "names": [
@@ -41006,7 +41153,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0004974118449190419,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 70,
+      "degree_centrality_mic": 1.0294117647058822,
+      "avg_degree_centrality": 1.028985507246378
     },
     {
       "names": [
@@ -46122,7 +46276,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0004761905537622141,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 71,
+      "degree_centrality_mic": 1.0289855072463767,
+      "avg_degree_centrality": 1.0285714285714274
     },
     {
       "names": [
@@ -51238,7 +51399,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005206009926639565,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 71,
+      "degree_centrality_mic": 1.0289855072463767,
+      "avg_degree_centrality": 1.0285714285714274
     },
     {
       "names": [
@@ -56354,7 +56522,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005251413198945203,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 71,
+      "degree_centrality_mic": 1.0289855072463767,
+      "avg_degree_centrality": 1.0285714285714274
     },
     {
       "names": [
@@ -61614,7 +61789,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0005026635865356278,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 72,
+      "degree_centrality_mic": 1.0285714285714285,
+      "avg_degree_centrality": 1.028169014084505
     },
     {
       "names": [
@@ -67938,7 +68120,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00030498772187650123,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 79,
+      "degree_centrality_mic": 1.025974025974026,
+      "avg_degree_centrality": 1.0256410256410238
     },
     {
       "names": [
@@ -74262,7 +74451,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0003073811856814216,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 79,
+      "degree_centrality_mic": 1.025974025974026,
+      "avg_degree_centrality": 1.0256410256410238
     },
     {
       "names": [
@@ -81072,7 +81268,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0002779796561099715,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 82,
+      "degree_centrality_mic": 1.0250000000000001,
+      "avg_degree_centrality": 1.024691358024692
     },
     {
       "names": [
@@ -87882,7 +88085,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00027634626839701453,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 82,
+      "degree_centrality_mic": 1.0250000000000001,
+      "avg_degree_centrality": 1.024691358024692
     },
     {
       "names": [
@@ -95026,7 +95236,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0002890133508015987,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 84,
+      "degree_centrality_mic": 1.024390243902439,
+      "avg_degree_centrality": 1.0240963855421696
     },
     {
       "names": [
@@ -102170,7 +102387,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.00028837438338017715,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 84,
+      "degree_centrality_mic": 1.024390243902439,
+      "avg_degree_centrality": 1.0240963855421696
     },
     {
       "names": [
@@ -109656,7 +109880,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0007912260539663752,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Mrs. Lynde",
+      "degree_of_mic": 86,
+      "degree_centrality_mic": 1.0238095238095237,
+      "avg_degree_centrality": 1.0235294117647054
     },
     {
       "names": [
@@ -118216,7 +118447,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0021434324487776585,
+      "no_of_cliques": 1,
+      "most_important_character": "Anne Confidentially",
+      "degree_of_mic": 92,
+      "degree_centrality_mic": 1.0222222222222224,
+      "avg_degree_centrality": 1.0219780219780241
     },
     {
       "names": [
@@ -126962,7 +127200,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0002735058507285155,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 93,
+      "degree_centrality_mic": 1.0219780219780221,
+      "avg_degree_centrality": 1.0217391304347847
     },
     {
       "names": [
@@ -136278,7 +136523,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0013495289185699653,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 96,
+      "degree_centrality_mic": 1.0212765957446808,
+      "avg_degree_centrality": 1.0210526315789472
     },
     {
       "names": [
@@ -145594,7 +145846,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0013670110255777693,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 96,
+      "degree_centrality_mic": 1.0212765957446808,
+      "avg_degree_centrality": 1.0210526315789472
     },
     {
       "names": [
@@ -154910,7 +155169,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.001382165916352937,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 96,
+      "degree_centrality_mic": 1.0212765957446808,
+      "avg_degree_centrality": 1.0210526315789472
     },
     {
       "names": [
@@ -164226,7 +164492,14 @@
           0.0,
           0.0
         ]
-      ]
+      ],
+      "node_connectivity": 0,
+      "average_clustering": 0.0014037889861822873,
+      "no_of_cliques": 1,
+      "most_important_character": "Matthew And Marilla",
+      "degree_of_mic": 96,
+      "degree_centrality_mic": 1.0212765957446808,
+      "avg_degree_centrality": 1.0210526315789472
     }
   ],
   "first_interactions_between_characters": {
@@ -164283,7 +164556,11 @@
       "Anne Confidentially": "Then she briefly told him Anne's history and the result of the interview with Mrs. Spencer.  ",
       "Matthew And Marilla": "\"Doctor Spencer was here while you were away,\" Marilla said."
     },
+    "Jane": {
+      "Mary": "I'd ruther Jane or Mary or some sensible name like that."
+    },
     "Anne Shirley": {
+      "Cordelia": "If Cordelia isn't your name, what is?\"  \"Anne Shirley,\" reluctantly faltered forth the owner of that name, \"but, oh, please do call me Cordelia.",
       "Matthew And Marilla": "\"Yes, this is Anne Shirley,\" said Marilla.  ",
       "Ruby Gillis": "But Ruby Gillis says she saw him writing something on her slate and when Prissy read it she blushed as red as a beet and giggled; and Ruby Gillis says she doesn't believe it had anything to do with the lesson.\"  \"Anne Shirley, don't let me hear you talking about your teacher in that way again,\" said Marilla sharply.",
       "Gilbert Blythe": "Gilbert Blythe was trying to make Anne Shirley look at him and failing utterly, because Anne was at that moment totally oblivious not only to the very existence of Gilbert Blythe, but of every other scholar in Avonlea school itself.",
@@ -164302,13 +164579,15 @@
       "Winnie Adella Blair": "Bertha Sampson and Pearl Clay of the White Sands Baptist choir had been asked to sing a duet; Milton Clark of Newbridge was to give a violin solo; Winnie Adella Blair of Carmody was to sing a Scotch ballad; and Laura Spencer of Spencervale and Anne Shirley of Avonlea were to recite.  ",
       "Carmody": "Bertha Sampson and Pearl Clay of the White Sands Baptist choir had been asked to sing a duet; Milton Clark of Newbridge was to give a violin solo; Winnie Adella Blair of Carmody was to sing a Scotch ballad; and Laura Spencer of Spencervale and Anne Shirley of Avonlea were to recite.  ",
       "Laura Spencer": "Bertha Sampson and Pearl Clay of the White Sands Baptist choir had been asked to sing a duet; Milton Clark of Newbridge was to give a violin solo; Winnie Adella Blair of Carmody was to sing a Scotch ballad; and Laura Spencer of Spencervale and Anne Shirley of Avonlea were to recite.  ",
-      "Stella Maynard": "Ruby Gillis was the handsomest girl of the year at the Academy; in the Second Year classes Stella Maynard carried off the palm for beauty, with small but critical minority in favor of Anne Shirley.",
-      "Cordelia Montmorency": "If Cordelia isn't your name, what is?\"  \"Anne Shirley,\" reluctantly faltered forth the owner of that name, \"but, oh, please do call me Cordelia."
+      "Stella Maynard": "Ruby Gillis was the handsomest girl of the year at the Academy; in the Second Year classes Stella Maynard carried off the palm for beauty, with small but critical minority in favor of Anne Shirley."
     },
     "Anne Spiritlessly": {
+      "Cordelia": "\"Oh, I'm not ashamed of it,\" explained Anne, \"only I like Cordelia better.",
       "Marilla Cuthbert": "But if you call me Anne please call me Anne spelled with an E.\"  \"What difference does it make how it's spelled?\" asked Marilla with another rusty smile as she picked up the teapot.  ",
-      "Matthew Helplessly": "Matthew hitched the sorrel into the buggy in due time and Marilla and Anne set off.",
-      "Cordelia Montmorency": "\"Oh, I'm not ashamed of it,\" explained Anne, \"only I like Cordelia better."
+      "Matthew Helplessly": "Matthew hitched the sorrel into the buggy in due time and Marilla and Anne set off."
+    },
+    "Cordelia": {
+      "Geraldine": "When I was young I used to imagine it was Geraldine, but I like Cordelia better now."
     },
     "Hammond": {
       "Thomas Lynde": "\"Were those women--Mrs. Thomas and Mrs. Hammond--good to you?\" asked Marilla, looking at Anne out of the corner of her eye.  ",
@@ -164330,8 +164609,10 @@
       "Diana Barry": "\"Diana, you might take Anne out into the garden and show her your flowers.",
       "Diana Gasped": "The way Anne and Diana went to school _was_ a pretty one.",
       "Gilbert Blythe": "\"Gilbert Blythe?\" said Anne.",
+      "Phillips": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne.",
       "Prissy Andrews": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne.",
       "Anne Shirley": "Gilbert Blythe was trying to make Anne Shirley look at him and failing utterly, because Anne was at that moment totally oblivious not only to the very existence of Gilbert Blythe, but of every other scholar in Avonlea school itself.",
+      "Priscilla": "When Mr. Phillips called the history class out Anne should have gone, but Anne did not move, and Mr. Phillips, who had been writing some verses \"To Priscilla\" before he called the class, was thinking about an obstinate rhyme still and never missed her.",
       "Rachel Nodded": "Marilla took Mrs. Rachel's advice and not another word was said to Anne about going back to school.",
       "Diana Goodbye-E-E--": "\"It's about Diana,\" sobbed Anne luxuriously.",
       "Dryad": "Anne flew down to the hollow, past the Dryad's Bubble and up the spruce path to Orchard Slope, to ask Diana to tea.",
@@ -164348,9 +164629,7 @@
       "Gertie Pye": "But as,    The Caesar's pageant shorn of Brutus' bust   Did but of Rome's best son remind her more,  so the marked absence of any tribute or recognition from Diana Barry who was sitting with Gertie Pye embittered Anne's little triumph.  ",
       "Jane Andrews": "Matthew nodded over a _Farmers' Advocate_ on the sofa and Anne at the table studied her lessons with grim determination, despite sundry wistful glances at the clock shelf, where lay a new book that Jane Andrews had lent her that day.",
       "Carmody": "\"He's gone to harness the sorrel mare to go to Carmody for the doctor,\"  said Anne, who was hurrying on hood and jacket.",
-      "Minnie May": "Anne, although sincerely sorry for Minnie May, was far from being insensible to the romance of the situation and to the sweetness of once more sharing that romance with a kindred spirit.  ",
-      "Teddy Phillips": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne.",
-      "Priscilla Grant": "When Mr. Phillips called the history class out Anne should have gone, but Anne did not move, and Mr. Phillips, who had been writing some verses \"To Priscilla\" before he called the class, was thinking about an obstinate rhyme still and never missed her."
+      "Minnie May": "Anne, although sincerely sorry for Minnie May, was far from being insensible to the romance of the situation and to the sweetness of once more sharing that romance with a kindred spirit.  "
     },
     "Blewett Ungraciously": {
       "Marilla Cuthbert": "Mrs. Blewett, Miss Cuthbert.",
@@ -164366,8 +164645,8 @@
       "Diana Goodbye-E-E--": "\"Diana has gone over to Carmody with her father,\" said Mrs. Barry, going in and shutting the door.  ",
       "Gertie Pye": "But as,    The Caesar's pageant shorn of Brutus' bust   Did but of Rome's best son remind her more,  so the marked absence of any tribute or recognition from Diana Barry who was sitting with Gertie Pye embittered Anne's little triumph.  ",
       "Mary Joe": "Young Mary Joe, a buxom, broad-faced French girl from the creek, whom Mrs. Barry had engaged to stay with the children during her absence, was helpless and bewildered, quite incapable of thinking what to do, or doing it if she thought of it.  ",
-      "Ruby Gillis": "I like more snap and color, like Diana Barry has or Ruby Gillis.",
-      "Snow Queen": "Diana Barry did not, as her parents did not intend to send her to Queen's."
+      "Queen": "Diana Barry did not, as her parents did not intend to send her to Queen's.",
+      "Ruby Gillis": "I like more snap and color, like Diana Barry has or Ruby Gillis."
     },
     "Matthew And Marilla": {
       "Rachel Lynde": "\"It's a good thing Rachel Lynde got a calling down; she's a meddlesome old gossip,\" was Matthew's consolatory rejoinder.  ",
@@ -164377,8 +164656,9 @@
       "Minnie Macpherson": "And oh, Marilla, Jane Andrews told me that Minnie MacPherson told her that she heard Prissy Andrews tell Sara Gillis that I had a very pretty nose.",
       "Prissy Andrews": "And oh, Marilla, Jane Andrews told me that Minnie MacPherson told her that she heard Prissy Andrews tell Sara Gillis that I had a very pretty nose.",
       "Sara Gillis": "And oh, Marilla, Jane Andrews told me that Minnie MacPherson told her that she heard Prissy Andrews tell Sara Gillis that I had a very pretty nose.",
+      "Phillips": "She would not go to school to Mr. Phillips again; she told Marilla so when she got home.  ",
       "Rachel Nodded": "Marilla took Mrs. Rachel's advice and not another word was said to Anne about going back to school.",
-      "Teddy Phillips": "She would not go to school to Mr. Phillips again; she told Marilla so when she got home.  ",
+      "Teddy Phillips": "\"I never thought you were so fond of Mr. Phillips that you'd require two handkerchiefs to dry your tears just because he was going away,\" said Marilla.  ",
       "Muriel Stacy": "\"I love Miss Stacy with my whole heart, Marilla.",
       "Samuel Lawson": "After much cogitation Matthew resolved to go to Samuel Lawson's store instead of William Blair's.",
       "William Blair": "After much cogitation Matthew resolved to go to Samuel Lawson's store instead of William Blair's."
@@ -164414,9 +164694,9 @@
       "Matthew And Marilla": "\"Not that lovers ever really walk there,\" she explained to Marilla, \"but Diana and I are reading a perfectly magnificent book and there's a Lover's Lane in it.",
       "Gilbert Blythe": "\"I guess Gilbert Blythe will be in school today,\" said Diana.",
       "Julia Bell": "\"Yes,\" said Diana, tossing her head, \"but I'm sure he doesn't like Julia Bell so very much.",
+      "Phillips": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne.",
       "Prissy Andrews": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne.",
-      "Josie Pye": "With resentful eyes and passion-red cheeks she confronted alike Diana's sympathetic gaze and Charlie Sloane's indignant nods and Josie Pye's malicious smiles.",
-      "Teddy Phillips": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne."
+      "Josie Pye": "With resentful eyes and passion-red cheeks she confronted alike Diana's sympathetic gaze and Charlie Sloane's indignant nods and Josie Pye's malicious smiles."
     },
     "Ruby Gillis": {
       "Teddy Phillips": "I guess Mr. Phillips is a Grit too because Prissy Andrews's father is one, and Ruby Gillis says that when a man is courting he always has to agree with the girl's mother in religion and her father in politics.",
@@ -164425,7 +164705,20 @@
       "Stella Maynard": "Ruby Gillis was the handsomest girl of the year at the Academy; in the Second Year classes Stella Maynard carried off the palm for beauty, with small but critical minority in favor of Anne Shirley."
     },
     "Jane Andrews": {
-      "Mary Alice Bell": "I'd ruther Jane or Mary or some sensible name like that."
+      "Matthew And Marilla": "And oh, Marilla, Jane Andrews told me that Minnie MacPherson told her that she heard Prissy Andrews tell Sara Gillis that I had a very pretty nose.",
+      "Minnie Macpherson": "And oh, Marilla, Jane Andrews told me that Minnie MacPherson told her that she heard Prissy Andrews tell Sara Gillis that I had a very pretty nose.",
+      "Prissy Andrews": "And oh, Marilla, Jane Andrews told me that Minnie MacPherson told her that she heard Prissy Andrews tell Sara Gillis that I had a very pretty nose.",
+      "Sara Gillis": "And oh, Marilla, Jane Andrews told me that Minnie MacPherson told her that she heard Prissy Andrews tell Sara Gillis that I had a very pretty nose.",
+      "Teddy Phillips": "Jane Andrews has been talking for a month about how glad she'd be when Mr. Phillips went away and she declared she'd never shed a tear.",
+      "Josie Pye": "Then Josie Pye dared Jane Andrews to hop on her left leg around the garden without stopping once or putting her right foot to the ground; which Jane Andrews gamely tried to do, but gave out at the third corner and had to confess herself defeated.  ",
+      "Ruby Gillis": "Diana and Ruby Gillis and Jane Andrews are preparing a dialogue, called 'A Morning Visit,' for next Friday.",
+      "King Arthur": "\"Ruby, you must be King Arthur and Jane will be Guinevere and Diana must be Lancelot.",
+      "Lancelot": "\"Ruby, you must be King Arthur and Jane will be Guinevere and Diana must be Lancelot.",
+      "Josie Pye.": "Mine is geometry of course, and Jane's is Latin, and Ruby and Charlie's is algebra, and Josie's is arithmetic.",
+      "Muriel Stacy": "Miss Stacy won't be there, nor you nor Jane nor Ruby probably.",
+      "Josie Pye!": "\"This morning Miss Stacy came for me and we went to the Academy, calling for Jane and Ruby and Josie on our way.",
+      "Queen": "Anne was wondering if, after all, solitude and tears were not more satisfactory than Josie Pye's companionship when Jane and Ruby appeared, each with an inch of Queen's color ribbon--purple and scarlet--pinned proudly to her coat.",
+      "Newbridge": "Isn't it splendid to think we all got through even to Moody Spurgeon and Josie Pye?\"  \"The Newbridge trustees have offered Jane their school already,\" said Diana."
     },
     "Minnie Macpherson": {
       "Prissy Andrews": "And oh, Marilla, Jane Andrews told me that Minnie MacPherson told her that she heard Prissy Andrews tell Sara Gillis that I had a very pretty nose.",
@@ -164436,7 +164729,14 @@
       "Teddy Phillips": "Mr. Phillips goes up to see Prissy Andrews nearly every evening.",
       "Sam Sloane": "When Prissy Andrews, attired in a new pink-silk waist with a string of pearls about her smooth white throat and real carnations in her hair--rumor whispered that the master had sent all the way to town for them for her--\"climbed the slimy ladder, dark without one ray of light,\" Anne shivered in luxurious sympathy; when the choir sang \"Far Above the Gentle Daisies\" Anne gazed at the ceiling as if it were frescoed with angels; when Sam Sloane proceeded to explain and illustrate \"How Sockery Set a Hen\" Anne laughed until people sitting near her laughed too, more out of sympathy with her than with amusement at a selection that was rather threadbare even in Avonlea; and when Mr. Phillips gave Mark Antony's oration over the dead body of Caesar in the most heart-stirring tones--looking at Prissy Andrews at the end of every sentence--Anne felt that she could rise and mutiny on the spot if but one Roman citizen led the way.  "
     },
+    "Phillips": {
+      "Prissy Andrews": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne.",
+      "Ruby Gillis": "Everybody looked at her and Mr. Phillips glared so sternly that Ruby began to cry.",
+      "Priscilla": "When Mr. Phillips called the history class out Anne should have gone, but Anne did not move, and Mr. Phillips, who had been writing some verses \"To Priscilla\" before he called the class, was thinking about an obstinate rhyme still and never missed her.",
+      "Sam Boulter": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
+    },
     "Gilbert Blythe": {
+      "Phillips": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne.",
       "Prissy Andrews": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne.",
       "Ruby Gillis": "She had a good chance to do so, for the said Gilbert Blythe was absorbed in stealthily pinning the long yellow braid of Ruby Gillis, who sat in front of him, to the back of her seat.",
       "Harmon Andrews": "Then, just as she thought she really could not endure the ache in her arms and wrists another moment, Gilbert Blythe came rowing under the bridge in Harmon Andrews's dory!  ",
@@ -164445,14 +164745,14 @@
       "Josie Pye": "Gilbert Blythe, Anne Shirley, Ruby Gillis, Jane Andrews, Josie Pye, Charlie Sloane, and Moody Spurgeon MacPherson joined it.",
       "Matthew And Marilla": "\"What is Gilbert Blythe going to be?\" queried Marilla, seeing that Anne was opening her Caesar.  ",
       "Muriel Stacy": "Anne intended taking up the Second Year work being advised to do so by Miss Stacy; Gilbert Blythe elected to do the same.",
-      "Tremaine": "Anne, Frank Stockley says that Professor Tremaine said Gilbert Blythe was sure to get the medal and that Emily Clay would likely win the Avery scholarship.\"  ",
-      "Teddy Phillips": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne."
+      "Tremaine": "Anne, Frank Stockley says that Professor Tremaine said Gilbert Blythe was sure to get the medal and that Emily Clay would likely win the Avery scholarship.\"  "
     },
     "Charlie Sloane": {
       "Diana Gasped": "With resentful eyes and passion-red cheeks she confronted alike Diana's sympathetic gaze and Charlie Sloane's indignant nods and Josie Pye's malicious smiles.",
       "Josie Pye": "With resentful eyes and passion-red cheeks she confronted alike Diana's sympathetic gaze and Charlie Sloane's indignant nods and Josie Pye's malicious smiles.",
       "Em White": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
       "Sam Boulter": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
+      "Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
       "Mattie Andrews": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
       "Lizzie Wright": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
       "Mamie Wilson": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
@@ -164462,13 +164762,13 @@
       "Gilbert Blythe": "Gilbert Blythe, Anne Shirley, Ruby Gillis, Jane Andrews, Josie Pye, Charlie Sloane, and Moody Spurgeon MacPherson joined it.",
       "Ruby Gillis": "Gilbert Blythe, Anne Shirley, Ruby Gillis, Jane Andrews, Josie Pye, Charlie Sloane, and Moody Spurgeon MacPherson joined it.",
       "Jane Andrews": "Gilbert Blythe, Anne Shirley, Ruby Gillis, Jane Andrews, Josie Pye, Charlie Sloane, and Moody Spurgeon MacPherson joined it.",
-      "Josie Pye.": "Mine is geometry of course, and Jane's is Latin, and Ruby and Charlie's is algebra, and Josie's is arithmetic.",
-      "Teddy Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
+      "Josie Pye.": "Mine is geometry of course, and Jane's is Latin, and Ruby and Charlie's is algebra, and Josie's is arithmetic."
     },
     "Gertie Pye": {
+      "Phillips": "Mr. Phillips will make me sit with that horrid Gertie Pye--I know he will because she is sitting alone.",
       "Ruby Gillis": "She had to sit with Gertie Pye and she hated it; Gertie squeaked her pencil all the time and it just made her--Diana's--blood run cold; Ruby Gillis had charmed all her warts away, true's you live, with a magic pebble that old Mary Joe from the Creek gave her.",
       "Mary Joe": "She had to sit with Gertie Pye and she hated it; Gertie squeaked her pencil all the time and it just made her--Diana's--blood run cold; Ruby Gillis had charmed all her warts away, true's you live, with a magic pebble that old Mary Joe from the Creek gave her.",
-      "Teddy Phillips": "Mr. Phillips will make me sit with that horrid Gertie Pye--I know he will because she is sitting alone.",
+      "Teddy Phillips": "We're going to ask Mr. Phillips to let us sit together in school again, and Gertie Pye can go with Minnie Andrews.",
       "Minnie Andrews": "We're going to ask Mr. Phillips to let us sit together in school again, and Gertie Pye can go with Minnie Andrews."
     },
     "Diana Goodbye-E-E--": {
@@ -164491,40 +164791,41 @@
       "Lancelot": "\"Ruby, you must be King Arthur and Jane will be Guinevere and Diana must be Lancelot.",
       "Muriel Stacy": "\"Anne,\" said Marilla abruptly, \"Miss Stacy was here this afternoon when you were out with Diana.\"  ",
       "Minnie May": "Never, since the night on which Minnie May had had the croup, had she and Diana been separated in anything.",
+      "Queen": "On the evening when the Queen's class first remained in school for the extra lessons and Anne saw Diana go slowly out with the others, to walk home alone through the Birch Path and Violet Vale, it was all the former could do to keep her seat and refrain from rushing impulsively after her chum.",
       "Gilbert Blythe--": "And at least neither Gilbert nor anybody else, not even Diana, should ever suspect how sorry she was and how much she wished she hadn't been so proud and horrid!",
       "Rapt": "\"You did just splendidly, Anne,\" puffed Diana, recovering sufficiently to sit up and speak, for Anne, starry eyed and rapt, had not uttered a word.",
       "Stella Maynard": "\"I thought you liked that Stella Maynard better than me,\" said Diana reproachfully.",
-      "Newbridge": "Isn't it splendid to think we all got through even to Moody Spurgeon and Josie Pye?\"  \"The Newbridge trustees have offered Jane their school already,\" said Diana.",
-      "Snow Queen": "On the evening when the Queen's class first remained in school for the extra lessons and Anne saw Diana go slowly out with the others, to walk home alone through the Birch Path and Violet Vale, it was all the former could do to keep her seat and refrain from rushing impulsively after her chum."
+      "Newbridge": "Isn't it splendid to think we all got through even to Moody Spurgeon and Josie Pye?\"  \"The Newbridge trustees have offered Jane their school already,\" said Diana."
     },
     "Mary Joe": {
       "Ruby Gillis": "She had to sit with Gertie Pye and she hated it; Gertie squeaked her pencil all the time and it just made her--Diana's--blood run cold; Ruby Gillis had charmed all her warts away, true's you live, with a magic pebble that old Mary Joe from the Creek gave her."
     },
     "Em White": {
       "Sam Boulter": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
+      "Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
       "Mattie Andrews": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
       "Lizzie Wright": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
       "Mamie Wilson": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
-      "Gilbert Blythe--": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
-      "Teddy Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
+      "Gilbert Blythe--": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
     },
     "Mattie Andrews": {
       "Sam Boulter": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
-      "Teddy Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
+      "Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
     },
     "Lizzie Wright": {
       "Sam Boulter": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
+      "Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
       "Mattie Andrews": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
-      "Mamie Wilson": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
-      "Teddy Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
+      "Mamie Wilson": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
     },
     "Mamie Wilson": {
       "Sam Boulter": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
-      "Mattie Andrews": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
-      "Teddy Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
+      "Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
+      "Mattie Andrews": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
     },
     "Gilbert Blythe--": {
       "Sam Boulter": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
+      "Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
       "Mattie Andrews": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
       "Lizzie Wright": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
       "Mamie Wilson": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
@@ -164532,11 +164833,11 @@
       "Ned Wright": "She knew that all Avonlea junior was wondering which would come out first; she even knew that Jimmy Glover and Ned Wright had a bet on the question and that Josie Pye had said there was no doubt in the world that Gilbert would be first; and she felt that her humiliation would be unbearable if she failed.  ",
       "Josie Pye": "She knew that all Avonlea junior was wondering which would come out first; she even knew that Jimmy Glover and Ned Wright had a bet on the question and that Josie Pye had said there was no doubt in the world that Gilbert would be first; and she felt that her humiliation would be unbearable if she failed.  ",
       "Jane Andrews": "\"But I shouldn't think she was the sort of girl Gilbert would like,\"  whispered Jane to Anne.",
-      "Ruby Gillis": "Gilbert had ambitions, she knew, and Ruby Gillis did not seem the sort of person with whom such could be profitably discussed.  ",
-      "Teddy Phillips": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
+      "Ruby Gillis": "Gilbert had ambitions, she knew, and Ruby Gillis did not seem the sort of person with whom such could be profitably discussed.  "
     },
     "Minnie Andrews": {
-      "Teddy Phillips": "Mr. Phillips said Minnie Andrews was a model pupil and there isn't a spark of imagination or life in her."
+      "Phillips": "Mr. Phillips said Minnie Andrews was a model pupil and there isn't a spark of imagination or life in her.",
+      "Teddy Phillips": "We're going to ask Mr. Phillips to let us sit together in school again, and Gertie Pye can go with Minnie Andrews."
     },
     "Julia Bell": {
       "Ruby Gillis": "There was a tang in the very air that inspired the hearts of small maidens tripping, unlike snails, swiftly and willingly to school; and it _was_ jolly to be back again at the little brown desk beside Diana, with Ruby Gillis nodding across the aisle and Carrie Sloane sending up notes and Julia Bell passing a \"chew\" of gum down from the back seat."
@@ -164555,10 +164856,8 @@
       "Mark Antony": "When Prissy Andrews, attired in a new pink-silk waist with a string of pearls about her smooth white throat and real carnations in her hair--rumor whispered that the master had sent all the way to town for them for her--\"climbed the slimy ladder, dark without one ray of light,\" Anne shivered in luxurious sympathy; when the choir sang \"Far Above the Gentle Daisies\" Anne gazed at the ceiling as if it were frescoed with angels; when Sam Sloane proceeded to explain and illustrate \"How Sockery Set a Hen\" Anne laughed until people sitting near her laughed too, more out of sympathy with her than with amusement at a selection that was rather threadbare even in Avonlea; and when Mr. Phillips gave Mark Antony's oration over the dead body of Caesar in the most heart-stirring tones--looking at Prissy Andrews at the end of every sentence--Anne felt that she could rise and mutiny on the spot if but one Roman citizen led the way.  "
     },
     "Teddy Phillips": {
-      "Prissy Andrews": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne.",
-      "Ruby Gillis": "Everybody looked at her and Mr. Phillips glared so sternly that Ruby began to cry.",
-      "Sam Boulter": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  ",
-      "Priscilla Grant": "When Mr. Phillips called the history class out Anne should have gone, but Anne did not move, and Mr. Phillips, who had been writing some verses \"To Priscilla\" before he called the class, was thinking about an obstinate rhyme still and never missed her."
+      "William J. Blair": "Mr. Phillips told me last week in Blair's store at Carmody that you was the smartest scholar in school and was making rapid progress.",
+      "Timothy Andrews": "I guess Mr. Phillips is a Grit too because Prissy Andrews's father is one, and Ruby Gillis says that when a man is courting he always has to agree with the girl's mother in religion and her father in politics."
     },
     "Minnie May": {
       "Young Mary Joe": "Minnie May is awful bad and Young Mary Joe doesn't know what to do--"
@@ -164587,6 +164886,7 @@
       "Gilbert Blythe--": "\"What has happened, Anne?\" asked Gilbert, taking up his oars.  ",
       "Timothy Andrews": "\"I climbed up on one of the piles,\" explained Anne wearily, \"and Gilbert Blythe came along in Mr. Andrews's dory and brought me to land.\"  ",
       "Ben Hur": "\"Oh, how can you call Ben Hur a novel when it's really such a religious book?\" protested Anne.",
+      "Queen": "So you can join the Queen's class if you like, Anne.\"  ",
       "Rachel Nodded": "Mrs. Rachel and Marilla sat comfortably in the parlor while Anne got the tea and made hot biscuits that were light and white enough to defy even Mrs. Rachel's criticism.  ",
       "Marilla Cuthbert": "The Spencervale doctor who had come the night Minnie May had the croup met Anne at the house of a patient one afternoon early in vacation, looked her over sharply, screwed up his mouth, shook his head, and sent a message to Marilla Cuthbert by another person.",
       "Josie Pye!": "At the end of the fortnight Anne took to \"haunting\" the post office also, in the distracted company of Jane, Ruby, and Josie, opening the Charlottetown dailies with shaking hands and cold, sinkaway feelings as bad as any experienced during the Entrance week.",
@@ -164597,8 +164897,7 @@
       "Priscilla Grant": "With the \"rose-red\" girl, Stella Maynard, and the \"dream girl,\" Priscilla Grant, she soon became intimate, finding the latter pale spiritual-looking maiden to be full to the brim of mischief and pranks and fun, while the vivid, black-eyed Stella had a heartful of wistful dreams and fancies, as aerial and rainbow-like as Anne's own.  ",
       "Frank Stockley": "Anne, Frank Stockley says that Professor Tremaine said Gilbert Blythe was sure to get the medal and that Emily Clay would likely win the Avery scholarship.\"  ",
       "Tremaine": "Anne, Frank Stockley says that Professor Tremaine said Gilbert Blythe was sure to get the medal and that Emily Clay would likely win the Avery scholarship.\"  ",
-      "Emily Clay": "Anne, Frank Stockley says that Professor Tremaine said Gilbert Blythe was sure to get the medal and that Emily Clay would likely win the Avery scholarship.\"  ",
-      "Snow Queen": "So you can join the Queen's class if you like, Anne.\"  "
+      "Emily Clay": "Anne, Frank Stockley says that Professor Tremaine said Gilbert Blythe was sure to get the medal and that Emily Clay would likely win the Avery scholarship.\"  "
     },
     "Carrie Sloane": {
       "Matthew And Marilla": "Everybody in school over nine years of age expected to go, except Carrie Sloane, whose father shared Marilla's opinions about small girls going out to night concerts.",
@@ -164646,8 +164945,8 @@
       "Ruby Gillis": "Gilbert Blythe, Anne Shirley, Ruby Gillis, Jane Andrews, Josie Pye, Charlie Sloane, and Moody Spurgeon MacPherson joined it.",
       "Muriel Stacy": "Josie Pye never scrupled to ask questions; in this instance the rest of the class felt grateful to her; none of them would have dared to ask it of Miss Stacy, but all wanted to, for there had been alarming rumors running at large through the school for some time that Miss Stacy was not coming back the next year--that she had been offered a position in the grade school of her own home district and meant to accept.",
       "Ned Wright": "She knew that all Avonlea junior was wondering which would come out first; she even knew that Jimmy Glover and Ned Wright had a bet on the question and that Josie Pye had said there was no doubt in the world that Gilbert would be first; and she felt that her humiliation would be unbearable if she failed.  ",
-      "Newbridge": "Isn't it splendid to think we all got through even to Moody Spurgeon and Josie Pye?\"  \"The Newbridge trustees have offered Jane their school already,\" said Diana.",
-      "Snow Queen": "Anne was wondering if, after all, solitude and tears were not more satisfactory than Josie Pye's companionship when Jane and Ruby appeared, each with an inch of Queen's color ribbon--purple and scarlet--pinned proudly to her coat."
+      "Queen": "Anne was wondering if, after all, solitude and tears were not more satisfactory than Josie Pye's companionship when Jane and Ruby appeared, each with an inch of Queen's color ribbon--purple and scarlet--pinned proudly to her coat.",
+      "Newbridge": "Isn't it splendid to think we all got through even to Moody Spurgeon and Josie Pye?\"  \"The Newbridge trustees have offered Jane their school already,\" said Diana."
     },
     "Bessie Wright": {
       "Josie Pye": "Josie Pye and Julia Bell did not \"speak\" for three months, because Josie Pye had told Bessie Wright that Julia Bell's bow when she got up to recite made her think of a chicken jerking its head, and Bessie told Julia.",
@@ -164657,12 +164956,13 @@
       "Moody Spurgeon Macpherson": "Finally, Charlie Sloane fought Moody Spurgeon MacPherson, because Moody Spurgeon had said that Anne Shirley put on airs about her recitations, and Moody Spurgeon was \"licked\"; consequently Moody Spurgeon's sister, Ella May, would not \"speak\" to Anne Shirley all the rest of the winter."
     },
     "Muriel Stacy": {
+      "Queen": "\"Well, Miss Stacy wants to organize a class among her advanced students who mean to study for the entrance examination into Queen's.",
       "Teddy Phillips": "Red eyes and damp handkerchiefs bore convincing testimony to the fact that Miss Stacy's farewell words must have been quite as touching as Mr. Phillips's had been under similar circumstances three years before.",
-      "Ruby Gillis": "\"This morning Miss Stacy came for me and we went to the Academy, calling for Jane and Ruby and Josie on our way.",
-      "Snow Queen": "\"Well, Miss Stacy wants to organize a class among her advanced students who mean to study for the entrance examination into Queen's."
+      "Ruby Gillis": "\"This morning Miss Stacy came for me and we went to the Academy, calling for Jane and Ruby and Josie on our way."
     },
     "Cordelia Montmorency": {
-      "Geraldine Seymour": "When I was young I used to imagine it was Geraldine, but I like Cordelia better now."
+      "Geraldine Seymour": "It's about two beautiful maidens called Cordelia Montmorency and Geraldine Seymour who lived in the same village and were devotedly attached to each other.",
+      "Diana Goodbye-E-E--": "\"Well, what became of Cordelia and Geraldine?\" asked Diana, who was beginning to feel rather interested in their fate.  "
     },
     "Bertram Devere": {
       "Geraldine Seymour": "Then Bertram DeVere came to their native village and fell in love with the fair Geraldine.",
@@ -164725,6 +165025,9 @@
       "Diana Goodbye-E-E--": "Anne and Diana were to drive over with Jane Andrews and her brother Billy in their double-seated buggy; and several other Avonlea girls and boys were going too.",
       "Jane Andrews": "Anne and Diana were to drive over with Jane Andrews and her brother Billy in their double-seated buggy; and several other Avonlea girls and boys were going too."
     },
+    "Queen": {
+      "Ruby Gillis": "Anne was wondering if, after all, solitude and tears were not more satisfactory than Josie Pye's companionship when Jane and Ruby appeared, each with an inch of Queen's color ribbon--purple and scarlet--pinned proudly to her coat."
+    },
     "Frank Stockley": {
       "Gilbert Blythe--": "Frank Stockley had lots more dash and go, but then he wasn't half as good-looking as Gilbert and she really couldn't decide which she liked best!  ",
       "Tremaine": "Anne, Frank Stockley says that Professor Tremaine said Gilbert Blythe was sure to get the medal and that Emily Clay would likely win the Avery scholarship.\"  ",
@@ -164740,9 +165043,6 @@
     },
     "Dryad": {
       "Matthew And Marilla": "Anne spent some of its rich hours in the orchard; she went to the Dryad's Bubble and Willowmere and Violet Vale; she called at the manse and had a satisfying talk with Mrs. Allan; and finally in the evening she went with Matthew for the cows, through Lovers' Lane to the back pasture."
-    },
-    "Snow Queen": {
-      "Ruby Gillis": "Anne was wondering if, after all, solitude and tears were not more satisfactory than Josie Pye's companionship when Jane and Ruby appeared, each with an inch of Queen's color ribbon--purple and scarlet--pinned proudly to her coat."
     }
   },
   "first_interactions_overall": {
@@ -164786,20 +165086,32 @@
       "with": "Marilla Cuthbert",
       "context": "Mrs. Spencer says--oh, Mr. Cuthbert!"
     },
-    "Mary Alice Bell": {
-      "with": "Jane Andrews",
+    "Barry": {
+      "with": "Matthew.",
+      "context": "\"That's Barry's pond,\" said Matthew.  "
+    },
+    "Jane": {
+      "with": "Mary",
+      "context": "I'd ruther Jane or Mary or some sensible name like that."
+    },
+    "Mary": {
+      "with": "Jane",
       "context": "I'd ruther Jane or Mary or some sensible name like that."
     },
     "Anne Shirley": {
-      "with": "Cordelia Montmorency",
+      "with": "Cordelia",
+      "context": "If Cordelia isn't your name, what is?\"  \"Anne Shirley,\" reluctantly faltered forth the owner of that name, \"but, oh, please do call me Cordelia."
+    },
+    "Cordelia": {
+      "with": "Anne Shirley",
       "context": "If Cordelia isn't your name, what is?\"  \"Anne Shirley,\" reluctantly faltered forth the owner of that name, \"but, oh, please do call me Cordelia."
     },
     "Anne Spiritlessly": {
-      "with": "Cordelia Montmorency",
+      "with": "Cordelia",
       "context": "\"Oh, I'm not ashamed of it,\" explained Anne, \"only I like Cordelia better."
     },
-    "Geraldine Seymour": {
-      "with": "Cordelia Montmorency",
+    "Geraldine": {
+      "with": "Cordelia",
       "context": "When I was young I used to imagine it was Geraldine, but I like Cordelia better now."
     },
     "Hammond": {
@@ -164867,8 +165179,8 @@
       "context": "But Ruby Gillis says she saw him writing something on her slate and when Prissy read it she blushed as red as a beet and giggled; and Ruby Gillis says she doesn't believe it had anything to do with the lesson.\"  \"Anne Shirley, don't let me hear you talking about your teacher in that way again,\" said Marilla sharply."
     },
     "Jane Andrews": {
-      "with": "Mary Alice Bell",
-      "context": "I'd ruther Jane or Mary or some sensible name like that."
+      "with": "Matthew And Marilla",
+      "context": "And oh, Marilla, Jane Andrews told me that Minnie MacPherson told her that she heard Prissy Andrews tell Sara Gillis that I had a very pretty nose."
     },
     "Minnie Macpherson": {
       "with": "Matthew And Marilla",
@@ -164890,7 +165202,7 @@
       "with": "Diana Gasped",
       "context": "\"Yes,\" said Diana, tossing her head, \"but I'm sure he doesn't like Julia Bell so very much."
     },
-    "Teddy Phillips": {
+    "Phillips": {
       "with": "Prissy Andrews",
       "context": "When Mr. Phillips was in the back of the room hearing Prissy Andrews's Latin, Diana whispered to Anne, \"That's Gilbert Blythe sitting right across the aisle from you, Anne."
     },
@@ -164902,12 +165214,12 @@
       "with": "Diana Gasped",
       "context": "With resentful eyes and passion-red cheeks she confronted alike Diana's sympathetic gaze and Charlie Sloane's indignant nods and Josie Pye's malicious smiles."
     },
-    "Priscilla Grant": {
-      "with": "Teddy Phillips",
+    "Priscilla": {
+      "with": "Phillips",
       "context": "When Mr. Phillips called the history class out Anne should have gone, but Anne did not move, and Mr. Phillips, who had been writing some verses \"To Priscilla\" before he called the class, was thinking about an obstinate rhyme still and never missed her."
     },
     "Gertie Pye": {
-      "with": "Teddy Phillips",
+      "with": "Phillips",
       "context": "Mr. Phillips will make me sit with that horrid Gertie Pye--I know he will because she is sitting alone."
     },
     "Rachel Nodded": {
@@ -164951,7 +165263,7 @@
       "context": "Charlie Sloane's name was written up with Em White's on the porch wall and Em White was _awful mad_ about it; Sam Boulter had \"sassed\" Mr. Phillips in class and Mr. Phillips whipped him and Sam's father came down to the school and dared Mr. Phillips to lay a hand on one of his children again; and Mattie Andrews had a new red hood and a blue crossover with tassels on it and the airs she put on about it were perfectly sickening; and Lizzie Wright didn't speak to Mamie Wilson because Mamie Wilson's grown-up sister had cut out Lizzie Wright's grown-up sister with her beau; and everybody missed Anne so and wished she's come to school again; and Gilbert Blythe--  "
     },
     "Minnie Andrews": {
-      "with": "Teddy Phillips",
+      "with": "Phillips",
       "context": "Mr. Phillips said Minnie Andrews was a model pupil and there isn't a spark of imagination or life in her."
     },
     "Brutus": {
@@ -164966,7 +165278,7 @@
       "with": "Teddy Phillips",
       "context": "I guess Mr. Phillips is a Grit too because Prissy Andrews's father is one, and Ruby Gillis says that when a man is courting he always has to agree with the girl's mother in religion and her father in politics."
     },
-    "Snow Queen": {
+    "Queen": {
       "with": "Miranda Sloane",
       "context": "He says it is to help her with her lessons but Miranda Sloane is studying for Queen's too, and I should think she needed help a lot more than Prissy because she's ever so much stupider, but he never goes to help her in the evenings at all."
     },
@@ -164983,8 +165295,8 @@
       "context": "A Concert a Catastrophe and a Confession   MARILLA, can I go over to see Diana just for a minute?\" asked Anne, running breathlessly down from the east gable one February evening.  "
     },
     "Josephine Barry": {
-      "with": "Matthew.",
-      "context": "\"That's Barry's pond,\" said Matthew.  "
+      "with": "Diana Goodbye-E-E--",
+      "context": "I'm surprised at Mrs. Barry's letting Diana go.\"  "
     },
     "Carrie Sloane": {
       "with": "Matthew And Marilla",
@@ -165035,8 +165347,8 @@
       "context": "Finally, Charlie Sloane fought Moody Spurgeon MacPherson, because Moody Spurgeon had said that Anne Shirley put on airs about her recitations, and Moody Spurgeon was \"licked\"; consequently Moody Spurgeon's sister, Ella May, would not \"speak\" to Anne Shirley all the rest of the winter."
     },
     "Cordelia Montmorency": {
-      "with": "Anne Shirley",
-      "context": "If Cordelia isn't your name, what is?\"  \"Anne Shirley,\" reluctantly faltered forth the owner of that name, \"but, oh, please do call me Cordelia."
+      "with": "Geraldine Seymour",
+      "context": "It's about two beautiful maidens called Cordelia Montmorency and Geraldine Seymour who lived in the same village and were devotedly attached to each other."
     },
     "Bertram Devere": {
       "with": "Geraldine Seymour",
