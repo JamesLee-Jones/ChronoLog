@@ -1,733 +1,124 @@
 {
   "book": "Dr Jekyll And Mr Hyde",
   "num_sections": 10,
-  "sections": [
-    {
-      "names": [
-        "Gabriel John Utterson",
-        "Henry Jekyll",
-        "Edward Hyde",
-        "Richard Enfield"
-      ],
-      "matrix": [
-        [
-          0.0,
-          0.5,
-          0.25,
-          0.25
-        ],
-        [
-          0.5,
-          0.0,
-          0.5,
-          0.0
-        ],
-        [
-          0.3333333333333333,
-          0.6666666666666666,
-          0.0,
-          0.0
-        ],
-        [
-          1.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      ],
-      "node_connectivity": 3.0,
-      "average_clustering": 0.16311948504870263,
-      "no_of_cliques": 1,
-      "most_important_character": "Gabriel John Utterson",
-      "degree_of_mic": 5,
-      "degree_centrality_mic": 1.6666666666666665,
-      "avg_degree_centrality": 1.5
-    },
-    {
-      "names": [
-        "Edward Hyde",
-        "Gabriel John Utterson",
-        "Henry Jekyll",
-        "Harry Jekyll",
-        "Richard Enfield"
-      ],
-      "matrix": [
-        [
-          0.0,
-          0.4,
-          0.4,
-          0.2,
-          0.0
-        ],
-        [
-          0.4,
-          0.0,
-          0.4,
-          0.0,
-          0.2
-        ],
-        [
-          0.5,
-          0.5,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      ],
-      "node_connectivity": 4.0,
-      "average_clustering": 0.07415748088439351,
-      "no_of_cliques": 1,
-      "most_important_character": "Gabriel John Utterson",
-      "degree_of_mic": 6,
-      "degree_centrality_mic": 1.5,
-      "avg_degree_centrality": 1.4
-    },
-    {
-      "names": [
-        "Edward Hyde",
-        "Gabriel John Utterson",
-        "Henry Jekyll",
-        "Harry Jekyll",
-        "Richard Enfield",
-        "Danvers Carew"
-      ],
-      "matrix": [
-        [
-          0.0,
-          0.42857142857142855,
-          0.42857142857142855,
-          0.14285714285714285,
-          0.0,
-          0.0
-        ],
-        [
-          0.42857142857142855,
-          0.0,
-          0.42857142857142855,
-          0.0,
-          0.14285714285714285,
-          0.0
-        ],
-        [
-          0.5,
-          0.5,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      ],
-      "node_connectivity": 5.0,
-      "average_clustering": 0.05000000000000001,
-      "no_of_cliques": 1,
-      "most_important_character": "Gabriel John Utterson",
-      "degree_of_mic": 7,
-      "degree_centrality_mic": 1.4000000000000001,
-      "avg_degree_centrality": 1.3333333333333333
-    },
-    {
-      "names": [
-        "Edward Hyde",
-        "Gabriel John Utterson",
-        "Henry Jekyll",
-        "Harry Jekyll",
-        "Danvers Carew",
-        "Richard Enfield"
-      ],
-      "matrix": [
-        [
-          0.0,
-          0.3,
-          0.3,
-          0.2,
-          0.2,
-          0.0
-        ],
-        [
-          0.375,
-          0.0,
-          0.375,
-          0.125,
-          0.0,
-          0.125
-        ],
-        [
-          0.5,
-          0.5,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.6666666666666666,
-          0.3333333333333333,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      ],
-      "node_connectivity": 5.0,
-      "average_clustering": 0.047162805574997115,
-      "no_of_cliques": 1,
-      "most_important_character": "Gabriel John Utterson",
-      "degree_of_mic": 7,
-      "degree_centrality_mic": 1.4000000000000001,
-      "avg_degree_centrality": 1.3333333333333333
-    },
-    {
-      "names": [
-        "Edward Hyde",
-        "G. J. Utterson",
-        "Henry Jekyll",
-        "Harry Jekyll",
-        "Richard Enfield",
-        "Danvers Carew"
-      ],
-      "matrix": [
-        [
-          0.0,
-          0.36363636363636365,
-          0.2727272727272727,
-          0.18181818181818182,
-          0.0,
-          0.18181818181818182
-        ],
-        [
-          0.4,
-          0.0,
-          0.3,
-          0.1,
-          0.2,
-          0.0
-        ],
-        [
-          0.5,
-          0.5,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.6666666666666666,
-          0.3333333333333333,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      ],
-      "node_connectivity": 5.0,
-      "average_clustering": 0.07322971778539364,
-      "no_of_cliques": 1,
-      "most_important_character": "Edward Hyde",
-      "degree_of_mic": 7,
-      "degree_centrality_mic": 1.4000000000000001,
-      "avg_degree_centrality": 1.3333333333333333
-    },
-    {
-      "names": [
-        "Edward Hyde",
-        "G. J. Utterson",
-        "Henry Jekyll",
-        "Harry Jekyll",
-        "Richard Enfield",
-        "Danvers Carew",
-        "Bradshaw"
-      ],
-      "matrix": [
-        [
-          0.0,
-          0.5,
-          0.21428571428571427,
-          0.14285714285714285,
-          0.0,
-          0.14285714285714285,
-          0.0
-        ],
-        [
-          0.5384615384615384,
-          0.0,
-          0.23076923076923078,
-          0.07692307692307693,
-          0.15384615384615385,
-          0.0,
-          0.0
-        ],
-        [
-          0.5,
-          0.5,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.6666666666666666,
-          0.3333333333333333,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      ],
-      "node_connectivity": 6.0,
-      "average_clustering": 0.026730592823887598,
-      "no_of_cliques": 1,
-      "most_important_character": "Edward Hyde",
-      "degree_of_mic": 8,
-      "degree_centrality_mic": 1.3333333333333333,
-      "avg_degree_centrality": 1.2857142857142858
-    },
-    {
-      "names": [
-        "Edward Hyde",
-        "G. J. Utterson",
-        "Henry Jekyll",
-        "Harry Jekyll",
-        "Richard Enfield",
-        "Danvers Carew",
-        "Bradshaw"
-      ],
-      "matrix": [
-        [
-          0.0,
-          0.5,
-          0.21428571428571427,
-          0.14285714285714285,
-          0.0,
-          0.14285714285714285,
-          0.0
-        ],
-        [
-          0.5384615384615384,
-          0.0,
-          0.23076923076923078,
-          0.07692307692307693,
-          0.15384615384615385,
-          0.0,
-          0.0
-        ],
-        [
-          0.5,
-          0.5,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.6666666666666666,
-          0.3333333333333333,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      ],
-      "node_connectivity": 6.0,
-      "average_clustering": 0.026730592823887598,
-      "no_of_cliques": 1,
-      "most_important_character": "Edward Hyde",
-      "degree_of_mic": 8,
-      "degree_centrality_mic": 1.3333333333333333,
-      "avg_degree_centrality": 1.2857142857142858
-    },
-    {
-      "names": [
-        "Edward Hyde",
-        "G. J. Utterson",
-        "Henry Jekyll",
-        "Harry Jekyll",
-        "Danvers Carew",
-        "Richard Enfield",
-        "Bradshaw"
-      ],
-      "matrix": [
-        [
-          0.0,
-          0.4666666666666667,
-          0.2,
-          0.13333333333333333,
-          0.2,
-          0.0,
-          0.0
-        ],
-        [
-          0.5384615384615384,
-          0.0,
-          0.23076923076923078,
-          0.07692307692307693,
-          0.0,
-          0.15384615384615385,
-          0.0
-        ],
-        [
-          0.5,
-          0.5,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.6666666666666666,
-          0.3333333333333333,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      ],
-      "node_connectivity": 6.0,
-      "average_clustering": 0.027352456224754223,
-      "no_of_cliques": 1,
-      "most_important_character": "Edward Hyde",
-      "degree_of_mic": 8,
-      "degree_centrality_mic": 1.3333333333333333,
-      "avg_degree_centrality": 1.2857142857142858
-    },
-    {
-      "names": [
-        "Edward Hyde",
-        "G. J. Utterson",
-        "Harry Jekyll",
-        "Henry Jekyll",
-        "Bradshaw",
-        "Richard Enfield",
-        "Danvers Carew"
-      ],
-      "matrix": [
-        [
-          0.0,
-          0.30434782608695654,
-          0.17391304347826086,
-          0.34782608695652173,
-          0.043478260869565216,
-          0.0,
-          0.13043478260869565
-        ],
-        [
-          0.5384615384615384,
-          0.0,
-          0.07692307692307693,
-          0.23076923076923078,
-          0.0,
-          0.15384615384615385,
-          0.0
-        ],
-        [
-          0.6666666666666666,
-          0.16666666666666666,
-          0.0,
-          0.0,
-          0.16666666666666666,
-          0.0,
-          0.0
-        ],
-        [
-          0.7272727272727273,
-          0.2727272727272727,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.5,
-          0.0,
-          0.5,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      ],
-      "node_connectivity": 6.0,
-      "average_clustering": 0.05097649996472968,
-      "no_of_cliques": 1,
-      "most_important_character": "Edward Hyde",
-      "degree_of_mic": 8,
-      "degree_centrality_mic": 1.3333333333333333,
-      "avg_degree_centrality": 1.2857142857142858
-    },
-    {
-      "names": [
-        "Edward Hyde",
-        "G. J. Utterson",
-        "Harry Jekyll",
-        "Henry Jekyll",
-        "Bradshaw",
-        "Richard Enfield",
-        "Danvers Carew"
-      ],
-      "matrix": [
-        [
-          0.0,
-          0.30434782608695654,
-          0.17391304347826086,
-          0.34782608695652173,
-          0.043478260869565216,
-          0.0,
-          0.13043478260869565
-        ],
-        [
-          0.5384615384615384,
-          0.0,
-          0.07692307692307693,
-          0.23076923076923078,
-          0.0,
-          0.15384615384615385,
-          0.0
-        ],
-        [
-          0.6666666666666666,
-          0.16666666666666666,
-          0.0,
-          0.0,
-          0.16666666666666666,
-          0.0,
-          0.0
-        ],
-        [
-          0.7272727272727273,
-          0.2727272727272727,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.5,
-          0.0,
-          0.5,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        [
-          1.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      ],
-      "node_connectivity": 6.0,
-      "average_clustering": 0.05097649996472968,
-      "no_of_cliques": 1,
-      "most_important_character": "Edward Hyde",
-      "degree_of_mic": 8,
-      "degree_centrality_mic": 1.3333333333333333,
-      "avg_degree_centrality": 1.2857142857142858
-    }
-  ],
+  "sections": [{
+    "names": ["Gabriel John Utterson", "Henry Jekyll", "Edward Hyde", "Richard Enfield"],
+    "matrix": [
+      [0.0, 0.5, 0.25, 0.25],
+      [0.5, 0.0, 0.5, 0.0],
+      [0.33333, 0.66667, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0]
+    ]
+  }, {
+    "names": ["Edward Hyde", "Gabriel John Utterson", "Henry Jekyll", "Harry Jekyll", "Richard Enfield"],
+    "matrix": [
+      [0.0, 0.4, 0.4, 0.2, 0.0],
+      [0.4, 0.0, 0.4, 0.0, 0.2],
+      [0.5, 0.5, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0]
+    ]
+  }, {
+    "names": ["Edward Hyde", "Gabriel John Utterson", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew"],
+    "matrix": [
+      [0.0, 0.42857, 0.42857, 0.14286, 0.0, 0.0],
+      [0.42857, 0.0, 0.42857, 0.0, 0.14286, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ]
+  }, {
+    "names": ["Edward Hyde", "Gabriel John Utterson", "Henry Jekyll", "Harry Jekyll", "Danvers Carew", "Richard Enfield"],
+    "matrix": [
+      [0.0, 0.3, 0.3, 0.2, 0.2, 0.0],
+      [0.375, 0.0, 0.375, 0.125, 0.0, 0.125],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+    ]
+  }, {
+    "names": ["Edward Hyde", "G. J. Utterson", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew"],
+    "matrix": [
+      [0.0, 0.36364, 0.27273, 0.18182, 0.0, 0.18182],
+      [0.4, 0.0, 0.3, 0.1, 0.2, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ]
+  }, {
+    "names": ["Edward Hyde", "G. J. Utterson", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew", "Bradshaw"],
+    "matrix": [
+      [0.0, 0.5, 0.21429, 0.14286, 0.0, 0.14286, 0.0],
+      [0.53846, 0.0, 0.23077, 0.07692, 0.15385, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ]
+  }, {
+    "names": ["Edward Hyde", "G. J. Utterson", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew", "Bradshaw"],
+    "matrix": [
+      [0.0, 0.5, 0.21429, 0.14286, 0.0, 0.14286, 0.0],
+      [0.53846, 0.0, 0.23077, 0.07692, 0.15385, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ]
+  }, {
+    "names": ["Edward Hyde", "G. J. Utterson", "Henry Jekyll", "Harry Jekyll", "Danvers Carew", "Richard Enfield", "Bradshaw"],
+    "matrix": [
+      [0.0, 0.46667, 0.2, 0.13333, 0.2, 0.0, 0.0],
+      [0.53846, 0.0, 0.23077, 0.07692, 0.0, 0.15385, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ]
+  }, {
+    "names": ["Edward Hyde", "G. J. Utterson", "Harry Jekyll", "Henry Jekyll", "Bradshaw", "Richard Enfield", "Danvers Carew"],
+    "matrix": [
+      [0.0, 0.30435, 0.17391, 0.34783, 0.04348, 0.0, 0.13043],
+      [0.53846, 0.0, 0.07692, 0.23077, 0.0, 0.15385, 0.0],
+      [0.66667, 0.16667, 0.0, 0.0, 0.16667, 0.0, 0.0],
+      [0.72727, 0.27273, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ]
+  }, {
+    "names": ["Edward Hyde", "G. J. Utterson", "Harry Jekyll", "Henry Jekyll", "Bradshaw", "Richard Enfield", "Danvers Carew"],
+    "matrix": [
+      [0.0, 0.30435, 0.17391, 0.34783, 0.04348, 0.0, 0.13043],
+      [0.53846, 0.0, 0.07692, 0.23077, 0.0, 0.15385, 0.0],
+      [0.66667, 0.16667, 0.0, 0.0, 0.16667, 0.0, 0.0],
+      [0.72727, 0.27273, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ]
+  }],
   "first_interactions_between_characters": {
     "Richard Enfield": {
-      "Utterson": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield."
+      "Gabriel John Utterson": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield."
     },
     "Henry Jekyll": {
-      "Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
+      "Gabriel John Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
     "Edward Hyde": {
-      "Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
       "Henry Jekyll": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
       "Harry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
-      "G. J. Utterson": "Utterson was amazed; the dark influence of Hyde had been withdrawn, the doctor had returned to his old tasks and amities; a week ago, the prospect had smiled with every promise of a cheerful and an honoured age; and now in a moment, friendship, and peace of mind, and the whole tenor of his life were wrecked."
+      "G. J. Utterson": "Utterson was amazed; the dark influence of Hyde had been withdrawn, the doctor had returned to his old tasks and amities; a week ago, the prospect had smiled with every promise of a cheerful and an honoured age; and now in a moment, friendship, and peace of mind, and the whole tenor of his life were wrecked.",
+      "Gabriel John Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
     "Harry Jekyll": {
-      "Utterson": "INCIDENT OF THE LETTER  It was late in the afternoon, when Mr. Utterson found his way to Dr. Jekyll's door, where he was at once admitted by Poole, and carried down by the kitchen offices and across a yard which had once been a garden, to the building which was indifferently known as the laboratory or dissecting rooms."
+      "Gabriel John Utterson": "INCIDENT OF THE LETTER  It was late in the afternoon, when Mr. Utterson found his way to Dr. Jekyll's door, where he was at once admitted by Poole, and carried down by the kitchen offices and across a yard which had once been a garden, to the building which was indifferently known as the laboratory or dissecting rooms."
     },
     "Danvers Carew": {
       "Edward Hyde": "LANYON  Time ran on; thousands of pounds were offered in reward, for the death of Sir Danvers was resented as a public injury; but Mr. Hyde had disappeared out of the ken of the police as though he had never existed."
@@ -742,19 +133,19 @@
   },
   "first_interactions_overall": {
     "Richard Enfield": {
-      "with": "Utterson",
+      "with": "Gabriel John Utterson",
       "context": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield."
     },
-    "Utterson": {
+    "Gabriel John Utterson": {
       "with": "Richard Enfield",
       "context": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield."
     },
     "Henry Jekyll": {
-      "with": "Utterson",
+      "with": "Gabriel John Utterson",
       "context": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
     "Edward Hyde": {
-      "with": "Utterson",
+      "with": "Gabriel John Utterson",
       "context": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
     "Harry Jekyll": {
