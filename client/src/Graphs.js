@@ -2,7 +2,7 @@ import React, {useEffect, useRef, useState, useCallback} from "react";
 import {ForceGraph2D} from "react-force-graph";
 import * as d3 from "d3";
 import "./Graphs.css";
-import MetadataCard from "./MetadataCard";
+import MetadataNodeCard from "./MetadataNodeCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

@@ -20,7 +20,7 @@ const ExpandMore = styled((props) => {
     }),
 }));
 
-function MetadataCard({node, firstInteraction}) {
+function MetadataNodeCard({node, firstInteraction}) {
 
     const [expanded, setExpanded] = React.useState(false);
 
@@ -29,15 +29,16 @@ function MetadataCard({node, firstInteraction}) {
     };
 
     return (
-        <Card sx={{maxWidth: 200, bgcolor: 'background.paper',
+        <Card sx={{bgcolor: 'background.paper',
             boxShadow: 1,
             borderRadius: 2,
-            p: 2,
-            minWidth: 300,}} variant="outlined">
+            p: 1,
+        }} variant="outlined">
             <CardHeader
-                title={<><Typography sx={{fontSize: 24}} color="text.primary" gutterBottom>{node ? node.name : "\n"}<span>  </span>
-                    <CircleIcon sx={{color: node.color, alignContent : "right"}}></CircleIcon></Typography></>}
-                subheader={<Typography sx={{fontSize: 14}} color="text.secondary"
+                title={<><Typography sx={{fontSize: 18, textAlign : "left"}} color="text.primary"
+                                     gutterBottom>{node ? node.name : "\n"}<span>  </span>
+                    <CircleIcon sx={{color: node.color, textAlign: "right", fontSize: 25}}></CircleIcon></Typography></>}
+                subheader={<Typography sx={{fontSize: 14, textAlign : "left"}} color="text.secondary"
                                        gutterBottom>{firstInteraction ? firstInteraction.with : "No Interactions."}</Typography>}></CardHeader>
             <CardActions>
                 <ExpandMore
@@ -59,4 +60,4 @@ function MetadataCard({node, firstInteraction}) {
     );
 }
 
-export default MetadataCard;
+export default MetadataNodeCard;

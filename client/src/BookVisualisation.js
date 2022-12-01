@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import TimelineNavigation from "./Slider";
 import {useParams} from "react-router-dom";
 import Graphs from "./Graphs";
-import MetadataCard from "./MetadataCard";
+import MetadataNodeCard from "./MetadataNodeCard";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -58,14 +58,11 @@ function BookVisualisation() {
     return (
         <>
             <div className="bookViz">
-                <h1>{data.book
-                    .toLowerCase()
-                    .split("_")
-                    .map((word) => {
-                        return word.charAt(0).toUpperCase() + word.slice(1);
-                    })
-                    .join(" ")}
-                </h1>
+                <Container fluid={"true"}>
+                    <h1>{data.book}
+                    </h1>
+                </Container>
+
                 <div className="App">
                     <Container fluid={"md"}>
                         <Row>
@@ -87,7 +84,7 @@ function BookVisualisation() {
                             </Col>
                             <Col sm={4}>
                                 <div className="metadata">
-                                    <MetadataCard node={node} firstInteraction={node.First_Interaction}/>
+                                    <MetadataNodeCard node={node} firstInteraction={node.First_Interaction}/>
                                 </div>
                             </Col>
                         </Row>
