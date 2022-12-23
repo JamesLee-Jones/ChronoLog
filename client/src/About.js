@@ -54,7 +54,7 @@ function About() {
           ChronoLog aims to make this easier by generating a timeline of where
           people are at what times using a state-of-the-art natural language
           processing tool{" "}
-          <a href="https://spacy.io/" target="_blank"  rel="noopener noreferrer">
+          <a href="https://spacy.io/" target="_blank" rel="noopener noreferrer">
             spaCy
           </a>
           .
