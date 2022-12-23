@@ -25,7 +25,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-function AboutMetadata({}) {
+function AboutMetadata() {
   const [expanded, setExpanded] = React.useState(true);
   const [expanded2, setExpanded2] = React.useState(false);
 

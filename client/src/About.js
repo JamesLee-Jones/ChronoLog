@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./App.css";
 import "./Library.css";
 import "./About.css";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import AboutGraph from "./about_page_components/AboutGraph";
 import AboutGraphAdv from "./about_page_components/AboutGraphAdv";
 import AboutNavigation from "./about_page_components/AboutNavigation";
@@ -54,7 +54,7 @@ function About() {
           ChronoLog aims to make this easier by generating a timeline of where
           people are at what times using a state-of-the-art natural language
           processing tool{" "}
-          <a href="https://spacy.io/" target="_blank">
+          <a href="https://spacy.io/" target="_blank"  rel="noopener noreferrer">
             spaCy
           </a>
           .

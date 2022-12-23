@@ -35,7 +35,7 @@ function AboutGraphAdv() {
   ];
 
   const [activeNode, setActiveNode] = useState("");
-  const [graphs, _] = useState({ nodes: node, links: link });
+  const [graphs] = useState({ nodes: node, links: link });
 
   // Link Manipulation
 
