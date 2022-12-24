@@ -7,17 +7,17 @@ import {
   Routes, //replaces "Switch" used till v5
   Route,
 } from "react-router-dom";
-import Home from "./Home";
 import Library from "./Library";
 import About from "./About";
 import BookVisualisation from "./BookVisualisation";
+import HomePage from "./NewHomepage";
 
 function App() {
   return (
     <BrowserRouter>
       <ChronoLogNavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/library/" element={<Library />} />
         <Route path="/library/:book/" element={<BookVisualisation />} />
         <Route path="/about/" element={<About />} />
