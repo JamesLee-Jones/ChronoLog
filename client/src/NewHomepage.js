@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import "./App.css";
 import {Button, IconButton, SvgIcon} from "@mui/material";
-import DeleteIcon from '@mui/icons-material/Delete';
 import {Circle, KeyboardArrowLeft, KeyboardArrowRight} from "@mui/icons-material";
 import Typography from "@mui/material/Typography";
+import CircleIcon from '@mui/icons-material/Circle';
 
 // function HomePage() {
 //   const [active1, setActive1] = useState(false);
@@ -146,12 +146,12 @@ function HomePage() {
 
     return (
         <>
-        <div className="chronolog-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <img src="../ChronoLogo.png" className="img-fluid" alt="ChronoLogo"/>
-            <div className="about-chronolog">
-                <p>Beautiful data.</p>
+            <div className="chronolog-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <img src="../ChronoLogo.png" className="img-fluid" alt="ChronoLogo"/>
+                <div className="about-chronolog">
+                    <p>Beautiful data.</p>
+                </div>
             </div>
-        </div>
             <div className="container">
                 <div className="row text-center">
                     <div className="col-sm text-center">
@@ -161,33 +161,54 @@ function HomePage() {
                     </div>
                     {buttons.map((list) => (
                         <div className="col-sm text-center">
-                            <Button variant="outlined"
-                                    id={list.id}
-                                    onClick={() => handleColor(list)}
-                                    style={{
-                                        borderRadius: 8,
-                                        backgroundColor: list.id === selected ? "#22333b" : "#eae0d5",
-                                        color: list.id === selected ? "#eae0d5" : "#22333b",
-                                        borderColor: list.id === selected ? "#22333b" : "#eae0d5"
-                                    }}
-                            >
-                                {list.title}
-                            </Button>
-
+                            {/*<Button variant="outlined"*/}
+                            {/*        id={list.id}*/}
+                            {/*        onClick={() => handleColor(list)}*/}
+                            {/*        style={{*/}
+                            {/*            borderRadius: 8,*/}
+                            {/*            backgroundColor: list.id === selected ? "#22333b" : "#eae0d5",*/}
+                            {/*            borderColor: list.id === selected ? "#22333b" : "#eae0d5"*/}
+                            {/*        }}*/}
+                            {/*>*/}
+                            {/*    {list.title}*/}
+                            {/*</Button>*/}
+                            <IconButton>
+                            <CircleIcon variant="outlined"
+                            id={list.id}
+                            onClick={() => handleColor(list)}
+                            style={{color: list.id === selected ? "#22333b" : "#eae0d5",
+                            borderColor: list.id === selected ? "#22333b" : "#eae0d5"}}>
+                            </CircleIcon>
+                            </IconButton>
                         </div>
 
                     ))}
                     <div className="col-sm text-center">
                         <Button>
-                            <KeyboardArrowRight onClick={() => selectRight(selected)} />
+                            <KeyboardArrowRight onClick={() => selectRight(selected)}/>
                         </Button>
+                    </div>
+                </div>
+                <div className="row text-center">
+                    <div className="col-sm">
+                    </div>
+                    {buttons.map((list) => (
+                        <div className="col-sm text-center">
+                            <Typography style={{fontFamily: 'Baskerville'}}>
+                                {list.title}
+                            </Typography>
+
+                        </div>
+
+                    ))}
+                    <div className="col-sm">
                     </div>
                 </div>
             </div>
 
         </>
 
-);
+    );
 
 
     // return (
