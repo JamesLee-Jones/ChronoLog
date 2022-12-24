@@ -98,21 +98,26 @@ function HomePage() {
                                 </p>
                                 <p className="home-para">Try out an example from ‘Harry Potter and the Philosopher’s
                                     Stone’ by J.K Rowling.</p>
-                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}} onClick={() => navigate('/about/')}
-                                           variant="outlined homepage-buttons" endIcon={<ArrowForward/>}>Learn How ChronoLog Works</Button></p>
+                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}}
+                                           onClick={() => navigate('/about/')}
+                                           variant="outlined homepage-buttons" endIcon={<ArrowForward/>}>Learn How
+                                    ChronoLog Works</Button></p>
                                 <p className="home-para">Browse ChronoLog's library of literary classics and start
                                     exploring.</p>
-                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}} onClick={() => navigate('/library/')}
+                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}}
+                                           onClick={() => navigate('/library/')}
                                            variant="outlined homepage-buttons" endIcon={<LibraryBooks/>}>Browse Our
                                     Library</Button></p>
                                 <p className="home-para">Want to request a book or contribute to this project? Check out
                                     our GitHub repository.</p>
-                                <a href="https://github.com/JamesLee-Jones/ChronoLog/blob/main/README.md"><p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF", color: "#000000"}}
-                                           variant="outlined homepage-buttons" endIcon={<Code/> }>Guide For Developers</Button>
-                                    </p></a>
-                                <a href='https://github.com/JamesLee-Jones/ChronoLog' className="home-para"><p >
+                                <a href="https://github.com/JamesLee-Jones/ChronoLog/blob/main/README.md"><p><Button
+                                    sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF", color: "#000000"}}
+                                    variant="outlined homepage-buttons" endIcon={<Code/>}>Guide For Developers</Button>
+                                </p></a>
+                                <a href='https://github.com/JamesLee-Jones/ChronoLog' className="home-para"><p>
                                     <Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF", color: "#000000"}}
-                                        variant="outlined homepage-buttons" endIcon={<GitHub/>} >GitHub Repository</Button></p></a>
+                                            variant="outlined homepage-buttons" endIcon={<GitHub/>}>GitHub
+                                        Repository</Button></p></a>
                             </div>
                         </div>
                     </div>
@@ -130,55 +135,8 @@ function HomePage() {
                     /></div>
                 </div>
             </main>
-            {/*<div className="container">*/}
-            {/*    <div className="row text-center">*/}
-            {/*        <div className="col-sm text-center">*/}
-            {/*            <Button style={{backgroundColor: "#22333b"}}>*/}
-            {/*                <KeyboardArrowLeft style={{color: "#eae0d5"}} onClick={() => selectLeft(selected)}/>*/}
-            {/*            </Button>*/}
-            {/*        </div>*/}
-            {/*        {buttons.map((list) => (*/}
-            {/*            <div className="col-sm text-center">*/}
-            {/*                <IconButton>*/}
-            {/*                    <CircleIcon variant="outlined"*/}
-            {/*                                id={list.id}*/}
-            {/*                                onClick={() => handleColor(list)}*/}
-            {/*                                style={{*/}
-            {/*                                    color: list.id === selected ? "#22333b" : "#eae0d5",*/}
-            {/*                                    borderColor: list.id === selected ? "#22333b" : "#eae0d5"*/}
-            {/*                                }}>*/}
-            {/*                    </CircleIcon>*/}
-            {/*                </IconButton>*/}
-            {/*            </div>*/}
-
-            {/*        ))}*/}
-            {/*        <div className="col-sm text-center">*/}
-            {/*            <Button style={{backgroundColor: "#22333b"}}>*/}
-            {/*                <KeyboardArrowRight style={{color: "#eae0d5"}} onClick={() => selectRight(selected)}/>*/}
-            {/*            </Button>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*    <div className="row text-center">*/}
-            {/*        <div className="col-sm">*/}
-            {/*        </div>*/}
-            {/*        {buttons.map((list) => (*/}
-            {/*            <div className="col-sm text-center">*/}
-            {/*                <Typography>*/}
-            {/*                    {list.title}*/}
-            {/*                </Typography>*/}
-
-            {/*            </div>*/}
-
-            {/*        ))}*/}
-            {/*        <div className="col-sm">*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-
         </>
-
-    );
-
+    )
 }
 
 export default HomePage;

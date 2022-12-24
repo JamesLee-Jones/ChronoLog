@@ -2,11 +2,8 @@
     text-align: center;
     align-items: center;
     align-content: center;
-    /*min-height: 300px;*/
     padding: 30px;
     border-radius: 10px;
-    /*max-width: 600px;*/
-    /*margin: 30px auto;*/
     border: 1px solid #22333b;
     justify-content: center;
     display: flex;
@@ -37,9 +34,8 @@ h1 {
 }
 
 h3 {
-    font-family: "Helvetica Neue", serif;
-    font-variant: small-caps;
-    color: #22333b;
+  font-family: "Baskerville", "Times New Roman", serif;
+  color: #22333b;
 }
 
 .about-chronolog {
