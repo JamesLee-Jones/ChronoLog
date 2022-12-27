@@ -26,14 +26,10 @@ const ExpandMore = styled((props) => {
 }));
 
 function AboutMetadata() {
-  const [expanded, setExpanded] = React.useState(true);
+  const [expanded] = React.useState(true);
   const [expanded2, setExpanded2] = React.useState(false);
 
   let node = { id: "id3", name: "Lily", val: 3, color: "#b2df8a" };
-
-  const handleExpandClick = () => {
-    setExpanded(expanded);
-  };
 
   const handleExpandClick2 = () => {
     setExpanded2(!expanded2);
@@ -68,7 +64,6 @@ function AboutMetadata() {
         </Typography>
         <ExpandMore
           expand={expanded}
-          onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
         >
