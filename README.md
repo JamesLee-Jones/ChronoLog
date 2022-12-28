@@ -21,6 +21,8 @@ can process and visualise the text on your own machine.
 
 The following guide assumes that you are using a Unix-like machine.
 
+#### Processing Text
+
 1. Clone the ChronoLog repository to your own machine by running the following command in the terminal:  
    `git clone https://github.com/JamesLee-Jones/ChronoLog.git`
 2. Navigate to the outermost folder, nlp-timeline-gen  
@@ -49,9 +51,22 @@ The following guide assumes that you are using a Unix-like machine.
 5. Run the script using the appropriate arguments for your text. In our example, this
    is  
    `python ./chronolog.py --chapterRegex numeral --narrator "Nick Carraway texts/the_great_gatsby.txt`.  
-Note the expected order: `python ./chronolog.py [optional arguments] [filename]`
-6. Wait for the script to finish. There will be frequent updates in the terminal about the current progress of the analysis. Note that this may take several minutes, depending on the length of the text.
+   Note the expected order: `python ./chronolog.py [optional arguments] [filename]`
+6. Wait for the script to finish. There will be frequent updates in the terminal about the current progress of the
+   analysis. Note that this may take several minutes, depending on the length of the text.
 7. When the script terminates, the analysis is finished. You can now proceed to visualising the text.
+
+#### Visualising Text
+
+Ensure that you have followed the steps above to process the text.
+
+1. Run `./scripts/setup.sh` to set up the visualisation.
+2. Run `npm run start`
+3. Go to `localhost:3000` in your web browser. You will find your text in the library along with all the existing
+   preprocessed texts.
+
+#### Adding Text to Global Library
+TODO 
 ## Guide for Developers
 
 The following guide assumes that you are using Linux for development.
