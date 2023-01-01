@@ -155,8 +155,8 @@ function HomePage() {
             <div className="container">
                 <div className="row text-center">
                     <div className="col-sm text-center">
-                        <Button>
-                            <KeyboardArrowLeft onClick={() => selectLeft(selected)}/>
+                        <Button style={{backgroundColor:"#22333b" }}>
+                            <KeyboardArrowLeft style={{color: "#eae0d5" }} onClick={() => selectLeft(selected)}/>
                         </Button>
                     </div>
                     {buttons.map((list) => (
@@ -184,8 +184,8 @@ function HomePage() {
 
                     ))}
                     <div className="col-sm text-center">
-                        <Button>
-                            <KeyboardArrowRight onClick={() => selectRight(selected)}/>
+                        <Button style={{backgroundColor:"#22333b" }}>
+                            <KeyboardArrowRight style={{color: "#eae0d5" }} onClick={() => selectRight(selected)}/>
                         </Button>
                     </div>
                 </div>
@@ -194,7 +194,7 @@ function HomePage() {
                     </div>
                     {buttons.map((list) => (
                         <div className="col-sm text-center">
-                            <Typography style={{fontFamily: 'Baskerville'}}>
+                            <Typography>
                                 {list.title}
                             </Typography>
 
