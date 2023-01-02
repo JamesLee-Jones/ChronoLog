@@ -32,7 +32,8 @@ class InteractionsCounter:
         return interactions
 
     def _pool_characters(self, all_characters: list[str]) -> list[str]:
-        character_matches = {ch: [ch2 for ch2 in all_characters if ch == ch2 or ch in re.split(" |-", ch2)] for ch in all_characters}
+        character_matches = {ch: [ch2 for ch2 in all_characters if ch == ch2 or ch in re.split(" |-", ch2)] for ch in
+                             all_characters}
         # Reduce to disjoint characters
         for (ch, names) in character_matches.items():
             for name1 in names:
@@ -58,6 +59,16 @@ class InteractionsCounter:
         if second_char in interactions and not sum(interactions[second_char].values()):
             self.first_interactions_overall[second_char] = {"with": first_char, "context": sentence}
 
+    def update_interactions(self, p1, p2, interactions, text):
+        for first_char in self.character_dict[p1]:
+            for second_char in self.character_dict[p2]:
+                if first_char == second_char:
+                    continue
+                self._update_interactions_records(interactions, text, first_char, second_char)
+                # Increment interactions
+                interactions[first_char][second_char] += 1
+                interactions[second_char][first_char] += 1
+
     def generate_interactions_matrix(self, text: str) -> tuple[np.ndarray, list[str]]:
         try:
             nlp = spacy.load("en_core_web_lg")
@@ -79,14 +90,7 @@ class InteractionsCounter:
             for i in range(len(people)):
                 for j in range(i + 1, len(people)):
                     # Track first interactions
-                    for first_char in self.character_dict[people[i]]:
-                        for second_char in self.character_dict[people[j]]:
-                            if first_char == second_char:
-                                continue
-                            self._update_interactions_records(interactions, sentence.text, first_char, second_char)
-                            # Increment interactions
-                            interactions[first_char][second_char] += 1
-                            interactions[second_char][first_char] += 1
+                    self.update_interactions(people[i], people[j], interactions, text)
 
         interactions_matrix = np.zeros((len(characters), len(characters)))
 

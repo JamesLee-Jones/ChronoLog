@@ -111,7 +111,7 @@ class CharacterInteractionsProcessor:
                         del interactions_per_character[key]
         return interactions_overall, interactions_per_character
 
-    def update_names_metadata(self, mg):
+    def update_per_char_metadata(self, mg):
         curr_metadata = "first interactions per char"
         for (name, value) in self.metadata[curr_metadata].copy().items():
             replace_name = False
@@ -124,11 +124,14 @@ class CharacterInteractionsProcessor:
                     for new_name2 in mg.character_dict[name2]:
                         if new_name2 != name2 and name2 in self.metadata[curr_metadata][new_name]:
                             replace_name_2 = True
-                            self.metadata[curr_metadata][new_name][new_name2] = self.metadata[curr_metadata][new_name][name2]
+                            self.metadata[curr_metadata][new_name][new_name2] = self.metadata[curr_metadata][new_name][
+                                name2]
                     if replace_name_2:
                         self.metadata[curr_metadata][new_name].pop(name2)
             if replace_name:
                 self.metadata[curr_metadata].pop(name)
+
+    def update_overall_metadata(self, mg):
         curr_metadata = "first interactions overall"
         for (name, interaction) in self.metadata[curr_metadata].copy().items():
             replace_name = False
@@ -141,6 +144,10 @@ class CharacterInteractionsProcessor:
                     self.metadata[curr_metadata][new_name]["with"] = int_with_fname
             if replace_name:
                 self.metadata[curr_metadata].pop(name)
+
+    def update_names_metadata(self, mg):
+        self.update_per_char_metadata(mg)
+        self.update_overall_metadata(mg)
 
     @staticmethod
     def normalise_matrix(matrix: np.ndarray):
@@ -211,7 +218,9 @@ class CharacterInteractionsProcessor:
         self.normalised_matrices = list(map(self.normalise_matrix, self.unnormalised_matrices))
         for i in range(len(self.characters_timeline)):
             for j in range(len(self.characters_timeline[i])):
-                self.characters_timeline[i][j] = max(matrix_generator.character_dict[self.characters_timeline[i][j]], key=len) if matrix_generator.character_dict[self.characters_timeline[i][j]] else self.characters_timeline[i][j]
+                self.characters_timeline[i][j] = max(matrix_generator.character_dict[self.characters_timeline[i][j]],
+                                                     key=len) if matrix_generator.character_dict[
+                    self.characters_timeline[i][j]] else self.characters_timeline[i][j]
             self.sort_matrix(i)
             analysis = self.network_analysis(self.normalised_matrices[i], self.characters_timeline[i])
             json_contents["sections"].append({
