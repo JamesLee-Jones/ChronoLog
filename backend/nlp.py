@@ -8,7 +8,7 @@ class InteractionsCounter:
     def __init__(self, narrator: str = None):
         self.prev_matrix: np.ndarray = np.zeros((1, 1))
         self.prev_characters: list[str] = []
-        self.character_dict: dict[str, str] = {} if not narrator else {"I": narrator}
+        self.character_dict: dict[str, [str]] = {} if not narrator else {"I": [narrator]}
         self.first_interactions_overall: dict = {}
         self.first_interactions_per_char: dict = {}
         self.first_person: bool = narrator is not None
@@ -25,17 +25,25 @@ class InteractionsCounter:
         for i in range(len(self.prev_characters)):
             for j in range(i + 1, len(self.prev_characters)):
                 char1, char2 = self.prev_characters[i], self.prev_characters[j]
-                interactions[self.character_dict[char1]][self.character_dict[char2]] = self.prev_matrix[i][j]
-                interactions[self.character_dict[char2]][self.character_dict[char1]] = self.prev_matrix[j][i]
+                for c1_full_name in self.character_dict[char1]:
+                    for c2_full_name in self.character_dict[char2]:
+                        interactions[c1_full_name][c2_full_name] = self.prev_matrix[i][j]
+                        interactions[c2_full_name][c1_full_name] = self.prev_matrix[j][i]
         return interactions
 
     def _pool_characters(self, all_characters: list[str]) -> list[str]:
-        character_matches = {ch: [ch2 for ch2 in all_characters if ch in re.split(" |-", ch2)] for ch in all_characters}
+        character_matches = {ch: [ch2 for ch2 in all_characters if ch == ch2 or ch in re.split(" |-", ch2)] for ch in all_characters}
+        # Reduce to disjoint characters
+        for (ch, names) in character_matches.items():
+            for name1 in names:
+                for name2 in names:
+                    if name2 != name1 and name2 in name1:
+                        names.remove(name2)
         for name in character_matches:
-            full_name = str(max(character_matches[name], key=len)) if character_matches[name] else name
-            self.character_dict[name] = full_name
+            # full_name = str(max(character_matches[name], key=len)) if character_matches[name] else name
+            self.character_dict[name] = character_matches[name]
 
-        return list(set(self.character_dict.values()))
+        return list(set([name for full_names in self.character_dict.values() for name in full_names]))
 
     def _update_interactions_records(self, interactions: dict, sentence: str, first_char: str, second_char: str):
         # If first char not in dict, add to dict
@@ -71,14 +79,14 @@ class InteractionsCounter:
             for i in range(len(people)):
                 for j in range(i + 1, len(people)):
                     # Track first interactions
-                    first_char = min(self.character_dict[people[i]], self.character_dict[people[j]])
-                    second_char = max(self.character_dict[people[i]], self.character_dict[people[j]])
-                    if first_char == second_char:
-                        continue
-                    self._update_interactions_records(interactions, sentence.text, first_char, second_char)
-                    # Increment interactions
-                    interactions[first_char][second_char] += 1
-                    interactions[second_char][first_char] += 1
+                    for first_char in self.character_dict[people[i]]:
+                        for second_char in self.character_dict[people[j]]:
+                            if first_char == second_char:
+                                continue
+                            self._update_interactions_records(interactions, sentence.text, first_char, second_char)
+                            # Increment interactions
+                            interactions[first_char][second_char] += 1
+                            interactions[second_char][first_char] += 1
 
         interactions_matrix = np.zeros((len(characters), len(characters)))
 
