@@ -6,7 +6,6 @@ import {
   IoPlay,
   IoPause,
 } from "react-icons/io5";
-import "./Slider.css";
 
 function generate_markers(val, scale) {
   let res = [];
@@ -35,16 +34,17 @@ function useInterval(callback, delay) {
   }, [delay]);
 }
 
-const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
+const AboutNavigation = () => {
   const [mark, setMark] = useState([]);
   const [run, setRun] = useState(false);
   const [sliderVal, setSliderVal] = useState(0);
+  const [counter, setCounter] = useState(0);
 
   let scale = 100;
 
   useInterval(
     () => {
-      if (sliderVal > maxval * scale) {
+      if (sliderVal > 10 * scale) {
         setRun(false);
       }
 
@@ -55,15 +55,15 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
   );
 
   useEffect(() => {
-    setMark(generate_markers(maxval, scale));
-  }, [maxval]);
+    setMark(generate_markers(10, scale));
+  }, [10]);
 
   useEffect(() => {
     setSliderVal(counter * scale);
   }, [counter]);
 
   const onNext = () => {
-    if (counter === maxval) {
+    if (counter === 10) {
       return;
     }
 
@@ -79,7 +79,7 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
   };
 
   return (
-    <div className="slider">
+    <div>
       <Slider
         aria-label="Sections"
         defaultValue={0}
@@ -93,7 +93,7 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
         }}
         step={1}
         sx={{
-          width: window.width * 0.5,
+          width: 250,
           height: 20,
           color: "#C6AC8F",
           ".MuiSlider-mark": {
@@ -106,10 +106,10 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
           },
         }}
         min={1}
-        max={maxval * scale}
+        max={10 * scale}
       />
 
-      <div className="nav">
+      <div style={{ paddingLeft: "15px" }}>
         <div
           className="btn"
           onClick={onPrev}
@@ -122,7 +122,7 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
           className="btn"
           onClick={() => {
             setRun(!run);
-            if (sliderVal > maxval * scale && !run) {
+            if (sliderVal > 10 * scale && !run) {
               setCounter(0);
               setSliderVal(0);
             }
@@ -143,4 +143,4 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
     </div>
   );
 };
-export default TimelineNavigaion;
+export default AboutNavigation;
