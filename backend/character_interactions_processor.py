@@ -148,14 +148,12 @@ class CharacterInteractionsProcessor:
         for j in range(len(character_list) - 1):
             for k in range(j, len(character_list)):
                 G.add_edge(character_list[j], character_list[k], weight=(matrix[k][j] + matrix[j][k]) * scale_factor)
-                
-                
 
         graph = G
         avg_clusterings = []
 
         # The most important character and how many characters they are connected to
-        # degree centrality - the number of connections a node has to another node 
+        # degree centrality - the number of connections a node has to another node
         centrality = nx.degree_centrality(graph)
         centrality_values = centrality.values()
         degrees = sorted([(d, n) for n, d in graph.degree(weight="weight")])
@@ -169,10 +167,8 @@ class CharacterInteractionsProcessor:
         # katz centrality - computes the relative influence of a node within a network by
         # measuring the number of the immediate neighbors (first degree nodes)
 
-        # degree centrality - the number of connections a node has to another node 
+        # degree centrality - the number of connections a node has to another node
         # get the connected components of G
-        
-
 
         # select the largest connected component
         # largest_component = max(connected_components, key=len)
@@ -192,7 +188,6 @@ class CharacterInteractionsProcessor:
         mc_stats = (most_important_node, degree_of_node, centrality_of_node)
 
         return clustering_average, number_of_cliques, mc_stats, avg_centrality, subgraph_centrality, betweeness_centrality, centrality
-
 
     def generate_timeline_json(self, title: str):
         file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
@@ -230,7 +225,7 @@ class CharacterInteractionsProcessor:
                     "degree_centrality_mic": analysis[2][2],
                     "avg_degree_centrality": analysis[3],
                     "subgraph_centrality": analysis[4],
-                    "betweness_centrality": analysis[5],
+                    "betweenness_centrality": analysis[5],
                     "degree_centrality": analysis[6],
                 }
             })
