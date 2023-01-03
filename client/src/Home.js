@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Home() {
+    useEffect(() => {
+        document.body.style.backgroundColor = "#eae0d5";
+    });
+
   return (
     <>
       <div class="chronolog-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
