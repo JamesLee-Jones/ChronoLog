@@ -1,11 +1,11 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Home() {
-    useEffect(() => {
-        document.body.style.backgroundColor = "#eae0d5";
-    });
+  useEffect(() => {
+    document.body.style.backgroundColor = "#eae0d5";
+  });
 
   return (
     <>
