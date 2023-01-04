@@ -28,6 +28,21 @@
     font-weight: 350;
 }
 
+.homeGraph {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  /*min-height: 300px;*/
+  padding: 30px;
+  border-radius: 10px;
+  /*max-width: 600px;*/
+  /*margin: 30px auto;*/
+  /*border: 1px solid #22333b;*/
+  justify-content: center;
+  display: flex;
+}
+
+
 h1 {
     font-family: "Baskerville", "Times New Roman", serif;
     color: #22333b;
@@ -38,10 +53,15 @@ h3 {
   color: #22333b;
 }
 
+h3 {
+  font-family: "Helvetica Neue", serif;
+  font-variant: small-caps;
+  color: #22333b;
+}
+
 .about-chronolog {
     font-family: Helvetica, sans-serif;
 }
-
 
 #chronolog-header {
     padding: 60px 0 0;
@@ -56,4 +76,9 @@ h3 {
 .bookViz p {
     text-align: center;
     color: #c6ac8f;
+}
+
+.bookViz p {
+  text-align: center;
+  color: #c6ac8f;
 }
