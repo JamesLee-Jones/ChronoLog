@@ -11,38 +11,40 @@ function Library() {
     });
 
     const [bookTitles, setBookTitles] = useState([])
-    const [loading, setLoading] = useState(true)
+    // const [loading, setLoading] = useState(true)
 
     let filePaths = require.context("../public/library/", false, /\.json$/);
     filePaths = filePaths.keys();
 
     let newTitles = []
 
-    async function getData(filename) {
-        setLoading(true);
-        await fetch(filename).then(response => {
-            console.log(filename + ' being fetched')
-            if (response.ok) {
-                return response.json()
-            }
-            throw response;
-        }).then(data => {
-            newTitles.push(data["book"])
-            console.log(newTitles)
-        }).finally(() => {setLoading(false)});
+    function checkStatus(response) {
+        if(response.ok) {
+            return Promise.resolve(response);
+        } else {
+            return Promise.reject(new Error(response.statusText));
+        }
     }
 
-    function getAllData() {
-        newTitles = []
-        return Promise.all(filePaths.map(filename => getData(filename)))
+    function parseJSON(response) {
+        return response.json();
     }
 
     useEffect(() => {
-        getAllData().then(setBookTitles(newTitles))
-        console.log(bookTitles)
-    }, []);
+        Promise.all(filePaths.map(fp => fetch(fp)
+            .then(checkStatus)
+            .then(parseJSON)
+            .catch(error => console.log('There was a problem',error))))
+            .then(data => {
+                console.log('Post Promise.all',data);
+                newTitles=[]
+                data.map( d1 => {
+                    newTitles.push(d1["book"]);
+                })
 
-    if (loading) return "Loading..."
+                setBookTitles(newTitles);
+            })
+    }, []);
 
     return (
         <div className="books">
