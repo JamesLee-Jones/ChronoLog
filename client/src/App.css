@@ -42,6 +42,11 @@
   display: flex;
 }
 
+.home-para {
+  font-family: "Helvetica Neue", serif;
+  font-weight: 350;
+}
+
 
 h1 {
     font-family: "Baskerville", "Times New Roman", serif;

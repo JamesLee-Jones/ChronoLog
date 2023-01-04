@@ -82,59 +82,62 @@ function HomePage() {
     // }
 
     return (
-        <main className="container" id="chronolog-header" role="main">
-            <div className="row justify-content-start">
-                <div className="col-4">
-                    <div className="row">
-                        <img src="../ChronoLogoTransparent.png" className="img-fluid" alt="ChronoLogo"/>
-                    </div>
-                    <div className="row"><p className="home-para">Bring literature to life with ChronoLog's book
-                        visualizations.</p></div>
-                    <div className="row">
+        <>
+            <main className="container" id="chronolog-header" role="main">
+                <div className="row justify-content-start">
+                    <div className="col-4">
                         <div className="row">
-                            <p className="home-para">ChronoLog offers colourful and informative networks of
-                                characters from literary classics.
-                            </p>
-                            <p className="home-para">Try out an example from ‘Harry Potter and the Philosopher’s
-                                Stone’ by J.K Rowling.</p>
-                            <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}}
-                                       onClick={() => navigate('/about/')}
-                                       variant="outlined homepage-buttons" endIcon={<ArrowForward/>}>Learn How ChronoLog
-                                Works</Button></p>
-                            <p className="home-para">Browse ChronoLog's library of literary classics and start
-                                exploring.</p>
-                            <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}}
-                                       onClick={() => navigate('/library/')}
-                                       variant="outlined homepage-buttons" endIcon={<LibraryBooks/>}>Browse Our
-                                Library</Button></p>
-                            <p className="home-para">Want to request a book or contribute to this project? Check out
-                                our GitHub repository.</p>
-                            <a href="https://github.com/JamesLee-Jones/ChronoLog/blob/main/README.md"><p><Button
-                                sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF", color: "#000000"}}
-                                variant="outlined homepage-buttons" endIcon={<Code/>}>Guide For Developers</Button>
-                            </p></a>
-                            <a href='https://github.com/JamesLee-Jones/ChronoLog' className="home-para"><p>
-                                <Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF", color: "#000000"}}
-                                        variant="outlined homepage-buttons" endIcon={<GitHub/>}>GitHub
-                                    Repository</Button></p></a>
+                            <img src="../ChronoLogoTransparent.png" className="img-fluid" alt="ChronoLogo"/>
+                        </div>
+                        <div className="row"><p className="home-para">Bring literature to life with ChronoLog's book
+                            visualizations.</p></div>
+                        <div className="row">
+                            <div className="row">
+                                <p className="home-para">ChronoLog offers colourful and informative networks of
+                                    characters from literary classics.
+                                </p>
+                                <p className="home-para">Try out an example from ‘Harry Potter and the Philosopher’s
+                                    Stone’ by J.K Rowling.</p>
+                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}}
+                                           onClick={() => navigate('/about/')}
+                                           variant="outlined homepage-buttons" endIcon={<ArrowForward/>}>Learn How
+                                    ChronoLog Works</Button></p>
+                                <p className="home-para">Browse ChronoLog's library of literary classics and start
+                                    exploring.</p>
+                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}}
+                                           onClick={() => navigate('/library/')}
+                                           variant="outlined homepage-buttons" endIcon={<LibraryBooks/>}>Browse Our
+                                    Library</Button></p>
+                                <p className="home-para">Want to request a book or contribute to this project? Check out
+                                    our GitHub repository.</p>
+                                <a href="https://github.com/JamesLee-Jones/ChronoLog/blob/main/README.md"><p><Button
+                                    sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF", color: "#000000"}}
+                                    variant="outlined homepage-buttons" endIcon={<Code/>}>Guide For Developers</Button>
+                                </p></a>
+                                <a href='https://github.com/JamesLee-Jones/ChronoLog' className="home-para"><p>
+                                    <Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF", color: "#000000"}}
+                                            variant="outlined homepage-buttons" endIcon={<GitHub/>}>GitHub
+                                        Repository</Button></p></a>
+                            </div>
                         </div>
                     </div>
+                    <div className="col-8 homeGraph"><ForceGraph2D
+                        graphData={{nodes: node, links: link}}
+                        nodeLabel="name"
+                        linkWidth={4}
+                        linkDirectionalParticleWidth={4}
+                        nodeAutoColorBy={"name"}
+                        width={width}
+                        height={height}
+                        ref={homePageGraph}
+                        enablePanInteraction={true}
+                        enableZoomInteraction={true}
+                    /></div>
                 </div>
-                <div className="col-8 homeGraph"><ForceGraph2D
-                    graphData={{nodes: node, links: link}}
-                    nodeLabel="name"
-                    linkWidth={4}
-                    linkDirectionalParticleWidth={4}
-                    nodeAutoColorBy={"name"}
-                    width={width}
-                    height={height}
-                    ref={homePageGraph}
-                    enablePanInteraction={true}
-                    enableZoomInteraction={true}
-                /></div>
-            </div>
-        </main>
-    )
+            </main>
+        </>
+    );
+
 }
 
 export default HomePage;
