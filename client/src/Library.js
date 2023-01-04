@@ -10,7 +10,7 @@ function Library() {
     document.body.style.backgroundColor = "#eae0d5";
   });
 
-  let files = require.context("../public/library/", false, /\.json$/);
+  let files = require.context("../public/library", false, /\.json$/);
   files = files.keys().map((filename) => filename.slice(2, -5));
 
   return (
