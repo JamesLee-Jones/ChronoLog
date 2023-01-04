@@ -32,12 +32,12 @@ function Library() {
 
   useEffect(() => {
     Promise.all(
-      filePaths.map((fp) =>
-        fetch(fp)
-          .then(checkStatus)
-          .then(parseJSON)
-          .catch((error) => console.log("There was a problem", error))
-      )
+        filePaths.map((fp) =>
+            fetch(fp)
+                .then(checkStatus)
+                .then(parseJSON)
+                .catch((error) => console.log("There was a problem", error))
+        )
     ).then((data) => {
       console.log("Post Promise.all", data);
       newTitles = [];
@@ -49,26 +49,26 @@ function Library() {
   }, []);
 
   return (
-    <div className="books">
-      <Row xs={1} md={2} lg={4} className="g-4">
-        {bookTitles.map((bookTitle, index) => (
-          <Col>
-            <Card className="text-center">
-              <Card.Img variant="top" src="../ChronoLogoMini.png" />
-              <Card.Body>
-                <Card.Title>{bookTitle}</Card.Title>
-                <a
-                  href={filePaths[index].slice(2, -5)}
-                  className="btn stretched-link"
-                >
-                  View graph
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </div>
+      <div className="books">
+        <Row xs={1} md={2} lg={4} className="g-4">
+          {bookTitles.map((bookTitle, index) => (
+              <Col>
+                <Card className="text-center">
+                  <Card.Img variant="top" src="../ChronoLogoMini.png" />
+                  <Card.Body>
+                    <Card.Title>{bookTitle}</Card.Title>
+                    <a
+                        href={filePaths[index].slice(2, -5)}
+                        className="btn stretched-link"
+                    >
+                      View graph
+                    </a>
+                  </Card.Body>
+                </Card>
+              </Col>
+          ))}
+        </Row>
+      </div>
   );
 }
 
