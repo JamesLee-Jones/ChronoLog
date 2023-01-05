@@ -2,6 +2,9 @@ import React, {useEffect, useState, useRef} from "react";
 import "./App.css";
 import {ForceGraph2D} from "react-force-graph";
 import * as d3 from "d3";
+import {Button} from "@mui/material";
+import {ArrowForward, Code, GitHub, LibraryBooks} from "@mui/icons-material";
+import {useNavigate} from "react-router-dom";
 
 function HomePage() {
 
@@ -57,8 +60,8 @@ function HomePage() {
         {source: "id5", target: "id8"},
     ];
 
-    const width = 1000;
-    const height = 800;
+    const width = 800;
+    const height = 600;
 
     const homePageGraph = useRef();
 
@@ -68,21 +71,49 @@ function HomePage() {
         homePageGraph.current.d3Force("collide", d3.forceCollide());
         homePageGraph.current.d3Force("y", d3.forceY(-10));
         homePageGraph.current.d3Force("x", d3.forceX(-10));
-        homePageGraph.current.zoom(6);
+        homePageGraph.current.zoom(5);
         homePageGraph.current.centerAt(homePageGraph.current.d3Force());
     }, []);
 
+    let navigate = useNavigate();
+    // const routeChange = () => {
+    //     let path = `newPath`;
+    //     navigate(path);
+    // }
+
     return (
         <>
-    <main className="container" id="chronolog-header" role="main">
+            <main className="container" id="chronolog-header" role="main">
                 <div className="row justify-content-start">
                     <div className="col-4">
                         <div className="row">
-                                <img src="../ChronoLogoTransparent.png" className="img-fluid" alt="ChronoLogo"/>
+                            <img src="../ChronoLogoTransparent.png" className="img-fluid" alt="ChronoLogo"/>
                         </div>
-                        <div className="row"><p className="home-para">Bring literature to life with ChronoLog's book visualizations.</p></div>
+                        <div className="row"><p className="home-para">Bring literature to life with ChronoLog's book
+                            visualizations.</p></div>
                         <div className="row">
-
+                            <div className="row">
+                                <p className="home-para">ChronoLog offers colourful and informative networks of
+                                    characters from literary classics.
+                                </p>
+                                <p className="home-para">Try out an example from ‘Harry Potter and the Philosopher’s
+                                    Stone’ by J.K Rowling.</p>
+                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#22333b"}} onClick={() => navigate('/about/')}
+                                           variant="outlined homepage-buttons" endIcon={<ArrowForward/>}>Learn How ChronoLog Works</Button></p>
+                                <p className="home-para">Browse ChronoLog's library of literary classics and start
+                                    exploring.</p>
+                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#22333b"}} onClick={() => navigate('/library/')}
+                                           variant="outlined homepage-buttons" endIcon={<LibraryBooks/>}>Browse Our
+                                    Library</Button></p>
+                                <p className="home-para">Want to request a book or contribute to this project? Check out
+                                    our GitHub repository.</p>
+                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#22333b"}}
+                                           variant="outlined homepage-buttons" endIcon={<Code/> }>Guide For Developers</Button>
+                                    </p>
+                                <a href='https://github.com/JamesLee-Jones/ChronoLog'><p  className="home-para">
+                                    <Button sx={{backgroundColor: "#FFFFFF", borderColor: "#22333b"}}
+                                        variant="outlined homepage-buttons" endIcon={<GitHub/>} >GitHub Repository</Button></p></a>
+                            </div>
                         </div>
                     </div>
                     <div className="col-8 homeGraph"><ForceGraph2D
@@ -98,7 +129,7 @@ function HomePage() {
                         enableZoomInteraction={true}
                     /></div>
                 </div>
-    </main>
+            </main>
             {/*<div className="container">*/}
             {/*    <div className="row text-center">*/}
             {/*        <div className="col-sm text-center">*/}
