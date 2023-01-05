@@ -147,20 +147,3 @@ class InteractionsCounter:
             "first interactions overall": dict.copy(self.first_interactions_overall),
             "first interactions per char": dict.copy(self.first_interactions_per_char)
         }
-
-
-# if __name__ == "__main__":
-#
-#     names = ['Abbie', 'Jack', 'Emily']
-#     pred_df = pd.DataFrame({'name': names})
-#     pred_df = pp.preprocess(pred_df, train=False)
-#     # Predictions
-#     result = gender_predictor.predict(np.asarray(pred_df['name'].values.tolist())).squeeze(axis=1)
-#     pred_df['Boy or Girl?'] = [
-#         'Boy' if logit > 0.5 else 'Girl' for logit in result
-#     ]
-#     pred_df['Probability'] = [
-#         logit if logit > 0.5 else 1.0 - logit for logit in result
-#     ]
-#     pred_df['name'] = names
-#     print(pred_df.at[pred_df.index[pred_df['name'] == 'Emily'].tolist()[0], 'Boy or Girl?'])
