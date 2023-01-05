@@ -154,12 +154,12 @@ class CharacterInteractionsProcessor:
 
         # The most important character and how many characters they are connected to
         # degree centrality - the number of connections a node has to another node
-        centrality = nx.degree_centrality(graph)
-        centrality_values = centrality.values()
+        d_centrality = nx.degree_centrality(graph)
+        centrality_values = d_centrality.values()
         degrees = sorted([(d, n) for n, d in graph.degree(weight="weight")])
         most_important_node = degrees[-1][1]
         degree_of_node = graph.degree(most_important_node)
-        centrality_of_node = centrality[most_important_node]
+        centrality_of_node = d_centrality[most_important_node]
         avg_centrality = 0 if len(centrality_values) == 0 else sum(centrality_values) / len(centrality_values)
 
         # Individual statistics for characters:
@@ -173,8 +173,8 @@ class CharacterInteractionsProcessor:
         # select the largest connected component
         # largest_component = max(connected_components, key=len)
 
-        betweeness_centrality = nx.betweenness_centrality(graph, weight="weight")
-        subgraph_centrality = nx.subgraph_centrality(graph)
+        b_centrality = nx.betweenness_centrality(graph, weight="weight")
+        s_centrality = nx.subgraph_centrality(graph)
 
         # The clique involving that character and it's size
         # The number of cliques
@@ -187,8 +187,7 @@ class CharacterInteractionsProcessor:
         clustering_average = 0 if len(avg_clusterings) == 0 else sum(avg_clusterings) / len(avg_clusterings)
         mc_stats = (most_important_node, degree_of_node, centrality_of_node)
 
-        return clustering_average, number_of_cliques, mc_stats, avg_centrality, subgraph_centrality, \
-               betweeness_centrality, centrality
+        return clustering_average, number_of_cliques, mc_stats, avg_centrality, s_centrality, b_centrality, d_centrality
 
     def generate_timeline_json(self, title: str):
         file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
