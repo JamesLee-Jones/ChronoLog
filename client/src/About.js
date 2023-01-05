@@ -224,7 +224,8 @@ function About() {
           <p>
             The subgraph centrality of a node is a measure of it's importance in terms of the size and density of the
             subgraph induced by it's neighbours. The subgraph centrality of that character would be a measure of their
-            importance in terms of the size and density of the group of characters they are connected to. Characters with
+            importance in terms of the size and density of the group of characters they are connected to. Characters
+            with
             a high subgraph centrality might be thought of as being at the center of a large, tightly-knit group of
             characters.
           </p>

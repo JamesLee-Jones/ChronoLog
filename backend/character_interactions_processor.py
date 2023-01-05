@@ -187,7 +187,8 @@ class CharacterInteractionsProcessor:
         clustering_average = 0 if len(avg_clusterings) == 0 else sum(avg_clusterings) / len(avg_clusterings)
         mc_stats = (most_important_node, degree_of_node, centrality_of_node)
 
-        return clustering_average, number_of_cliques, mc_stats, avg_centrality, subgraph_centrality, betweeness_centrality, centrality
+        return clustering_average, number_of_cliques, mc_stats, avg_centrality, subgraph_centrality, \
+               betweeness_centrality, centrality
 
     def generate_timeline_json(self, title: str):
         file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
