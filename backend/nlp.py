@@ -78,7 +78,8 @@ class InteractionsCounter:
             elif p == 'he' or p == 'him':
                 more_chars.append(self.pronouns['male'])
 
-        for char in characters:
+        for c in characters:
+            char = self.character_dict[c]
             gender = self.character_genders[char]
             if gender == 'Girl':
                 self.pronouns['female'] = char
