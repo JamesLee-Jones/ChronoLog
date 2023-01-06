@@ -25,12 +25,12 @@ The following guide assumes that you are using a Unix-like machine.
 
 1. Clone the ChronoLog repository to your own machine by running the following command in the terminal:  
    `git clone https://github.com/JamesLee-Jones/ChronoLog.git`
-2. Navigate to the outermost folder, nlp-timeline-gen  
-   `cd nlp-timeline-gen`
+2. Navigate to the outermost folder, ChronoLog  
+   `cd ChronoLog`
 3. Save the text you want to process and visualise as a `.txt` file. You can save the text in the `/texts/` folder.  
    For this guide, we will assume we want to process and analyse the text 'The Great Gatsby', saved
    at `/texts/the_great_gatsby.txt`.
-4. There is a script in `nlp-timeline-gen` called `chronology.py`.  
+4. There is a script in `ChronoLog` called `chronology.py`.  
    Run `python ./chronolog.py --help` to see detailed information about the script's usage.  
    To briefly summarise, the script takes 1 compulsory argument, `filename` (the path to the text you want to analyse)
    and
@@ -50,8 +50,7 @@ The following guide assumes that you are using a Unix-like machine.
       There are additional optional arguments for refining the analysis that can be found through the `--help` command.
 5. Run the script using the appropriate arguments for your text. In our example, this
    is  
-   `python ./chronolog.py --chapterRegex numeral --narrator "Nick Carraway texts/the_great_gatsby.txt`.  
-   Note the expected order: `python ./chronolog.py [optional arguments] [filename]`
+   `python ./chronolog.py --chapterRegex numeral --narrator "Nick Carraway" texts/the_great_gatsby.txt`.  
 6. Wait for the script to finish. There will be frequent updates in the terminal about the current progress of the
    analysis. Note that this may take several minutes, depending on the length of the text.
 7. When the script terminates, the analysis is finished. You can now proceed to visualising the text.
