@@ -41,10 +41,9 @@ function Library() {
     ).then((data) => {
       console.log("Post Promise.all", data);
       newTitles = [];
-      data.map((d1) => {
+      data.forEach((d1) => {
         newTitles.push(d1["book"]);
       });
-
       setBookTitles(newTitles);
     });
   }, []);
@@ -52,13 +51,13 @@ function Library() {
   return (
     <div className="books">
       <Row xs={1} md={2} lg={4} className="g-4">
-        {bookTitles.map((bookTitle) => (
+        {bookTitles.map((bookTitle, index) => (
           <Col>
             <Card className="text-center">
               <Card.Img variant="top" src="../ChronoLogoMini.png" />
               <Card.Body>
                 <Card.Title>{bookTitle}</Card.Title>
-                <a href="" className="btn stretched-link">
+                <a href={filePaths[index].slice(2, -5)} className="btn stretched-link">
                   View graph
                 </a>
               </Card.Body>
