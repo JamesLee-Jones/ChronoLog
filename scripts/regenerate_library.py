@@ -34,5 +34,3 @@ if __name__ == '__main__':
                                 check=True)
         except subprocess.CalledProcessError:
             print("Error occurred whilst processing {}.".format(file))
-    subprocess.run(["python", ".\\chronolog.py", "texts\\" + "little_women.txt", "-s 20", "-t little_women_sectioned"],
-                   env=env)
