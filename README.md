@@ -66,7 +66,11 @@ Ensure that you have followed the steps above to process the text.
    preprocessed texts.
 
 #### Adding Text to Global Library
-TODO 
+
+To add a text you have processed to the website (and not just locally), create a pull request with your text in `/texts`
+and the corresponding analysis in `/timelines`. The text and analysis will be reviewed by a developer to ensure it meets
+quality standards, and then added to the website. This may take a few days, so please be patient!
+
 ## Guide for Developers
 
 The following guide assumes that you are using Linux for development.
