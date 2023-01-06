@@ -69,7 +69,7 @@ class CharacterInteractionsProcessor:
         threshold = self._calculate_threshold(np.fromiter(characters_interactions.values(), dtype=int))
         if not self.quiet:
             print("Threshold: ", threshold)
-        unimportant_characters = [ch for (ch, x) in characters_interactions.items() if x < threshold]
+        unimportant_characters = [ch for (ch, x) in characters_interactions.items() if x <= threshold]
 
         self._prune_matrices(unimportant_characters)
         interactions_overall, interactions_per_character = self._prune_metadata(unimportant_characters)

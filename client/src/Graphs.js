@@ -14,37 +14,6 @@ function addNodeMetadata(node, metaData) {
   return node;
 }
 
-// Converts JSON data from backend into graph JSON data for react force graph
-// function convert(data, characters) {
-//   let result = [...data];
-//   return result.map((d) => convertToGraph(d, characters));
-// }
-
-// function convertToGraph(data, characters) {
-//   let nodes = [];
-//   let links = [];
-//   let scale = 10;
-//   let names = data["names"];
-//   let matrix = data["matrix"];
-//   let numNodes = Math.min(names.length, characters);
-//   for (let i = 0; i < numNodes; i++) {
-//     nodes.push({ id: "id" + String(i), name: names[i] });
-//   }
-//   for (let j = 0; j < numNodes; j++) {
-//     for (let k = 0; k < numNodes; k++) {
-//       if (j !== k && matrix[j][k] !== 0) {
-//         links.push({
-//           source: "id" + String(j),
-//           target: "id" + String(k),
-//           value: matrix[j][k] * scale,
-//           linkVisibility: true,
-//         });
-//       }
-//     }
-//   }
-//   return { nodes: nodes, links: links };
-// }
-
 function addLinkMetaData(link, metaData, nodes) {
   let data = Object.keys(metaData);
 
@@ -90,22 +59,23 @@ function hideLinks(links, id) {
       links[i]["linkVisibility"] = !links[i]["linkVisibility"];
     }
 
-    // if(links[i]["source"]["id"] === id){
-    //     links[i]["value"] = links[i]["valSource"]
-    // }else if (links[i]["target"]["id"] === id){
-    //     links[i]["value"] = links[i]["valTarget"]
-    // }
+    if (links[i]["source"]["id"] === id) {
+      links[i]["value"] = JSON.parse(JSON.stringify(links[i]["valSource"]));
+    } else if (links[i]["target"]["id"] === id) {
+      links[i]["value"] = JSON.parse(JSON.stringify(links[i]["valTarget"]));
+    }
+
+    links[i]["linkLineDash"] = links[i]["value"] < 2 ? [4, 3] : [1, 0];
   }
 }
 
-// function revertLinks(links){
-
-//     for (let i = 0; i < links.length; i++) {
-//         console.log(links[i])
-//         links[2]["value"] = 100
-//     }
-//     console.log(links)
-// }
+function revertLinks(links) {
+  for (let i = 0; i < links.length; i++) {
+    links[i]["value"] = JSON.parse(JSON.stringify(links[i]["valTotal"]));
+    links[i]["linkLineDash"] = links[i]["value"] < 2 ? [4, 3] : [1, 0];
+    links[i]["linkVisibility"] = true;
+  }
+}
 
 const Graphs = ({
   graphData,
@@ -149,11 +119,13 @@ const Graphs = ({
           let curLink = {
             source: "id" + String(i),
             target: "id" + String(j),
-            value: matrix[i][j] + matrix[j][i] * scale,
-            valSource: matrix[i][j],
-            valTarget: matrix[j][i],
-            valTotal: matrix[i][j] + matrix[j][i] * scale,
+            value: ((matrix[i][j] + matrix[j][i]) / 2) * scale,
+            valSource: matrix[i][j] * scale,
+            valTarget: matrix[j][i] * scale,
+            valTotal: ((matrix[i][j] + matrix[j][i]) / 2) * scale,
             linkVisibility: true,
+            linkLineDash:
+              matrix[i][j] + matrix[j][i] * scale < 2 ? [4, 3] : [1, 0],
           };
 
           curLink = addLinkMetaData(curLink, linkMetadata, nodes);
@@ -177,15 +149,15 @@ const Graphs = ({
 
     if (activeNode === "") {
       setActiveNode(node["id"]);
+      hideLinks(links, node["id"]);
     } else if (activeNode === node["id"]) {
       setActiveNode("");
-      //revertLinks(links)
+      revertLinks(links);
     } else {
-      hideLinks(links, activeNode);
+      revertLinks(links);
       setActiveNode(node["id"]);
+      hideLinks(links, node["id"]);
     }
-
-    hideLinks(links, node["id"]);
 
     setNode(node);
     console.log(node);
@@ -212,7 +184,8 @@ const Graphs = ({
         <ForceGraph2D
           graphData={graphs[counter]}
           nodeLabel="name"
-          linkWidth="value"
+          linkWidth={4}
+          linkLineDash="linkLineDash"
           linkVisibility="linkVisibility"
           linkDirectionalParticleWidth={4}
           width={width}

@@ -1,5 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Slider } from "@mui/material";
+import {
+  IoPlaySkipBack,
+  IoPlaySkipForward,
+  IoPlay,
+  IoPause,
+} from "react-icons/io5";
+import "./Slider.css";
 
 function generate_markers(val, scale) {
   let res = [];
@@ -72,7 +79,7 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
   };
 
   return (
-    <div>
+    <div className="slider">
       <Slider
         aria-label="Sections"
         defaultValue={0}
@@ -102,33 +109,37 @@ const TimelineNavigaion = ({ maxval, setCounter, counter }) => {
         max={maxval * scale}
       />
 
-      <button
-        style={{ backgroundColor: "#0A0908", color: "white" }}
-        className="btn"
-        onClick={onPrev}
-      >
-        {"Previous"}
-      </button>
-      <button
-        onClick={() => {
-          setRun(!run);
-          if (sliderVal > maxval * scale && !run) {
-            setCounter(0);
-            setSliderVal(0);
-          }
-        }}
-        style={{ backgroundColor: "#0A0908", color: "white" }}
-        className="btn"
-      >
-        {run ? "Pause" : "Play"}
-      </button>
-      <button
-        style={{ backgroundColor: "#0A0908", color: "white" }}
-        className="btn"
-        onClick={onNext}
-      >
-        {"Next"}
-      </button>
+      <div className="nav">
+        <div
+          className="btn"
+          onClick={onPrev}
+          style={{ color: "#22333b", fontSize: "50px" }}
+        >
+          <IoPlaySkipBack></IoPlaySkipBack>
+        </div>
+
+        <div
+          className="btn"
+          onClick={() => {
+            setRun(!run);
+            if (sliderVal > maxval * scale && !run) {
+              setCounter(0);
+              setSliderVal(0);
+            }
+          }}
+          style={{ color: "#22333b", fontSize: "50px" }}
+        >
+          {run ? <IoPause></IoPause> : <IoPlay></IoPlay>}
+        </div>
+
+        <div
+          className="btn"
+          onClick={onNext}
+          style={{ color: "#22333b", fontSize: "50px" }}
+        >
+          <IoPlaySkipForward></IoPlaySkipForward>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -10,19 +10,57 @@ function Library() {
     document.body.style.backgroundColor = "#eae0d5";
   });
 
-  let files = require.context("../public/library/", false, /\.json$/);
-  files = files.keys().map((filename) => filename.slice(2, -5));
+  const [bookTitles, setBookTitles] = useState([]);
+  // const [loading, setLoading] = useState(true)
+
+  let filePaths = require.context("../public/library/", false, /\.json$/);
+  filePaths = filePaths.keys();
+
+  let newTitles = [];
+
+  function checkStatus(response) {
+    if (response.ok) {
+      return Promise.resolve(response);
+    } else {
+      return Promise.reject(new Error(response.statusText));
+    }
+  }
+
+  function parseJSON(response) {
+    return response.json();
+  }
+
+  useEffect(() => {
+    Promise.all(
+      filePaths.map((fp) =>
+        fetch(fp)
+          .then(checkStatus)
+          .then(parseJSON)
+          .catch((error) => console.log("There was a problem", error))
+      )
+    ).then((data) => {
+      console.log("Post Promise.all", data);
+      newTitles = [];
+      data.forEach((d1) => {
+        newTitles.push(d1["book"]);
+      });
+      setBookTitles(newTitles);
+    });
+  }, []);
 
   return (
     <div className="books">
       <Row xs={1} md={2} lg={4} className="g-4">
-        {files.map((filename) => (
+        {bookTitles.map((bookTitle, index) => (
           <Col>
             <Card className="text-center">
               <Card.Img variant="top" src="../ChronoLogoMini.png" />
               <Card.Body>
-                <Card.Title>{filename.replaceAll("_", " ")}</Card.Title>
-                <a href={filename} class="btn stretched-link">
+                <Card.Title>{bookTitle}</Card.Title>
+                <a
+                  href={filePaths[index].slice(2, -5)}
+                  className="btn stretched-link"
+                >
                   View graph
                 </a>
               </Card.Body>

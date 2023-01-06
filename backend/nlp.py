@@ -1,6 +1,16 @@
+import os
+import sys
 import numpy as np
+import pandas as pd
+from .gendermodel import preprocess as pp
+from keras.models import load_model
 import spacy
 import regex as re
+
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.append(parent)
+gender_predictor = load_model(os.path.join(parent, 'backend/gendermodel/boyorgirl.h5'))
 
 
 class InteractionsCounter:
@@ -11,7 +21,10 @@ class InteractionsCounter:
         self.character_dict: dict[str, [str]] = {} if not narrator else {"I": [narrator]}
         self.first_interactions_overall: dict = {}
         self.first_interactions_per_char: dict = {}
+
         self.first_person: bool = narrator is not None
+        self.character_genders: dict[str, str] = {}
+        self.pronouns: dict[str, str] = {'I': narrator, 'female': '', 'male': ''}
 
     def _get_characters(self, doc) -> list[str]:
         all_characters = sorted(
@@ -43,8 +56,46 @@ class InteractionsCounter:
         for name in character_matches:
             # full_name = str(max(character_matches[name], key=len)) if character_matches[name] else name
             self.character_dict[name] = character_matches[name]
+        return self._predict_genders(list(set([name for full_names in self.character_dict.values() for name in full_names])))
 
-        return list(set([name for full_names in self.character_dict.values() for name in full_names]))
+    def _predict_genders(self, characters) -> list[str]:
+        pred_df = pd.DataFrame({'name': characters})
+        pred_df = pp.preprocess(pred_df, train=False)
+        # Predictions
+        result = gender_predictor.predict(np.asarray(pred_df['name'].values.tolist())).squeeze(axis=1)
+        pred_df['Boy or Girl?'] = [
+            'Boy' if logit > 0.5 else 'Girl' for logit in result
+        ]
+        pred_df['Probability'] = [
+            logit if logit > 0.5 else 1.0 - logit for logit in result
+        ]
+        pred_df['name'] = characters
+        self.character_genders = {
+            char: pred_df.at[pred_df.index[pred_df['name'] == char].tolist()[0], 'Boy or Girl?']
+            for char in characters
+        }
+        return characters
+
+    def _match_pronouns(self, pronouns, characters):
+        more_chars = []
+        for p in pronouns:
+            if self.first_person and p == 'I':
+                more_chars.append(self.pronouns['I'])
+            elif (p == 'she' or p == 'her') and self.pronouns['female']:
+                more_chars.append(self.pronouns['female'])
+            elif (p == 'he' or p == 'him') and self.pronouns['male']:
+                more_chars.append(self.pronouns['male'])
+
+        for c in characters:
+            full_names = self.character_dict[c]
+            for char in full_names:
+                gender = self.character_genders[char]
+                if gender == 'Girl':
+                    self.pronouns['female'] = char
+                elif gender == 'Boy':
+                    self.pronouns['male'] = char
+        all_chars = set(characters).union(set(more_chars).difference(''))
+        return list(all_chars) if more_chars else characters
 
     def _update_interactions_records(self, interactions: dict, sentence: str, first_char: str, second_char: str):
         # If first char not in dict, add to dict
@@ -84,9 +135,8 @@ class InteractionsCounter:
             people = list(dict.fromkeys(
                 [ent.text.title().replace("_", "").removesuffix("'S") for ent in sentence.ents if
                  ent.label_ == "PERSON"]))
-            pronouns = list(set([pn.text.title() for pn in sentence if pn.pos_ == "PRON" and pn.text == "I"]))
-            if self.first_person:
-                people.extend(pronouns)
+            pronouns = list(set([pn.text.lower() for pn in sentence if pn.pos_ == "PRON"]))
+            people = self._match_pronouns(pronouns, people)
             for i in range(len(people)):
                 for j in range(i + 1, len(people)):
                     # Track first interactions
