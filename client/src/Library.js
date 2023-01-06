@@ -57,7 +57,10 @@ function Library() {
               <Card.Img variant="top" src="../ChronoLogoMini.png" />
               <Card.Body>
                 <Card.Title>{bookTitle}</Card.Title>
-                <a href={filePaths[index].slice(2, -5)} className="btn stretched-link">
+                <a
+                  href={filePaths[index].slice(2, -5)}
+                  className="btn stretched-link"
+                >
                   View graph
                 </a>
               </Card.Body>
