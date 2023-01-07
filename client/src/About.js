@@ -190,14 +190,51 @@ function About() {
           </li>
           <p>
             A measure of the degree to which nodes in a graph tend to cluster
-            together.
+            together. In this context, the average clustering coefficient of the
+            graph would be a measure of the degree to which the characters tend
+            to form groups or cliques. A value of 0 indicates that the
+            characters do not tend to cluster together at all, while a value of
+            1 indicates that the characters are highly interconnected and tend
+            to form a large number of triangles.
           </p>
           <li>
             <text style={{ fontWeight: "bold" }}>Degree Centrallity</text>
           </li>
           <p>
             How many direct, 'one hop' connections each node has to other nodes
-            in the graph.
+            in the graph. It is a measure of a node's influence based on the
+            number of edges incident on it. This would represent how important a
+            character is based on how many characters they interact with. We
+            used this metric to determine who the most important character is.
+          </p>
+          <li>
+            <text style={{ fontWeight: "bold" }}>Betweenness Centrallity</text>
+          </li>
+          <p>
+            The betweenness centrality of a node in a graph represents the
+            number of times the node lies on the shortest between two other
+            nodes. For every character this is would be a measure of how often
+            they are involved in the interactions between other characters.
+          </p>
+          <p>
+            A character with a high betweenness centrality might be considered a
+            'mediator' who connects different groups of characters and plays a
+            key role in facilitating communication and interactions between
+            them. On the other hand, a character with a low betweenness
+            centrality might be more isolated and have fewer connections to
+            other characters.
+          </p>
+          <li>
+            <text style={{ fontWeight: "bold" }}>Subgraph Centrality</text>
+          </li>
+          <p>
+            The subgraph centrality of a node is a measure of it's importance in
+            terms of the size and density of the subgraph induced by it's
+            neighbours. The subgraph centrality of that character would be a
+            measure of their importance in terms of the size and density of the
+            group of characters they are connected to. Characters with a high
+            subgraph centrality might be thought of as being at the center of a
+            large, tightly-knit group of characters.
           </p>
           <li>
             <text style={{ fontWeight: "bold" }}>First Interaction</text>
