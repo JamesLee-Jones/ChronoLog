@@ -99,36 +99,55 @@ class CharacterInteractionsProcessor:
     def _prune_metadata(self, unimportant_characters: list[str]):
         interactions_overall = self.metadata["first interactions overall"]
         interactions_per_character = self.metadata["first interactions per char"]
-        for c in unimportant_characters:
-            if c in interactions_overall:
-                del interactions_overall[c]
-            if c in interactions_per_character:
-                del interactions_per_character[c]
+        for uc in unimportant_characters:
+            if uc in interactions_overall:
+                del interactions_overall[uc]
+            if uc in interactions_per_character:
+                del interactions_per_character[uc]
             for key in list(interactions_per_character.keys()):
-                if c in interactions_per_character[key]:
-                    del interactions_per_character[key][c]
+                if uc in interactions_per_character[key]:
+                    del interactions_per_character[key][uc]
                     if not interactions_per_character[key]:
                         del interactions_per_character[key]
         return interactions_overall, interactions_per_character
 
-    def update_names_metadata(self, mg):
+    def update_per_char_metadata(self, mg):
         curr_metadata = "first interactions per char"
-        for (name, value) in self.metadata["first interactions per char"].copy().items():
-            new_name = mg.character_dict[name]
-            if new_name != name:
-                self.metadata[curr_metadata][new_name] = self.metadata[curr_metadata].pop(name)
-            for (name2, interaction) in value.copy().items():
-                new_name2 = mg.character_dict[name2]
-                if new_name2 != name2 and name2 in self.metadata[curr_metadata][new_name]:
-                    self.metadata[curr_metadata][new_name][new_name2] = self.metadata[curr_metadata][new_name].pop(
-                        name2)
+        for (name, value) in self.metadata[curr_metadata].copy().items():
+            replace_name = False
+            for new_name in mg.character_dict[name]:
+                if new_name != name:
+                    replace_name = True
+                    self.metadata[curr_metadata][new_name] = self.metadata[curr_metadata][name]
+                for (name2, interaction) in value.copy().items():
+                    replace_name_2 = False
+                    for new_name2 in mg.character_dict[name2]:
+                        if new_name2 != name2 and name2 in self.metadata[curr_metadata][new_name]:
+                            replace_name_2 = True
+                            self.metadata[curr_metadata][new_name][new_name2] = self.metadata[curr_metadata][new_name][
+                                name2]
+                    if replace_name_2:
+                        self.metadata[curr_metadata][new_name].pop(name2)
+            if replace_name:
+                self.metadata[curr_metadata].pop(name)
 
+    def update_overall_metadata(self, mg):
         curr_metadata = "first interactions overall"
         for (name, interaction) in self.metadata[curr_metadata].copy().items():
-            new_name = mg.character_dict[name]
-            self.metadata[curr_metadata][new_name] = self.metadata[curr_metadata].pop(name)
-            int_with = self.metadata[curr_metadata][new_name]["with"]
-            self.metadata[curr_metadata][new_name]["with"] = mg.character_dict[int_with]
+            replace_name = False
+            for new_name in mg.character_dict[name]:
+                if new_name != name:
+                    replace_name = True
+                    self.metadata[curr_metadata][new_name] = self.metadata[curr_metadata][name]
+                int_with = self.metadata[curr_metadata][new_name]["with"]
+                for int_with_fname in mg.character_dict[int_with]:
+                    self.metadata[curr_metadata][new_name]["with"] = int_with_fname
+            if replace_name:
+                self.metadata[curr_metadata].pop(name)
+
+    def update_names_metadata(self, mg):
+        self.update_per_char_metadata(mg)
+        self.update_overall_metadata(mg)
 
     @staticmethod
     def normalise_matrix(matrix: np.ndarray):
@@ -199,7 +218,9 @@ class CharacterInteractionsProcessor:
         self.normalised_matrices = list(map(self.normalise_matrix, self.unnormalised_matrices))
         for i in range(len(self.characters_timeline)):
             for j in range(len(self.characters_timeline[i])):
-                self.characters_timeline[i][j] = matrix_generator.character_dict[self.characters_timeline[i][j]]
+                self.characters_timeline[i][j] = max(matrix_generator.character_dict[self.characters_timeline[i][j]],
+                                                     key=len) if matrix_generator.character_dict[
+                    self.characters_timeline[i][j]] else self.characters_timeline[i][j]
             self.sort_matrix(i)
             analysis = self.network_analysis(self.normalised_matrices[i], self.characters_timeline[i])
             json_contents["sections"].append({

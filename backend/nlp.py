@@ -18,7 +18,7 @@ class InteractionsCounter:
     def __init__(self, narrator: str = None):
         self.prev_matrix: np.ndarray = np.zeros((1, 1))
         self.prev_characters: list[str] = []
-        self.character_dict: dict[str, str] = {} if not narrator else {"I": narrator}
+        self.character_dict: dict[str, [str]] = {} if not narrator else {"I": [narrator]}
         self.first_interactions_overall: dict = {}
         self.first_interactions_per_char: dict = {}
 
@@ -38,17 +38,25 @@ class InteractionsCounter:
         for i in range(len(self.prev_characters)):
             for j in range(i + 1, len(self.prev_characters)):
                 char1, char2 = self.prev_characters[i], self.prev_characters[j]
-                interactions[self.character_dict[char1]][self.character_dict[char2]] = self.prev_matrix[i][j]
-                interactions[self.character_dict[char2]][self.character_dict[char1]] = self.prev_matrix[j][i]
+                for c1_full_name in self.character_dict[char1]:
+                    for c2_full_name in self.character_dict[char2]:
+                        interactions[c1_full_name][c2_full_name] = self.prev_matrix[i][j]
+                        interactions[c2_full_name][c1_full_name] = self.prev_matrix[j][i]
         return interactions
 
     def _pool_characters(self, all_characters: list[str]) -> list[str]:
-        character_matches = {ch: [ch2 for ch2 in all_characters if ch in re.split(" |-", ch2)] for ch in all_characters}
+        character_matches = {ch: [ch2 for ch2 in all_characters if ch == ch2 or ch in re.split(" |-", ch2)] for ch in
+                             all_characters}
+        # Reduce to disjoint characters
+        for (ch, names) in character_matches.items():
+            for name1 in names:
+                for name2 in names:
+                    if name2 != name1 and name2 in name1:
+                        names.remove(name2)
         for name in character_matches:
-            full_name = str(max(character_matches[name], key=len)) if character_matches[name] else name
-            self.character_dict[name] = full_name
-
-        return self._predict_genders(list(set(self.character_dict.values())))
+            # full_name = str(max(character_matches[name], key=len)) if character_matches[name] else name
+            self.character_dict[name] = character_matches[name]
+        return self._predict_genders(list(set([name for full_names in self.character_dict.values() for name in full_names])))
 
     def _predict_genders(self, characters) -> list[str]:
         pred_df = pd.DataFrame({'name': characters})
@@ -73,19 +81,19 @@ class InteractionsCounter:
         for p in pronouns:
             if self.first_person and p == 'I':
                 more_chars.append(self.pronouns['I'])
-            elif p == 'she' or p == 'her':
+            elif (p == 'she' or p == 'her') and self.pronouns['female']:
                 more_chars.append(self.pronouns['female'])
-            elif p == 'he' or p == 'him':
+            elif (p == 'he' or p == 'him') and self.pronouns['male']:
                 more_chars.append(self.pronouns['male'])
 
         for c in characters:
-            char = self.character_dict[c]
-            gender = self.character_genders[char]
-            if gender == 'Girl':
-                self.pronouns['female'] = char
-            elif gender == 'Boy':
-                self.pronouns['male'] = char
-
+            full_names = self.character_dict[c]
+            for char in full_names:
+                gender = self.character_genders[char]
+                if gender == 'Girl':
+                    self.pronouns['female'] = char
+                elif gender == 'Boy':
+                    self.pronouns['male'] = char
         all_chars = set(characters).union(set(more_chars).difference(''))
         return list(all_chars) if more_chars else characters
 
@@ -101,6 +109,16 @@ class InteractionsCounter:
             self.first_interactions_overall[first_char] = {"with": second_char, "context": sentence}
         if second_char in interactions and not sum(interactions[second_char].values()):
             self.first_interactions_overall[second_char] = {"with": first_char, "context": sentence}
+
+    def update_interactions(self, p1, p2, interactions, text):
+        for first_char in self.character_dict[p1]:
+            for second_char in self.character_dict[p2]:
+                if first_char == second_char:
+                    continue
+                self._update_interactions_records(interactions, text, first_char, second_char)
+                # Increment interactions
+                interactions[first_char][second_char] += 1
+                interactions[second_char][first_char] += 1
 
     def generate_interactions_matrix(self, text: str) -> tuple[np.ndarray, list[str]]:
         try:
@@ -122,14 +140,7 @@ class InteractionsCounter:
             for i in range(len(people)):
                 for j in range(i + 1, len(people)):
                     # Track first interactions
-                    first_char = min(self.character_dict[people[i]], self.character_dict[people[j]])
-                    second_char = max(self.character_dict[people[i]], self.character_dict[people[j]])
-                    if first_char == second_char:
-                        continue
-                    self._update_interactions_records(interactions, sentence.text, first_char, second_char)
-                    # Increment interactions
-                    interactions[first_char][second_char] += 1
-                    interactions[second_char][first_char] += 1
+                    self.update_interactions(people[i], people[j], interactions, text)
 
         interactions_matrix = np.zeros((len(characters), len(characters)))
 

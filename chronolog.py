@@ -55,8 +55,8 @@ def main():
     parser.add_argument('--quiet', '-q', required=False, action='store_true',
                         help="Suppresses updates on progress of model.")
     parser.add_argument('--percentile', '-p', required=False, type=int, default=DEFAULT_PERCENTILE,
-                        choices=range(0, 101),
-                        help="Percentile threshold below which names will be disregarded. Defaults to {}.".format(
+                        choices=range(0, 101), metavar="[0-100]",
+                        help="Percentile threshold (0-100) below which names will be disregarded. Defaults to {}.".format(
                             DEFAULT_PERCENTILE))
     parser.add_argument('--unpruned', '-u', required=False, action='store_true',
                         help="Perform no pruning on output matrix.")
