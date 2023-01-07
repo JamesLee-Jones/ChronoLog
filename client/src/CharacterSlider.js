@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Slider } from "@mui/material";
 
-function generate_markers(val, scale) {
+function generate_markers(val) {
   let res = [];
   for (let i = 0; i < val; i++) {
-    res.push({ value: i * scale });
+    res.push({ value: i });
   }
   return res;
 }
@@ -32,39 +32,36 @@ const CharacterSlider = ({ maxval, setCounter, counter }) => {
   const [run, setRun] = useState(false);
   const [sliderVal, setSliderVal] = useState(0);
 
-  let scale = 100;
-
   useInterval(
     () => {
-      if (sliderVal > maxval * scale) {
+      if (sliderVal > maxval) {
         setRun(false);
       }
 
       setSliderVal(sliderVal + 1);
-      setCounter(Math.floor(sliderVal / scale));
+      setCounter(Math.floor(sliderVal));
     },
     run ? 50 : null
   );
 
   useEffect(() => {
-    setMark(generate_markers(maxval, scale));
+    setMark(generate_markers(maxval));
   }, [maxval]);
 
   useEffect(() => {
-    setSliderVal(counter * scale);
+    setSliderVal(counter);
   }, [counter]);
 
   return (
     <div>
       <Slider
-        aria-label="Sections"
+        aria-label="characters"
         defaultValue={0}
         marks={mark}
         value={sliderVal}
-        valueLabelDisplay="off"
+        valueLabelDisplay="on"
         onChange={(_, value) => {
-          let val = Math.floor(value / scale);
-          setCounter(val);
+          setCounter(value);
           setSliderVal(value);
         }}
         step={1}
@@ -82,7 +79,7 @@ const CharacterSlider = ({ maxval, setCounter, counter }) => {
           },
         }}
         min={1}
-        max={maxval * scale}
+        max={maxval}
       />
     </div>
   );

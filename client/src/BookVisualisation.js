@@ -11,6 +11,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import MetadataLinkCard from "./MetadataLinkCard";
 import MetadataAnalysisCard from "./MetadataAnalysisCard";
+import { BsPersonFill, FaBookOpen } from "react-icons/all";
+import { IconContext } from "react-icons";
+import { Tooltip } from "@mui/material";
 
 function convertData(data) {
   return {
@@ -84,20 +87,58 @@ function BookVisualisation() {
                   setLink={setLink}
                   characters={numCharacters}
                 ></Graphs>
-                <TimelineNavigation
-                  maxval={
-                    data["sections"].length ? data["sections"].length - 1 : 0
-                  }
-                  setCounter={setCounter}
-                  counter={counter}
-                  TimelineNavigation
-                />
-                <CharacterSlider
-                  maxval={30}
-                  setCounter={setNumCharacters}
-                  counter={numCharacters}
-                  CharacterSlider
-                />
+                <row>
+                  <Tooltip title="Select a section in the text to view.">
+                    <div
+                      style={{
+                        float: "left",
+                        width: "5%",
+                        paddingTop: "5px",
+                        paddingRight: "5px",
+                      }}
+                    >
+                      <IconContext.Provider value={{ size: "2em" }}>
+                        <FaBookOpen />
+                      </IconContext.Provider>
+                    </div>
+                  </Tooltip>
+                  <div style={{ float: "left", width: "95%" }}>
+                    <TimelineNavigation
+                      maxval={
+                        data["sections"].length
+                          ? data["sections"].length - 1
+                          : 0
+                      }
+                      setCounter={setCounter}
+                      counter={counter}
+                      TimelineNavigation
+                    />
+                  </div>
+                </row>
+                <row>
+                  <Tooltip title="Select the top number of characters to view.">
+                    <div style={{ float: "left", width: "5%" }}>
+                      <IconContext.Provider value={{ size: "2em" }}>
+                        <BsPersonFill />
+                      </IconContext.Provider>
+                    </div>
+                  </Tooltip>
+                  <div style={{ float: "left", width: "95%" }}>
+                    <CharacterSlider
+                      maxval={
+                        data["sections"].at(-1)
+                          ? Math.min(
+                              data["sections"].at(-1)["names"].length,
+                              30
+                            )
+                          : 1
+                      }
+                      setCounter={setNumCharacters}
+                      counter={numCharacters}
+                      CharacterSlider
+                    />
+                  </div>
+                </row>
               </Col>
               <Col sm={4}>
                 <div className="metadata">
