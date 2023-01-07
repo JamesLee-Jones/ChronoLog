@@ -15,25 +15,7 @@
       "most_important_character": "Gabriel John Utterson",
       "degree_of_mic": 5,
       "degree_centrality_mic": 1.6666666666666665,
-      "avg_degree_centrality": 1.5,
-      "subgraph_centrality": {
-        "Gabriel John Utterson": 3.492148788049189,
-        "Henry Jekyll": 2.782980402210387,
-        "Edward Hyde": 2.782980402210387,
-        "Richard Enfield": 1.6611137559132958
-      },
-      "betweenness_centrality": {
-        "Gabriel John Utterson": 0.5,
-        "Henry Jekyll": 0.5,
-        "Edward Hyde": 1.3888888888888888,
-        "Richard Enfield": 0.875
-      },
-      "degree_centrality": {
-        "Gabriel John Utterson": 1.6666666666666665,
-        "Henry Jekyll": 1.6666666666666665,
-        "Edward Hyde": 1.6666666666666665,
-        "Richard Enfield": 1.0
-      }
+      "avg_degree_centrality": 1.5
     }
   }, {
     "names": ["Edward Hyde", "Gabriel John Utterson", "Damon", "Pythias", "Henry Jekyll", "Richard Enfield", "Harry Jekyll", "Seek"],
@@ -53,37 +35,7 @@
       "most_important_character": "Edward Hyde",
       "degree_of_mic": 9,
       "degree_centrality_mic": 1.2857142857142856,
-      "avg_degree_centrality": 1.25,
-      "subgraph_centrality": {
-        "Edward Hyde": 4.474101366211852,
-        "Gabriel John Utterson": 3.6548276922891736,
-        "Damon": 1.5430806348152424,
-        "Pythias": 1.5430806348152428,
-        "Henry Jekyll": 2.938119774793514,
-        "Richard Enfield": 1.665425039282147,
-        "Harry Jekyll": 1.7167079174956594,
-        "Seek": 1.716707917495659
-      },
-      "betweenness_centrality": {
-        "Edward Hyde": 0.5854214292189526,
-        "Gabriel John Utterson": 2.0179329132244765,
-        "Damon": 6.346884617608693,
-        "Pythias": 6.357417808245524,
-        "Henry Jekyll": 2.514283743389517,
-        "Richard Enfield": 2.05863729585899,
-        "Harry Jekyll": 1.4232421622022273,
-        "Seek": 0.21927609665094872
-      },
-      "degree_centrality": {
-        "Edward Hyde": 1.2857142857142856,
-        "Gabriel John Utterson": 1.2857142857142856,
-        "Damon": 1.2857142857142856,
-        "Pythias": 1.2857142857142856,
-        "Henry Jekyll": 1.2857142857142856,
-        "Richard Enfield": 1.2857142857142856,
-        "Harry Jekyll": 1.2857142857142856,
-        "Seek": 1.0
-      }
+      "avg_degree_centrality": 1.25
     }
   }, {
     "names": ["Edward Hyde", "Gabriel John Utterson", "Damon", "Pythias", "Henry Jekyll", "Richard Enfield", "Harry Jekyll", "Seek", "Danvers Carew"],
@@ -104,40 +56,7 @@
       "most_important_character": "Edward Hyde",
       "degree_of_mic": 10,
       "degree_centrality_mic": 1.25,
-      "avg_degree_centrality": 1.2222222222222223,
-      "subgraph_centrality": {
-        "Edward Hyde": 4.474101366211851,
-        "Gabriel John Utterson": 3.6548276922891736,
-        "Damon": 1.5430806348152424,
-        "Pythias": 1.5430806348152428,
-        "Henry Jekyll": 2.938119774793514,
-        "Richard Enfield": 1.6654250392821472,
-        "Harry Jekyll": 1.7167079174956592,
-        "Seek": 1.716707917495659,
-        "Danvers Carew": 1.0
-      },
-      "betweenness_centrality": {
-        "Edward Hyde": 1.5118470235527877,
-        "Gabriel John Utterson": 3.409872260702657,
-        "Damon": 10.534961079882045,
-        "Pythias": 10.538563884094417,
-        "Henry Jekyll": 3.42307428863594,
-        "Richard Enfield": 3.139456481207165,
-        "Harry Jekyll": 2.535944550126485,
-        "Seek": 1.2464076295167101,
-        "Danvers Carew": 0.6611632927906529
-      },
-      "degree_centrality": {
-        "Edward Hyde": 1.25,
-        "Gabriel John Utterson": 1.25,
-        "Damon": 1.25,
-        "Pythias": 1.25,
-        "Henry Jekyll": 1.25,
-        "Richard Enfield": 1.25,
-        "Harry Jekyll": 1.25,
-        "Seek": 1.25,
-        "Danvers Carew": 1.0
-      }
+      "avg_degree_centrality": 1.2222222222222223
     }
   }, {
     "names": ["Edward Hyde", "Gabriel John Utterson", "Damon", "Pythias", "Henry Jekyll", "Harry Jekyll", "Danvers Carew", "Richard Enfield", "Seek"],
@@ -158,40 +77,7 @@
       "most_important_character": "Edward Hyde",
       "degree_of_mic": 10,
       "degree_centrality_mic": 1.25,
-      "avg_degree_centrality": 1.2222222222222223,
-      "subgraph_centrality": {
-        "Edward Hyde": 6.420045686751244,
-        "Gabriel John Utterson": 5.449983092168104,
-        "Damon": 1.5430806348152435,
-        "Pythias": 1.543080634815245,
-        "Henry Jekyll": 3.2802637838257764,
-        "Harry Jekyll": 3.280263783825776,
-        "Danvers Carew": 1.8042458813579616,
-        "Richard Enfield": 1.7489736436162373,
-        "Seek": 1.8042458813579614
-      },
-      "betweenness_centrality": {
-        "Edward Hyde": 0.34593633569300986,
-        "Gabriel John Utterson": 1.9334919883452626,
-        "Damon": 13.340934419574626,
-        "Pythias": 13.345253315751364,
-        "Henry Jekyll": 3.911994974438271,
-        "Harry Jekyll": 1.96377119025323,
-        "Danvers Carew": 2.336418817282325,
-        "Richard Enfield": 1.626792261474626,
-        "Seek": 0.29807723287941673
-      },
-      "degree_centrality": {
-        "Edward Hyde": 1.25,
-        "Gabriel John Utterson": 1.25,
-        "Damon": 1.25,
-        "Pythias": 1.25,
-        "Henry Jekyll": 1.25,
-        "Harry Jekyll": 1.25,
-        "Danvers Carew": 1.25,
-        "Richard Enfield": 1.25,
-        "Seek": 1.0
-      }
+      "avg_degree_centrality": 1.2222222222222223
     }
   }, {
     "names": ["Edward Hyde", "G. J. Utterson", "Damon", "Pythias", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew", "Mien", "Seek"],
@@ -213,43 +99,7 @@
       "most_important_character": "Edward Hyde",
       "degree_of_mic": 11,
       "degree_centrality_mic": 1.222222222222222,
-      "avg_degree_centrality": 1.1999999999999997,
-      "subgraph_centrality": {
-        "Edward Hyde": 6.5508868660923305,
-        "G. J. Utterson": 6.550886866092328,
-        "Damon": 1.5430806348152428,
-        "Pythias": 1.543080634815242,
-        "Henry Jekyll": 3.3718053130723424,
-        "Harry Jekyll": 3.3718053130723424,
-        "Richard Enfield": 1.8072762399476439,
-        "Danvers Carew": 1.8072762399476445,
-        "Mien": 1.8072762399476434,
-        "Seek": 1.8072762399476447
-      },
-      "betweenness_centrality": {
-        "Edward Hyde": 1.033724753665336,
-        "G. J. Utterson": 2.271749536843338,
-        "Damon": 23.088391067365574,
-        "Pythias": 23.090136243219238,
-        "Henry Jekyll": 6.151406984861898,
-        "Harry Jekyll": 3.1156048680500508,
-        "Richard Enfield": 3.4394833368073288,
-        "Danvers Carew": 2.5571603854032694,
-        "Mien": 1.2964052976932545,
-        "Seek": 0.42725708238532656
-      },
-      "degree_centrality": {
-        "Edward Hyde": 1.222222222222222,
-        "G. J. Utterson": 1.222222222222222,
-        "Damon": 1.222222222222222,
-        "Pythias": 1.222222222222222,
-        "Henry Jekyll": 1.222222222222222,
-        "Harry Jekyll": 1.222222222222222,
-        "Richard Enfield": 1.222222222222222,
-        "Danvers Carew": 1.222222222222222,
-        "Mien": 1.222222222222222,
-        "Seek": 1.0
-      }
+      "avg_degree_centrality": 1.1999999999999997
     }
   }, {
     "names": ["G. J. Utterson", "Edward Hyde", "Damon", "Pythias", "Henry Jekyll", "Harry Jekyll", "Danvers Carew", "Richard Enfield", "M.", "Mien", "Seek", "Bradshaw"],
@@ -273,49 +123,7 @@
       "most_important_character": "G. J. Utterson",
       "degree_of_mic": 13,
       "degree_centrality_mic": 1.1818181818181819,
-      "avg_degree_centrality": 1.1666666666666667,
-      "subgraph_centrality": {
-        "G. J. Utterson": 7.793238580609898,
-        "Edward Hyde": 6.688403743357935,
-        "Damon": 1.5430806348152433,
-        "Pythias": 1.5430806348152426,
-        "Henry Jekyll": 3.46844466343035,
-        "Harry Jekyll": 3.4684446634303505,
-        "Danvers Carew": 1.8104011532896889,
-        "Richard Enfield": 1.869287890082144,
-        "M.": 1.8692878900821441,
-        "Mien": 1.8692878900821444,
-        "Seek": 1.8104011532896889,
-        "Bradshaw": 1.0
-      },
-      "betweenness_centrality": {
-        "G. J. Utterson": 9.599598608142381,
-        "Edward Hyde": 9.166066406561704,
-        "Damon": 70.26292229724449,
-        "Pythias": 70.26317998449932,
-        "Henry Jekyll": 15.505647704783016,
-        "Harry Jekyll": 7.925287940269628,
-        "Danvers Carew": 9.550665042427168,
-        "Richard Enfield": 7.8526549127990535,
-        "M.": 3.926299708251306,
-        "Mien": 1.9457325375932903,
-        "Seek": 2.605964075969965,
-        "Bradshaw": 1.0156603319872946
-      },
-      "degree_centrality": {
-        "G. J. Utterson": 1.1818181818181819,
-        "Edward Hyde": 1.1818181818181819,
-        "Damon": 1.1818181818181819,
-        "Pythias": 1.1818181818181819,
-        "Henry Jekyll": 1.1818181818181819,
-        "Harry Jekyll": 1.1818181818181819,
-        "Danvers Carew": 1.1818181818181819,
-        "Richard Enfield": 1.1818181818181819,
-        "M.": 1.1818181818181819,
-        "Mien": 1.1818181818181819,
-        "Seek": 1.1818181818181819,
-        "Bradshaw": 1.0
-      }
+      "avg_degree_centrality": 1.1666666666666667
     }
   }, {
     "names": ["Edward Hyde", "G. J. Utterson", "Damon", "Pythias", "Henry Jekyll", "Harry Jekyll", "Richard Enfield", "Danvers Carew", "M.", "Mien", "Gabriel John Utterson", "Seek", "Bradshaw"],
@@ -340,52 +148,7 @@
       "most_important_character": "Edward Hyde",
       "degree_of_mic": 14,
       "degree_centrality_mic": 1.1666666666666665,
-      "avg_degree_centrality": 1.1538461538461535,
-      "subgraph_centrality": {
-        "Edward Hyde": 7.937684522761303,
-        "G. J. Utterson": 7.937684522761312,
-        "Damon": 1.543080634815243,
-        "Pythias": 1.543080634815243,
-        "Henry Jekyll": 3.565953981242376,
-        "Harry Jekyll": 3.565953981242377,
-        "Richard Enfield": 1.8725097536620137,
-        "Danvers Carew": 1.8725097536620137,
-        "M.": 1.8725097536620139,
-        "Mien": 1.8725097536620137,
-        "Gabriel John Utterson": 1.8725097536620137,
-        "Seek": 1.8725097536620137,
-        "Bradshaw": 1.0
-      },
-      "betweenness_centrality": {
-        "Edward Hyde": 13.579197017797378,
-        "G. J. Utterson": 22.57581880517844,
-        "Damon": 121.87825572156643,
-        "Pythias": 121.8783633679456,
-        "Henry Jekyll": 27.032815342469316,
-        "Harry Jekyll": 13.808006347496093,
-        "Richard Enfield": 16.023302389141183,
-        "Danvers Carew": 12.678109467303667,
-        "M.": 5.339003993792467,
-        "Mien": 2.662258701566661,
-        "Gabriel John Utterson": 4.607260452939071,
-        "Seek": 2.283536711519678,
-        "Bradshaw": 1.1007929264011398
-      },
-      "degree_centrality": {
-        "Edward Hyde": 1.1666666666666665,
-        "G. J. Utterson": 1.1666666666666665,
-        "Damon": 1.1666666666666665,
-        "Pythias": 1.1666666666666665,
-        "Henry Jekyll": 1.1666666666666665,
-        "Harry Jekyll": 1.1666666666666665,
-        "Richard Enfield": 1.1666666666666665,
-        "Danvers Carew": 1.1666666666666665,
-        "M.": 1.1666666666666665,
-        "Mien": 1.1666666666666665,
-        "Gabriel John Utterson": 1.1666666666666665,
-        "Seek": 1.1666666666666665,
-        "Bradshaw": 1.0
-      }
+      "avg_degree_centrality": 1.1538461538461535
     }
   }, {
     "names": ["Edward Hyde", "G. J. Utterson", "Damon", "Pythias", "Henry Jekyll", "Harry Jekyll", "Danvers Carew", "Richard Enfield", "M.", "Mien", "Gabriel John Utterson", "Seek", "Bradshaw"],
@@ -410,52 +173,7 @@
       "most_important_character": "Edward Hyde",
       "degree_of_mic": 14,
       "degree_centrality_mic": 1.1666666666666665,
-      "avg_degree_centrality": 1.1538461538461535,
-      "subgraph_centrality": {
-        "Edward Hyde": 7.937684522761287,
-        "G. J. Utterson": 7.9376845227612955,
-        "Damon": 1.5430806348152444,
-        "Pythias": 1.5430806348152442,
-        "Henry Jekyll": 3.565953981242371,
-        "Harry Jekyll": 3.5659539812423713,
-        "Danvers Carew": 1.872509753662013,
-        "Richard Enfield": 1.8725097536620132,
-        "M.": 1.872509753662013,
-        "Mien": 1.8725097536620132,
-        "Gabriel John Utterson": 1.8725097536620126,
-        "Seek": 1.8725097536620123,
-        "Bradshaw": 1.0
-      },
-      "betweenness_centrality": {
-        "Edward Hyde": 12.268669133181312,
-        "G. J. Utterson": 24.249952374310414,
-        "Damon": 122.2316379944683,
-        "Pythias": 122.23174679477118,
-        "Henry Jekyll": 27.039666296883055,
-        "Harry Jekyll": 13.813863340963435,
-        "Danvers Carew": 20.5464018040434,
-        "Richard Enfield": 10.634296399118226,
-        "M.": 5.33915479830971,
-        "Mien": 2.662358782688102,
-        "Gabriel John Utterson": 4.607223094795121,
-        "Seek": 2.283515554752136,
-        "Bradshaw": 1.1007822073296731
-      },
-      "degree_centrality": {
-        "Edward Hyde": 1.1666666666666665,
-        "G. J. Utterson": 1.1666666666666665,
-        "Damon": 1.1666666666666665,
-        "Pythias": 1.1666666666666665,
-        "Henry Jekyll": 1.1666666666666665,
-        "Harry Jekyll": 1.1666666666666665,
-        "Danvers Carew": 1.1666666666666665,
-        "Richard Enfield": 1.1666666666666665,
-        "M.": 1.1666666666666665,
-        "Mien": 1.1666666666666665,
-        "Gabriel John Utterson": 1.1666666666666665,
-        "Seek": 1.1666666666666665,
-        "Bradshaw": 1.0
-      }
+      "avg_degree_centrality": 1.1538461538461535
     }
   }, {
     "names": ["Edward Hyde", "G. J. Utterson", "Damon", "Pythias", "Harry Jekyll", "Henry Jekyll", "Bradshaw", "Richard Enfield", "Danvers Carew", "M.", "Mien", "Gabriel John Utterson", "Seek"],
@@ -475,57 +193,12 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.0033383093419978487,
+      "average_clustering": 0.003338309341997849,
       "no_of_cliques": 1,
       "most_important_character": "Edward Hyde",
       "degree_of_mic": 14,
       "degree_centrality_mic": 1.1666666666666665,
-      "avg_degree_centrality": 1.1538461538461535,
-      "subgraph_centrality": {
-        "Edward Hyde": 10.453079132157155,
-        "G. J. Utterson": 8.458731186990821,
-        "Damon": 1.5430806348152442,
-        "Pythias": 1.5430806348152433,
-        "Harry Jekyll": 5.3670886560951345,
-        "Henry Jekyll": 3.7517870206984156,
-        "Bradshaw": 3.5030926332741523,
-        "Richard Enfield": 1.8842459459487828,
-        "Danvers Carew": 1.9724616529831827,
-        "M.": 1.884245945948783,
-        "Mien": 1.8842459459487833,
-        "Gabriel John Utterson": 1.9724616529831829,
-        "Seek": 1.9724616529831829
-      },
-      "betweenness_centrality": {
-        "Edward Hyde": 1.9653008670461174,
-        "G. J. Utterson": 23.34800774114929,
-        "Damon": 100.72659965329036,
-        "Pythias": 100.72673291154415,
-        "Harry Jekyll": 21.953868542969783,
-        "Henry Jekyll": 21.114277965118237,
-        "Bradshaw": 16.157119097636738,
-        "Richard Enfield": 15.269492706536944,
-        "Danvers Carew": 7.977511152395213,
-        "M.": 5.169799899649361,
-        "Mien": 2.5699971883319708,
-        "Gabriel John Utterson": 2.1801764815820492,
-        "Seek": 0.46873863748775096
-      },
-      "degree_centrality": {
-        "Edward Hyde": 1.1666666666666665,
-        "G. J. Utterson": 1.1666666666666665,
-        "Damon": 1.1666666666666665,
-        "Pythias": 1.1666666666666665,
-        "Harry Jekyll": 1.1666666666666665,
-        "Henry Jekyll": 1.1666666666666665,
-        "Bradshaw": 1.1666666666666665,
-        "Richard Enfield": 1.1666666666666665,
-        "Danvers Carew": 1.1666666666666665,
-        "M.": 1.1666666666666665,
-        "Mien": 1.1666666666666665,
-        "Gabriel John Utterson": 1.1666666666666665,
-        "Seek": 1.0
-      }
+      "avg_degree_centrality": 1.1538461538461535
     }
   }, {
     "names": ["Edward Hyde", "G. J. Utterson", "Damon", "Pythias", "Harry Jekyll", "Henry Jekyll", "Bradshaw", "Richard Enfield", "Danvers Carew", "M.", "Mien", "Gabriel John Utterson", "Seek"],
@@ -545,57 +218,12 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.0033383093419978487,
+      "average_clustering": 0.003338309341997849,
       "no_of_cliques": 1,
       "most_important_character": "Edward Hyde",
       "degree_of_mic": 14,
       "degree_centrality_mic": 1.1666666666666665,
-      "avg_degree_centrality": 1.1538461538461535,
-      "subgraph_centrality": {
-        "Edward Hyde": 10.453079132157155,
-        "G. J. Utterson": 8.458731186990821,
-        "Damon": 1.5430806348152442,
-        "Pythias": 1.5430806348152433,
-        "Harry Jekyll": 5.3670886560951345,
-        "Henry Jekyll": 3.7517870206984156,
-        "Bradshaw": 3.5030926332741523,
-        "Richard Enfield": 1.8842459459487828,
-        "Danvers Carew": 1.9724616529831827,
-        "M.": 1.884245945948783,
-        "Mien": 1.8842459459487833,
-        "Gabriel John Utterson": 1.9724616529831829,
-        "Seek": 1.9724616529831829
-      },
-      "betweenness_centrality": {
-        "Edward Hyde": 1.9653008670461174,
-        "G. J. Utterson": 23.34800774114929,
-        "Damon": 100.72659965329036,
-        "Pythias": 100.72673291154415,
-        "Harry Jekyll": 21.953868542969783,
-        "Henry Jekyll": 21.114277965118237,
-        "Bradshaw": 16.157119097636738,
-        "Richard Enfield": 15.269492706536944,
-        "Danvers Carew": 7.977511152395213,
-        "M.": 5.169799899649361,
-        "Mien": 2.5699971883319708,
-        "Gabriel John Utterson": 2.1801764815820492,
-        "Seek": 0.46873863748775096
-      },
-      "degree_centrality": {
-        "Edward Hyde": 1.1666666666666665,
-        "G. J. Utterson": 1.1666666666666665,
-        "Damon": 1.1666666666666665,
-        "Pythias": 1.1666666666666665,
-        "Harry Jekyll": 1.1666666666666665,
-        "Henry Jekyll": 1.1666666666666665,
-        "Bradshaw": 1.1666666666666665,
-        "Richard Enfield": 1.1666666666666665,
-        "Danvers Carew": 1.1666666666666665,
-        "M.": 1.1666666666666665,
-        "Mien": 1.1666666666666665,
-        "Gabriel John Utterson": 1.1666666666666665,
-        "Seek": 1.0
-      }
+      "avg_degree_centrality": 1.1538461538461535
     }
   }],
   "first_interactions_between_characters": {

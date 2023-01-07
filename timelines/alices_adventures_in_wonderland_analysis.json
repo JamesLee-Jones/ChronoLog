@@ -12,16 +12,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 0,
       "degree_centrality_mic": 1,
-      "avg_degree_centrality": 1.0,
-      "subgraph_centrality": {
-        "Alice": 1.0
-      },
-      "betweenness_centrality": {
-        "Alice": 0.0
-      },
-      "degree_centrality": {
-        "Alice": 1
-      }
+      "avg_degree_centrality": 1.0
     }
   }, {
     "names": ["Alice", "Mabel", "Ada", "Mouse", "Latin Grammar", "William The Conqueror"],
@@ -39,31 +30,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 7,
       "degree_centrality_mic": 1.4000000000000001,
-      "avg_degree_centrality": 1.3333333333333333,
-      "subgraph_centrality": {
-        "Alice": 3.817894647799641,
-        "Mabel": 2.3351716240498486,
-        "Ada": 1.5938101121749544,
-        "Mouse": 1.6921777119749148,
-        "Latin Grammar": 1.692177711974915,
-        "William The Conqueror": 1.692177711974915
-      },
-      "betweenness_centrality": {
-        "Alice": 0.25,
-        "Mabel": 1.1330252100840337,
-        "Ada": 3.94148425324008,
-        "Mouse": 2.820603174603175,
-        "Latin Grammar": 1.4525714285714288,
-        "William The Conqueror": 0.16865079365079363
-      },
-      "degree_centrality": {
-        "Alice": 1.4000000000000001,
-        "Mabel": 1.4000000000000001,
-        "Ada": 1.4000000000000001,
-        "Mouse": 1.4000000000000001,
-        "Latin Grammar": 1.4000000000000001,
-        "William The Conqueror": 1.0
-      }
+      "avg_degree_centrality": 1.3333333333333333
     }
   }, {
     "names": ["Alice", "Mabel", "William The Conqueror", "Mouse", "Ada", "Edgar Atheling", "Latin Grammar"],
@@ -82,34 +49,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 8,
       "degree_centrality_mic": 1.3333333333333333,
-      "avg_degree_centrality": 1.2857142857142858,
-      "subgraph_centrality": {
-        "Alice": 3.8736514717424475,
-        "Mabel": 2.3368567422240303,
-        "William The Conqueror": 2.3368567422240303,
-        "Mouse": 1.693807113761595,
-        "Ada": 1.5938381201144058,
-        "Edgar Atheling": 1.5938381201144063,
-        "Latin Grammar": 1.6938071137615953
-      },
-      "betweenness_centrality": {
-        "Alice": 0.22336145015008532,
-        "Mabel": 2.3254078946106427,
-        "William The Conqueror": 2.241783370982141,
-        "Mouse": 2.096315129364584,
-        "Ada": 2.5803024426498076,
-        "Edgar Atheling": 2.281043444041321,
-        "Latin Grammar": 0.1669953680547991
-      },
-      "degree_centrality": {
-        "Alice": 1.3333333333333333,
-        "Mabel": 1.3333333333333333,
-        "William The Conqueror": 1.3333333333333333,
-        "Mouse": 1.3333333333333333,
-        "Ada": 1.3333333333333333,
-        "Edgar Atheling": 1.3333333333333333,
-        "Latin Grammar": 1.0
-      }
+      "avg_degree_centrality": 1.2857142857142858
     }
   }, {
     "names": ["Alice", "Bill", "Mabel", "William The Conqueror", "Ada", "Edgar Atheling", "Mouse", "That?--It", "Latin Grammar", "Mary Ann"],
@@ -131,43 +71,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 11,
       "degree_centrality_mic": 1.222222222222222,
-      "avg_degree_centrality": 1.1999999999999997,
-      "subgraph_centrality": {
-        "Alice": 6.023697001644009,
-        "Bill": 2.4608918773777013,
-        "Mabel": 2.4608918773777004,
-        "William The Conqueror": 2.460891877377701,
-        "Ada": 1.5973005578070079,
-        "Edgar Atheling": 1.5973005578070072,
-        "Mouse": 1.8109743476439746,
-        "That?--It": 1.5973005578070072,
-        "Latin Grammar": 1.8109743476439752,
-        "Mary Ann": 1.8109743476439752
-      },
-      "betweenness_centrality": {
-        "Alice": 0.15316169210328393,
-        "Bill": 12.892645759714124,
-        "Mabel": 8.04371224918287,
-        "William The Conqueror": 6.031026593766658,
-        "Ada": 11.55121947451366,
-        "Edgar Atheling": 9.828135054602335,
-        "Mouse": 2.5036993502989286,
-        "That?--It": 3.4423402704335593,
-        "Latin Grammar": 0.7955661965135591,
-        "Mary Ann": 0.09699010971013575
-      },
-      "degree_centrality": {
-        "Alice": 1.222222222222222,
-        "Bill": 1.222222222222222,
-        "Mabel": 1.222222222222222,
-        "William The Conqueror": 1.222222222222222,
-        "Ada": 1.222222222222222,
-        "Edgar Atheling": 1.222222222222222,
-        "Mouse": 1.222222222222222,
-        "That?--It": 1.222222222222222,
-        "Latin Grammar": 1.222222222222222,
-        "Mary Ann": 1.0
-      }
+      "avg_degree_centrality": 1.1999999999999997
     }
   }, {
     "names": ["Alice", "Bill", "William The Conqueror", "Mabel", "Ada", "Mouse", "Edgar Atheling", "That?--It", "Latin Grammar", "Mary Ann", "Shyly"],
@@ -190,46 +94,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 12,
       "degree_centrality_mic": 1.2000000000000002,
-      "avg_degree_centrality": 1.1818181818181819,
-      "subgraph_centrality": {
-        "Alice": 7.283688830846209,
-        "Bill": 2.5278630920784515,
-        "William The Conqueror": 2.5278630920784484,
-        "Mabel": 2.5278630920784497,
-        "Ada": 1.5991094839979976,
-        "Mouse": 1.8743570016512132,
-        "Edgar Atheling": 1.5991094839979985,
-        "That?--It": 1.5991094839979996,
-        "Latin Grammar": 1.8743570016512137,
-        "Mary Ann": 1.8743570016512137,
-        "Shyly": 1.8743570016512137
-      },
-      "betweenness_centrality": {
-        "Alice": 0.12354678068440753,
-        "Bill": 26.50195469156729,
-        "William The Conqueror": 17.171218753363938,
-        "Mabel": 7.645076406839677,
-        "Ada": 20.65757943875884,
-        "Mouse": 6.519245499727967,
-        "Edgar Atheling": 11.04214919049278,
-        "That?--It": 5.851318662115722,
-        "Latin Grammar": 1.3788730502544122,
-        "Mary Ann": 0.6804537246732603,
-        "Shyly": 0.07755985060505996
-      },
-      "degree_centrality": {
-        "Alice": 1.2000000000000002,
-        "Bill": 1.2000000000000002,
-        "William The Conqueror": 1.2000000000000002,
-        "Mabel": 1.2000000000000002,
-        "Ada": 1.2000000000000002,
-        "Mouse": 1.2000000000000002,
-        "Edgar Atheling": 1.2000000000000002,
-        "That?--It": 1.2000000000000002,
-        "Latin Grammar": 1.2000000000000002,
-        "Mary Ann": 1.2000000000000002,
-        "Shyly": 1.0
-      }
+      "avg_degree_centrality": 1.1818181818181819
     }
   }, {
     "names": ["Alice", "Bill", "William The Conqueror", "Mabel", "Ada", "Mouse", "Edgar Atheling", "That?--It", "Latin Grammar", "Mary Ann", "Shyly", "Hatter", "Queen"],
@@ -254,52 +119,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 14,
       "degree_centrality_mic": 1.1666666666666665,
-      "avg_degree_centrality": 1.1538461538461535,
-      "subgraph_centrality": {
-        "Alice": 7.283688830846207,
-        "Bill": 2.52786309207845,
-        "William The Conqueror": 2.5278630920784497,
-        "Mabel": 2.5278630920784493,
-        "Ada": 1.599109483997999,
-        "Mouse": 1.874357001651214,
-        "Edgar Atheling": 1.5991094839979996,
-        "That?--It": 1.5991094839979991,
-        "Latin Grammar": 1.8743570016512132,
-        "Mary Ann": 1.8743570016512134,
-        "Shyly": 1.8743570016512134,
-        "Hatter": 1.0,
-        "Queen": 1.0
-      },
-      "betweenness_centrality": {
-        "Alice": 6.869987973289652,
-        "Bill": 70.95772448310042,
-        "William The Conqueror": 45.30567665030264,
-        "Mabel": 20.398342589083594,
-        "Ada": 57.93755009582531,
-        "Mouse": 16.610141361588447,
-        "Edgar Atheling": 33.689758919603705,
-        "That?--It": 18.488749823309846,
-        "Latin Grammar": 3.2513125682634882,
-        "Mary Ann": 1.622289548046788,
-        "Shyly": 0.794635549557553,
-        "Hatter": 6.033376745782979,
-        "Queen": 1.4346788872440615
-      },
-      "degree_centrality": {
-        "Alice": 1.1666666666666665,
-        "Bill": 1.1666666666666665,
-        "William The Conqueror": 1.1666666666666665,
-        "Mabel": 1.1666666666666665,
-        "Ada": 1.1666666666666665,
-        "Mouse": 1.1666666666666665,
-        "Edgar Atheling": 1.1666666666666665,
-        "That?--It": 1.1666666666666665,
-        "Latin Grammar": 1.1666666666666665,
-        "Mary Ann": 1.1666666666666665,
-        "Shyly": 1.1666666666666665,
-        "Hatter": 1.1666666666666665,
-        "Queen": 1.0
-      }
+      "avg_degree_centrality": 1.1538461538461535
     }
   }, {
     "names": ["Alice", "Hatter", "Bill", "William The Conqueror", "Mabel", "Ada", "Edgar Atheling", "That?--It", "Mouse", "Dormouse", "Queen", "Latin Grammar", "Mary Ann", "Shyly", "Tillie"],
@@ -326,58 +146,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 16,
       "degree_centrality_mic": 1.1428571428571428,
-      "avg_degree_centrality": 1.1333333333333329,
-      "subgraph_centrality": {
-        "Alice": 10.45006955842628,
-        "Hatter": 3.4422030787518154,
-        "Bill": 2.6784803816940794,
-        "William The Conqueror": 2.6784803816940808,
-        "Mabel": 2.6784803816940794,
-        "Ada": 1.6029841941964522,
-        "Edgar Atheling": 1.6029841941964529,
-        "That?--It": 1.6029841941964516,
-        "Mouse": 2.0172860871385128,
-        "Dormouse": 1.6525262592555001,
-        "Queen": 1.6525262592555003,
-        "Latin Grammar": 2.017286087138513,
-        "Mary Ann": 2.0172860871385128,
-        "Shyly": 2.0172860871385128,
-        "Tillie": 2.0172860871385128
-      },
-      "betweenness_centrality": {
-        "Alice": 0.11429315813966737,
-        "Hatter": 264.8714592986708,
-        "Bill": 195.06480326565358,
-        "William The Conqueror": 107.15986190198821,
-        "Mabel": 49.548880577776316,
-        "Ada": 122.23998992404684,
-        "Edgar Atheling": 98.6215934304159,
-        "That?--It": 54.94731162311865,
-        "Mouse": 12.314868573244508,
-        "Dormouse": 18.339105178179523,
-        "Queen": 9.178094774296486,
-        "Latin Grammar": 2.151533055624783,
-        "Mary Ann": 1.0711371482624348,
-        "Shyly": 0.5239590845871633,
-        "Tillie": 0.06559896933870775
-      },
-      "degree_centrality": {
-        "Alice": 1.1428571428571428,
-        "Hatter": 1.1428571428571428,
-        "Bill": 1.1428571428571428,
-        "William The Conqueror": 1.1428571428571428,
-        "Mabel": 1.1428571428571428,
-        "Ada": 1.1428571428571428,
-        "Edgar Atheling": 1.1428571428571428,
-        "That?--It": 1.1428571428571428,
-        "Mouse": 1.1428571428571428,
-        "Dormouse": 1.1428571428571428,
-        "Queen": 1.1428571428571428,
-        "Latin Grammar": 1.1428571428571428,
-        "Mary Ann": 1.1428571428571428,
-        "Shyly": 1.1428571428571428,
-        "Tillie": 1.0
-      }
+      "avg_degree_centrality": 1.1333333333333329
     }
   }, {
     "names": ["Alice", "Hatter", "Bill", "William The Conqueror", "Mabel", "Ada", "Edgar Atheling", "That?--It", "Queen", "Mouse", "Dormouse", "Latin Grammar", "Mary Ann", "Shyly", "Tillie"],
@@ -404,58 +173,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 16,
       "degree_centrality_mic": 1.1428571428571428,
-      "avg_degree_centrality": 1.1333333333333329,
-      "subgraph_centrality": {
-        "Alice": 13.204413788449171,
-        "Hatter": 4.2732967313054,
-        "Bill": 2.789612843853885,
-        "William The Conqueror": 2.789612843853886,
-        "Mabel": 2.7896128438538845,
-        "Ada": 1.6055774993382665,
-        "Edgar Atheling": 1.6055774993382668,
-        "That?--It": 1.605577499338267,
-        "Queen": 3.530464972952149,
-        "Mouse": 2.1232704462468686,
-        "Dormouse": 1.6803058269421505,
-        "Latin Grammar": 2.1232704462468677,
-        "Mary Ann": 2.123270446246868,
-        "Shyly": 2.123270446246868,
-        "Tillie": 2.1232704462468686
-      },
-      "betweenness_centrality": {
-        "Alice": 0.09505137900228619,
-        "Hatter": 264.01085155601197,
-        "Bill": 197.8124159052923,
-        "William The Conqueror": 108.49491184409192,
-        "Mabel": 49.892016263917064,
-        "Ada": 137.92464474563545,
-        "Edgar Atheling": 108.28784975991333,
-        "That?--It": 59.38551057586681,
-        "Queen": 11.314317542510645,
-        "Mouse": 7.021925074001309,
-        "Dormouse": 13.132993599094922,
-        "Latin Grammar": 2.2412143221319183,
-        "Mary Ann": 1.1160269934148244,
-        "Shyly": 0.5465025328920907,
-        "Tillie": 0.07113610997148109
-      },
-      "degree_centrality": {
-        "Alice": 1.1428571428571428,
-        "Hatter": 1.1428571428571428,
-        "Bill": 1.1428571428571428,
-        "William The Conqueror": 1.1428571428571428,
-        "Mabel": 1.1428571428571428,
-        "Ada": 1.1428571428571428,
-        "Edgar Atheling": 1.1428571428571428,
-        "That?--It": 1.1428571428571428,
-        "Queen": 1.1428571428571428,
-        "Mouse": 1.1428571428571428,
-        "Dormouse": 1.1428571428571428,
-        "Latin Grammar": 1.1428571428571428,
-        "Mary Ann": 1.1428571428571428,
-        "Shyly": 1.1428571428571428,
-        "Tillie": 1.0
-      }
+      "avg_degree_centrality": 1.1333333333333329
     }
   }, {
     "names": ["Alice", "Hatter", "Bill", "William The Conqueror", "Mabel", "Ada", "Edgar Atheling", "That?--It", "Queen", "Mouse", "Dormouse", "Latin Grammar", "Mary Ann", "Shyly", "Tillie", "Washing--Extra"],
@@ -483,61 +201,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 17,
       "degree_centrality_mic": 1.1333333333333333,
-      "avg_degree_centrality": 1.1249999999999998,
-      "subgraph_centrality": {
-        "Alice": 15.272214664814452,
-        "Hatter": 4.395778227905134,
-        "Bill": 2.87590691899731,
-        "William The Conqueror": 2.875906918997309,
-        "Mabel": 2.8759069189973085,
-        "Ada": 1.6076720049189064,
-        "Edgar Atheling": 1.6076720049189066,
-        "That?--It": 1.6076720049189066,
-        "Queen": 3.648096507177414,
-        "Mouse": 2.2054076563375835,
-        "Dormouse": 1.68306094984449,
-        "Latin Grammar": 2.2054076563375835,
-        "Mary Ann": 2.205407656337584,
-        "Shyly": 2.2054076563375835,
-        "Tillie": 2.205407656337584,
-        "Washing--Extra": 2.2054076563375844
-      },
-      "betweenness_centrality": {
-        "Alice": 0.07927468401476974,
-        "Hatter": 518.9562723806982,
-        "Bill": 372.48268338967307,
-        "William The Conqueror": 202.18178645880465,
-        "Mabel": 92.14802770891914,
-        "Ada": 255.9577169996084,
-        "Edgar Atheling": 196.19698160969546,
-        "That?--It": 107.21843016416544,
-        "Queen": 20.367890474072794,
-        "Mouse": 12.5966333138733,
-        "Dormouse": 23.35133259746595,
-        "Latin Grammar": 4.02471766969842,
-        "Mary Ann": 2.024650655160468,
-        "Shyly": 1.0068741108359769,
-        "Tillie": 0.4926622328496867,
-        "Washing--Extra": 0.061650452899000306
-      },
-      "degree_centrality": {
-        "Alice": 1.1333333333333333,
-        "Hatter": 1.1333333333333333,
-        "Bill": 1.1333333333333333,
-        "William The Conqueror": 1.1333333333333333,
-        "Mabel": 1.1333333333333333,
-        "Ada": 1.1333333333333333,
-        "Edgar Atheling": 1.1333333333333333,
-        "That?--It": 1.1333333333333333,
-        "Queen": 1.1333333333333333,
-        "Mouse": 1.1333333333333333,
-        "Dormouse": 1.1333333333333333,
-        "Latin Grammar": 1.1333333333333333,
-        "Mary Ann": 1.1333333333333333,
-        "Shyly": 1.1333333333333333,
-        "Tillie": 1.1333333333333333,
-        "Washing--Extra": 1.0
-      }
+      "avg_degree_centrality": 1.1249999999999998
     }
   }, {
     "names": ["Alice", "Hatter", "William The Conqueror", "Bill", "Mabel", "Ada", "Edgar Atheling", "That?--It", "Queen", "Mouse", "Dormouse", "Latin Grammar", "Washing--Extra", "Mary Ann", "Panther", "Shyly", "Tillie", "A Lobster Quadrille"],
@@ -567,67 +231,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 19,
       "degree_centrality_mic": 1.1176470588235294,
-      "avg_degree_centrality": 1.111111111111111,
-      "subgraph_centrality": {
-        "Alice": 20.101732331470405,
-        "Hatter": 4.660919195272758,
-        "William The Conqueror": 3.0640033670912343,
-        "Bill": 3.0640033670912326,
-        "Mabel": 3.064003367091231,
-        "Ada": 1.6120826607805485,
-        "Edgar Atheling": 1.6120826607805498,
-        "That?--It": 1.6120826607805476,
-        "Queen": 3.9030409185906145,
-        "Mouse": 2.3847492611832575,
-        "Dormouse": 1.6888461666918628,
-        "Latin Grammar": 2.3847492611832575,
-        "Washing--Extra": 2.3847492611832575,
-        "Mary Ann": 2.3847492611832575,
-        "Panther": 2.3847492611832575,
-        "Shyly": 2.3847492611832575,
-        "Tillie": 2.3847492611832575,
-        "A Lobster Quadrille": 2.3847492611832584
-      },
-      "betweenness_centrality": {
-        "Alice": 0.06401394446883059,
-        "Hatter": 2020.5661067338892,
-        "William The Conqueror": 1331.537013542686,
-        "Bill": 782.7086443049717,
-        "Mabel": 319.17503963443096,
-        "Ada": 895.9919466267257,
-        "Edgar Atheling": 657.9462832325448,
-        "That?--It": 365.77618307499716,
-        "Queen": 67.34919280120272,
-        "Mouse": 41.244123727127,
-        "Dormouse": 75.53210092992548,
-        "Latin Grammar": 13.111685286220023,
-        "Washing--Extra": 6.6592218096205675,
-        "Mary Ann": 3.367399573708547,
-        "Panther": 1.6902520443356308,
-        "Shyly": 0.8386328512591272,
-        "Tillie": 0.40977093020750316,
-        "A Lobster Quadrille": 0.04759757103245322
-      },
-      "degree_centrality": {
-        "Alice": 1.1176470588235294,
-        "Hatter": 1.1176470588235294,
-        "William The Conqueror": 1.1176470588235294,
-        "Bill": 1.1176470588235294,
-        "Mabel": 1.1176470588235294,
-        "Ada": 1.1176470588235294,
-        "Edgar Atheling": 1.1176470588235294,
-        "That?--It": 1.1176470588235294,
-        "Queen": 1.1176470588235294,
-        "Mouse": 1.1176470588235294,
-        "Dormouse": 1.1176470588235294,
-        "Latin Grammar": 1.1176470588235294,
-        "Washing--Extra": 1.1176470588235294,
-        "Mary Ann": 1.1176470588235294,
-        "Panther": 1.1176470588235294,
-        "Shyly": 1.1176470588235294,
-        "Tillie": 1.1176470588235294,
-        "A Lobster Quadrille": 1.0
-      }
+      "avg_degree_centrality": 1.111111111111111
     }
   }, {
     "names": ["Alice", "Hatter", "William The Conqueror", "Bill", "Mabel", "Ada", "Queen", "Edgar Atheling", "That?--It", "Mouse", "Dormouse", "Latin Grammar", "Washing--Extra", "Mary Ann", "Panther", "Shyly", "Tillie", "A Lobster Quadrille"],
@@ -657,67 +261,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 19,
       "degree_centrality_mic": 1.1176470588235294,
-      "avg_degree_centrality": 1.111111111111111,
-      "subgraph_centrality": {
-        "Alice": 20.101732331470384,
-        "Hatter": 4.660919195272757,
-        "William The Conqueror": 3.0640033670912317,
-        "Bill": 3.0640033670912326,
-        "Mabel": 3.064003367091231,
-        "Ada": 1.6120826607805483,
-        "Queen": 3.9030409185906123,
-        "Edgar Atheling": 1.6120826607805498,
-        "That?--It": 1.6120826607805494,
-        "Mouse": 2.3847492611832575,
-        "Dormouse": 1.6888461666918615,
-        "Latin Grammar": 2.3847492611832575,
-        "Washing--Extra": 2.3847492611832575,
-        "Mary Ann": 2.3847492611832575,
-        "Panther": 2.384749261183258,
-        "Shyly": 2.384749261183258,
-        "Tillie": 2.3847492611832575,
-        "A Lobster Quadrille": 2.3847492611832575
-      },
-      "betweenness_centrality": {
-        "Alice": 0.06372625128811203,
-        "Hatter": 2045.408530909518,
-        "William The Conqueror": 1428.6913518338977,
-        "Bill": 824.6637835202479,
-        "Mabel": 319.08936821091214,
-        "Ada": 895.8629519543709,
-        "Queen": 182.96956992565185,
-        "Edgar Atheling": 461.97595738318597,
-        "That?--It": 251.51408438764125,
-        "Mouse": 41.24411782391581,
-        "Dormouse": 75.53212164726793,
-        "Latin Grammar": 13.111683531582404,
-        "Washing--Extra": 6.659220931823399,
-        "Mary Ann": 3.367399133860061,
-        "Panther": 1.6902518225388348,
-        "Shyly": 0.8386327367243458,
-        "Tillie": 0.40977086609787905,
-        "A Lobster Quadrille": 0.04759756101986794
-      },
-      "degree_centrality": {
-        "Alice": 1.1176470588235294,
-        "Hatter": 1.1176470588235294,
-        "William The Conqueror": 1.1176470588235294,
-        "Bill": 1.1176470588235294,
-        "Mabel": 1.1176470588235294,
-        "Ada": 1.1176470588235294,
-        "Queen": 1.1176470588235294,
-        "Edgar Atheling": 1.1176470588235294,
-        "That?--It": 1.1176470588235294,
-        "Mouse": 1.1176470588235294,
-        "Dormouse": 1.1176470588235294,
-        "Latin Grammar": 1.1176470588235294,
-        "Washing--Extra": 1.1176470588235294,
-        "Mary Ann": 1.1176470588235294,
-        "Panther": 1.1176470588235294,
-        "Shyly": 1.1176470588235294,
-        "Tillie": 1.1176470588235294,
-        "A Lobster Quadrille": 1.0
-      }
+      "avg_degree_centrality": 1.111111111111111
     }
   }, {
     "names": ["Alice", "Hatter", "William The Conqueror", "Bill", "Mabel", "Queen", "Ada", "Mouse", "Edgar Atheling", "That?--It", "Dormouse", "Latin Grammar", "Washing--Extra", "Mary Ann", "Panther", "Shyly", "Tillie", "A Lobster Quadrille"],
@@ -747,67 +291,7 @@
       "most_important_character": "Alice",
       "degree_of_mic": 19,
       "degree_centrality_mic": 1.1176470588235294,
-      "avg_degree_centrality": 1.111111111111111,
-      "subgraph_centrality": {
-        "Alice": 21.67967630308473,
-        "Hatter": 4.982260924649076,
-        "William The Conqueror": 3.107454520500231,
-        "Bill": 3.107454520500233,
-        "Mabel": 3.107454520500232,
-        "Queen": 5.782584020116184,
-        "Ada": 1.6128334538658395,
-        "Mouse": 4.1365889292351605,
-        "Edgar Atheling": 1.6128334538658395,
-        "That?--It": 1.6128334538658404,
-        "Dormouse": 1.696378336170116,
-        "Latin Grammar": 2.426707560788496,
-        "Washing--Extra": 2.426707560788496,
-        "Mary Ann": 2.4267075607884956,
-        "Panther": 2.4267075607884965,
-        "Shyly": 2.4267075607884956,
-        "Tillie": 2.4267075607884956,
-        "A Lobster Quadrille": 2.4267075607884956
-      },
-      "betweenness_centrality": {
-        "Alice": 0.06341865619796487,
-        "Hatter": 1846.6443594893724,
-        "William The Conqueror": 1343.212517576819,
-        "Bill": 776.8999064406405,
-        "Mabel": 363.73364167130796,
-        "Queen": 193.3356606018794,
-        "Ada": 560.1992593417775,
-        "Mouse": 101.22684791892105,
-        "Edgar Atheling": 314.0644165164353,
-        "That?--It": 168.35198614623124,
-        "Dormouse": 75.62934287732685,
-        "Latin Grammar": 14.992045417276486,
-        "Washing--Extra": 7.599322984045871,
-        "Mary Ann": 3.8372949624427766,
-        "Panther": 1.9248996609415752,
-        "Shyly": 0.9553975312273131,
-        "Tillie": 0.4671952423779996,
-        "A Lobster Quadrille": 0.06261901995701026
-      },
-      "degree_centrality": {
-        "Alice": 1.1176470588235294,
-        "Hatter": 1.1176470588235294,
-        "William The Conqueror": 1.1176470588235294,
-        "Bill": 1.1176470588235294,
-        "Mabel": 1.1176470588235294,
-        "Queen": 1.1176470588235294,
-        "Ada": 1.1176470588235294,
-        "Mouse": 1.1176470588235294,
-        "Edgar Atheling": 1.1176470588235294,
-        "That?--It": 1.1176470588235294,
-        "Dormouse": 1.1176470588235294,
-        "Latin Grammar": 1.1176470588235294,
-        "Washing--Extra": 1.1176470588235294,
-        "Mary Ann": 1.1176470588235294,
-        "Panther": 1.1176470588235294,
-        "Shyly": 1.1176470588235294,
-        "Tillie": 1.1176470588235294,
-        "A Lobster Quadrille": 1.0
-      }
+      "avg_degree_centrality": 1.111111111111111
     }
   }],
   "first_interactions_between_characters": {
