@@ -2,239 +2,687 @@
   "book": "A Christmas Carol",
   "num_sections": 5,
   "sections": [{
-    "names": ["Jacob Marley", "Ebenezer Scrooge", "Pharaoh", "Prophet"],
+    "names": ["Ebenezer Scrooge", "Jacob Marley", "Old Marley", "Scrooge Scrooge"],
     "matrix": [
-      [0.0, 0.83333, 0.08333, 0.08333],
-      [1.0, 0.0, 0.0, 0.0],
-      [0.5, 0.0, 0.0, 0.5],
-      [0.5, 0.0, 0.5, 0.0]
+      [0.0, 0.23404, 0.23404, 0.53191],
+      [0.37931, 0.0, 0.06897, 0.55172],
+      [0.37931, 0.06897, 0.0, 0.55172],
+      [0.4386, 0.2807, 0.2807, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.09520115960541173,
+      "average_clustering": 0.6215411313186201,
       "no_of_cliques": 1,
-      "most_important_character": "Jacob Marley",
-      "degree_of_mic": 5,
-      "degree_centrality_mic": 1.6666666666666665,
-      "avg_degree_centrality": 1.5
+      "most_important_character": "Scrooge Scrooge",
+      "degree_of_mic": 3,
+      "degree_centrality_mic": 1.0,
+      "avg_degree_centrality": 1.0,
+      "subgraph_centrality": {
+        "Ebenezer Scrooge": 5.297293811675499,
+        "Jacob Marley": 5.297293811675501,
+        "Old Marley": 5.297293811675501,
+        "Scrooge Scrooge": 5.297293811675501
+      },
+      "betweenness_centrality": {
+        "Ebenezer Scrooge": 0.0,
+        "Jacob Marley": 0.0,
+        "Old Marley": 0.0,
+        "Scrooge Scrooge": 0.0
+      },
+      "degree_centrality": {
+        "Ebenezer Scrooge": 1.0,
+        "Jacob Marley": 1.0,
+        "Old Marley": 1.0,
+        "Scrooge Scrooge": 1.0
+      }
     }
   }, {
-    "names": ["Ebenezer Scrooge", "Jacob Marley", "Pharaoh", "Prophet", "Orson", "Valentine", "Dick Wilkins"],
+    "names": ["Ebenezer Scrooge", "Scrooge Scrooge", "Jacob Marley", "Old Marley", "Ali Baba", "Dick Wilkins", "Fezziwig", "Orson"],
     "matrix": [
-      [0.0, 0.76923, 0.0, 0.0, 0.07692, 0.07692, 0.07692],
-      [0.83333, 0.0, 0.08333, 0.08333, 0.0, 0.0, 0.0],
-      [0.0, 0.5, 0.0, 0.5, 0.0, 0.0, 0.0],
-      [0.0, 0.5, 0.5, 0.0, 0.0, 0.0, 0.0],
-      [0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0],
-      [0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      [0.0, 0.58824, 0.16176, 0.16176, 0.01471, 0.01471, 0.02941, 0.02941],
+      [0.44944, 0.0, 0.19101, 0.19101, 0.04494, 0.03371, 0.06742, 0.02247],
+      [0.36667, 0.56667, 0.0, 0.06667, 0.0, 0.0, 0.0, 0.0],
+      [0.36667, 0.56667, 0.06667, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.2, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.024802411056464347,
+      "average_clustering": 0.46567114387733716,
       "no_of_cliques": 1,
-      "most_important_character": "Ebenezer Scrooge",
-      "degree_of_mic": 8,
-      "degree_centrality_mic": 1.3333333333333333,
-      "avg_degree_centrality": 1.2857142857142858
+      "most_important_character": "Scrooge Scrooge",
+      "degree_of_mic": 7,
+      "degree_centrality_mic": 1.0,
+      "avg_degree_centrality": 0.49999999999999994,
+      "subgraph_centrality": {
+        "Ali Baba": 4.934017671256418,
+        "Dick Wilkins": 4.934017671256419,
+        "Ebenezer Scrooge": 17.749976031023543,
+        "Fezziwig": 4.934017671256419,
+        "Jacob Marley": 7.79620361202501,
+        "Old Marley": 7.796203612025012,
+        "Orson": 4.934017671256418,
+        "Scrooge Scrooge": 17.74997603102352
+      },
+      "betweenness_centrality": {
+        "Ali Baba": 0.0,
+        "Dick Wilkins": 0.0,
+        "Ebenezer Scrooge": 0.6666666666666666,
+        "Fezziwig": 0.0,
+        "Jacob Marley": 0.0,
+        "Old Marley": 0.0,
+        "Orson": 0.0,
+        "Scrooge Scrooge": 0.0
+      },
+      "degree_centrality": {
+        "Ali Baba": 0.2857142857142857,
+        "Dick Wilkins": 0.2857142857142857,
+        "Ebenezer Scrooge": 1.0,
+        "Fezziwig": 0.2857142857142857,
+        "Jacob Marley": 0.42857142857142855,
+        "Old Marley": 0.42857142857142855,
+        "Orson": 0.2857142857142857,
+        "Scrooge Scrooge": 1.0
+      }
     }
   }, {
-    "names": ["Ebenezer Scrooge", "Belinda Cratchit", "Bob Cratchit", "Tiny Tim", "Jacob Marley", "Peter Cratchit", "Pharaoh", "Prophet", "Orson", "Valentine", "Martha", "Parks", "Fred", "Hurrah", "Dick Wilkins"],
+    "names": ["Ebenezer Scrooge", "Scrooge Scrooge", "Whereat Scrooge", "Uncle Scrooge", "Bob Cratchit", "Belinda Cratchit", "Tiny Tim", "Peter Cratchit", "Baleful", "Jacob Marley", "Martha", "Old Marley", "Topper", "Parks", "Kith", "Hurrah", "Heaped", "Fred", "Norfolk Biffins", "Orson", "Fezziwig", "Dick Wilkins", "Ali Baba"],
     "matrix": [
-      [0.0, 0.0, 0.09524, 0.09524, 0.52381, 0.0, 0.0, 0.0, 0.04762, 0.04762, 0.0, 0.0, 0.14286, 0.0, 0.04762],
-      [0.0, 0.0, 0.35, 0.2, 0.0, 0.2, 0.0, 0.0, 0.0, 0.0, 0.1, 0.1, 0.0, 0.05, 0.0],
-      [0.08696, 0.30435, 0.0, 0.26087, 0.0, 0.17391, 0.0, 0.0, 0.0, 0.0, 0.13043, 0.04348, 0.0, 0.0, 0.0],
-      [0.11111, 0.22222, 0.33333, 0.0, 0.0, 0.11111, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.05556, 0.0],
-      [0.84615, 0.0, 0.0, 0.0, 0.0, 0.0, 0.07692, 0.07692, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.33333, 0.33333, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.08333, 0.08333, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.22222, 0.33333, 0.33333, 0.0, 0.11111, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.5, 0.25, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      [0.0, 0.36364, 0.02727, 0.2, 0.02727, 0.00909, 0.01818, 0.0, 0.00909, 0.11818, 0.0, 0.10909, 0.00909, 0.0, 0.00909, 0.0, 0.00909, 0.02727, 0.00909, 0.01818, 0.01818, 0.00909, 0.00909],
+      [0.30534, 0.0, 0.0229, 0.16794, 0.0229, 0.00763, 0.01527, 0.0, 0.00763, 0.14504, 0.0, 0.1374, 0.00763, 0.0, 0.00763, 0.0, 0.00763, 0.0229, 0.00763, 0.01527, 0.0458, 0.0229, 0.03053],
+      [0.05, 0.05, 0.0, 0.46667, 0.08333, 0.05, 0.03333, 0.03333, 0.01667, 0.03333, 0.01667, 0.01667, 0.01667, 0.01667, 0.01667, 0.0, 0.01667, 0.06667, 0.01667, 0.0, 0.0, 0.0, 0.0],
+      [0.22917, 0.22917, 0.29167, 0.0, 0.04167, 0.01042, 0.02083, 0.0, 0.01042, 0.05208, 0.0, 0.01042, 0.01042, 0.0, 0.01042, 0.0, 0.01042, 0.0625, 0.01042, 0.0, 0.0, 0.0, 0.0],
+      [0.04348, 0.04348, 0.07246, 0.05797, 0.0, 0.15942, 0.21739, 0.26087, 0.01449, 0.0, 0.08696, 0.0, 0.0, 0.02899, 0.0, 0.01449, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.02564, 0.02564, 0.07692, 0.02564, 0.28205, 0.0, 0.12821, 0.28205, 0.0, 0.0, 0.07692, 0.0, 0.0, 0.05128, 0.0, 0.02564, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.04762, 0.04762, 0.04762, 0.04762, 0.35714, 0.11905, 0.0, 0.2381, 0.0, 0.0, 0.07143, 0.0, 0.0, 0.0, 0.0, 0.02381, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.03846, 0.0, 0.34615, 0.21154, 0.19231, 0.0, 0.01923, 0.0, 0.11538, 0.0, 0.0, 0.05769, 0.0, 0.01923, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.16667, 0.16667, 0.16667, 0.16667, 0.16667, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.31707, 0.46341, 0.04878, 0.12195, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.04878, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.05263, 0.0, 0.31579, 0.15789, 0.15789, 0.31579, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.35294, 0.52941, 0.02941, 0.02941, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05882, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.125, 0.0, 0.25, 0.25, 0.0, 0.375, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.1875, 0.1875, 0.25, 0.375, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.2, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.012491337011206593,
+      "average_clustering": 0.31105118310675994,
       "no_of_cliques": 1,
-      "most_important_character": "Ebenezer Scrooge",
-      "degree_of_mic": 16,
-      "degree_centrality_mic": 1.1428571428571428,
-      "avg_degree_centrality": 1.1333333333333329
+      "most_important_character": "Scrooge Scrooge",
+      "degree_of_mic": 18,
+      "degree_centrality_mic": 0.8181818181818182,
+      "avg_degree_centrality": 0.3201581027667984,
+      "subgraph_centrality": {
+        "Ali Baba": 79.7003019012064,
+        "Baleful": 532.349750159796,
+        "Belinda Cratchit": 935.0951786463684,
+        "Bob Cratchit": 1073.30471386673,
+        "Dick Wilkins": 79.70030190120666,
+        "Ebenezer Scrooge": 1769.0308152180571,
+        "Fezziwig": 79.70030190120666,
+        "Fred": 305.6420515552878,
+        "Heaped": 305.64205155528794,
+        "Hurrah": 148.06135799892064,
+        "Jacob Marley": 381.9471447496377,
+        "Kith": 305.6420515552878,
+        "Martha": 277.36004950419454,
+        "Norfolk Biffins": 305.6420515552878,
+        "Old Marley": 381.94714474963746,
+        "Orson": 79.70030190120671,
+        "Parks": 184.23514455735813,
+        "Peter Cratchit": 454.06018063473294,
+        "Scrooge Scrooge": 1769.0308152180587,
+        "Tiny Tim": 857.8412224633319,
+        "Topper": 305.64205155528765,
+        "Uncle Scrooge": 1497.422787224235,
+        "Whereat Scrooge": 1892.4159321076859
+      },
+      "betweenness_centrality": {
+        "Ali Baba": 0.0,
+        "Baleful": 0.0,
+        "Belinda Cratchit": 0.1341991341991342,
+        "Bob Cratchit": 0.004329004329004329,
+        "Dick Wilkins": 0.0,
+        "Ebenezer Scrooge": 0.2597402597402597,
+        "Fezziwig": 0.0,
+        "Fred": 0.0,
+        "Heaped": 0.0,
+        "Hurrah": 0.0,
+        "Jacob Marley": 0.0,
+        "Kith": 0.0,
+        "Martha": 0.0,
+        "Norfolk Biffins": 0.0,
+        "Old Marley": 0.025974025974025976,
+        "Orson": 0.0,
+        "Parks": 0.0,
+        "Peter Cratchit": 0.017316017316017316,
+        "Scrooge Scrooge": 0.3116883116883117,
+        "Tiny Tim": 0.0,
+        "Topper": 0.0,
+        "Uncle Scrooge": 0.0735930735930736,
+        "Whereat Scrooge": 0.3116883116883117
+      },
+      "degree_centrality": {
+        "Ali Baba": 0.09090909090909091,
+        "Baleful": 0.2727272727272727,
+        "Belinda Cratchit": 0.4545454545454546,
+        "Bob Cratchit": 0.5,
+        "Dick Wilkins": 0.09090909090909091,
+        "Ebenezer Scrooge": 0.8181818181818182,
+        "Fezziwig": 0.09090909090909091,
+        "Fred": 0.18181818181818182,
+        "Heaped": 0.18181818181818182,
+        "Hurrah": 0.18181818181818182,
+        "Jacob Marley": 0.2272727272727273,
+        "Kith": 0.18181818181818182,
+        "Martha": 0.2272727272727273,
+        "Norfolk Biffins": 0.18181818181818182,
+        "Old Marley": 0.2272727272727273,
+        "Orson": 0.09090909090909091,
+        "Parks": 0.18181818181818182,
+        "Peter Cratchit": 0.36363636363636365,
+        "Scrooge Scrooge": 0.8181818181818182,
+        "Tiny Tim": 0.4090909090909091,
+        "Topper": 0.18181818181818182,
+        "Uncle Scrooge": 0.6363636363636364,
+        "Whereat Scrooge": 0.7727272727272727
+      }
     }
   }, {
-    "names": ["Ebenezer Scrooge", "Belinda Cratchit", "Bob Cratchit", "Tiny Tim", "Jacob Marley", "Peter Cratchit", "Pharaoh", "Prophet", "Orson", "Valentine", "Martha", "Parks", "Fred", "Hurrah", "Dick Wilkins", "Joe Miller"],
+    "names": ["Scrooge Scrooge", "Ebenezer Scrooge", "Whereat Scrooge", "Uncle Scrooge", "Peter Cratchit", "Bob Cratchit", "Belinda Cratchit", "Tiny Tim", "Baleful", "Jacob Marley", "Martha", "Old Marley", "Fred", "Heaped", "Parks", "Kith", "Norfolk Biffins", "Topper", "Hurrah", "Ali Baba", "Fezziwig", "Dick Wilkins", "Orson", "Joe Miller"],
     "matrix": [
-      [0.0, 0.0, 0.13636, 0.09091, 0.5, 0.0, 0.0, 0.0, 0.04545, 0.04545, 0.0, 0.0, 0.13636, 0.0, 0.04545, 0.0],
-      [0.0, 0.0, 0.31818, 0.18182, 0.0, 0.27273, 0.0, 0.0, 0.0, 0.0, 0.09091, 0.09091, 0.0, 0.04545, 0.0, 0.0],
-      [0.12, 0.28, 0.0, 0.28, 0.0, 0.16, 0.0, 0.0, 0.0, 0.0, 0.12, 0.04, 0.0, 0.0, 0.0, 0.0],
-      [0.10526, 0.21053, 0.36842, 0.0, 0.0, 0.10526, 0.0, 0.0, 0.0, 0.0, 0.15789, 0.0, 0.0, 0.05263, 0.0, 0.0],
-      [0.84615, 0.0, 0.0, 0.0, 0.0, 0.0, 0.07692, 0.07692, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.42857, 0.28571, 0.14286, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.07143, 0.07143, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.22222, 0.33333, 0.33333, 0.0, 0.11111, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.5, 0.25, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      [0.0, 0.28169, 0.02113, 0.19718, 0.00704, 0.03521, 0.00704, 0.01408, 0.00704, 0.14789, 0.0, 0.12676, 0.02113, 0.00704, 0.0, 0.00704, 0.00704, 0.00704, 0.0, 0.02817, 0.04225, 0.02113, 0.01408, 0.0],
+      [0.33058, 0.0, 0.02479, 0.2314, 0.00826, 0.04132, 0.00826, 0.01653, 0.00826, 0.12397, 0.0, 0.09917, 0.02479, 0.00826, 0.0, 0.00826, 0.00826, 0.00826, 0.0, 0.00826, 0.01653, 0.00826, 0.01653, 0.0],
+      [0.03896, 0.03896, 0.0, 0.50649, 0.03896, 0.09091, 0.03896, 0.02597, 0.01299, 0.05195, 0.01299, 0.01299, 0.05195, 0.01299, 0.01299, 0.01299, 0.01299, 0.01299, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01299],
+      [0.22222, 0.22222, 0.30952, 0.0, 0.00794, 0.06349, 0.00794, 0.01587, 0.00794, 0.05556, 0.0, 0.00794, 0.04762, 0.00794, 0.0, 0.00794, 0.00794, 0.00794, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.01389, 0.01389, 0.04167, 0.01389, 0.0, 0.40278, 0.18056, 0.18056, 0.01389, 0.0, 0.08333, 0.0, 0.0, 0.0, 0.04167, 0.0, 0.0, 0.0, 0.01389, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.05102, 0.05102, 0.07143, 0.08163, 0.29592, 0.0, 0.15306, 0.19388, 0.0102, 0.0, 0.06122, 0.0, 0.0, 0.0, 0.02041, 0.0, 0.0, 0.0, 0.0102, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.02222, 0.02222, 0.06667, 0.02222, 0.28889, 0.33333, 0.0, 0.11111, 0.0, 0.0, 0.06667, 0.0, 0.0, 0.0, 0.04444, 0.0, 0.0, 0.0, 0.02222, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.04082, 0.04082, 0.04082, 0.04082, 0.26531, 0.38776, 0.10204, 0.0, 0.0, 0.0, 0.06122, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.02041, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.16667, 0.16667, 0.16667, 0.16667, 0.16667, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.42857, 0.30612, 0.08163, 0.14286, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.04082, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.05263, 0.0, 0.31579, 0.31579, 0.15789, 0.15789, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.52941, 0.35294, 0.02941, 0.02941, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05882, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.1875, 0.1875, 0.25, 0.375, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.125, 0.0, 0.375, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.8, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.010265569324087473,
+      "average_clustering": 0.23781047102936426,
       "no_of_cliques": 1,
-      "most_important_character": "Ebenezer Scrooge",
-      "degree_of_mic": 17,
-      "degree_centrality_mic": 1.1333333333333333,
-      "avg_degree_centrality": 1.1249999999999998
+      "most_important_character": "Scrooge Scrooge",
+      "degree_of_mic": 19,
+      "degree_centrality_mic": 0.8260869565217391,
+      "avg_degree_centrality": 0.3079710144927536,
+      "subgraph_centrality": {
+        "Ali Baba": 114.70389506821155,
+        "Baleful": 839.3501101288864,
+        "Belinda Cratchit": 1442.342471501759,
+        "Bob Cratchit": 1648.421247765781,
+        "Dick Wilkins": 114.70389506821142,
+        "Ebenezer Scrooge": 2834.1873921250976,
+        "Fezziwig": 114.70389506821151,
+        "Fred": 437.17420068842176,
+        "Heaped": 437.1742006884217,
+        "Hurrah": 245.47968859831198,
+        "Jacob Marley": 540.025152967514,
+        "Joe Miller": 29.6271301863879,
+        "Kith": 437.17420068842176,
+        "Martha": 438.4227691418206,
+        "Norfolk Biffins": 437.17420068842176,
+        "Old Marley": 540.025152967514,
+        "Orson": 114.7038950682115,
+        "Parks": 299.22846179418536,
+        "Peter Cratchit": 1648.421247765781,
+        "Scrooge Scrooge": 2834.187392125099,
+        "Tiny Tim": 1325.4592808192417,
+        "Topper": 437.17420068842154,
+        "Uncle Scrooge": 2437.575382982736,
+        "Whereat Scrooge": 2840.7547441193606
+      },
+      "betweenness_centrality": {
+        "Ali Baba": 0.0,
+        "Baleful": 0.0,
+        "Belinda Cratchit": 0.0,
+        "Bob Cratchit": 0.003952569169960474,
+        "Dick Wilkins": 0.0,
+        "Ebenezer Scrooge": 0.24901185770750986,
+        "Fezziwig": 0.0,
+        "Fred": 0.0,
+        "Heaped": 0.0,
+        "Hurrah": 0.0,
+        "Jacob Marley": 0.0,
+        "Joe Miller": 0.0,
+        "Kith": 0.0,
+        "Martha": 0.0,
+        "Norfolk Biffins": 0.0,
+        "Old Marley": 0.08695652173913043,
+        "Orson": 0.0,
+        "Parks": 0.0,
+        "Peter Cratchit": 0.1660079051383399,
+        "Scrooge Scrooge": 0.32806324110671936,
+        "Tiny Tim": 0.015810276679841896,
+        "Topper": 0.0,
+        "Uncle Scrooge": 0.13438735177865613,
+        "Whereat Scrooge": 0.24505928853754938
+      },
+      "degree_centrality": {
+        "Ali Baba": 0.08695652173913043,
+        "Baleful": 0.2608695652173913,
+        "Belinda Cratchit": 0.43478260869565216,
+        "Bob Cratchit": 0.4782608695652174,
+        "Dick Wilkins": 0.08695652173913043,
+        "Ebenezer Scrooge": 0.8260869565217391,
+        "Fezziwig": 0.08695652173913043,
+        "Fred": 0.17391304347826086,
+        "Heaped": 0.17391304347826086,
+        "Hurrah": 0.17391304347826086,
+        "Jacob Marley": 0.21739130434782608,
+        "Joe Miller": 0.043478260869565216,
+        "Kith": 0.17391304347826086,
+        "Martha": 0.21739130434782608,
+        "Norfolk Biffins": 0.17391304347826086,
+        "Old Marley": 0.21739130434782608,
+        "Orson": 0.08695652173913043,
+        "Parks": 0.17391304347826086,
+        "Peter Cratchit": 0.4782608695652174,
+        "Scrooge Scrooge": 0.8260869565217391,
+        "Tiny Tim": 0.3913043478260869,
+        "Topper": 0.17391304347826086,
+        "Uncle Scrooge": 0.6521739130434783,
+        "Whereat Scrooge": 0.7826086956521738
+      }
     }
   }, {
-    "names": ["Ebenezer Scrooge", "Bob Cratchit", "Belinda Cratchit", "Tiny Tim", "Jacob Marley", "Peter Cratchit", "Pharaoh", "Prophet", "Orson", "Valentine", "Martha", "Parks", "Fred", "Hurrah", "Dick Wilkins", "Joe Miller"],
+    "names": ["Ebenezer Scrooge", "Scrooge Scrooge", "Whereat Scrooge", "Uncle Scrooge", "Bob Cratchit", "Peter Cratchit", "Belinda Cratchit", "Tiny Tim", "Baleful", "Old Marley", "Martha", "Jacob Marley", "Fred", "Kith", "Heaped", "Norfolk Biffins", "Hallo", "Parks", "Topper", "Hurrah", "Orson", "Fezziwig", "Dick Wilkins", "Ali Baba"],
     "matrix": [
-      [0.0, 0.2, 0.0, 0.08, 0.48, 0.0, 0.0, 0.0, 0.04, 0.04, 0.0, 0.0, 0.12, 0.0, 0.04, 0.0],
-      [0.17857, 0.0, 0.25, 0.25, 0.0, 0.14286, 0.0, 0.0, 0.0, 0.0, 0.10714, 0.03571, 0.0, 0.0, 0.0, 0.03571],
-      [0.0, 0.31818, 0.0, 0.18182, 0.0, 0.27273, 0.0, 0.0, 0.0, 0.0, 0.09091, 0.09091, 0.0, 0.04545, 0.0, 0.0],
-      [0.10526, 0.36842, 0.21053, 0.0, 0.0, 0.10526, 0.0, 0.0, 0.0, 0.0, 0.15789, 0.0, 0.0, 0.05263, 0.0, 0.0],
-      [0.85714, 0.0, 0.0, 0.0, 0.0, 0.0, 0.07143, 0.07143, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.28571, 0.42857, 0.14286, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.07143, 0.07143, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.33333, 0.22222, 0.33333, 0.0, 0.11111, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.25, 0.5, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 0.0, 0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-      [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      [0.0, 0.28777, 0.02878, 0.27338, 0.06475, 0.00719, 0.00719, 0.01439, 0.00719, 0.09353, 0.0, 0.11511, 0.02158, 0.00719, 0.00719, 0.00719, 0.00719, 0.0, 0.00719, 0.0, 0.01439, 0.01439, 0.00719, 0.00719],
+      [0.25, 0.0, 0.025, 0.2375, 0.05625, 0.00625, 0.00625, 0.0125, 0.00625, 0.11875, 0.0, 0.1375, 0.01875, 0.00625, 0.00625, 0.00625, 0.00625, 0.0, 0.00625, 0.0, 0.0125, 0.0375, 0.01875, 0.025],
+      [0.04124, 0.04124, 0.0, 0.52577, 0.1134, 0.03093, 0.03093, 0.02062, 0.01031, 0.02062, 0.01031, 0.05155, 0.04124, 0.01031, 0.01031, 0.01031, 0.01031, 0.01031, 0.01031, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.22353, 0.22353, 0.3, 0.0, 0.08235, 0.00588, 0.00588, 0.01176, 0.00588, 0.01765, 0.0, 0.05294, 0.04118, 0.00588, 0.00588, 0.00588, 0.00588, 0.0, 0.00588, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.07627, 0.07627, 0.09322, 0.11864, 0.0, 0.24576, 0.12712, 0.16949, 0.00847, 0.0, 0.05085, 0.0, 0.00847, 0.0, 0.0, 0.0, 0.0, 0.01695, 0.0, 0.00847, 0.0, 0.0, 0.0, 0.0],
+      [0.01389, 0.01389, 0.04167, 0.01389, 0.40278, 0.0, 0.18056, 0.18056, 0.01389, 0.0, 0.08333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.04167, 0.0, 0.01389, 0.0, 0.0, 0.0, 0.0],
+      [0.02222, 0.02222, 0.06667, 0.02222, 0.33333, 0.28889, 0.0, 0.11111, 0.0, 0.0, 0.06667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.04444, 0.0, 0.02222, 0.0, 0.0, 0.0, 0.0],
+      [0.04, 0.04, 0.04, 0.04, 0.4, 0.26, 0.1, 0.0, 0.0, 0.0, 0.06, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.02, 0.0, 0.0, 0.0, 0.0],
+      [0.16667, 0.16667, 0.16667, 0.16667, 0.16667, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.33333, 0.48718, 0.05128, 0.07692, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05128, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.05263, 0.0, 0.31579, 0.31579, 0.15789, 0.15789, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.2963, 0.40741, 0.09259, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.03704, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.16667, 0.16667, 0.22222, 0.38889, 0.05556, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.125, 0.0, 0.25, 0.375, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.25, 0.25, 0.25, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.25, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.2, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.010238890596159136,
+      "average_clustering": 0.29838202685243165,
       "no_of_cliques": 1,
-      "most_important_character": "Ebenezer Scrooge",
-      "degree_of_mic": 17,
-      "degree_centrality_mic": 1.1333333333333333,
-      "avg_degree_centrality": 1.1249999999999998
+      "most_important_character": "Scrooge Scrooge",
+      "degree_of_mic": 20,
+      "degree_centrality_mic": 0.8695652173913043,
+      "avg_degree_centrality": 0.3224637681159421,
+      "subgraph_centrality": {
+        "Ali Baba": 141.63078978627266,
+        "Baleful": 1029.590481739567,
+        "Belinda Cratchit": 1737.382826789706,
+        "Bob Cratchit": 2206.4768217615792,
+        "Dick Wilkins": 141.63078978627257,
+        "Ebenezer Scrooge": 3696.0070606746076,
+        "Fezziwig": 141.63078978627257,
+        "Fred": 771.1653808330285,
+        "Hallo": 539.3752176788037,
+        "Heaped": 539.3752176788038,
+        "Hurrah": 288.26367705191046,
+        "Jacob Marley": 662.412414049746,
+        "Kith": 539.3752176788037,
+        "Martha": 519.5906374678343,
+        "Norfolk Biffins": 539.3752176788037,
+        "Old Marley": 662.412414049746,
+        "Orson": 141.63078978627257,
+        "Parks": 357.02981549341087,
+        "Peter Cratchit": 1982.0867856090779,
+        "Scrooge Scrooge": 3696.007060674609,
+        "Tiny Tim": 1600.3857098479145,
+        "Topper": 539.3752176788034,
+        "Uncle Scrooge": 3202.9767692172973,
+        "Whereat Scrooge": 3631.9135868013827
+      },
+      "betweenness_centrality": {
+        "Ali Baba": 0.0,
+        "Baleful": 0.0,
+        "Belinda Cratchit": 0.0,
+        "Bob Cratchit": 0.015810276679841896,
+        "Dick Wilkins": 0.0,
+        "Ebenezer Scrooge": 0.24901185770750986,
+        "Fezziwig": 0.0,
+        "Fred": 0.0,
+        "Hallo": 0.0,
+        "Heaped": 0.0,
+        "Hurrah": 0.0,
+        "Jacob Marley": 0.0,
+        "Kith": 0.0,
+        "Martha": 0.0,
+        "Norfolk Biffins": 0.0,
+        "Old Marley": 0.015810276679841896,
+        "Orson": 0.0,
+        "Parks": 0.0,
+        "Peter Cratchit": 0.14624505928853754,
+        "Scrooge Scrooge": 0.18577075098814227,
+        "Tiny Tim": 0.011857707509881422,
+        "Topper": 0.0,
+        "Uncle Scrooge": 0.2134387351778656,
+        "Whereat Scrooge": 0.24901185770750986
+      },
+      "degree_centrality": {
+        "Ali Baba": 0.08695652173913043,
+        "Baleful": 0.2608695652173913,
+        "Belinda Cratchit": 0.43478260869565216,
+        "Bob Cratchit": 0.5217391304347826,
+        "Dick Wilkins": 0.08695652173913043,
+        "Ebenezer Scrooge": 0.8695652173913043,
+        "Fezziwig": 0.08695652173913043,
+        "Fred": 0.21739130434782608,
+        "Hallo": 0.17391304347826086,
+        "Heaped": 0.17391304347826086,
+        "Hurrah": 0.17391304347826086,
+        "Jacob Marley": 0.21739130434782608,
+        "Kith": 0.17391304347826086,
+        "Martha": 0.21739130434782608,
+        "Norfolk Biffins": 0.17391304347826086,
+        "Old Marley": 0.21739130434782608,
+        "Orson": 0.08695652173913043,
+        "Parks": 0.17391304347826086,
+        "Peter Cratchit": 0.4782608695652174,
+        "Scrooge Scrooge": 0.8695652173913043,
+        "Tiny Tim": 0.3913043478260869,
+        "Topper": 0.17391304347826086,
+        "Uncle Scrooge": 0.6956521739130435,
+        "Whereat Scrooge": 0.7826086956521738
+      }
     }
   }],
   "first_interactions_between_characters": {
+    "Scrooge Scrooge": {
+      "Ebenezer Scrooge": "And Scrooge's name was good upon 'Change for anything he chose to put his hand to.",
+      "Jacob Marley": "There it stood, years afterwards, above the warehouse door: Scrooge and Marley.",
+      "Old Marley": "There it stood, years afterwards, above the warehouse door: Scrooge and Marley.",
+      "Orson": "And Valentine,\" said Scrooge, \"and his wild brother, Orson; there they go!",
+      "Ali Baba": "It opened; and a little girl, much younger than the boy, came darting in, and, putting her arms about his neck, and often kissing him, addressed him as her \"dear, dear brother.\"  ",
+      "Dick Wilkins": "He was very much attached to me, was Dick.",
+      "Fezziwig": "He was about to speak; but, with her head turned from him, she resumed.  ",
+      "Norfolk Biffins": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch.",
+      "Tiny Tim": "\"Spirit,\" said Scrooge with an interest he had never felt before, \"tell me if Tiny Tim will live.\"  ",
+      "Bob Cratchit": "\"Mr. Scrooge!\" said Bob.",
+      "Belinda Cratchit": "\"It should be Christmas-day, I am sure,\" said she, \"on which one drinks the health of such an odious, stingy, hard, unfeeling man as Mr. Scrooge.",
+      "Baleful": "After it had passed away they were ten times merrier than before, from the mere relief of Scrooge the Baleful being done with.",
+      "Whereat Scrooge": "\"Do go on, Fred,\" said Scrooge's niece, clapping her hands."
+    },
+    "Old Marley": {
+      "Ebenezer Scrooge": "Scrooge knew he was dead?",
+      "Scrooge Scrooge": "Scrooge knew he was dead?",
+      "Jacob Marley": "Sometimes people new to the business called Scrooge Scrooge, and sometimes Marley, but he answered to both names.",
+      "Uncle Scrooge": "He had not gone far when, coming on towards him, he beheld the portly gentleman who had walked into his counting-house the day before, and said, \"Scrooge and Marley's, I believe?\"",
+      "Whereat Scrooge": "He had not gone far when, coming on towards him, he beheld the portly gentleman who had walked into his counting-house the day before, and said, \"Scrooge and Marley's, I believe?\""
+    },
     "Ebenezer Scrooge": {
       "Jacob Marley": "There it stood, years afterwards, above the warehouse door: Scrooge and Marley.",
-      "Valentine": "And Valentine,\" said Scrooge, \"and his wild brother, Orson; there they go!",
+      "Old Marley": "There it stood, years afterwards, above the warehouse door: Scrooge and Marley.",
+      "Scrooge Scrooge": "It was a habit with Scrooge, whenever he became thoughtful, to put his hands in his breeches pockets.",
       "Orson": "And Valentine,\" said Scrooge, \"and his wild brother, Orson; there they go!",
+      "Ali Baba": "\"So she had,\" cried Scrooge.",
+      "Fezziwig": "Near to the winter fire sat a beautiful young girl, so like that last that Scrooge believed it was the same, until he saw _her_, now a comely matron, sitting opposite her daughter.",
+      "Norfolk Biffins": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch.",
       "Tiny Tim": "\"Spirit,\" said Scrooge with an interest he had never felt before, \"tell me if Tiny Tim will live.\"  ",
-      "Fred": "\"More shame for him, Fred!\" said Scrooge's niece indignantly."
+      "Bob Cratchit": "\"Mr. Scrooge!\" said Bob.",
+      "Belinda Cratchit": "\"It should be Christmas-day, I am sure,\" said she, \"on which one drinks the health of such an odious, stingy, hard, unfeeling man as Mr. Scrooge.",
+      "Baleful": "After it had passed away they were ten times merrier than before, from the mere relief of Scrooge the Baleful being done with.",
+      "Whereat Scrooge": "\"Do go on, Fred,\" said Scrooge's niece, clapping her hands."
     },
     "Jacob Marley": {
-      "Pharaoh": "There were Cains and Abels, Pharaoh's daughters, Queens of Sheba, Angelic messengers descending through the air on clouds like feather beds, Abrahams, Belshazzars, Apostles putting off to sea in butter-boats, hundreds of figures to attract his thoughts; and yet that face of Marley, seven years dead, came like the ancient Prophet's rod, and swallowed up the whole.",
-      "Prophet": "There were Cains and Abels, Pharaoh's daughters, Queens of Sheba, Angelic messengers descending through the air on clouds like feather beds, Abrahams, Belshazzars, Apostles putting off to sea in butter-boats, hundreds of figures to attract his thoughts; and yet that face of Marley, seven years dead, came like the ancient Prophet's rod, and swallowed up the whole."
-    },
-    "Pharaoh": {
-      "Prophet": "There were Cains and Abels, Pharaoh's daughters, Queens of Sheba, Angelic messengers descending through the air on clouds like feather beds, Abrahams, Belshazzars, Apostles putting off to sea in butter-boats, hundreds of figures to attract his thoughts; and yet that face of Marley, seven years dead, came like the ancient Prophet's rod, and swallowed up the whole."
+      "Ebenezer Scrooge": "And then let any man explain to me, if he can, how it happened that Scrooge, having his key in the lock of the door, saw in the knocker, without its undergoing any intermediate process of change--not a knocker, but Marley's face.  ",
+      "Scrooge Scrooge": "And then let any man explain to me, if he can, how it happened that Scrooge, having his key in the lock of the door, saw in the knocker, without its undergoing any intermediate process of change--not a knocker, but Marley's face.  ",
+      "Uncle Scrooge": "He had not gone far when, coming on towards him, he beheld the portly gentleman who had walked into his counting-house the day before, and said, \"Scrooge and Marley's, I believe?\"",
+      "Whereat Scrooge": "He had not gone far when, coming on towards him, he beheld the portly gentleman who had walked into his counting-house the day before, and said, \"Scrooge and Marley's, I believe?\""
     },
     "Orson": {
-      "Valentine": "And Valentine,\" said Scrooge, \"and his wild brother, Orson; there they go!"
+      "Ebenezer Scrooge": "What business had _he_ to be married to the Princess?\"  To hear Scrooge expending all the earnestness of his nature on such subjects, in a most extraordinary voice between laughing and crying; and to see his heightened and excited face; would have been a surprise to his business friends in the City, indeed.  ",
+      "Scrooge Scrooge": "What business had _he_ to be married to the Princess?\"  To hear Scrooge expending all the earnestness of his nature on such subjects, in a most extraordinary voice between laughing and crying; and to see his heightened and excited face; would have been a surprise to his business friends in the City, indeed.  "
     },
     "Dick Wilkins": {
-      "Ebenezer Scrooge": "\"Dick Wilkins, to be sure!\" said Scrooge to the Ghost."
+      "Ebenezer Scrooge": "\"Dick Wilkins, to be sure!\" said Scrooge to the Ghost.",
+      "Scrooge Scrooge": "\"Dick Wilkins, to be sure!\" said Scrooge to the Ghost."
+    },
+    "Uncle Scrooge": {
+      "Jacob Marley": "He felt that he was restored to consciousness in the right nick of time, for the especial purpose of holding a conference with the second messenger dispatched to him through Jacob Marley's intervention.",
+      "Ebenezer Scrooge": "The moment Scrooge's hand was on the lock, a strange voice called him by his name, and bade him enter.",
+      "Scrooge Scrooge": "The moment Scrooge's hand was on the lock, a strange voice called him by his name, and bade him enter.",
+      "Whereat Scrooge": "The moment Scrooge's hand was on the lock, a strange voice called him by his name, and bade him enter.",
+      "Old Marley": "The crisp leaves of holly, mistletoe, and ivy reflected back the light, as if so many little mirrors had been scattered there; and such a mighty blaze went roaring up the chimney as that dull petrifaction of a hearth had never known in Scrooge's time, or Marley's, or for many and many a winter season gone.",
+      "Norfolk Biffins": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch.",
+      "Bob Cratchit": "And perhaps it was the pleasure the good Spirit had in showing off this power of his, or else it was his own kind, generous, hearty nature, and his sympathy with all poor men, that led him straight to Scrooge's clerk's; for there he went, and took Scrooge with him, holding to his robe; and, on the threshold of the door, the Spirit smiled, and stopped to bless Bob Cratchit's dwelling with the sprinklings of his torch.",
+      "Tiny Tim": "\"Spirit,\" said Scrooge with an interest he had never felt before, \"tell me if Tiny Tim will live.\"  ",
+      "Belinda Cratchit": "\"It should be Christmas-day, I am sure,\" said she, \"on which one drinks the health of such an odious, stingy, hard, unfeeling man as Mr. Scrooge.",
+      "Baleful": "After it had passed away they were ten times merrier than before, from the mere relief of Scrooge the Baleful being done with."
+    },
+    "Whereat Scrooge": {
+      "Jacob Marley": "Without venturing for Scrooge quite as hardily as this, I don't mind calling on you to believe that he was ready for a good broad field of strange appearances, and that nothing between a baby and a rhinoceros would have astonished him very much.  ",
+      "Old Marley": "The crisp leaves of holly, mistletoe, and ivy reflected back the light, as if so many little mirrors had been scattered there; and such a mighty blaze went roaring up the chimney as that dull petrifaction of a hearth had never known in Scrooge's time, or Marley's, or for many and many a winter season gone.",
+      "Norfolk Biffins": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch.",
+      "Parks": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Belinda Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Bob Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Peter Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Tiny Tim": "\"Spirit,\" said Scrooge with an interest he had never felt before, \"tell me if Tiny Tim will live.\"  ",
+      "Baleful": "After it had passed away they were ten times merrier than before, from the mere relief of Scrooge the Baleful being done with.",
+      "Joe Miller": "While he did this, the woman who had already spoken threw her bundle on the floor, and sat down in a flaunting manner on a stool; crossing her elbows on her knees, and looking with a bold defiance at the other two.  "
+    },
+    "Heaped": {
+      "Ebenezer Scrooge": "In easy state upon this couch there sat a jolly Giant, glorious to see; who bore a glowing torch, in shape not unlike Plenty's horn, and held it up, high up, to shed its light on Scrooge as he came peeping round the door.  ",
+      "Scrooge Scrooge": "In easy state upon this couch there sat a jolly Giant, glorious to see; who bore a glowing torch, in shape not unlike Plenty's horn, and held it up, high up, to shed its light on Scrooge as he came peeping round the door.  ",
+      "Uncle Scrooge": "In easy state upon this couch there sat a jolly Giant, glorious to see; who bore a glowing torch, in shape not unlike Plenty's horn, and held it up, high up, to shed its light on Scrooge as he came peeping round the door.  ",
+      "Whereat Scrooge": "In easy state upon this couch there sat a jolly Giant, glorious to see; who bore a glowing torch, in shape not unlike Plenty's horn, and held it up, high up, to shed its light on Scrooge as he came peeping round the door.  "
+    },
+    "Kith": {
+      "Ebenezer Scrooge": "Scrooge promised that he would; and they went on, invisible, as they had been before, into the suburbs of the town.",
+      "Scrooge Scrooge": "Scrooge promised that he would; and they went on, invisible, as they had been before, into the suburbs of the town.",
+      "Uncle Scrooge": "Scrooge promised that he would; and they went on, invisible, as they had been before, into the suburbs of the town.",
+      "Whereat Scrooge": "Scrooge promised that he would; and they went on, invisible, as they had been before, into the suburbs of the town."
     },
     "Bob Cratchit": {
       "Ebenezer Scrooge": "And perhaps it was the pleasure the good Spirit had in showing off this power of his, or else it was his own kind, generous, hearty nature, and his sympathy with all poor men, that led him straight to Scrooge's clerk's; for there he went, and took Scrooge with him, holding to his robe; and, on the threshold of the door, the Spirit smiled, and stopped to bless Bob Cratchit's dwelling with the sprinklings of his torch.",
-      "Peter Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Scrooge Scrooge": "And perhaps it was the pleasure the good Spirit had in showing off this power of his, or else it was his own kind, generous, hearty nature, and his sympathy with all poor men, that led him straight to Scrooge's clerk's; for there he went, and took Scrooge with him, holding to his robe; and, on the threshold of the door, the Spirit smiled, and stopped to bless Bob Cratchit's dwelling with the sprinklings of his torch.",
+      "Uncle Scrooge": "And perhaps it was the pleasure the good Spirit had in showing off this power of his, or else it was his own kind, generous, hearty nature, and his sympathy with all poor men, that led him straight to Scrooge's clerk's; for there he went, and took Scrooge with him, holding to his robe; and, on the threshold of the door, the Spirit smiled, and stopped to bless Bob Cratchit's dwelling with the sprinklings of his torch.",
+      "Whereat Scrooge": "And perhaps it was the pleasure the good Spirit had in showing off this power of his, or else it was his own kind, generous, hearty nature, and his sympathy with all poor men, that led him straight to Scrooge's clerk's; for there he went, and took Scrooge with him, holding to his robe; and, on the threshold of the door, the Spirit smiled, and stopped to bless Bob Cratchit's dwelling with the sprinklings of his torch.",
       "Parks": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Martha": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder.",
-      "Tiny Tim": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder.",
-      "Joe Miller": "Joe Miller never made such a joke as sending it to Bob's will be!\"  "
-    },
-    "Belinda Cratchit": {
+      "Belinda Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
       "Peter Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Bob Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Parks": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Tiny Tim": "\"And how did little Tim behave?\" asked Mrs. Cratchit when she had rallied Bob on his credulity, and Bob had hugged his daughter to his heart's content.  ",
-      "Martha": "Mrs. Cratchit made the gravy (ready beforehand in a little saucepan) hissing hot; Master Peter mashed the potatoes with incredible vigour; Miss Belinda sweetened up the apple sauce; Martha dusted the hot plates; Bob took Tiny Tim beside him in a tiny corner at the table; the two young Cratchits set chairs for everybody, not forgetting themselves, and, mounting guard upon their posts, crammed spoons into their mouths, lest they should shriek for goose before their turn came to be helped.",
-      "Hurrah": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  "
-    },
-    "Parks": {
-      "Peter Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
-    },
-    "Martha": {
-      "Tiny Tim": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder.",
-      "Peter Cratchit": "Mrs. Cratchit made the gravy (ready beforehand in a little saucepan) hissing hot; Master Peter mashed the potatoes with incredible vigour; Miss Belinda sweetened up the apple sauce; Martha dusted the hot plates; Bob took Tiny Tim beside him in a tiny corner at the table; the two young Cratchits set chairs for everybody, not forgetting themselves, and, mounting guard upon their posts, crammed spoons into their mouths, lest they should shriek for goose before their turn came to be helped."
+      "Tiny Tim": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder."
     },
     "Peter Cratchit": {
-      "Tiny Tim": "His active little crutch was heard upon the floor, and back came Tiny Tim before another word was spoken, escorted by his brother and sister to his stool beside the fire; and while Bob, turning up his cuffs--as if, poor fellow, they were capable of being made more shabby--compounded some hot mixture in a jug with gin and lemons, and stirred it round and round, and put it on the hob to simmer, Master Peter and the two ubiquitous young Cratchits went to fetch the goose, with which they soon returned in high procession.  "
+      "Bob Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Whereat Scrooge": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Parks": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Belinda Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Tiny Tim": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder.",
+      "Ebenezer Scrooge": "\"'And he took a child, and set him in the midst of them.'\"  Where had Scrooge heard those words?",
+      "Scrooge Scrooge": "\"'And he took a child, and set him in the midst of them.'\"  Where had Scrooge heard those words?",
+      "Uncle Scrooge": "\"'And he took a child, and set him in the midst of them.'\"  Where had Scrooge heard those words?"
+    },
+    "Parks": {
+      "Belinda Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Bob Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Peter Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
+    },
+    "Belinda Cratchit": {
+      "Bob Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Peter Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Tiny Tim": "Mrs. Cratchit made the gravy (ready beforehand in a little saucepan) hissing hot; Master Peter mashed the potatoes with incredible vigour; Miss Belinda sweetened up the apple sauce; Martha dusted the hot plates; Bob took Tiny Tim beside him in a tiny corner at the table; the two young Cratchits set chairs for everybody, not forgetting themselves, and, mounting guard upon their posts, crammed spoons into their mouths, lest they should shriek for goose before their turn came to be helped."
+    },
+    "Martha": {
+      "Belinda Cratchit": "\"Why, bless your heart alive, my dear, how late you are!\" said Mrs. Cratchit, kissing her a dozen times, and taking off her shawl and bonnet for her with officious zeal.  ",
+      "Bob Cratchit": "\"Why, bless your heart alive, my dear, how late you are!\" said Mrs. Cratchit, kissing her a dozen times, and taking off her shawl and bonnet for her with officious zeal.  ",
+      "Peter Cratchit": "\"Why, bless your heart alive, my dear, how late you are!\" said Mrs. Cratchit, kissing her a dozen times, and taking off her shawl and bonnet for her with officious zeal.  ",
+      "Tiny Tim": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder.",
+      "Whereat Scrooge": "Martha, who was a poor apprentice at a milliner's, then told them what kind of work she had to do, and how many hours she worked at a stretch, and how she meant to lie abed to-morrow morning for a good long rest; to-morrow being a holiday she passed at home."
+    },
+    "Tiny Tim": {
+      "Belinda Cratchit": "\"And how did little Tim behave?\" asked Mrs. Cratchit when she had rallied Bob on his credulity, and Bob had hugged his daughter to his heart's content.  ",
+      "Bob Cratchit": "\"And how did little Tim behave?\" asked Mrs. Cratchit when she had rallied Bob on his credulity, and Bob had hugged his daughter to his heart's content.  ",
+      "Peter Cratchit": "\"And how did little Tim behave?\" asked Mrs. Cratchit when she had rallied Bob on his credulity, and Bob had hugged his daughter to his heart's content.  "
     },
     "Hurrah": {
-      "Tiny Tim": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  "
+      "Tiny Tim": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  ",
+      "Belinda Cratchit": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  ",
+      "Bob Cratchit": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  ",
+      "Peter Cratchit": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  "
+    },
+    "Baleful": {
+      "Bob Cratchit": "Bob Cratchit told them how he had a situation in his eye for Master Peter, which would bring in, if obtained, full five-and-sixpence weekly.",
+      "Peter Cratchit": "Bob Cratchit told them how he had a situation in his eye for Master Peter, which would bring in, if obtained, full five-and-sixpence weekly."
+    },
+    "Fred": {
+      "Uncle Scrooge": "\"More shame for him, Fred!\" said Scrooge's niece indignantly.",
+      "Ebenezer Scrooge": "\"More shame for him, Fred!\" said Scrooge's niece indignantly.",
+      "Scrooge Scrooge": "\"More shame for him, Fred!\" said Scrooge's niece indignantly.",
+      "Whereat Scrooge": "\"More shame for him, Fred!\" said Scrooge's niece indignantly.",
+      "Bob Cratchit": "If he could only be there first, and catch Bob Cratchit coming late!"
+    },
+    "Topper": {
+      "Ebenezer Scrooge": "My opinion is, that it was a done thing between him and Scrooge's nephew; and that the Ghost of Christmas Present knew it.",
+      "Scrooge Scrooge": "My opinion is, that it was a done thing between him and Scrooge's nephew; and that the Ghost of Christmas Present knew it.",
+      "Uncle Scrooge": "My opinion is, that it was a done thing between him and Scrooge's nephew; and that the Ghost of Christmas Present knew it.",
+      "Whereat Scrooge": "My opinion is, that it was a done thing between him and Scrooge's nephew; and that the Ghost of Christmas Present knew it."
+    },
+    "Hallo": {
+      "Ebenezer Scrooge": "cried Scrooge, calling downward to a boy in Sunday clothes, who perhaps had loitered in to look about him.  ",
+      "Scrooge Scrooge": "cried Scrooge, calling downward to a boy in Sunday clothes, who perhaps had loitered in to look about him.  ",
+      "Uncle Scrooge": "cried Scrooge, calling downward to a boy in Sunday clothes, who perhaps had loitered in to look about him.  ",
+      "Whereat Scrooge": "cried Scrooge, calling downward to a boy in Sunday clothes, who perhaps had loitered in to look about him.  "
     }
   },
   "first_interactions_overall": {
+    "Scrooge Scrooge": {
+      "with": "Ebenezer Scrooge",
+      "context": "And Scrooge's name was good upon 'Change for anything he chose to put his hand to."
+    },
     "Ebenezer Scrooge": {
-      "with": "Jacob Marley",
-      "context": "There it stood, years afterwards, above the warehouse door: Scrooge and Marley."
+      "with": "Scrooge Scrooge",
+      "context": "And Scrooge's name was good upon 'Change for anything he chose to put his hand to."
+    },
+    "Old Marley": {
+      "with": "Ebenezer Scrooge",
+      "context": "Scrooge knew he was dead?"
     },
     "Jacob Marley": {
       "with": "Ebenezer Scrooge",
       "context": "There it stood, years afterwards, above the warehouse door: Scrooge and Marley."
-    },
-    "Pharaoh": {
-      "with": "Jacob Marley",
-      "context": "There were Cains and Abels, Pharaoh's daughters, Queens of Sheba, Angelic messengers descending through the air on clouds like feather beds, Abrahams, Belshazzars, Apostles putting off to sea in butter-boats, hundreds of figures to attract his thoughts; and yet that face of Marley, seven years dead, came like the ancient Prophet's rod, and swallowed up the whole."
-    },
-    "Prophet": {
-      "with": "Pharaoh",
-      "context": "There were Cains and Abels, Pharaoh's daughters, Queens of Sheba, Angelic messengers descending through the air on clouds like feather beds, Abrahams, Belshazzars, Apostles putting off to sea in butter-boats, hundreds of figures to attract his thoughts; and yet that face of Marley, seven years dead, came like the ancient Prophet's rod, and swallowed up the whole."
-    },
-    "Valentine": {
-      "with": "Ebenezer Scrooge",
-      "context": "And Valentine,\" said Scrooge, \"and his wild brother, Orson; there they go!"
     },
     "Orson": {
       "with": "Valentine",
       "context": "And Valentine,\" said Scrooge, \"and his wild brother, Orson; there they go!"
     },
+    "Ali Baba": {
+      "with": "Scrooge Scrooge",
+      "context": "It opened; and a little girl, much younger than the boy, came darting in, and, putting her arms about his neck, and often kissing him, addressed him as her \"dear, dear brother.\"  "
+    },
     "Dick Wilkins": {
       "with": "Ebenezer Scrooge",
       "context": "\"Dick Wilkins, to be sure!\" said Scrooge to the Ghost."
     },
-    "Bob Cratchit": {
+    "Fezziwig": {
+      "with": "Yo Ho",
+      "context": "\"Yo ho, my boys!\" said Fezziwig."
+    },
+    "Uncle Scrooge": {
+      "with": "Nick",
+      "context": "He felt that he was restored to consciousness in the right nick of time, for the especial purpose of holding a conference with the second messenger dispatched to him through Jacob Marley's intervention."
+    },
+    "Whereat Scrooge": {
+      "with": "Jacob Marley",
+      "context": "Without venturing for Scrooge quite as hardily as this, I don't mind calling on you to believe that he was ready for a good broad field of strange appearances, and that nothing between a baby and a rhinoceros would have astonished him very much.  "
+    },
+    "Heaped": {
+      "with": "Geese",
+      "context": "Heaped up on the floor, to form a kind of throne, were turkeys, geese, game, poultry, brawn, great joints of meat, sucking-pigs, long wreaths of sausages, mince-pies, plum-puddings, barrels of oysters, red-hot chestnuts, cherry-cheeked apples, juicy oranges, luscious pears, immense twelfth-cakes, and seething bowls of punch, that made the chamber dim with their delicious steam."
+    },
+    "Norfolk Biffins": {
       "with": "Ebenezer Scrooge",
+      "context": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch."
+    },
+    "Kith": {
+      "with": "Ebenezer Scrooge",
+      "context": "Scrooge promised that he would; and they went on, invisible, as they had been before, into the suburbs of the town."
+    },
+    "Bob Cratchit": {
+      "with": "Uncle Scrooge",
       "context": "And perhaps it was the pleasure the good Spirit had in showing off this power of his, or else it was his own kind, generous, hearty nature, and his sympathy with all poor men, that led him straight to Scrooge's clerk's; for there he went, and took Scrooge with him, holding to his robe; and, on the threshold of the door, the Spirit smiled, and stopped to bless Bob Cratchit's dwelling with the sprinklings of his torch."
+    },
+    "Peter Cratchit": {
+      "with": "Bob Cratchit",
+      "context": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
+    },
+    "Parks": {
+      "with": "Peter Cratchit",
+      "context": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
     },
     "Belinda Cratchit": {
       "with": "Peter Cratchit",
       "context": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
     },
-    "Peter Cratchit": {
-      "with": "Belinda Cratchit",
-      "context": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
-    },
-    "Parks": {
-      "with": "Belinda Cratchit",
-      "context": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
-    },
     "Martha": {
-      "with": "Bob Cratchit",
-      "context": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder."
+      "with": "Belinda Cratchit",
+      "context": "\"Why, bless your heart alive, my dear, how late you are!\" said Mrs. Cratchit, kissing her a dozen times, and taking off her shawl and bonnet for her with officious zeal.  "
     },
     "Tiny Tim": {
       "with": "Martha",
       "context": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder."
     },
     "Hurrah": {
-      "with": "Belinda Cratchit",
+      "with": "Tiny Tim",
       "context": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  "
     },
-    "Fred": {
+    "Baleful": {
       "with": "Ebenezer Scrooge",
+      "context": "After it had passed away they were ten times merrier than before, from the mere relief of Scrooge the Baleful being done with."
+    },
+    "Fred": {
+      "with": "Uncle Scrooge",
       "context": "\"More shame for him, Fred!\" said Scrooge's niece indignantly."
     },
+    "Topper": {
+      "with": "Buff",
+      "context": "And I no more believe Topper was really blind than I believe he had eyes in his boots."
+    },
+    "Hallo": {
+      "with": "Ebenezer Scrooge",
+      "context": "cried Scrooge, calling downward to a boy in Sunday clothes, who perhaps had loitered in to look about him.  "
+    },
     "Joe Miller": {
-      "with": "Sha",
-      "context": "\"I certainly shan't hold my hand, when I can get anything in it by reaching it out, for the sake of such a man as He was, I promise you, Joe,\" returned the woman coolly."
+      "with": "Whereat Scrooge",
+      "context": "While he did this, the woman who had already spoken threw her bundle on the floor, and sat down in a flaunting manner on a stool; crossing her elbows on her knees, and looking with a bold defiance at the other two.  "
     }
   }
 }

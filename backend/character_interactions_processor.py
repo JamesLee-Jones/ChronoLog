@@ -86,10 +86,11 @@ class CharacterInteractionsProcessor:
                 )
                 self.characters_timeline[i].pop(j)
 
-    def sort_matrix(self, i):
+    def sort_matrix(self, i, d_centrality):
         matrix = np.array(self.normalised_matrices[i])
         np_chars = np.array(self.characters_timeline[i])
-        indices = np.argsort(-np.sum(matrix, 0))
+        d_c = np.array([d_centrality[char] for char in self.characters_timeline[i]])
+        indices = np.argsort(-d_c)
         ordered_matrix = matrix[:, indices]
         ordered_matrix = ordered_matrix[indices, :]
         ordered_characters = np_chars[indices]
@@ -166,7 +167,9 @@ class CharacterInteractionsProcessor:
             G.add_node(character_list[i])
         for j in range(len(character_list) - 1):
             for k in range(j, len(character_list)):
-                G.add_edge(character_list[j], character_list[k], weight=(matrix[k][j] + matrix[j][k]) * scale_factor)
+                w = matrix[k][j] + matrix[j][k]
+                if not w == 0:
+                    G.add_edge(character_list[j], character_list[k], weight=w * scale_factor)
 
         graph = G
         avg_clusterings = []
@@ -175,8 +178,7 @@ class CharacterInteractionsProcessor:
         # degree centrality - the number of connections a node has to another node
         d_centrality = nx.degree_centrality(graph)
         centrality_values = d_centrality.values()
-        degrees = sorted([(d, n) for n, d in graph.degree(weight="weight")])
-        most_important_node = degrees[-1][1]
+        most_important_node = sorted(list(d_centrality.items()), key=lambda v: v[1])[-1][0]
         degree_of_node = graph.degree(most_important_node)
         centrality_of_node = d_centrality[most_important_node]
         avg_centrality = 0 if len(centrality_values) == 0 else sum(centrality_values) / len(centrality_values)
@@ -233,8 +235,8 @@ class CharacterInteractionsProcessor:
                 self.characters_timeline[i][j] = max(matrix_generator.character_dict[self.characters_timeline[i][j]],
                                                      key=len) if matrix_generator.character_dict[
                     self.characters_timeline[i][j]] else self.characters_timeline[i][j]
-            self.sort_matrix(i)
             analysis = self.network_analysis(self.normalised_matrices[i], self.characters_timeline[i])
+            self.sort_matrix(i, analysis[6])
             json_contents["sections"].append({
                 "names": self.characters_timeline[i],
                 "matrix": self.normalised_matrices[i].tolist(),

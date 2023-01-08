@@ -3,6 +3,7 @@
 from unidecode import unidecode
 import os.path
 import regex as re
+import time
 
 import backend.character_interactions_processor as cip
 from argparse import RawTextHelpFormatter, ArgumentParser
@@ -86,8 +87,14 @@ def main():
         help="If the book is in first person, enter the full name of the character. " +
              "We assume the book is written in third person otherwise."
     )
+    parser.add_argument("--runningTime", "-r", required=False, action='store_true',
+                        help="Outputs the time taken to run the whole pipeline."
+                        )
 
     args = parser.parse_args()
+    if args.runningTime:
+        startTime = time.time()
+
     with open(args.filename, 'r', encoding="utf-8") as f:
         text = f.read()
     text = unidecode(text)
@@ -109,6 +116,10 @@ def main():
         quiet=args.quiet,
         pruned=not args.unpruned
     ).process(title, text)
+    if args.runningTime:
+        endTime = time.time()
+        timeElasped = endTime - startTime
+        print(f"Processing completed in {timeElasped} seconds.")
 
 
 if __name__ == "__main__":

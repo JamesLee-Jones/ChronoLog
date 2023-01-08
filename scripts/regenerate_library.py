@@ -12,7 +12,7 @@ OUTPUT_DIRECTORY = 'timelines/'
 chapter_regex = {
     "alices_adventures_in_wonderland.txt": ['-c', 'chapter_numeral', '-p', '30'],
     "anne_of_green_gables.txt": ['-c', 'chapter_numeral'],
-    "a_christmas_carol.txt": ['-c', 'STAVE', '-p', '30'],
+    "a_christmas_carol.txt": ['-c', 'STAVE'],
     "dr_jekyll_and_mr_hyde.txt": ['-s', '10'],
     "jane_eyre.txt": ['-c', 'chapter_numeral', "-n", "Jane Eyre"],
     "little_women.txt": ['-c', 'CHAPTER '],
@@ -30,7 +30,7 @@ if __name__ == '__main__':
             else:
                 print("No chapter regex found for {}. Defaulting to 'CHAPTER'.".format(file))
                 cr = ['-c', 'CHAPTER ']
-            sb = subprocess.run(["python", ".\\chronolog.py", "texts\\" + file] + cr, env=env,
+            sb = subprocess.run(["python", ".\\chronolog.py", "-r", "texts\\" + file] + cr, env=env,
                                 check=True)
         except subprocess.CalledProcessError:
             print("Error occurred whilst processing {}.".format(file))
