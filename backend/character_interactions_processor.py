@@ -2,6 +2,7 @@ import json
 import jsbeautifier
 import numpy as np
 import networkx as nx
+import matplotlib.pyplot as plt
 
 import backend.nlp as nlp
 
@@ -166,7 +167,9 @@ class CharacterInteractionsProcessor:
             G.add_node(character_list[i])
         for j in range(len(character_list) - 1):
             for k in range(j, len(character_list)):
-                G.add_edge(character_list[j], character_list[k], weight=(matrix[k][j] + matrix[j][k]) * scale_factor)
+                w = matrix[k][j] + matrix[j][k]
+                if not w == 0:
+                    G.add_edge(character_list[j], character_list[k], weight=w * scale_factor)
 
         graph = G
         avg_clusterings = []
@@ -175,8 +178,7 @@ class CharacterInteractionsProcessor:
         # degree centrality - the number of connections a node has to another node
         d_centrality = nx.degree_centrality(graph)
         centrality_values = d_centrality.values()
-        degrees = sorted([(d, n) for n, d in graph.degree(weight="weight")])
-        most_important_node = degrees[-1][1]
+        most_important_node = sorted(list(d_centrality.items()), key=lambda v: v[1])[-1][0]
         degree_of_node = graph.degree(most_important_node)
         centrality_of_node = d_centrality[most_important_node]
         avg_centrality = 0 if len(centrality_values) == 0 else sum(centrality_values) / len(centrality_values)

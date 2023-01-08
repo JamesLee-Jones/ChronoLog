@@ -140,7 +140,7 @@ class InteractionsCounter:
             for i in range(len(people)):
                 for j in range(i + 1, len(people)):
                     # Track first interactions
-                    self.update_interactions(people[i], people[j], interactions, text)
+                    self.update_interactions(people[i], people[j], interactions, sentence.text)
 
         interactions_matrix = np.zeros((len(characters), len(characters)))
 
