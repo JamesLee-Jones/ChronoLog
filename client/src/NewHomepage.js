@@ -98,26 +98,21 @@ function HomePage() {
                                 </p>
                                 <p className="home-para">Try out an example from ‘Harry Potter and the Philosopher’s
                                     Stone’ by J.K Rowling.</p>
-                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}}
-                                           onClick={() => navigate('/about/')}
-                                           variant="outlined homepage-buttons" endIcon={<ArrowForward/>}>Learn How
-                                    ChronoLog Works</Button></p>
+                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}} onClick={() => navigate('/about/')}
+                                           variant="outlined homepage-buttons" endIcon={<ArrowForward/>}>Learn How ChronoLog Works</Button></p>
                                 <p className="home-para">Browse ChronoLog's library of literary classics and start
                                     exploring.</p>
-                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}}
-                                           onClick={() => navigate('/library/')}
+                                <p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF"}} onClick={() => navigate('/library/')}
                                            variant="outlined homepage-buttons" endIcon={<LibraryBooks/>}>Browse Our
                                     Library</Button></p>
                                 <p className="home-para">Want to request a book or contribute to this project? Check out
                                     our GitHub repository.</p>
-                                <a href="https://github.com/JamesLee-Jones/ChronoLog/blob/main/README.md"><p><Button
-                                    sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF", color: "#000000"}}
-                                    variant="outlined homepage-buttons" endIcon={<Code/>}>Guide For Developers</Button>
+                                <a href="https://github.com/JamesLee-Jones/ChronoLog/blob/main/README.md"><p><Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF", color: "#000000"}}
+                                                                                                                     variant="outlined homepage-buttons" endIcon={<Code/> }>Guide For Developers</Button>
                                 </p></a>
-                                <a href='https://github.com/JamesLee-Jones/ChronoLog' className="home-para"><p>
+                                <a href='https://github.com/JamesLee-Jones/ChronoLog' className="home-para"><p >
                                     <Button sx={{backgroundColor: "#FFFFFF", borderColor: "#FFFFFF", color: "#000000"}}
-                                            variant="outlined homepage-buttons" endIcon={<GitHub/>}>GitHub
-                                        Repository</Button></p></a>
+                                            variant="outlined homepage-buttons" endIcon={<GitHub/>} >GitHub Repository</Button></p></a>
                             </div>
                         </div>
                     </div>
@@ -136,7 +131,9 @@ function HomePage() {
                 </div>
             </main>
         </>
+
     );
+
 }
 
 export default HomePage;
