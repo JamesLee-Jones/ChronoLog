@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./App.css";
 import { ForceGraph2D } from "react-force-graph";
 import * as d3 from "d3";
@@ -7,30 +7,6 @@ import { ArrowForward, Code, GitHub, LibraryBooks } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 
 function HomePage() {
-  const buttons = [
-    { id: 0, title: "I" },
-    { id: 1, title: "II" },
-    { id: 2, title: "III" },
-    { id: 3, title: "IV" },
-    { id: 4, title: "V" },
-  ];
-
-  const [selected, setSelected] = useState(0);
-  const [state, setState] = useState({
-    color: "blue",
-  });
-
-  const handleColor = (row) => {
-    setSelected(row.id);
-  };
-
-  const selectLeft = (row_id) => {
-    setSelected((row_id - 1 + 5) % 5);
-  };
-
-  const selectRight = (row_id) => {
-    setSelected((row_id + 1) % 5);
-  };
 
   useEffect(() => {
     document.body.style.backgroundColor = "#F5EEE2";
@@ -74,10 +50,6 @@ function HomePage() {
   }, []);
 
   let navigate = useNavigate();
-  // const routeChange = () => {
-  //     let path = `newPath`;
-  //     navigate(path);
-  // }
 
   return (
     <>
