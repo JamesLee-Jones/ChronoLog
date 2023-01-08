@@ -2,8 +2,11 @@
     text-align: center;
     align-items: center;
     align-content: center;
+    /*min-height: 300px;*/
     padding: 30px;
     border-radius: 10px;
+    /*max-width: 600px;*/
+    /*margin: 30px auto;*/
     border: 1px solid #22333b;
     justify-content: center;
     display: flex;
@@ -28,33 +31,9 @@
     font-weight: 350;
 }
 
-.homeGraph {
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    /*min-height: 300px;*/
-    padding: 30px;
-    border-radius: 10px;
-    /*max-width: 600px;*/
-    /*margin: 30px auto;*/
-    /*border: 1px solid #22333b;*/
-    justify-content: center;
-    display: flex;
-}
-
-.home-para {
-    font-family: "Helvetica Neue", serif;
-    font-weight: 350;
-}
-
 h1 {
     font-family: "Baskerville", "Times New Roman", serif;
     color: #22333b;
-}
-
-h3 {
-  font-family: "Baskerville", "Times New Roman", serif;
-  color: #22333b;
 }
 
 h3 {
