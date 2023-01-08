@@ -1,9 +1,15 @@
 .color-nav {
   background-color: #22333b;
-  font-family: "EB Garamond", serif;
+  font-family: "Baskerville", "Times New Roman", serif;
   font-weight: 500;
 }
 
 .nav-brand {
   font-size: 16pt;
+  /*color: #22333b !important;*/
+  text-decoration: underline !important;
+}
+
+.nav-link {
+  color: #c6ac8f !important;
 }
