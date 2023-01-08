@@ -7,7 +7,6 @@ import { ArrowForward, Code, GitHub, LibraryBooks } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 
 function HomePage() {
-
   useEffect(() => {
     document.body.style.backgroundColor = "#F5EEE2";
   });
