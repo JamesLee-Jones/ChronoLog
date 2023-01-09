@@ -25,7 +25,13 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-function MetadataLinkCard({ link, source, target, firstInteraction }) {
+function MetadataLinkCard({
+  link,
+  source,
+  target,
+  firstInteraction,
+  interaction_strength,
+}) {
   const [expanded, setExpanded] = React.useState(false);
   const [expanded2, setExpanded2] = React.useState(false);
 
@@ -111,7 +117,7 @@ function MetadataLinkCard({ link, source, target, firstInteraction }) {
       </Collapse>
       <CardActions>
         <Typography sx={{ fontSize: 18, textAlign: "left", p: 1 }}>
-          Details
+          More Metrics
         </Typography>
         <ExpandMore
           expand={expanded2}
@@ -129,7 +135,10 @@ function MetadataLinkCard({ link, source, target, firstInteraction }) {
             color="text.secondary"
             gutterBottom
           >
-            {"WAH"}
+            {interaction_strength
+              ? "Strength of Interaction : " +
+                Math.round(interaction_strength * 100) / 100
+              : "Stength of Interaction : - "}
           </Typography>
           <Typography sx={{ fontSize: 14, fontStyle: "italic" }}></Typography>
         </CardContent>

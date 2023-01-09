@@ -71,6 +71,7 @@ function BookVisualisation() {
 
         <div className="App">
           <Container fluid={"md"}>
+            <h2 style={{ padding: "10px" }}>Chapter {counter + 1}</h2>
             <Row>
               <Col sm={8}>
                 <Graphs
@@ -145,6 +146,9 @@ function BookVisualisation() {
                   <MetadataNodeCard
                     node={node}
                     firstInteraction={node.First_Interaction}
+                    betweenness_centrality={node.Betweenness_Centrality}
+                    subgraph_centrality={node.Subgraph_Centrality}
+                    degree_centraility={node.Degree_Centrality}
                   />
                   <MetadataLinkCard
                     link={link}
@@ -153,6 +157,7 @@ function BookVisualisation() {
                     firstInteraction={
                       link.First_Interactions_Between_Characters
                     }
+                    interaction_strength={link.value}
                   />
                   <MetadataAnalysisCard
                     graphAttributes={
