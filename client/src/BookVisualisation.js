@@ -145,6 +145,9 @@ function BookVisualisation() {
                   <MetadataNodeCard
                     node={node}
                     firstInteraction={node.First_Interaction}
+                    betweenness_centrality={node.Betweenness_Centrality}
+                    subgraph_centrality={node.Subgraph_Centrality}
+                    degree_centraility={node.Degree_Centrality}
                   />
                   <MetadataLinkCard
                     link={link}
@@ -152,6 +155,9 @@ function BookVisualisation() {
                     target={link.target}
                     firstInteraction={
                       link.First_Interactions_Between_Characters
+                    }
+                    interaction_strength = {
+                      link.value
                     }
                   />
                   <MetadataAnalysisCard

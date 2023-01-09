@@ -25,7 +25,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-function MetadataNodeCard({ node, firstInteraction }) {
+function MetadataNodeCard({ node, firstInteraction,betweenness_centrality,subgraph_centrality,degree_centraility}) {
   const [expanded, setExpanded] = React.useState(false);
   const [expanded2, setExpanded2] = React.useState(false);
 
@@ -91,7 +91,7 @@ function MetadataNodeCard({ node, firstInteraction }) {
       </Collapse>
       <CardActions>
         <Typography sx={{ fontSize: 18, textAlign: "left", p: 1 }}>
-          Details
+          More Metrics
         </Typography>
         <ExpandMore
           expand={expanded2}
@@ -104,16 +104,42 @@ function MetadataNodeCard({ node, firstInteraction }) {
       </CardActions>
       <Collapse in={expanded2} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography
-            sx={{ fontSize: 14, textAlign: "left" }}
-            color="text.secondary"
-            gutterBottom
-          >
-            {"WAH"}
-          </Typography>
-          <Typography sx={{ fontSize: 14, fontStyle: "italic" }}>
-            {firstInteraction ? '"' + firstInteraction.context + '"' : ""}
-          </Typography>
+          
+        <Typography
+          sx={{ fontSize: 14, textAlign: "left" }}
+          color="text.secondary"
+          gutterBottom
+        >
+          {betweenness_centrality !== undefined
+            ? "Betweenness Centrality: " +
+              betweenness_centrality
+            : "Betweenness Centrality: - "}
+          <span> </span>
+        </Typography>
+
+        <Typography
+          sx={{ fontSize: 14, textAlign: "left" }}
+          color="text.secondary"
+          gutterBottom
+        >
+          {subgraph_centrality !== undefined
+            ? "Subgraph Centrality: " +
+              subgraph_centrality
+            : "Subgraph Centrality: - "}
+          <span> </span>
+        </Typography>
+
+        <Typography
+          sx={{ fontSize: 14, textAlign: "left" }}
+          color="text.secondary"
+          gutterBottom
+        >
+          {degree_centraility !== undefined
+            ? "Degree Centrality: " +
+              degree_centraility
+            : "Degree Centrality: - "}
+          <span> </span>
+        </Typography>
         </CardContent>
       </Collapse>
     </Card>
