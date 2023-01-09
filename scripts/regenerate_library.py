@@ -10,14 +10,14 @@ INPUT_DIRECTORY = 'texts/'
 OUTPUT_DIRECTORY = 'timelines/'
 
 chapter_regex = {
-    "alices_adventures_in_wonderland.txt": ['-c', 'chapter_numeral', '-p', '30'],
-    "anne_of_green_gables.txt": ['-c', 'chapter_numeral'],
-    "a_christmas_carol.txt": ['-c', 'STAVE'],
-    "dr_jekyll_and_mr_hyde.txt": ['-s', '10'],
-    "jane_eyre.txt": ['-c', 'chapter_numeral', "-n", "Jane Eyre"],
-    "little_women.txt": ['-c', 'CHAPTER '],
-    "pride_and_prejudice.txt": ['-c', 'chapter_numeral'],
-    "winnie_the_pooh.txt": ['-c', 'chapter_numeral']
+    "alices_adventures_in_wonderland.txt": ['-c', 'chapter_numeral', '-p', '30', '-a', 'Lewis Carroll'],
+    "anne_of_green_gables.txt": ['-c', 'chapter_numeral', '-a', 'L. M. Montgomery'],
+    "a_christmas_carol.txt": ['-c', 'STAVE', '-a', 'Charles Dickens'],
+    "dr_jekyll_and_mr_hyde.txt": ['-s', '10', '-a', 'Robert Louis Stevenson'],
+    "jane_eyre.txt": ['-c', 'chapter_numeral', "-n", "Jane Eyre", '-a', 'Charlotte Bronte'],
+    "little_women.txt": ['-c', 'CHAPTER ', '-a', 'Louisa May Alcott'],
+    "pride_and_prejudice.txt": ['-c', 'chapter_numeral', '-a', 'Jane Austen'],
+    "winnie_the_pooh.txt": ['-c', 'chapter_numeral', '-a', 'A. A. Milne']
 }
 
 if __name__ == '__main__':

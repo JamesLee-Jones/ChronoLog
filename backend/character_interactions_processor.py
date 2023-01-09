@@ -238,7 +238,6 @@ class CharacterInteractionsProcessor:
 
         if self.pruned:
             self.prune()
-        print(self.unnormalised_matrices)
         self.normalised_matrices = list(map(self.normalise_matrix, self.unnormalised_matrices))
         for i in range(len(self.characters_timeline)):
             for j in range(len(self.characters_timeline[i])):
