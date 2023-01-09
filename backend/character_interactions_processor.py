@@ -163,6 +163,7 @@ class CharacterInteractionsProcessor:
 
     @staticmethod
     def network_analysis(matrix, character_list):
+        ROUND_TO = 4
         scale_factor = 10
         G = nx.Graph()
         for i in range(len(character_list)):
@@ -179,11 +180,13 @@ class CharacterInteractionsProcessor:
         # The most important character and how many characters they are connected to
         # degree centrality - the number of connections a node has to another node
         d_centrality = nx.degree_centrality(graph)
-        centrality_values = d_centrality.values()
+        d_centrality_rounded = {key: round(d_centrality[key], ROUND_TO) for key in d_centrality}
+        centrality_values = d_centrality_rounded.values()
         most_important_node = sorted(list(d_centrality.items()), key=lambda v: v[1])[-1][0]
         degree_of_node = graph.degree(most_important_node)
-        centrality_of_node = d_centrality[most_important_node]
-        avg_centrality = 0 if len(centrality_values) == 0 else sum(centrality_values) / len(centrality_values)
+        centrality_of_node = d_centrality_rounded[most_important_node]
+        avg_centrality = 0 if len(centrality_values) == 0 else np.round(
+            sum(centrality_values) / len(centrality_values), ROUND_TO)
 
         # Individual statistics for characters:
         # betweeness centrality - how much these nodes connect other nodes
@@ -197,7 +200,9 @@ class CharacterInteractionsProcessor:
         # largest_component = max(connected_components, key=len)
 
         b_centrality = nx.betweenness_centrality(graph, weight="weight")
+        b_centrality_rounded = {key: round(b_centrality[key], ROUND_TO) for key in b_centrality}
         s_centrality = nx.subgraph_centrality(graph)
+        s_centrality_rounded = {key: round(s_centrality[key], ROUND_TO) for key in s_centrality}
 
         # The clique involving that character and it's size
         # The number of cliques
@@ -207,10 +212,12 @@ class CharacterInteractionsProcessor:
                 number_of_cliques += 1
                 avg_clusterings.append(nx.average_clustering(C, weight="weight"))
 
-        clustering_average = 0 if len(avg_clusterings) == 0 else sum(avg_clusterings) / len(avg_clusterings)
+        clustering_average = 0 if len(avg_clusterings) == 0 else np.round(sum(avg_clusterings) / len(avg_clusterings),
+                                                                          ROUND_TO)
         mc_stats = (most_important_node, degree_of_node, centrality_of_node)
 
-        return clustering_average, number_of_cliques, mc_stats, avg_centrality, s_centrality, b_centrality, d_centrality
+        return clustering_average, number_of_cliques, mc_stats, avg_centrality, s_centrality_rounded, \
+            b_centrality_rounded, d_centrality_rounded
 
     def generate_timeline_json(self, title: str):
         file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
