@@ -3,12 +3,21 @@ import { ForceGraph2D } from "react-force-graph";
 import * as d3 from "d3";
 import "./Graphs.css";
 
-function addNodeMetadata(node, metaData) {
+function addNodeMetadata(node, metaData, extraData) {
   let data = Object.keys(metaData);
+  let eData = [];
+  eData.push("betweenness_centrality");
+  eData.push("degree_centrality");
+  eData.push("subgraph_centrality");
 
   for (let i = 0; i < data.length; i++) {
     let metric = cleanString(data[i]);
     node[metric] = metaData[data[i]][node.name];
+  }
+
+  for (let i = 0; i < eData.length; i++) {
+    let metric = cleanString(eData[i]);
+    node[metric] = extraData[eData[i]][node.name];
   }
 
   return node;
@@ -20,14 +29,21 @@ function addLinkMetaData(link, metaData, nodes) {
   for (let i = 0; i < data.length; i++) {
     let metric = cleanString(data[i]);
 
-    if (metaData[data[i]][idToName(nodes, link.source)] === undefined) {
-      return link;
+    if (metaData[data[i]][idToName(nodes, link.source)] !== undefined) {
+      link[metric] =
+        metaData[data[i]][idToName(nodes, link.source)][
+          idToName(nodes, link.target)
+        ];
     }
 
-    link[metric] =
-      metaData[data[i]][idToName(nodes, link.source)][
-        idToName(nodes, link.target)
-      ];
+    if (metaData[data[i]][idToName(nodes, link.target)] !== undefined) {
+      if (link[metric] === undefined) {
+        link[metric] =
+          metaData[data[i]][idToName(nodes, link.target)][
+            idToName(nodes, link.source)
+          ];
+      }
+    }
   }
 
   return link;
@@ -65,14 +81,14 @@ function hideLinks(links, id) {
       links[i]["value"] = JSON.parse(JSON.stringify(links[i]["valTarget"]));
     }
 
-    links[i]["linkLineDash"] = links[i]["value"] < 2 ? [4, 3] : [1, 0];
+    links[i]["linkLineDash"] = links[i]["value"] < 1 ? [4, 3] : [1, 0];
   }
 }
 
 function revertLinks(links) {
   for (let i = 0; i < links.length; i++) {
     links[i]["value"] = JSON.parse(JSON.stringify(links[i]["valTotal"]));
-    links[i]["linkLineDash"] = links[i]["value"] < 2 ? [4, 3] : [1, 0];
+    links[i]["linkLineDash"] = links[i]["value"] < 1 ? [4, 3] : [1, 0];
     links[i]["linkVisibility"] = true;
   }
 }
@@ -107,7 +123,12 @@ const Graphs = ({
     let numNodes = Math.min(characters, names.length);
     for (let i = 0; i < numNodes; i++) {
       let curNode = { id: "id" + String(i), name: names[i] };
-      curNode = addNodeMetadata(curNode, nodeMetadata);
+      curNode = addNodeMetadata(
+        curNode,
+        nodeMetadata,
+        data["graph_attributes"]
+      );
+
       nodes.push(curNode);
       ids.push(i);
     }
@@ -125,7 +146,7 @@ const Graphs = ({
             valTotal: ((matrix[i][j] + matrix[j][i]) / 2) * scale,
             linkVisibility: true,
             linkLineDash:
-              matrix[i][j] + matrix[j][i] * scale < 2 ? [4, 3] : [1, 0],
+              matrix[i][j] + matrix[j][i] * scale < 1 ? [4, 3] : [1, 0],
           };
 
           curLink = addLinkMetaData(curLink, linkMetadata, nodes);
@@ -144,6 +165,8 @@ const Graphs = ({
     setGraphs(convertedGraphData);
   }, [graphData, characters]);
 
+  const forceRef = useRef();
+
   const handleNodeClick = useCallback((node) => {
     let links = graphs[counter]["links"];
 
@@ -159,21 +182,19 @@ const Graphs = ({
       hideLinks(links, node["id"]);
     }
 
-    setNode(node);
-    console.log(node);
+    setNode(activeNode === node["id"] ? {} : node);
+
+    forceRef.current.d3ReheatSimulation();
   });
 
   const handleLinkClick = useCallback((link) => {
     setLink(link);
-    console.log(link);
   });
 
-  const forceRef = useRef();
-
   useEffect(() => {
-    forceRef.current.d3Force("charge", d3.forceManyBody().strength(-150));
+    forceRef.current.d3Force("charge", d3.forceManyBody().strength(-200));
     forceRef.current.d3Force("center", d3.forceCenter(0, 0));
-    forceRef.current.d3Force("collide", d3.forceCollide());
+    forceRef.current.d3Force("collide", d3.forceCollide(10));
     forceRef.current.d3Force("y", d3.forceY(10));
     forceRef.current.d3Force("x", d3.forceX(10));
   }, []);

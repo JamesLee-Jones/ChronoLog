@@ -38,6 +38,7 @@ const AboutNavigation = () => {
   const [mark, setMark] = useState([]);
   const [run, setRun] = useState(false);
   const [sliderVal, setSliderVal] = useState(0);
+  const [sliderVal2, setSliderVal2] = useState(0);
   const [counter, setCounter] = useState(0);
 
   let scale = 100;
@@ -140,6 +141,33 @@ const AboutNavigation = () => {
           <IoPlaySkipForward></IoPlaySkipForward>
         </div>
       </div>
+
+      <Slider
+        aria-label="Sections"
+        defaultValue={0}
+        marks={mark}
+        value={sliderVal2}
+        valueLabelDisplay="off"
+        onChange={(_, value) => {
+          setSliderVal2(value);
+        }}
+        step={1}
+        sx={{
+          width: 250,
+          height: 20,
+          color: "#C6AC8F",
+          ".MuiSlider-mark": {
+            color: "#22333B",
+            height: 5,
+            width: 5,
+          },
+          ".MuiSlider-thumb": {
+            color: "#22333B",
+          },
+        }}
+        min={1}
+        max={10 * scale}
+      ></Slider>
     </div>
   );
 };

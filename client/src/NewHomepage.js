@@ -151,8 +151,8 @@ function HomePage() {
               width={width}
               height={height}
               ref={homePageGraph}
-              enablePanInteraction={true}
-              enableZoomInteraction={true}
+              enablePanInteraction={false}
+              enableZoomInteraction={false}
             />
           </div>
         </div>
