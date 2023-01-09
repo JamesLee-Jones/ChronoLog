@@ -25,7 +25,13 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-function MetadataNodeCard({ node, firstInteraction,betweenness_centrality,subgraph_centrality,degree_centraility}) {
+function MetadataNodeCard({
+  node,
+  firstInteraction,
+  betweenness_centrality,
+  subgraph_centrality,
+  degree_centraility,
+}) {
   const [expanded, setExpanded] = React.useState(false);
   const [expanded2, setExpanded2] = React.useState(false);
 
@@ -104,42 +110,38 @@ function MetadataNodeCard({ node, firstInteraction,betweenness_centrality,subgra
       </CardActions>
       <Collapse in={expanded2} timeout="auto" unmountOnExit>
         <CardContent>
-          
-        <Typography
-          sx={{ fontSize: 14, textAlign: "left" }}
-          color="text.secondary"
-          gutterBottom
-        >
-          {betweenness_centrality !== undefined
-            ? "Betweenness Centrality: " +
-              betweenness_centrality
-            : "Betweenness Centrality: - "}
-          <span> </span>
-        </Typography>
+          <Typography
+            sx={{ fontSize: 14, textAlign: "left" }}
+            color="text.secondary"
+            gutterBottom
+          >
+            {betweenness_centrality !== undefined
+              ? "Betweenness Centrality: " + betweenness_centrality
+              : "Betweenness Centrality: - "}
+            <span> </span>
+          </Typography>
 
-        <Typography
-          sx={{ fontSize: 14, textAlign: "left" }}
-          color="text.secondary"
-          gutterBottom
-        >
-          {subgraph_centrality !== undefined
-            ? "Subgraph Centrality: " +
-              subgraph_centrality
-            : "Subgraph Centrality: - "}
-          <span> </span>
-        </Typography>
+          <Typography
+            sx={{ fontSize: 14, textAlign: "left" }}
+            color="text.secondary"
+            gutterBottom
+          >
+            {subgraph_centrality !== undefined
+              ? "Subgraph Centrality: " + subgraph_centrality
+              : "Subgraph Centrality: - "}
+            <span> </span>
+          </Typography>
 
-        <Typography
-          sx={{ fontSize: 14, textAlign: "left" }}
-          color="text.secondary"
-          gutterBottom
-        >
-          {degree_centraility !== undefined
-            ? "Degree Centrality: " +
-              degree_centraility
-            : "Degree Centrality: - "}
-          <span> </span>
-        </Typography>
+          <Typography
+            sx={{ fontSize: 14, textAlign: "left" }}
+            color="text.secondary"
+            gutterBottom
+          >
+            {degree_centraility !== undefined
+              ? "Degree Centrality: " + degree_centraility
+              : "Degree Centrality: - "}
+            <span> </span>
+          </Typography>
         </CardContent>
       </Collapse>
     </Card>

@@ -130,8 +130,8 @@ function About() {
           <div className="graph_explaination_1">
             <h3>Navigating and Editing the Graph</h3>
             <p>
-              Sliders are the main way to navigate to different sections of the
-              book
+              Navigating to different sections of the book can be done using the
+              top slider
             </p>
             <p>
               You can also use the buttons provided to go forward, backward or
@@ -139,7 +139,7 @@ function About() {
             </p>
             <p>
               Sometimes the graph can become very cluttered so you can use the
-              pruning slider to reduce the number of characters shown
+              bottom slider to reduce the number of characters shown
             </p>
             <p>
               Characters will be removed in order of importance, starting with
@@ -239,13 +239,21 @@ function About() {
           <li>
             <text style={{ fontWeight: "bold" }}>First Interaction</text>
           </li>
-          <p>The first interaction a selected character engaged in </p>
+          <p>The first interaction a selected character engaged in. </p>
           <li>
             <text style={{ fontWeight: "bold" }}>
               First Interaction between Characters
             </text>
           </li>
-          <p>The first interaction a pair of characters engaged in </p>
+          <p>The first interaction a pair of characters engaged in. </p>
+          <li>
+            <text style={{ fontWeight: "bold" }}>Stength of Interaction</text>
+          </li>
+          <p>
+            A number between 0 and 10 representing the average amount of
+            interactions two characters have had so far in the book. The larger
+            the number the more they have interacted!
+          </p>
         </ul>
       </section>
       <section id="using_tool">
@@ -253,8 +261,8 @@ function About() {
 
         <p>
           Can't find what you are looking for in the library? ChronoLog Viz
-          allows you to run ChronoLog on a book and bring it to life! Please use
-          the guide below to get started:
+          allows you to run ChronoLog on any book and bring it to life! Please
+          use the guide below to get started:
         </p>
 
         <div style={{ placeItems: "center" }}>

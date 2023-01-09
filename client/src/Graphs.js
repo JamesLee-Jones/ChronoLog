@@ -5,11 +5,10 @@ import "./Graphs.css";
 
 function addNodeMetadata(node, metaData, extraData) {
   let data = Object.keys(metaData);
-  let eData = []
-  eData.push("betweenness_centrality")
-  eData.push("degree_centrality")
-  eData.push("subgraph_centrality")
-
+  let eData = [];
+  eData.push("betweenness_centrality");
+  eData.push("degree_centrality");
+  eData.push("subgraph_centrality");
 
   for (let i = 0; i < data.length; i++) {
     let metric = cleanString(data[i]);
@@ -30,22 +29,25 @@ function addLinkMetaData(link, metaData, nodes) {
   for (let i = 0; i < data.length; i++) {
     let metric = cleanString(data[i]);
 
+    if (metaData[data[i]][idToName(nodes, link.source)] !== undefined) {
       link[metric] =
-      metaData[data[i]][idToName(nodes, link.source)][
-        idToName(nodes, link.target)
-      ];
-       
-      if (link[metric] === undefined){
-        link[metric] = metaData[data[i]][idToName(nodes, link.target)][
-          idToName(nodes, link.source)
+        metaData[data[i]][idToName(nodes, link.source)][
+          idToName(nodes, link.target)
         ];
-      }
-      
     }
 
-    return link
+    if (metaData[data[i]][idToName(nodes, link.target)] !== undefined) {
+      if (link[metric] === undefined) {
+        link[metric] =
+          metaData[data[i]][idToName(nodes, link.target)][
+            idToName(nodes, link.source)
+          ];
+      }
+    }
   }
 
+  return link;
+}
 
 function idToName(nodes, id) {
   for (let i = 0; i < nodes.length; i++) {
@@ -121,8 +123,12 @@ const Graphs = ({
     let numNodes = Math.min(characters, names.length);
     for (let i = 0; i < numNodes; i++) {
       let curNode = { id: "id" + String(i), name: names[i] };
-      curNode = addNodeMetadata(curNode, nodeMetadata, data["graph_attributes"]);
-      
+      curNode = addNodeMetadata(
+        curNode,
+        nodeMetadata,
+        data["graph_attributes"]
+      );
+
       nodes.push(curNode);
       ids.push(i);
     }
@@ -159,6 +165,8 @@ const Graphs = ({
     setGraphs(convertedGraphData);
   }, [graphData, characters]);
 
+  const forceRef = useRef();
+
   const handleNodeClick = useCallback((node) => {
     let links = graphs[counter]["links"];
 
@@ -175,20 +183,18 @@ const Graphs = ({
     }
 
     setNode(activeNode === node["id"] ? {} : node);
-    console.log(node);
+
+    forceRef.current.d3ReheatSimulation();
   });
 
   const handleLinkClick = useCallback((link) => {
     setLink(link);
-    console.log(link);
   });
-
-  const forceRef = useRef();
 
   useEffect(() => {
     forceRef.current.d3Force("charge", d3.forceManyBody().strength(-200));
     forceRef.current.d3Force("center", d3.forceCenter(0, 0));
-    forceRef.current.d3Force("collide", d3.forceCollide());
+    forceRef.current.d3Force("collide", d3.forceCollide(10));
     forceRef.current.d3Force("y", d3.forceY(10));
     forceRef.current.d3Force("x", d3.forceX(10));
   }, []);
