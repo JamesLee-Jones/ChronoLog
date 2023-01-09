@@ -79,6 +79,13 @@ def main():
         help="Supply the number of sections you want to divide your book into. " +
              "The timeline will then be created in N similar sized sections. Default N = {}.".format(DEFAULT_SPLITS))
     parser.add_argument(
+        '--author',
+        '-a',
+        required=False,
+        type=str,
+        default="Unknown",
+        help="Supply the author of the text, if known. Defaults to Unknown.")
+    parser.add_argument(
         "--narrator",
         "-n",
         required=False,
@@ -114,7 +121,8 @@ def main():
         percentile=args.percentile,
         narrator=args.narrator,
         quiet=args.quiet,
-        pruned=not args.unpruned
+        pruned=not args.unpruned,
+        author=args.author
     ).process(title, text)
     if args.runningTime:
         endTime = time.time()
