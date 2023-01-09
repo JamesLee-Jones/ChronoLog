@@ -10,7 +10,8 @@ JSON_DIRECTORY = "timelines/"
 
 class CharacterInteractionsProcessor:
 
-    def __init__(self, chapter_regex: str, nb_sections: int, percentile: int, narrator: str, quiet: bool, pruned: bool, author: str):
+    def __init__(self, chapter_regex: str, nb_sections: int, percentile: int, narrator: str, quiet: bool, pruned: bool,
+                 author: str):
         self.pruned = pruned
         self.quiet = quiet
         self.narrator = narrator
