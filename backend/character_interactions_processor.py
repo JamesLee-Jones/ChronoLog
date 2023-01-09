@@ -10,13 +10,15 @@ JSON_DIRECTORY = "timelines/"
 
 class CharacterInteractionsProcessor:
 
-    def __init__(self, chapter_regex: str, nb_sections: int, percentile: int, narrator: str, quiet: bool, pruned: bool):
+    def __init__(self, chapter_regex: str, nb_sections: int, percentile: int, narrator: str, quiet: bool, pruned: bool,
+                 author: str):
         self.pruned = pruned
         self.quiet = quiet
         self.narrator = narrator
         self.percentile = percentile
         self.nb_sections = nb_sections
         self.chapter_regex = chapter_regex
+        self.author = author
 
         self.sections = []
         self.unnormalised_matrices = []
@@ -213,6 +215,7 @@ class CharacterInteractionsProcessor:
     def generate_timeline_json(self, title: str):
         file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
         json_contents = {"book": title.replace('_', ' ').title(),
+                         "author": self.author.title(),
                          "num_sections": self.nb_sections,
                          "sections": []
                          }
@@ -228,7 +231,7 @@ class CharacterInteractionsProcessor:
 
         if self.pruned:
             self.prune()
-
+        print(self.unnormalised_matrices)
         self.normalised_matrices = list(map(self.normalise_matrix, self.unnormalised_matrices))
         for i in range(len(self.characters_timeline)):
             for j in range(len(self.characters_timeline[i])):
