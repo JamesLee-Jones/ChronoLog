@@ -1,5 +1,6 @@
 {
   "book": "Dr Jekyll And Mr Hyde",
+  "author": "Robert Louis Stevenson",
   "num_sections": 10,
   "sections": [{
     "names": ["Gabriel John Utterson", "Edward Hyde", "Henry Jekyll", "Richard Enfield"],
@@ -10,28 +11,28 @@
       [1.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.36624924086044774,
+      "average_clustering": 0.3662,
       "no_of_cliques": 1,
       "most_important_character": "Gabriel John Utterson",
       "degree_of_mic": 3,
       "degree_centrality_mic": 1.0,
-      "avg_degree_centrality": 0.6666666666666666,
+      "avg_degree_centrality": 0.6667,
       "subgraph_centrality": {
-        "Edward Hyde": 2.7829804022103906,
-        "Henry Jekyll": 2.782980402210389,
-        "Richard Enfield": 1.6611137559132978,
-        "Gabriel John Utterson": 3.4921487880491933
+        "Edward Hyde": 2.783,
+        "Henry Jekyll": 2.783,
+        "Richard Enfield": 1.6611,
+        "Gabriel John Utterson": 3.4921
       },
       "betweenness_centrality": {
         "Edward Hyde": 0.0,
         "Henry Jekyll": 0.0,
         "Richard Enfield": 0.0,
-        "Gabriel John Utterson": 0.6666666666666666
+        "Gabriel John Utterson": 0.6667
       },
       "degree_centrality": {
-        "Edward Hyde": 0.6666666666666666,
-        "Henry Jekyll": 0.6666666666666666,
-        "Richard Enfield": 0.3333333333333333,
+        "Edward Hyde": 0.6667,
+        "Henry Jekyll": 0.6667,
+        "Richard Enfield": 0.3333,
         "Gabriel John Utterson": 1.0
       }
     }
@@ -47,20 +48,20 @@
       [0.33333, 0.66667, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.5905940613765763,
+      "average_clustering": 0.5906,
       "no_of_cliques": 1,
       "most_important_character": "Gabriel John Utterson",
       "degree_of_mic": 6,
       "degree_centrality_mic": 1.0,
-      "avg_degree_centrality": 0.5238095238095238,
+      "avg_degree_centrality": 0.5238,
       "subgraph_centrality": {
-        "Edward Hyde": 11.907400090240953,
-        "Harry Jekyll": 4.2261434198792855,
-        "Henry Jekyll": 4.226143419879282,
-        "Lanyon": 4.226143419879282,
-        "Richard Enfield": 4.226143419879282,
-        "Seek": 4.226143419879283,
-        "Gabriel John Utterson": 11.907400090240975
+        "Edward Hyde": 11.9074,
+        "Harry Jekyll": 4.2261,
+        "Henry Jekyll": 4.2261,
+        "Lanyon": 4.2261,
+        "Richard Enfield": 4.2261,
+        "Seek": 4.2261,
+        "Gabriel John Utterson": 11.9074
       },
       "betweenness_centrality": {
         "Edward Hyde": 0.6,
@@ -69,15 +70,15 @@
         "Lanyon": 0.0,
         "Richard Enfield": 0.0,
         "Seek": 0.0,
-        "Gabriel John Utterson": 0.06666666666666667
+        "Gabriel John Utterson": 0.0667
       },
       "degree_centrality": {
         "Edward Hyde": 1.0,
-        "Harry Jekyll": 0.3333333333333333,
-        "Henry Jekyll": 0.3333333333333333,
-        "Lanyon": 0.3333333333333333,
-        "Richard Enfield": 0.3333333333333333,
-        "Seek": 0.3333333333333333,
+        "Harry Jekyll": 0.3333,
+        "Henry Jekyll": 0.3333,
+        "Lanyon": 0.3333,
+        "Richard Enfield": 0.3333,
+        "Seek": 0.3333,
         "Gabriel John Utterson": 1.0
       }
     }
@@ -94,40 +95,40 @@
       [0.33333, 0.66667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.5072958694196412,
+      "average_clustering": 0.5073,
       "no_of_cliques": 1,
       "most_important_character": "Gabriel John Utterson",
       "degree_of_mic": 7,
       "degree_centrality_mic": 1.0,
-      "avg_degree_centrality": 0.49999999999999994,
+      "avg_degree_centrality": 0.5,
       "subgraph_centrality": {
-        "Danvers Carew": 7.796203612025021,
-        "Edward Hyde": 17.74997603102355,
-        "Harry Jekyll": 4.934017671256421,
-        "Henry Jekyll": 7.796203612025012,
-        "Lanyon": 4.934017671256422,
-        "Richard Enfield": 4.934017671256423,
-        "Seek": 4.934017671256423,
-        "Gabriel John Utterson": 17.749976031023557
+        "Danvers Carew": 7.7962,
+        "Edward Hyde": 17.75,
+        "Harry Jekyll": 4.934,
+        "Henry Jekyll": 7.7962,
+        "Lanyon": 4.934,
+        "Richard Enfield": 4.934,
+        "Seek": 4.934,
+        "Gabriel John Utterson": 17.75
       },
       "betweenness_centrality": {
-        "Danvers Carew": 0.047619047619047616,
-        "Edward Hyde": 0.5714285714285714,
+        "Danvers Carew": 0.0476,
+        "Edward Hyde": 0.5714,
         "Harry Jekyll": 0.0,
         "Henry Jekyll": 0.0,
         "Lanyon": 0.0,
         "Richard Enfield": 0.0,
         "Seek": 0.0,
-        "Gabriel John Utterson": 0.09523809523809523
+        "Gabriel John Utterson": 0.0952
       },
       "degree_centrality": {
-        "Danvers Carew": 0.42857142857142855,
+        "Danvers Carew": 0.4286,
         "Edward Hyde": 1.0,
-        "Harry Jekyll": 0.2857142857142857,
-        "Henry Jekyll": 0.42857142857142855,
-        "Lanyon": 0.2857142857142857,
-        "Richard Enfield": 0.2857142857142857,
-        "Seek": 0.2857142857142857,
+        "Harry Jekyll": 0.2857,
+        "Henry Jekyll": 0.4286,
+        "Lanyon": 0.2857,
+        "Richard Enfield": 0.2857,
+        "Seek": 0.2857,
         "Gabriel John Utterson": 1.0
       }
     }
@@ -145,33 +146,33 @@
       [0.33333, 0.66667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.5052836193848637,
+      "average_clustering": 0.5053,
       "no_of_cliques": 1,
       "most_important_character": "Gabriel John Utterson",
       "degree_of_mic": 8,
       "degree_centrality_mic": 1.0,
-      "avg_degree_centrality": 0.4722222222222222,
+      "avg_degree_centrality": 0.4722,
       "subgraph_centrality": {
-        "Danvers Carew": 9.530135313197938,
-        "Edward Hyde": 25.603735887416715,
-        "Guest": 5.780576776503397,
-        "Harry Jekyll": 5.780576776503389,
-        "Henry Jekyll": 12.903131214406121,
-        "Lanyon": 9.530135313197945,
-        "Richard Enfield": 5.780576776503395,
-        "Seek": 5.780576776503395,
-        "Gabriel John Utterson": 25.603735887416715
+        "Danvers Carew": 9.5301,
+        "Edward Hyde": 25.6037,
+        "Guest": 5.7806,
+        "Harry Jekyll": 5.7806,
+        "Henry Jekyll": 12.9031,
+        "Lanyon": 9.5301,
+        "Richard Enfield": 5.7806,
+        "Seek": 5.7806,
+        "Gabriel John Utterson": 25.6037
       },
       "betweenness_centrality": {
-        "Danvers Carew": 0.017857142857142856,
-        "Edward Hyde": 0.6071428571428571,
+        "Danvers Carew": 0.0179,
+        "Edward Hyde": 0.6071,
         "Guest": 0.0,
         "Harry Jekyll": 0.0,
         "Henry Jekyll": 0.0,
-        "Lanyon": 0.03571428571428571,
+        "Lanyon": 0.0357,
         "Richard Enfield": 0.0,
         "Seek": 0.0,
-        "Gabriel John Utterson": 0.07142857142857142
+        "Gabriel John Utterson": 0.0714
       },
       "degree_centrality": {
         "Danvers Carew": 0.375,
@@ -200,47 +201,47 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.3802111286448733,
+      "average_clustering": 0.3802,
       "no_of_cliques": 1,
       "most_important_character": "G. J. Utterson",
       "degree_of_mic": 9,
       "degree_centrality_mic": 1.0,
-      "avg_degree_centrality": 0.4000000000000001,
+      "avg_degree_centrality": 0.4,
       "subgraph_centrality": {
-        "Danvers Carew": 9.765884735553342,
-        "Edward Hyde": 26.169665313093947,
-        "G. J. Utterson": 28.257922767511907,
-        "Guest": 5.947007562765878,
-        "Harry Jekyll": 5.9470075627658785,
-        "Henry Jekyll": 13.201460917887008,
-        "Lanyon": 9.765884735553373,
-        "Poole": 2.4676894806519103,
-        "Richard Enfield": 5.947007562765878,
-        "Seek": 5.947007562765878
+        "Danvers Carew": 9.7659,
+        "Edward Hyde": 26.1697,
+        "G. J. Utterson": 28.2579,
+        "Guest": 5.947,
+        "Harry Jekyll": 5.947,
+        "Henry Jekyll": 13.2015,
+        "Lanyon": 9.7659,
+        "Poole": 2.4677,
+        "Richard Enfield": 5.947,
+        "Seek": 5.947
       },
       "betweenness_centrality": {
         "Danvers Carew": 0.0,
-        "Edward Hyde": 0.4444444444444444,
-        "G. J. Utterson": 0.3055555555555555,
+        "Edward Hyde": 0.4444,
+        "G. J. Utterson": 0.3056,
         "Guest": 0.0,
         "Harry Jekyll": 0.0,
         "Henry Jekyll": 0.0,
-        "Lanyon": 0.1111111111111111,
+        "Lanyon": 0.1111,
         "Poole": 0.0,
         "Richard Enfield": 0.0,
         "Seek": 0.0
       },
       "degree_centrality": {
-        "Danvers Carew": 0.3333333333333333,
-        "Edward Hyde": 0.8888888888888888,
+        "Danvers Carew": 0.3333,
+        "Edward Hyde": 0.8889,
         "G. J. Utterson": 1.0,
-        "Guest": 0.2222222222222222,
-        "Harry Jekyll": 0.2222222222222222,
-        "Henry Jekyll": 0.4444444444444444,
-        "Lanyon": 0.3333333333333333,
-        "Poole": 0.1111111111111111,
-        "Richard Enfield": 0.2222222222222222,
-        "Seek": 0.2222222222222222
+        "Guest": 0.2222,
+        "Harry Jekyll": 0.2222,
+        "Henry Jekyll": 0.4444,
+        "Lanyon": 0.3333,
+        "Poole": 0.1111,
+        "Richard Enfield": 0.2222,
+        "Seek": 0.2222
       }
     }
   }, {
@@ -260,35 +261,35 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.3474724302037843,
+      "average_clustering": 0.3475,
       "no_of_cliques": 1,
       "most_important_character": "G. J. Utterson",
       "degree_of_mic": 10,
-      "degree_centrality_mic": 0.9090909090909092,
-      "avg_degree_centrality": 0.28787878787878785,
+      "degree_centrality_mic": 0.9091,
+      "avg_degree_centrality": 0.2879,
       "subgraph_centrality": {
         "Bradshaw": 1.0,
-        "Danvers Carew": 10.01190477944233,
-        "Edward Hyde": 26.757734157016277,
-        "G. J. Utterson": 31.158029681872282,
-        "Guest": 6.121261518287344,
-        "Harry Jekyll": 6.121261518287345,
-        "Henry Jekyll": 13.51230434293679,
-        "Lanyon": 10.011904779442347,
-        "Maw": 2.56134055290312,
-        "Poole": 2.56134055290312,
-        "Richard Enfield": 6.121261518287344,
-        "Seek": 6.121261518287344
+        "Danvers Carew": 10.0119,
+        "Edward Hyde": 26.7577,
+        "G. J. Utterson": 31.158,
+        "Guest": 6.1213,
+        "Harry Jekyll": 6.1213,
+        "Henry Jekyll": 13.5123,
+        "Lanyon": 10.0119,
+        "Maw": 2.5613,
+        "Poole": 2.5613,
+        "Richard Enfield": 6.1213,
+        "Seek": 6.1213
       },
       "betweenness_centrality": {
         "Bradshaw": 0.0,
         "Danvers Carew": 0.0,
-        "Edward Hyde": 0.2909090909090909,
-        "G. J. Utterson": 0.36363636363636365,
+        "Edward Hyde": 0.2909,
+        "G. J. Utterson": 0.3636,
         "Guest": 0.0,
         "Harry Jekyll": 0.0,
         "Henry Jekyll": 0.0,
-        "Lanyon": 0.10909090909090909,
+        "Lanyon": 0.1091,
         "Maw": 0.0,
         "Poole": 0.0,
         "Richard Enfield": 0.0,
@@ -296,17 +297,17 @@
       },
       "degree_centrality": {
         "Bradshaw": 0.0,
-        "Danvers Carew": 0.2727272727272727,
-        "Edward Hyde": 0.7272727272727273,
-        "G. J. Utterson": 0.9090909090909092,
-        "Guest": 0.18181818181818182,
-        "Harry Jekyll": 0.18181818181818182,
-        "Henry Jekyll": 0.36363636363636365,
-        "Lanyon": 0.2727272727272727,
-        "Maw": 0.09090909090909091,
-        "Poole": 0.09090909090909091,
-        "Richard Enfield": 0.18181818181818182,
-        "Seek": 0.18181818181818182
+        "Danvers Carew": 0.2727,
+        "Edward Hyde": 0.7273,
+        "G. J. Utterson": 0.9091,
+        "Guest": 0.1818,
+        "Harry Jekyll": 0.1818,
+        "Henry Jekyll": 0.3636,
+        "Lanyon": 0.2727,
+        "Maw": 0.0909,
+        "Poole": 0.0909,
+        "Richard Enfield": 0.1818,
+        "Seek": 0.1818
       }
     }
   }, {
@@ -326,35 +327,35 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.3474724302037843,
+      "average_clustering": 0.3475,
       "no_of_cliques": 1,
       "most_important_character": "G. J. Utterson",
       "degree_of_mic": 10,
-      "degree_centrality_mic": 0.9090909090909092,
-      "avg_degree_centrality": 0.28787878787878785,
+      "degree_centrality_mic": 0.9091,
+      "avg_degree_centrality": 0.2879,
       "subgraph_centrality": {
         "Bradshaw": 1.0,
-        "Danvers Carew": 10.01190477944233,
-        "Edward Hyde": 26.757734157016277,
-        "G. J. Utterson": 31.158029681872282,
-        "Guest": 6.121261518287344,
-        "Harry Jekyll": 6.121261518287345,
-        "Henry Jekyll": 13.51230434293679,
-        "Lanyon": 10.011904779442347,
-        "Maw": 2.56134055290312,
-        "Poole": 2.56134055290312,
-        "Richard Enfield": 6.121261518287344,
-        "Seek": 6.121261518287344
+        "Danvers Carew": 10.0119,
+        "Edward Hyde": 26.7577,
+        "G. J. Utterson": 31.158,
+        "Guest": 6.1213,
+        "Harry Jekyll": 6.1213,
+        "Henry Jekyll": 13.5123,
+        "Lanyon": 10.0119,
+        "Maw": 2.5613,
+        "Poole": 2.5613,
+        "Richard Enfield": 6.1213,
+        "Seek": 6.1213
       },
       "betweenness_centrality": {
         "Bradshaw": 0.0,
         "Danvers Carew": 0.0,
-        "Edward Hyde": 0.2909090909090909,
-        "G. J. Utterson": 0.36363636363636365,
+        "Edward Hyde": 0.2909,
+        "G. J. Utterson": 0.3636,
         "Guest": 0.0,
         "Harry Jekyll": 0.0,
         "Henry Jekyll": 0.0,
-        "Lanyon": 0.10909090909090909,
+        "Lanyon": 0.1091,
         "Maw": 0.0,
         "Poole": 0.0,
         "Richard Enfield": 0.0,
@@ -362,17 +363,17 @@
       },
       "degree_centrality": {
         "Bradshaw": 0.0,
-        "Danvers Carew": 0.2727272727272727,
-        "Edward Hyde": 0.7272727272727273,
-        "G. J. Utterson": 0.9090909090909092,
-        "Guest": 0.18181818181818182,
-        "Harry Jekyll": 0.18181818181818182,
-        "Henry Jekyll": 0.36363636363636365,
-        "Lanyon": 0.2727272727272727,
-        "Maw": 0.09090909090909091,
-        "Poole": 0.09090909090909091,
-        "Richard Enfield": 0.18181818181818182,
-        "Seek": 0.18181818181818182
+        "Danvers Carew": 0.2727,
+        "Edward Hyde": 0.7273,
+        "G. J. Utterson": 0.9091,
+        "Guest": 0.1818,
+        "Harry Jekyll": 0.1818,
+        "Henry Jekyll": 0.3636,
+        "Lanyon": 0.2727,
+        "Maw": 0.0909,
+        "Poole": 0.0909,
+        "Richard Enfield": 0.1818,
+        "Seek": 0.1818
       }
     }
   }, {
@@ -392,35 +393,35 @@
       [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.3457773326865516,
+      "average_clustering": 0.3458,
       "no_of_cliques": 1,
       "most_important_character": "G. J. Utterson",
       "degree_of_mic": 10,
-      "degree_centrality_mic": 0.9090909090909092,
-      "avg_degree_centrality": 0.28787878787878785,
+      "degree_centrality_mic": 0.9091,
+      "avg_degree_centrality": 0.2879,
       "subgraph_centrality": {
         "Bradshaw": 1.0,
-        "Danvers Carew": 10.01190477944233,
-        "Edward Hyde": 26.757734157016277,
-        "G. J. Utterson": 31.158029681872282,
-        "Guest": 6.121261518287344,
-        "Harry Jekyll": 6.121261518287345,
-        "Henry Jekyll": 13.51230434293679,
-        "Lanyon": 10.011904779442347,
-        "Maw": 2.56134055290312,
-        "Poole": 2.56134055290312,
-        "Richard Enfield": 6.121261518287344,
-        "Seek": 6.121261518287344
+        "Danvers Carew": 10.0119,
+        "Edward Hyde": 26.7577,
+        "G. J. Utterson": 31.158,
+        "Guest": 6.1213,
+        "Harry Jekyll": 6.1213,
+        "Henry Jekyll": 13.5123,
+        "Lanyon": 10.0119,
+        "Maw": 2.5613,
+        "Poole": 2.5613,
+        "Richard Enfield": 6.1213,
+        "Seek": 6.1213
       },
       "betweenness_centrality": {
         "Bradshaw": 0.0,
-        "Danvers Carew": 0.05454545454545454,
-        "Edward Hyde": 0.3090909090909091,
-        "G. J. Utterson": 0.39999999999999997,
+        "Danvers Carew": 0.0545,
+        "Edward Hyde": 0.3091,
+        "G. J. Utterson": 0.4,
         "Guest": 0.0,
         "Harry Jekyll": 0.0,
         "Henry Jekyll": 0.0,
-        "Lanyon": 0.10909090909090909,
+        "Lanyon": 0.1091,
         "Maw": 0.0,
         "Poole": 0.0,
         "Richard Enfield": 0.0,
@@ -428,17 +429,17 @@
       },
       "degree_centrality": {
         "Bradshaw": 0.0,
-        "Danvers Carew": 0.2727272727272727,
-        "Edward Hyde": 0.7272727272727273,
-        "G. J. Utterson": 0.9090909090909092,
-        "Guest": 0.18181818181818182,
-        "Harry Jekyll": 0.18181818181818182,
-        "Henry Jekyll": 0.36363636363636365,
-        "Lanyon": 0.2727272727272727,
-        "Maw": 0.09090909090909091,
-        "Poole": 0.09090909090909091,
-        "Richard Enfield": 0.18181818181818182,
-        "Seek": 0.18181818181818182
+        "Danvers Carew": 0.2727,
+        "Edward Hyde": 0.7273,
+        "G. J. Utterson": 0.9091,
+        "Guest": 0.1818,
+        "Harry Jekyll": 0.1818,
+        "Henry Jekyll": 0.3636,
+        "Lanyon": 0.2727,
+        "Maw": 0.0909,
+        "Poole": 0.0909,
+        "Richard Enfield": 0.1818,
+        "Seek": 0.1818
       }
     }
   }, {
@@ -458,53 +459,53 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.2995134936819315,
+      "average_clustering": 0.2995,
       "no_of_cliques": 1,
       "most_important_character": "G. J. Utterson",
       "degree_of_mic": 10,
-      "degree_centrality_mic": 0.9090909090909092,
-      "avg_degree_centrality": 0.3333333333333333,
+      "degree_centrality_mic": 0.9091,
+      "avg_degree_centrality": 0.3333,
       "subgraph_centrality": {
-        "Bradshaw": 8.327829391603249,
-        "Danvers Carew": 11.187971121282473,
-        "Edward Hyde": 34.68531822420031,
-        "G. J. Utterson": 34.49012727325751,
-        "Guest": 6.617267054615475,
-        "Harry Jekyll": 9.504363244503539,
-        "Henry Jekyll": 18.45298820968838,
-        "Lanyon": 11.187971121282468,
-        "Maw": 2.6181139056536953,
-        "Poole": 2.6181139056536953,
-        "Richard Enfield": 6.617267054615475,
-        "Seek": 6.617267054615475
+        "Bradshaw": 8.3278,
+        "Danvers Carew": 11.188,
+        "Edward Hyde": 34.6853,
+        "G. J. Utterson": 34.4901,
+        "Guest": 6.6173,
+        "Harry Jekyll": 9.5044,
+        "Henry Jekyll": 18.453,
+        "Lanyon": 11.188,
+        "Maw": 2.6181,
+        "Poole": 2.6181,
+        "Richard Enfield": 6.6173,
+        "Seek": 6.6173
       },
       "betweenness_centrality": {
-        "Bradshaw": 0.09090909090909091,
+        "Bradshaw": 0.0909,
         "Danvers Carew": 0.0,
-        "Edward Hyde": 0.36363636363636365,
-        "G. J. Utterson": 0.43636363636363634,
+        "Edward Hyde": 0.3636,
+        "G. J. Utterson": 0.4364,
         "Guest": 0.0,
         "Harry Jekyll": 0.0,
-        "Henry Jekyll": 0.07272727272727272,
-        "Lanyon": 0.10909090909090909,
+        "Henry Jekyll": 0.0727,
+        "Lanyon": 0.1091,
         "Maw": 0.0,
         "Poole": 0.0,
         "Richard Enfield": 0.0,
         "Seek": 0.0
       },
       "degree_centrality": {
-        "Bradshaw": 0.2727272727272727,
-        "Danvers Carew": 0.2727272727272727,
-        "Edward Hyde": 0.8181818181818182,
-        "G. J. Utterson": 0.9090909090909092,
-        "Guest": 0.18181818181818182,
-        "Harry Jekyll": 0.2727272727272727,
-        "Henry Jekyll": 0.4545454545454546,
-        "Lanyon": 0.2727272727272727,
-        "Maw": 0.09090909090909091,
-        "Poole": 0.09090909090909091,
-        "Richard Enfield": 0.18181818181818182,
-        "Seek": 0.18181818181818182
+        "Bradshaw": 0.2727,
+        "Danvers Carew": 0.2727,
+        "Edward Hyde": 0.8182,
+        "G. J. Utterson": 0.9091,
+        "Guest": 0.1818,
+        "Harry Jekyll": 0.2727,
+        "Henry Jekyll": 0.4545,
+        "Lanyon": 0.2727,
+        "Maw": 0.0909,
+        "Poole": 0.0909,
+        "Richard Enfield": 0.1818,
+        "Seek": 0.1818
       }
     }
   }, {
@@ -524,108 +525,98 @@
       [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ],
     "graph_attributes": {
-      "average_clustering": 0.2991496844686205,
+      "average_clustering": 0.2991,
       "no_of_cliques": 1,
       "most_important_character": "G. J. Utterson",
       "degree_of_mic": 10,
-      "degree_centrality_mic": 0.9090909090909092,
-      "avg_degree_centrality": 0.3333333333333333,
+      "degree_centrality_mic": 0.9091,
+      "avg_degree_centrality": 0.3333,
       "subgraph_centrality": {
-        "Bradshaw": 8.327829391603249,
-        "Danvers Carew": 11.187971121282473,
-        "Edward Hyde": 34.68531822420031,
-        "G. J. Utterson": 34.49012727325751,
-        "Guest": 6.617267054615475,
-        "Harry Jekyll": 9.504363244503539,
-        "Henry Jekyll": 18.45298820968838,
-        "Lanyon": 11.187971121282468,
-        "Maw": 2.6181139056536953,
-        "Poole": 2.6181139056536953,
-        "Richard Enfield": 6.617267054615475,
-        "Seek": 6.617267054615475
+        "Bradshaw": 8.3278,
+        "Danvers Carew": 11.188,
+        "Edward Hyde": 34.6853,
+        "G. J. Utterson": 34.4901,
+        "Guest": 6.6173,
+        "Harry Jekyll": 9.5044,
+        "Henry Jekyll": 18.453,
+        "Lanyon": 11.188,
+        "Maw": 2.6181,
+        "Poole": 2.6181,
+        "Richard Enfield": 6.6173,
+        "Seek": 6.6173
       },
       "betweenness_centrality": {
-        "Bradshaw": 0.09090909090909091,
+        "Bradshaw": 0.0909,
         "Danvers Carew": 0.0,
-        "Edward Hyde": 0.36363636363636365,
-        "G. J. Utterson": 0.43636363636363634,
+        "Edward Hyde": 0.3636,
+        "G. J. Utterson": 0.4364,
         "Guest": 0.0,
         "Harry Jekyll": 0.0,
-        "Henry Jekyll": 0.07272727272727272,
-        "Lanyon": 0.10909090909090909,
+        "Henry Jekyll": 0.0727,
+        "Lanyon": 0.1091,
         "Maw": 0.0,
         "Poole": 0.0,
         "Richard Enfield": 0.0,
         "Seek": 0.0
       },
       "degree_centrality": {
-        "Bradshaw": 0.2727272727272727,
-        "Danvers Carew": 0.2727272727272727,
-        "Edward Hyde": 0.8181818181818182,
-        "G. J. Utterson": 0.9090909090909092,
-        "Guest": 0.18181818181818182,
-        "Harry Jekyll": 0.2727272727272727,
-        "Henry Jekyll": 0.4545454545454546,
-        "Lanyon": 0.2727272727272727,
-        "Maw": 0.09090909090909091,
-        "Poole": 0.09090909090909091,
-        "Richard Enfield": 0.18181818181818182,
-        "Seek": 0.18181818181818182
+        "Bradshaw": 0.2727,
+        "Danvers Carew": 0.2727,
+        "Edward Hyde": 0.8182,
+        "G. J. Utterson": 0.9091,
+        "Guest": 0.1818,
+        "Harry Jekyll": 0.2727,
+        "Henry Jekyll": 0.4545,
+        "Lanyon": 0.2727,
+        "Maw": 0.0909,
+        "Poole": 0.0909,
+        "Richard Enfield": 0.1818,
+        "Seek": 0.1818
       }
     }
   }],
   "first_interactions_between_characters": {
-    "Richard Enfield": {
-      "Edward Hyde": "And still the figure had no face by which he might know it; even in his dreams, it had no face, or one that baffled him and melted before his eyes; and thus it was that there sprang up and grew apace in the lawyer's mind a singularly strong, almost an inordinate, curiosity to behold the features of the real Mr. Hyde.",
-      "G. J. Utterson": "Hence, no doubt the bond that united him to Mr. Richard Enfield, his distant kinsman, the well-known man about town.",
-      "Gabriel John Utterson": "Hence, no doubt the bond that united him to Mr. Richard Enfield, his distant kinsman, the well-known man about town."
-    },
     "Henry Jekyll": {
       "Edward Hyde": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
-      "Danvers Carew": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
-      "Lanyon": "The fifth night he had in Guest to dine with him; and the sixth he betook himself to Dr. Lanyon's.  ",
-      "G. J. Utterson": "There he opened his safe, took from the most private part of it a document endorsed on the envelope as Dr. Jekyll's Will and sat down with a clouded brow to study its contents.",
-      "Gabriel John Utterson": "There he opened his safe, took from the most private part of it a document endorsed on the envelope as Dr. Jekyll's Will and sat down with a clouded brow to study its contents."
-    },
-    "Edward Hyde": {
-      "Henry Jekyll": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
-      "Lanyon": "With that he blew out his candle, put on a greatcoat, and set forth in the direction of Cavendish Square, that citadel of medicine, where his friend, the great Dr. Lanyon, had his house and received his crowding patients.",
-      "Danvers Carew": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
-      "Harry Jekyll": "INCIDENT OF THE LETTER  It was late in the afternoon, when Mr. Utterson found his way to Dr. Jekyll's door, where he was at once admitted by Poole, and carried down by the kitchen offices and across a yard which had once been a garden, to the building which was indifferently known as the laboratory or dissecting rooms.",
+      "Danvers Carew": "LANYON  Time ran on; thousands of pounds were offered in reward, for the death of Sir Danvers was resented as a public injury; but Mr. Hyde had disappeared out of the ken of the police as though he had never existed.",
       "G. J. Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
       "Gabriel John Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
     "Lanyon": {
-      "G. J. Utterson": "At sight of Mr. Utterson, he sprang up from his chair and welcomed him with both hands.",
-      "Gabriel John Utterson": "At sight of Mr. Utterson, he sprang up from his chair and welcomed him with both hands."
+      "Edward Hyde": "With that he blew out his candle, put on a greatcoat, and set forth in the direction of Cavendish Square, that citadel of medicine, where his friend, the great Dr. Lanyon, had his house and received his crowding patients.",
+      "Henry Jekyll": "The fifth night he had in Guest to dine with him; and the sixth he betook himself to Dr. Lanyon's.  "
     },
-    "Seek": {
-      "Edward Hyde": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
-      "G. J. Utterson": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
-      "Gabriel John Utterson": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  "
-    },
-    "Harry Jekyll": {
-      "Edward Hyde": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
-      "G. J. Utterson": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
-      "Gabriel John Utterson": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key."
-    },
-    "Guest": {
-      "Edward Hyde": "Guest had often been on business to the doctor's; he knew Poole; he could scarce have failed to hear of Mr. Hyde's familiarity about the house; he might draw conclusions: was it not as well, then, that he should see a letter which put that mystery to right?",
-      "G. J. Utterson": "Presently after, he sat on one side of his own hearth, with Mr. Guest, his head clerk, upon the other, and midway between, at a nicely calculated distance from the fire, a bottle of a particular old wine that had long dwelt unsunned in the foundations of his house.",
-      "Gabriel John Utterson": "Presently after, he sat on one side of his own hearth, with Mr. Guest, his head clerk, upon the other, and midway between, at a nicely calculated distance from the fire, a bottle of a particular old wine that had long dwelt unsunned in the foundations of his house."
+    "Edward Hyde": {
+      "Richard Enfield": "And still the figure had no face by which he might know it; even in his dreams, it had no face, or one that baffled him and melted before his eyes; and thus it was that there sprang up and grew apace in the lawyer's mind a singularly strong, almost an inordinate, curiosity to behold the features of the real Mr. Hyde.",
+      "Seek": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
+      "Harry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
+      "Henry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
+      "Danvers Carew": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
+      "Guest": "Guest had often been on business to the doctor's; he knew Poole; he could scarce have failed to hear of Mr. Hyde's familiarity about the house; he might draw conclusions: was it not as well, then, that he should see a letter which put that mystery to right?",
+      "G. J. Utterson": "\"Ah, that's not Jekyll's voice--it's Hyde's!\" cried Utterson."
     },
     "Danvers Carew": {
+      "Henry Jekyll": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
       "Edward Hyde": "The death of Sir Danvers was, to his way of thinking, more than paid for by the disappearance of Mr. Hyde."
     },
+    "Harry Jekyll": {
+      "Edward Hyde": "INCIDENT OF THE LETTER  It was late in the afternoon, when Mr. Utterson found his way to Dr. Jekyll's door, where he was at once admitted by Poole, and carried down by the kitchen offices and across a yard which had once been a garden, to the building which was indifferently known as the laboratory or dissecting rooms."
+    },
     "G. J. Utterson": {
-      "Richard Enfield": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield.",
-      "Danvers Carew": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  "
+      "Richard Enfield": "Hence, no doubt the bond that united him to Mr. Richard Enfield, his distant kinsman, the well-known man about town.",
+      "Henry Jekyll": "There he opened his safe, took from the most private part of it a document endorsed on the envelope as Dr. Jekyll's Will and sat down with a clouded brow to study its contents.",
+      "Edward Hyde": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
+      "Lanyon": "At sight of Mr. Utterson, he sprang up from his chair and welcomed him with both hands.",
+      "Seek": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
+      "Harry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
+      "Danvers Carew": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
+      "Guest": "Presently after, he sat on one side of his own hearth, with Mr. Guest, his head clerk, upon the other, and midway between, at a nicely calculated distance from the fire, a bottle of a particular old wine that had long dwelt unsunned in the foundations of his house."
     },
     "Poole": {
       "G. J. Utterson": "\"Bless me, Poole, what brings you here?\" he cried; and then taking a second look at him, \"What ails you?\""
     },
     "Maw": {
-      "G. J. Utterson": "In the year 18--, Dr. J. purchased a somewhat large quantity from Messrs. M. He now begs them to search with most sedulous care, and should any of the same quality be left, forward it to him at once."
+      "G. J. Utterson": "\"The man at Maw's was main angry, sir, and he threw it back to me like so much dirt,\" returned Poole.  "
     },
     "Bradshaw": {
       "Edward Hyde": "I had soon dressed, as well as I was able, in clothes of my own size: had soon passed through the house, where Bradshaw stared and drew back at seeing Mr. Hyde at such an hour and in such a strange array; and ten minutes later, Dr. Jekyll had returned to his own shape and was sitting down, with a darkened brow, to make a feint of breakfasting.  ",
@@ -633,8 +624,14 @@
       "Henry Jekyll": "I had soon dressed, as well as I was able, in clothes of my own size: had soon passed through the house, where Bradshaw stared and drew back at seeing Mr. Hyde at such an hour and in such a strange array; and ten minutes later, Dr. Jekyll had returned to his own shape and was sitting down, with a darkened brow, to make a feint of breakfasting.  "
     },
     "Gabriel John Utterson": {
-      "Richard Enfield": "From this he was recalled by Mr. Utterson asking rather suddenly: \"And you don't know if the drawer of the cheque lives there?\"  \"A likely place, isn't it?\" returned Mr. Enfield.",
-      "Danvers Carew": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  "
+      "Richard Enfield": "Hence, no doubt the bond that united him to Mr. Richard Enfield, his distant kinsman, the well-known man about town.",
+      "Henry Jekyll": "There he opened his safe, took from the most private part of it a document endorsed on the envelope as Dr. Jekyll's Will and sat down with a clouded brow to study its contents.",
+      "Edward Hyde": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
+      "Lanyon": "At sight of Mr. Utterson, he sprang up from his chair and welcomed him with both hands.",
+      "Seek": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
+      "Harry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
+      "Danvers Carew": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
+      "Guest": "Presently after, he sat on one side of his own hearth, with Mr. Guest, his head clerk, upon the other, and midway between, at a nicely calculated distance from the fire, a bottle of a particular old wine that had long dwelt unsunned in the foundations of his house."
     }
   },
   "first_interactions_overall": {
@@ -655,15 +652,15 @@
       "context": "With that he blew out his candle, put on a greatcoat, and set forth in the direction of Cavendish Square, that citadel of medicine, where his friend, the great Dr. Lanyon, had his house and received his crowding patients."
     },
     "Seek": {
-      "with": "Edward Hyde",
+      "with": "Gabriel John Utterson",
       "context": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  "
     },
     "Harry Jekyll": {
-      "with": "Edward Hyde",
+      "with": "Gabriel John Utterson",
       "context": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key."
     },
     "Danvers Carew": {
-      "with": "Henry Jekyll",
+      "with": "Gabriel John Utterson",
       "context": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  "
     },
     "Guest": {
@@ -675,7 +672,7 @@
       "context": "\"Bless me, Poole, what brings you here?\" he cried; and then taking a second look at him, \"What ails you?\""
     },
     "Maw": {
-      "with": "M.",
+      "with": "G. J. Utterson",
       "context": "In the year 18--, Dr. J. purchased a somewhat large quantity from Messrs. M. He now begs them to search with most sedulous care, and should any of the same quality be left, forward it to him at once."
     },
     "Bradshaw": {
