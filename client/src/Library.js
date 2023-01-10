@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import "./App.css";
 import "./Library.css";
+import {CircularProgress, LinearProgress} from "@mui/material";
 
 function Library() {
   useEffect(() => {
@@ -13,6 +14,7 @@ function Library() {
   const [bookTitles, setBookTitles] = useState([]);
   const [bookCovers, setBookCovers] = useState([]);
   const [bookAuthors, setBookAuthors] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   let filePaths = require.context("../public/library/", false, /\.json$/);
   filePaths = filePaths.keys();
@@ -34,12 +36,12 @@ function Library() {
 
   useEffect(() => {
     Promise.all(
-      filePaths.map((fp) =>
-        fetch(fp)
-          .then(checkStatus)
-          .then(parseJSON)
-          .catch((error) => console.log("There was a problem", error))
-      )
+        filePaths.map((fp) =>
+            fetch(fp)
+                .then(checkStatus)
+                .then(parseJSON)
+                .catch((error) => console.log("There was a problem", error))
+        )
     ).then((data) => {
       console.log("Post Promise.all", data);
       newTitles = [];
@@ -58,13 +60,14 @@ function Library() {
   let newBookCovers = [];
 
   useEffect(() => {
+    setLoading(true);
     Promise.all(
-      bookTitles.map((fp) =>
-        fetch("https://gutendex.com/books/?search=" + fp)
-          .then(checkStatus)
-          .then(parseJSON)
-          .catch((error) => console.log("There was a problem", error))
-      )
+        bookTitles.map((fp) =>
+            fetch("https://gutendex.com/books/?search=" + fp)
+                .then(checkStatus)
+                .then(parseJSON)
+                .catch((error) => console.log("There was a problem", error))
+        )
     ).then((data) => {
       console.log("Post Promise.all", data);
       newBookCovers = [];
@@ -76,35 +79,44 @@ function Library() {
         }
       });
       setBookCovers(newBookCovers);
+      setLoading(false);
     });
   }, [bookTitles]);
 
   console.log(bookCovers);
 
+  function loadingBookCover(index) {
+    if (loading) {
+      return <LinearProgress sx={{bgcolor: "#eae0d5"}}/>
+    } else {
+      return <Card.Img variant="top" src={bookCovers[index]} />
+    }
+  }
+
   return (
-    <div className="books">
-      <Row xs={1} md={2} lg={4} className="g-4">
-        {bookTitles.map((bookTitle, index) => (
-          <Col>
-            <Card className="text-center">
-              <Card>
-                <Card.Img variant="top" src={bookCovers[index]} />
-              </Card>
-              <Card.Body>
-                <Card.Title>{bookTitle}</Card.Title>
-                <Card.Subtitle>{bookAuthors[index]}</Card.Subtitle>
-                <a
-                  href={filePaths[index].slice(2, -5)}
-                  className="btn stretched-link"
-                >
-                  View graph
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </div>
+      <div className="books">
+        <Row xs={1} md={2} lg={4} className="g-4">
+          {bookTitles.map((bookTitle, index) => (
+              <Col>
+                <Card className="text-center">
+                  <Card>
+                    {loadingBookCover(index)}
+                  </Card>
+                  <Card.Body>
+                    <Card.Title>{bookTitle}</Card.Title>
+                    <Card.Subtitle>{bookAuthors[index]}</Card.Subtitle>
+                    <a
+                        href={filePaths[index].slice(2, -5)}
+                        className="btn stretched-link"
+                    >
+                      View graph
+                    </a>
+                  </Card.Body>
+                </Card>
+              </Col>
+          ))}
+        </Row>
+      </div>
   );
 }
 
