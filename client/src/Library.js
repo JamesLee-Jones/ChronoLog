@@ -14,7 +14,6 @@ function Library() {
   const [bookCovers, setBookCovers] = useState([]);
   const [bookAuthors, setBookAuthors] = useState([]);
 
-
   let filePaths = require.context("../public/library/", false, /\.json$/);
   filePaths = filePaths.keys();
 
@@ -35,12 +34,12 @@ function Library() {
 
   useEffect(() => {
     Promise.all(
-        filePaths.map((fp) =>
-            fetch(fp)
-                .then(checkStatus)
-                .then(parseJSON)
-                .catch((error) => console.log("There was a problem", error))
-        )
+      filePaths.map((fp) =>
+        fetch(fp)
+          .then(checkStatus)
+          .then(parseJSON)
+          .catch((error) => console.log("There was a problem", error))
+      )
     ).then((data) => {
       console.log("Post Promise.all", data);
       newTitles = [];
@@ -60,21 +59,20 @@ function Library() {
 
   useEffect(() => {
     Promise.all(
-        bookTitles.map((fp) =>
-            fetch('https://gutendex.com/books/?search=' + fp,
-            )
-                .then(checkStatus)
-                .then(parseJSON)
-                .catch((error) => console.log("There was a problem", error))
-        )
+      bookTitles.map((fp) =>
+        fetch("https://gutendex.com/books/?search=" + fp)
+          .then(checkStatus)
+          .then(parseJSON)
+          .catch((error) => console.log("There was a problem", error))
+      )
     ).then((data) => {
       console.log("Post Promise.all", data);
       newBookCovers = [];
       data.forEach((d1) => {
         if (d1["results"][0] === undefined) {
-          newBookCovers.push('../ChronoLogoMini.png')
+          newBookCovers.push("../ChronoLogoMini.png");
         } else {
-          console.log(d1["results"][0]["formats"]["image/jpeg"])
+          console.log(d1["results"][0]["formats"]["image/jpeg"]);
           newBookCovers.push(d1["results"][0]["formats"]["image/jpeg"]);
         }
       });
@@ -85,28 +83,29 @@ function Library() {
   console.log(bookCovers);
 
   return (
-      <div className="books">
-        <Row xs={1} md={2} lg={4} className="g-4">
-          {bookTitles.map((bookTitle, index) => (
-              <Col>
-                <Card className="text-center">
-                  <Card><Card.Img variant="top" src={bookCovers[index]} />
-                  </Card>
-                  <Card.Body>
-                    <Card.Title>{bookTitle}</Card.Title>
-                    <Card.Subtitle>{bookAuthors[index]}</Card.Subtitle>
-                    <a
-                        href={filePaths[index].slice(2, -5)}
-                        className="btn stretched-link"
-                    >
-                      View graph
-                    </a>
-                  </Card.Body>
-                </Card>
-              </Col>
-          ))}
-        </Row>
-      </div>
+    <div className="books">
+      <Row xs={1} md={2} lg={4} className="g-4">
+        {bookTitles.map((bookTitle, index) => (
+          <Col>
+            <Card className="text-center">
+              <Card>
+                <Card.Img variant="top" src={bookCovers[index]} />
+              </Card>
+              <Card.Body>
+                <Card.Title>{bookTitle}</Card.Title>
+                <Card.Subtitle>{bookAuthors[index]}</Card.Subtitle>
+                <a
+                  href={filePaths[index].slice(2, -5)}
+                  className="btn stretched-link"
+                >
+                  View graph
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </div>
   );
 }
 
