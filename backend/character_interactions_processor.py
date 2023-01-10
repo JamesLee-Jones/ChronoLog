@@ -1,6 +1,7 @@
 import json
 import jsbeautifier
 import numpy as np
+import string
 import networkx as nx
 
 import backend.nlp as nlp
@@ -221,7 +222,7 @@ class CharacterInteractionsProcessor:
 
     def generate_timeline_json(self, title: str):
         file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))
-        json_contents = {"book": title.replace('_', ' ').title(),
+        json_contents = {"book": string.capwords(title.replace('_', ' ')),
                          "author": self.author.title(),
                          "num_sections": self.nb_sections,
                          "sections": []
