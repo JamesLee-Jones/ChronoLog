@@ -72,7 +72,6 @@ function Library() {
         if (d1["results"][0] === undefined) {
           newBookCovers.push("../ChronoLogoMini.png");
         } else {
-          console.log(d1["results"][0]["formats"]["image/jpeg"]);
           newBookCovers.push(d1["results"][0]["formats"]["image/jpeg"]);
         }
       });
