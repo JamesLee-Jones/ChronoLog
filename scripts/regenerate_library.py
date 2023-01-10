@@ -10,7 +10,8 @@ INPUT_DIRECTORY = 'texts/'
 OUTPUT_DIRECTORY = 'timelines/'
 
 chapter_regex = {
-    "alices_adventures_in_wonderland.txt": ['-c', 'chapter_numeral', '-p', '30', '-a', 'Lewis Carroll', '-t', 'Alice\'s Adventures in Wonderland'],
+    "alices_adventures_in_wonderland.txt": ['-c', 'chapter_numeral', '-p', '30', '-a', 'Lewis Carroll', '-t',
+                                            'Alice\'s Adventures in Wonderland'],
     "anne_of_green_gables.txt": ['-c', 'chapter_numeral', '-a', 'L. M. Montgomery'],
     "a_christmas_carol.txt": ['-c', 'STAVE', '-a', 'Charles Dickens'],
     "dr_jekyll_and_mr_hyde.txt": ['-s', '10', '-a', 'Robert Louis Stevenson'],
