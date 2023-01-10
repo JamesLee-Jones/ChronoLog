@@ -36,7 +36,7 @@ if __name__ == '__main__':
         except subprocess.CalledProcessError:
             # Try macOS formatting
             try:
-                sb = subprocess.run(["python", "./chronolog.py", "-r", "texts\\" + file] + cr, env=env,
+                sb = subprocess.run(["python", "./chronolog.py", "-r", "texts/" + file] + cr, env=env,
                                     check=True)
             except subprocess.CalledProcessError:
                 print("Error occurred whilst processing {}.".format(file))
