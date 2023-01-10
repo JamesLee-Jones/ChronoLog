@@ -71,8 +71,12 @@ function Library() {
       console.log("Post Promise.all", data);
       newBookCovers = [];
       data.forEach((d1) => {
-        console.log(d1["results"][0]["formats"]["image/jpeg"])
-        newBookCovers.push(d1["results"][0]["formats"]["image/jpeg"]);
+        if (d1["results"][0] === undefined) {
+          newBookCovers.push('../ChronoLogoMini.png')
+        } else {
+          console.log(d1["results"][0]["formats"]["image/jpeg"])
+          newBookCovers.push(d1["results"][0]["formats"]["image/jpeg"]);
+        }
       });
       setBookCovers(newBookCovers);
     });
