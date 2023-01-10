@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import "./App.css";
 import "./Library.css";
+import { LinearProgress } from "@mui/material";
 
 function Library() {
   useEffect(() => {
@@ -13,6 +14,7 @@ function Library() {
   const [bookTitles, setBookTitles] = useState([]);
   const [bookCovers, setBookCovers] = useState([]);
   const [bookAuthors, setBookAuthors] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   let filePaths = require.context("../public/library/", false, /\.json$/);
   filePaths = filePaths.keys();
@@ -58,6 +60,7 @@ function Library() {
   let newBookCovers = [];
 
   useEffect(() => {
+    setLoading(true);
     Promise.all(
       bookTitles.map((fp) =>
         fetch("https://gutendex.com/books/?search=" + fp)
@@ -76,10 +79,19 @@ function Library() {
         }
       });
       setBookCovers(newBookCovers);
+      setLoading(false);
     });
   }, [bookTitles]);
 
   console.log(bookCovers);
+
+  function loadingBookCover(index) {
+    if (loading) {
+      return <LinearProgress sx={{ bgcolor: "#eae0d5" }} />;
+    } else {
+      return <Card.Img variant="top" src={bookCovers[index]} />;
+    }
+  }
 
   return (
     <div className="books">
@@ -87,9 +99,7 @@ function Library() {
         {bookTitles.map((bookTitle, index) => (
           <Col>
             <Card className="text-center">
-              <Card>
-                <Card.Img variant="top" src={bookCovers[index]} />
-              </Card>
+              <Card>{loadingBookCover(index)}</Card>
               <Card.Body>
                 <Card.Title>{bookTitle}</Card.Title>
                 <Card.Subtitle>{bookAuthors[index]}</Card.Subtitle>
