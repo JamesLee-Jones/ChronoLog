@@ -11,12 +11,15 @@ function Library() {
   });
 
   const [bookTitles, setBookTitles] = useState([]);
-  // const [loading, setLoading] = useState(true)
+  const [bookCovers, setBookCovers] = useState([]);
+  const [bookAuthors, setBookAuthors] = useState([]);
+
 
   let filePaths = require.context("../public/library/", false, /\.json$/);
   filePaths = filePaths.keys();
 
   let newTitles = [];
+  let newAuthors = [];
 
   function checkStatus(response) {
     if (response.ok) {
@@ -41,12 +44,41 @@ function Library() {
     ).then((data) => {
       console.log("Post Promise.all", data);
       newTitles = [];
+      newAuthors = [];
       data.forEach((d1) => {
         newTitles.push(d1["book"]);
       });
+      data.forEach((d1) => {
+        newAuthors.push(d1["author"]);
+      });
       setBookTitles(newTitles);
+      setBookAuthors(newAuthors);
     });
   }, []);
+
+  let newBookCovers = [];
+
+  useEffect(() => {
+    Promise.all(
+        bookTitles.map((fp) =>
+            fetch('https://gutendex.com/books/?search=' + fp,
+            )
+                .then(checkStatus)
+                .then(parseJSON)
+                .catch((error) => console.log("There was a problem", error))
+        )
+    ).then((data) => {
+      console.log("Post Promise.all", data);
+      newBookCovers = [];
+      data.forEach((d1) => {
+        console.log(d1["results"][0]["formats"]["image/jpeg"])
+        newBookCovers.push(d1["results"][0]["formats"]["image/jpeg"]);
+      });
+      setBookCovers(newBookCovers);
+    });
+  }, [bookTitles]);
+
+  console.log(bookCovers);
 
   return (
       <div className="books">
@@ -54,9 +86,11 @@ function Library() {
           {bookTitles.map((bookTitle, index) => (
               <Col>
                 <Card className="text-center">
-                  <Card.Img variant="top" src="../ChronoLogoMini.png" />
+                  <Card><Card.Img variant="top" src={bookCovers[index]} />
+                  </Card>
                   <Card.Body>
                     <Card.Title>{bookTitle}</Card.Title>
+                    <Card.Subtitle>{bookAuthors[index]}</Card.Subtitle>
                     <a
                         href={filePaths[index].slice(2, -5)}
                         className="btn stretched-link"

@@ -1,3 +1,11 @@
 .books {
   padding: 50px 50px 50px 50px;
 }
+
+.card-img-top {
+  width: 100%;
+  height: 25vw;
+  object-fit: contain;
+  padding: 10px 10px 10px 10px;
+}
+
