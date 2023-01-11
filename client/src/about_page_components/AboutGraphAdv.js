@@ -96,7 +96,6 @@ function AboutGraphAdv() {
   const width = 500;
   const height = 300;
 
-
   useEffect(() => {
     forceRef.current.d3Force("charge", d3.forceManyBody().strength(-100));
     forceRef.current.d3Force("center", d3.forceCenter(0, 0));

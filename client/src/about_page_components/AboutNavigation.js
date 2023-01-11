@@ -43,7 +43,6 @@ const AboutNavigation = () => {
   const [sliderVal2, setSliderVal2] = useState(10 * scale);
   const [counter, setCounter] = useState(0);
 
-
   useInterval(
     () => {
       if (sliderVal > 10 * scale) {
