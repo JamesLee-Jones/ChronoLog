@@ -210,7 +210,7 @@ class CharacterInteractionsProcessor:
         max_val = max(s_centrality_rounded.values())
         range_val = max_val - min_val
         for key in s_centrality_rounded:
-            s_centrality_rounded[key] = (s_centrality_rounded[key] - min_val) / range_val
+            s_centrality_rounded[key] = (s_centrality_rounded[key] - min_val) / (range_val if range_val > 0 else 1)
         s_c_r = s_centrality_rounded
         b_c_r = b_centrality_rounded
         d_c_r = d_centrality_rounded
