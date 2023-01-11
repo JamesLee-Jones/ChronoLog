@@ -205,6 +205,16 @@ class CharacterInteractionsProcessor:
         s_centrality = nx.subgraph_centrality(graph)
         s_centrality_rounded = {key: round(s_centrality[key], ROUND_TO) for key in s_centrality}
 
+        # normalize subgraph_centrality
+        min_val = min(s_centrality_rounded.values())
+        max_val = max(s_centrality_rounded.values())
+        range_val = max_val - min_val
+        for key in s_centrality_rounded:
+            s_centrality_rounded[key] = (s_centrality_rounded[key] - min_val) / range_val
+        s_c_r = s_centrality_rounded
+        b_c_r = b_centrality_rounded
+        d_c_r = d_centrality_rounded
+
         # The clique involving that character and it's size
         # The number of cliques
         number_of_cliques = 0
@@ -217,8 +227,7 @@ class CharacterInteractionsProcessor:
                                                                           ROUND_TO)
         mc_stats = (most_important_node, degree_of_node, centrality_of_node)
 
-        return clustering_average, number_of_cliques, mc_stats, avg_centrality, s_centrality_rounded, \
-            b_centrality_rounded, d_centrality_rounded
+        return clustering_average, number_of_cliques, mc_stats, avg_centrality, s_c_r, b_c_r, d_c_r
 
     def generate_timeline_json(self, title: str):
         file_path = JSON_DIRECTORY + "{}_analysis.json".format(title.replace(' ', '_'))

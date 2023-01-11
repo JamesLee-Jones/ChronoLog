@@ -69,6 +69,8 @@ function AboutGraphAdv() {
     }
   }
 
+  const forceRef = useRef();
+
   const handleNodeClick = useCallback((node) => {
     let links = graphs["links"];
 
@@ -87,12 +89,12 @@ function AboutGraphAdv() {
       node["color"] = "red";
       hideLinks(links, node["id"]);
     }
+
+    forceRef.current.d3ReheatSimulation();
   });
 
   const width = 500;
   const height = 300;
-
-  const forceRef = useRef();
 
   useEffect(() => {
     forceRef.current.d3Force("charge", d3.forceManyBody().strength(-100));

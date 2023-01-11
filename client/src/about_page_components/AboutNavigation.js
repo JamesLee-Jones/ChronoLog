@@ -35,13 +35,13 @@ function useInterval(callback, delay) {
 }
 
 const AboutNavigation = () => {
+  let scale = 100;
+
   const [mark, setMark] = useState([]);
   const [run, setRun] = useState(false);
   const [sliderVal, setSliderVal] = useState(0);
-  const [sliderVal2, setSliderVal2] = useState(0);
+  const [sliderVal2, setSliderVal2] = useState(10 * scale);
   const [counter, setCounter] = useState(0);
-
-  let scale = 100;
 
   useInterval(
     () => {
@@ -151,7 +151,7 @@ const AboutNavigation = () => {
         onChange={(_, value) => {
           setSliderVal2(value);
         }}
-        step={1}
+        step={scale}
         sx={{
           width: 250,
           height: 20,
