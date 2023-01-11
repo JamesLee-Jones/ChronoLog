@@ -12,10 +12,10 @@ function HomePage() {
   });
 
   let node = [
-    { id: "id1", name: "Harry", val: "3" },
+    { id: "id1", name: "Dumbledore", val: "3" },
     { id: "id2", name: "Ron", val: "3" },
     { id: "id3", name: "Hermione", val: "3" },
-    { id: "id4", name: "Dumbledore", val: "3" },
+    { id: "id4", name: "Harry", val: "3" },
     { id: "id5", name: "Snape", val: "3" },
     { id: "id6", name: "Dobby", val: "3" },
     { id: "id7", name: "Draco", val: "3" },
