@@ -18,10 +18,10 @@
       "degree_centrality_mic": 1.0,
       "avg_degree_centrality": 0.6667,
       "subgraph_centrality": {
-        "Edward Hyde": 2.783,
-        "Henry Jekyll": 2.783,
-        "Richard Enfield": 1.6611,
-        "Gabriel John Utterson": 3.4921
+        "Edward Hyde": 0.6127252867285635,
+        "Henry Jekyll": 0.6127252867285635,
+        "Richard Enfield": 0.0,
+        "Gabriel John Utterson": 1.0
       },
       "betweenness_centrality": {
         "Edward Hyde": 0.0,
@@ -55,13 +55,13 @@
       "degree_centrality_mic": 1.0,
       "avg_degree_centrality": 0.5238,
       "subgraph_centrality": {
-        "Edward Hyde": 11.9074,
-        "Harry Jekyll": 4.2261,
-        "Henry Jekyll": 4.2261,
-        "Lanyon": 4.2261,
-        "Richard Enfield": 4.2261,
-        "Seek": 4.2261,
-        "Gabriel John Utterson": 11.9074
+        "Edward Hyde": 1.0,
+        "Harry Jekyll": 0.0,
+        "Henry Jekyll": 0.0,
+        "Lanyon": 0.0,
+        "Richard Enfield": 0.0,
+        "Seek": 0.0,
+        "Gabriel John Utterson": 1.0
       },
       "betweenness_centrality": {
         "Edward Hyde": 0.6,
@@ -102,14 +102,14 @@
       "degree_centrality_mic": 1.0,
       "avg_degree_centrality": 0.5,
       "subgraph_centrality": {
-        "Danvers Carew": 7.7962,
-        "Edward Hyde": 17.75,
-        "Harry Jekyll": 4.934,
-        "Henry Jekyll": 7.7962,
-        "Lanyon": 4.934,
-        "Richard Enfield": 4.934,
-        "Seek": 4.934,
-        "Gabriel John Utterson": 17.75
+        "Danvers Carew": 0.22333021223470662,
+        "Edward Hyde": 1.0,
+        "Harry Jekyll": 0.0,
+        "Henry Jekyll": 0.22333021223470662,
+        "Lanyon": 0.0,
+        "Richard Enfield": 0.0,
+        "Seek": 0.0,
+        "Gabriel John Utterson": 1.0
       },
       "betweenness_centrality": {
         "Danvers Carew": 0.0476,
@@ -153,15 +153,15 @@
       "degree_centrality_mic": 1.0,
       "avg_degree_centrality": 0.4722,
       "subgraph_centrality": {
-        "Danvers Carew": 9.5301,
-        "Edward Hyde": 25.6037,
-        "Guest": 5.7806,
-        "Harry Jekyll": 5.7806,
-        "Henry Jekyll": 12.9031,
-        "Lanyon": 9.5301,
-        "Richard Enfield": 5.7806,
-        "Seek": 5.7806,
-        "Gabriel John Utterson": 25.6037
+        "Danvers Carew": 0.18914801418547045,
+        "Edward Hyde": 1.0,
+        "Guest": 0.0,
+        "Harry Jekyll": 0.0,
+        "Henry Jekyll": 0.35930303534765,
+        "Lanyon": 0.18914801418547045,
+        "Richard Enfield": 0.0,
+        "Seek": 0.0,
+        "Gabriel John Utterson": 1.0
       },
       "betweenness_centrality": {
         "Danvers Carew": 0.0179,
@@ -208,16 +208,16 @@
       "degree_centrality_mic": 1.0,
       "avg_degree_centrality": 0.4,
       "subgraph_centrality": {
-        "Danvers Carew": 9.7659,
-        "Edward Hyde": 26.1697,
-        "G. J. Utterson": 28.2579,
-        "Guest": 5.947,
-        "Harry Jekyll": 5.947,
-        "Henry Jekyll": 13.2015,
-        "Lanyon": 9.7659,
-        "Poole": 2.4677,
-        "Richard Enfield": 5.947,
-        "Seek": 5.947
+        "Danvers Carew": 0.28298345883320025,
+        "Edward Hyde": 0.9190312599359446,
+        "G. J. Utterson": 1.0,
+        "Guest": 0.13490783320796274,
+        "Harry Jekyll": 0.13490783320796274,
+        "Henry Jekyll": 0.4161968499662662,
+        "Lanyon": 0.28298345883320025,
+        "Poole": 0.0,
+        "Richard Enfield": 0.13490783320796274,
+        "Seek": 0.13490783320796274
       },
       "betweenness_centrality": {
         "Danvers Carew": 0.0,
@@ -268,18 +268,18 @@
       "degree_centrality_mic": 0.9091,
       "avg_degree_centrality": 0.2879,
       "subgraph_centrality": {
-        "Bradshaw": 1.0,
-        "Danvers Carew": 10.0119,
-        "Edward Hyde": 26.7577,
-        "G. J. Utterson": 31.158,
-        "Guest": 6.1213,
-        "Harry Jekyll": 6.1213,
-        "Henry Jekyll": 13.5123,
-        "Lanyon": 10.0119,
-        "Maw": 2.5613,
-        "Poole": 2.5613,
-        "Richard Enfield": 6.1213,
-        "Seek": 6.1213
+        "Bradshaw": 0.0,
+        "Danvers Carew": 0.2988228662378142,
+        "Edward Hyde": 0.8540917832747529,
+        "G. J. Utterson": 1.0,
+        "Guest": 0.16981563764175342,
+        "Harry Jekyll": 0.16981563764175342,
+        "Henry Jekyll": 0.41489157105908875,
+        "Lanyon": 0.2988228662378142,
+        "Maw": 0.051770674447907686,
+        "Poole": 0.051770674447907686,
+        "Richard Enfield": 0.16981563764175342,
+        "Seek": 0.16981563764175342
       },
       "betweenness_centrality": {
         "Bradshaw": 0.0,
@@ -334,18 +334,18 @@
       "degree_centrality_mic": 0.9091,
       "avg_degree_centrality": 0.2879,
       "subgraph_centrality": {
-        "Bradshaw": 1.0,
-        "Danvers Carew": 10.0119,
-        "Edward Hyde": 26.7577,
-        "G. J. Utterson": 31.158,
-        "Guest": 6.1213,
-        "Harry Jekyll": 6.1213,
-        "Henry Jekyll": 13.5123,
-        "Lanyon": 10.0119,
-        "Maw": 2.5613,
-        "Poole": 2.5613,
-        "Richard Enfield": 6.1213,
-        "Seek": 6.1213
+        "Bradshaw": 0.0,
+        "Danvers Carew": 0.2988228662378142,
+        "Edward Hyde": 0.8540917832747529,
+        "G. J. Utterson": 1.0,
+        "Guest": 0.16981563764175342,
+        "Harry Jekyll": 0.16981563764175342,
+        "Henry Jekyll": 0.41489157105908875,
+        "Lanyon": 0.2988228662378142,
+        "Maw": 0.051770674447907686,
+        "Poole": 0.051770674447907686,
+        "Richard Enfield": 0.16981563764175342,
+        "Seek": 0.16981563764175342
       },
       "betweenness_centrality": {
         "Bradshaw": 0.0,
@@ -400,18 +400,18 @@
       "degree_centrality_mic": 0.9091,
       "avg_degree_centrality": 0.2879,
       "subgraph_centrality": {
-        "Bradshaw": 1.0,
-        "Danvers Carew": 10.0119,
-        "Edward Hyde": 26.7577,
-        "G. J. Utterson": 31.158,
-        "Guest": 6.1213,
-        "Harry Jekyll": 6.1213,
-        "Henry Jekyll": 13.5123,
-        "Lanyon": 10.0119,
-        "Maw": 2.5613,
-        "Poole": 2.5613,
-        "Richard Enfield": 6.1213,
-        "Seek": 6.1213
+        "Bradshaw": 0.0,
+        "Danvers Carew": 0.2988228662378142,
+        "Edward Hyde": 0.8540917832747529,
+        "G. J. Utterson": 1.0,
+        "Guest": 0.16981563764175342,
+        "Harry Jekyll": 0.16981563764175342,
+        "Henry Jekyll": 0.41489157105908875,
+        "Lanyon": 0.2988228662378142,
+        "Maw": 0.051770674447907686,
+        "Poole": 0.051770674447907686,
+        "Richard Enfield": 0.16981563764175342,
+        "Seek": 0.16981563764175342
       },
       "betweenness_centrality": {
         "Bradshaw": 0.0,
@@ -466,18 +466,18 @@
       "degree_centrality_mic": 0.9091,
       "avg_degree_centrality": 0.3333,
       "subgraph_centrality": {
-        "Bradshaw": 8.3278,
-        "Danvers Carew": 11.188,
-        "Edward Hyde": 34.6853,
-        "G. J. Utterson": 34.4901,
-        "Guest": 6.6173,
-        "Harry Jekyll": 9.5044,
-        "Henry Jekyll": 18.453,
-        "Lanyon": 11.188,
-        "Maw": 2.6181,
-        "Poole": 2.6181,
-        "Richard Enfield": 6.6173,
-        "Seek": 6.6173
+        "Bradshaw": 0.1780542111565712,
+        "Danvers Carew": 0.26724815387685863,
+        "Edward Hyde": 1.0,
+        "G. J. Utterson": 0.9939127831553737,
+        "Guest": 0.12471310248478196,
+        "Harry Jekyll": 0.2147459085919569,
+        "Henry Jekyll": 0.49380363736154076,
+        "Lanyon": 0.26724815387685863,
+        "Maw": 0.0,
+        "Poole": 0.0,
+        "Richard Enfield": 0.12471310248478196,
+        "Seek": 0.12471310248478196
       },
       "betweenness_centrality": {
         "Bradshaw": 0.0909,
@@ -532,18 +532,18 @@
       "degree_centrality_mic": 0.9091,
       "avg_degree_centrality": 0.3333,
       "subgraph_centrality": {
-        "Bradshaw": 8.3278,
-        "Danvers Carew": 11.188,
-        "Edward Hyde": 34.6853,
-        "G. J. Utterson": 34.4901,
-        "Guest": 6.6173,
-        "Harry Jekyll": 9.5044,
-        "Henry Jekyll": 18.453,
-        "Lanyon": 11.188,
-        "Maw": 2.6181,
-        "Poole": 2.6181,
-        "Richard Enfield": 6.6173,
-        "Seek": 6.6173
+        "Bradshaw": 0.1780542111565712,
+        "Danvers Carew": 0.26724815387685863,
+        "Edward Hyde": 1.0,
+        "G. J. Utterson": 0.9939127831553737,
+        "Guest": 0.12471310248478196,
+        "Harry Jekyll": 0.2147459085919569,
+        "Henry Jekyll": 0.49380363736154076,
+        "Lanyon": 0.26724815387685863,
+        "Maw": 0.0,
+        "Poole": 0.0,
+        "Richard Enfield": 0.12471310248478196,
+        "Seek": 0.12471310248478196
       },
       "betweenness_centrality": {
         "Bradshaw": 0.0909,
@@ -576,47 +576,50 @@
     }
   }],
   "first_interactions_between_characters": {
-    "Henry Jekyll": {
-      "Edward Hyde": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
+    "Richard Enfield": {
+      "Edward Hyde": "And still the figure had no face by which he might know it; even in his dreams, it had no face, or one that baffled him and melted before his eyes; and thus it was that there sprang up and grew apace in the lawyer's mind a singularly strong, almost an inordinate, curiosity to behold the features of the real Mr. Hyde.",
+      "G. J. Utterson": "Hence, no doubt the bond that united him to Mr. Richard Enfield, his distant kinsman, the well-known man about town.",
+      "Gabriel John Utterson": "Hence, no doubt the bond that united him to Mr. Richard Enfield, his distant kinsman, the well-known man about town."
+    },
+    "Edward Hyde": {
+      "Henry Jekyll": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
+      "Lanyon": "With that he blew out his candle, put on a greatcoat, and set forth in the direction of Cavendish Square, that citadel of medicine, where his friend, the great Dr. Lanyon, had his house and received his crowding patients.",
+      "Seek": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
+      "Harry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
       "Danvers Carew": "LANYON  Time ran on; thousands of pounds were offered in reward, for the death of Sir Danvers was resented as a public injury; but Mr. Hyde had disappeared out of the ken of the police as though he had never existed.",
       "G. J. Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
       "Gabriel John Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
-    "Lanyon": {
-      "Edward Hyde": "With that he blew out his candle, put on a greatcoat, and set forth in the direction of Cavendish Square, that citadel of medicine, where his friend, the great Dr. Lanyon, had his house and received his crowding patients.",
-      "Henry Jekyll": "The fifth night he had in Guest to dine with him; and the sixth he betook himself to Dr. Lanyon's.  "
-    },
-    "Edward Hyde": {
-      "Richard Enfield": "And still the figure had no face by which he might know it; even in his dreams, it had no face, or one that baffled him and melted before his eyes; and thus it was that there sprang up and grew apace in the lawyer's mind a singularly strong, almost an inordinate, curiosity to behold the features of the real Mr. Hyde.",
-      "Seek": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
-      "Harry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
-      "Henry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
-      "Danvers Carew": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
-      "Guest": "Guest had often been on business to the doctor's; he knew Poole; he could scarce have failed to hear of Mr. Hyde's familiarity about the house; he might draw conclusions: was it not as well, then, that he should see a letter which put that mystery to right?",
-      "G. J. Utterson": "\"Ah, that's not Jekyll's voice--it's Hyde's!\" cried Utterson."
-    },
-    "Danvers Carew": {
-      "Henry Jekyll": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
-      "Edward Hyde": "The death of Sir Danvers was, to his way of thinking, more than paid for by the disappearance of Mr. Hyde."
+    "Henry Jekyll": {
+      "Edward Hyde": "LANYON  Time ran on; thousands of pounds were offered in reward, for the death of Sir Danvers was resented as a public injury; but Mr. Hyde had disappeared out of the ken of the police as though he had never existed.",
+      "Danvers Carew": "LANYON  Time ran on; thousands of pounds were offered in reward, for the death of Sir Danvers was resented as a public injury; but Mr. Hyde had disappeared out of the ken of the police as though he had never existed.",
+      "Lanyon": "The fifth night he had in Guest to dine with him; and the sixth he betook himself to Dr. Lanyon's.  ",
+      "G. J. Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
+      "Gabriel John Utterson": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household."
     },
     "Harry Jekyll": {
-      "Edward Hyde": "INCIDENT OF THE LETTER  It was late in the afternoon, when Mr. Utterson found his way to Dr. Jekyll's door, where he was at once admitted by Poole, and carried down by the kitchen offices and across a yard which had once been a garden, to the building which was indifferently known as the laboratory or dissecting rooms."
+      "Edward Hyde": "I next drew up that will to which you so much objected; so that if anything befell me in the person of Dr. Jekyll, I could enter on that of Edward Hyde without pecuniary loss.",
+      "G. J. Utterson": "JEKYLL WAS QUITE AT EASE  A fortnight later, by excellent good fortune, the doctor gave one of his pleasant dinners to some five or six old cronies, all intelligent, reputable men and all judges of good wine; and Mr. Utterson so contrived that he remained behind after the others had departed.",
+      "Gabriel John Utterson": "JEKYLL WAS QUITE AT EASE  A fortnight later, by excellent good fortune, the doctor gave one of his pleasant dinners to some five or six old cronies, all intelligent, reputable men and all judges of good wine; and Mr. Utterson so contrived that he remained behind after the others had departed."
+    },
+    "Danvers Carew": {
+      "Edward Hyde": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
+      "Henry Jekyll": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
+      "G. J. Utterson": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
+      "Gabriel John Utterson": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  "
+    },
+    "Guest": {
+      "Edward Hyde": "Guest had often been on business to the doctor's; he knew Poole; he could scarce have failed to hear of Mr. Hyde's familiarity about the house; he might draw conclusions: was it not as well, then, that he should see a letter which put that mystery to right?",
+      "G. J. Utterson": "Presently after, he sat on one side of his own hearth, with Mr. Guest, his head clerk, upon the other, and midway between, at a nicely calculated distance from the fire, a bottle of a particular old wine that had long dwelt unsunned in the foundations of his house.",
+      "Gabriel John Utterson": "Presently after, he sat on one side of his own hearth, with Mr. Guest, his head clerk, upon the other, and midway between, at a nicely calculated distance from the fire, a bottle of a particular old wine that had long dwelt unsunned in the foundations of his house."
     },
     "G. J. Utterson": {
-      "Richard Enfield": "Hence, no doubt the bond that united him to Mr. Richard Enfield, his distant kinsman, the well-known man about town.",
       "Henry Jekyll": "There he opened his safe, took from the most private part of it a document endorsed on the envelope as Dr. Jekyll's Will and sat down with a clouded brow to study its contents.",
-      "Edward Hyde": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
       "Lanyon": "At sight of Mr. Utterson, he sprang up from his chair and welcomed him with both hands.",
+      "Edward Hyde": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
       "Seek": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
       "Harry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
-      "Danvers Carew": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
-      "Guest": "Presently after, he sat on one side of his own hearth, with Mr. Guest, his head clerk, upon the other, and midway between, at a nicely calculated distance from the fire, a bottle of a particular old wine that had long dwelt unsunned in the foundations of his house."
-    },
-    "Poole": {
-      "G. J. Utterson": "\"Bless me, Poole, what brings you here?\" he cried; and then taking a second look at him, \"What ails you?\""
-    },
-    "Maw": {
-      "G. J. Utterson": "\"The man at Maw's was main angry, sir, and he threw it back to me like so much dirt,\" returned Poole.  "
+      "Danvers Carew": "\"This is a sad business about Sir Danvers,\" he said.  "
     },
     "Bradshaw": {
       "Edward Hyde": "I had soon dressed, as well as I was able, in clothes of my own size: had soon passed through the house, where Bradshaw stared and drew back at seeing Mr. Hyde at such an hour and in such a strange array; and ten minutes later, Dr. Jekyll had returned to his own shape and was sitting down, with a darkened brow, to make a feint of breakfasting.  ",
@@ -624,14 +627,12 @@
       "Henry Jekyll": "I had soon dressed, as well as I was able, in clothes of my own size: had soon passed through the house, where Bradshaw stared and drew back at seeing Mr. Hyde at such an hour and in such a strange array; and ten minutes later, Dr. Jekyll had returned to his own shape and was sitting down, with a darkened brow, to make a feint of breakfasting.  "
     },
     "Gabriel John Utterson": {
-      "Richard Enfield": "Hence, no doubt the bond that united him to Mr. Richard Enfield, his distant kinsman, the well-known man about town.",
       "Henry Jekyll": "There he opened his safe, took from the most private part of it a document endorsed on the envelope as Dr. Jekyll's Will and sat down with a clouded brow to study its contents.",
-      "Edward Hyde": "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it; it provided not only that, in case of the decease of Henry Jekyll, M.D., D.C.L., L.L.D., F.R.S., etc., all his possessions were to pass into the hands of his \"friend and benefactor Edward Hyde,\" but that in case of Dr. Jekyll's \"disappearance or unexplained absence for any period exceeding three calendar months,\" the said Edward Hyde should step into the said Henry Jekyll's shoes without further delay and free from any burthen or obligation beyond the payment of a few small sums to the members of the doctor's household.",
       "Lanyon": "At sight of Mr. Utterson, he sprang up from his chair and welcomed him with both hands.",
+      "Edward Hyde": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
       "Seek": "\"If he be Mr. Hyde,\" he had thought, \"I shall be Mr. Seek.\"  ",
       "Harry Jekyll": "\"You will not find Dr. Jekyll; he is from home,\" replied Mr. Hyde, blowing in the key.",
-      "Danvers Carew": "Mr. Utterson had already quailed at the name of Hyde; but when the stick was laid before him, he could doubt no longer; broken and battered as it was, he recognised it for one that he had himself presented many years before to Henry Jekyll.  ",
-      "Guest": "Presently after, he sat on one side of his own hearth, with Mr. Guest, his head clerk, upon the other, and midway between, at a nicely calculated distance from the fire, a bottle of a particular old wine that had long dwelt unsunned in the foundations of his house."
+      "Danvers Carew": "\"This is a sad business about Sir Danvers,\" he said.  "
     }
   },
   "first_interactions_overall": {
