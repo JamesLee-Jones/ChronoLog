@@ -18,10 +18,10 @@
       "degree_centrality_mic": 1.0,
       "avg_degree_centrality": 1.0,
       "subgraph_centrality": {
-        "Ebenezer Scrooge": 5.2973,
-        "Jacob Marley": 5.2973,
-        "Old Marley": 5.2973,
-        "Scrooge Scrooge": 5.2973
+        "Ebenezer Scrooge": 0.0,
+        "Jacob Marley": 0.0,
+        "Old Marley": 0.0,
+        "Scrooge Scrooge": 0.0
       },
       "betweenness_centrality": {
         "Ebenezer Scrooge": 0.0,
@@ -56,14 +56,14 @@
       "degree_centrality_mic": 1.0,
       "avg_degree_centrality": 0.5,
       "subgraph_centrality": {
-        "Ali Baba": 4.934,
-        "Dick Wilkins": 4.934,
-        "Ebenezer Scrooge": 17.75,
-        "Fezziwig": 4.934,
-        "Jacob Marley": 7.7962,
-        "Old Marley": 7.7962,
-        "Orson": 4.934,
-        "Scrooge Scrooge": 17.75
+        "Ali Baba": 0.0,
+        "Dick Wilkins": 0.0,
+        "Ebenezer Scrooge": 1.0,
+        "Fezziwig": 0.0,
+        "Jacob Marley": 0.22333021223470662,
+        "Old Marley": 0.22333021223470662,
+        "Orson": 0.0,
+        "Scrooge Scrooge": 1.0
       },
       "betweenness_centrality": {
         "Ali Baba": 0.0,
@@ -121,29 +121,29 @@
       "degree_centrality_mic": 0.8182,
       "avg_degree_centrality": 0.3202,
       "subgraph_centrality": {
-        "Ali Baba": 79.7003,
-        "Baleful": 532.3498,
-        "Belinda Cratchit": 935.0952,
-        "Bob Cratchit": 1073.3047,
-        "Dick Wilkins": 79.7003,
-        "Ebenezer Scrooge": 1769.0308,
-        "Fezziwig": 79.7003,
-        "Fred": 305.6421,
-        "Heaped": 305.6421,
-        "Hurrah": 148.0614,
-        "Jacob Marley": 381.9471,
-        "Kith": 305.6421,
-        "Martha": 277.36,
-        "Norfolk Biffins": 305.6421,
-        "Old Marley": 381.9471,
-        "Orson": 79.7003,
-        "Parks": 184.2351,
-        "Peter Cratchit": 454.0602,
-        "Scrooge Scrooge": 1769.0308,
-        "Tiny Tim": 857.8412,
-        "Topper": 305.6421,
-        "Uncle Scrooge": 1497.4228,
-        "Whereat Scrooge": 1892.4159
+        "Ali Baba": 0.0,
+        "Baleful": 0.24970795198099469,
+        "Belinda Cratchit": 0.47188588215382493,
+        "Bob Cratchit": 0.5481303299866785,
+        "Dick Wilkins": 0.0,
+        "Ebenezer Scrooge": 0.9319335586895153,
+        "Fezziwig": 0.0,
+        "Fred": 0.1246427183613359,
+        "Heaped": 0.1246427183613359,
+        "Hurrah": 0.03771198306011158,
+        "Jacob Marley": 0.16673702151622682,
+        "Kith": 0.1246427183613359,
+        "Martha": 0.10904065701205419,
+        "Norfolk Biffins": 0.1246427183613359,
+        "Old Marley": 0.16673702151622682,
+        "Orson": 0.0,
+        "Parks": 0.05766751276372311,
+        "Peter Cratchit": 0.2065188273328701,
+        "Scrooge Scrooge": 0.9319335586895153,
+        "Tiny Tim": 0.4292680550661119,
+        "Topper": 0.1246427183613359,
+        "Uncle Scrooge": 0.7820986921500538,
+        "Whereat Scrooge": 1.0
       },
       "betweenness_centrality": {
         "Ali Baba": 0.0,
@@ -232,30 +232,30 @@
       "degree_centrality_mic": 0.8261,
       "avg_degree_centrality": 0.308,
       "subgraph_centrality": {
-        "Ali Baba": 114.7039,
-        "Baleful": 839.3501,
-        "Belinda Cratchit": 1442.3425,
-        "Bob Cratchit": 1648.4212,
-        "Dick Wilkins": 114.7039,
-        "Ebenezer Scrooge": 2834.1874,
-        "Fezziwig": 114.7039,
-        "Fred": 437.1742,
-        "Heaped": 437.1742,
-        "Hurrah": 245.4797,
-        "Jacob Marley": 540.0252,
-        "Joe Miller": 29.6271,
-        "Kith": 437.1742,
-        "Martha": 438.4228,
-        "Norfolk Biffins": 437.1742,
-        "Old Marley": 540.0252,
-        "Orson": 114.7039,
-        "Parks": 299.2285,
-        "Peter Cratchit": 1648.4212,
-        "Scrooge Scrooge": 2834.1874,
-        "Tiny Tim": 1325.4593,
-        "Topper": 437.1742,
-        "Uncle Scrooge": 2437.5754,
-        "Whereat Scrooge": 2840.7547
+        "Ali Baba": 0.03026429678965836,
+        "Baleful": 0.28804206539752947,
+        "Belinda Cratchit": 0.5025440325085209,
+        "Bob Cratchit": 0.5758522309695228,
+        "Dick Wilkins": 0.03026429678965836,
+        "Ebenezer Scrooge": 0.9976638200272374,
+        "Fezziwig": 0.03026429678965836,
+        "Fred": 0.14497637887373024,
+        "Heaped": 0.14497637887373024,
+        "Hurrah": 0.07678505949000679,
+        "Jacob Marley": 0.18156347652095198,
+        "Joe Miller": 0.0,
+        "Kith": 0.14497637887373024,
+        "Martha": 0.14542054227634493,
+        "Norfolk Biffins": 0.14497637887373024,
+        "Old Marley": 0.18156347652095198,
+        "Orson": 0.03026429678965836,
+        "Parks": 0.09590507382162233,
+        "Peter Cratchit": 0.5758522309695228,
+        "Scrooge Scrooge": 0.9976638200272374,
+        "Tiny Tim": 0.4609652724408526,
+        "Topper": 0.14497637887373024,
+        "Uncle Scrooge": 0.8565773748584021,
+        "Whereat Scrooge": 1.0
       },
       "betweenness_centrality": {
         "Ali Baba": 0.0,
@@ -346,30 +346,30 @@
       "degree_centrality_mic": 0.8696,
       "avg_degree_centrality": 0.3225,
       "subgraph_centrality": {
-        "Ali Baba": 141.6308,
-        "Baleful": 1029.5905,
-        "Belinda Cratchit": 1737.3828,
-        "Bob Cratchit": 2206.4768,
-        "Dick Wilkins": 141.6308,
-        "Ebenezer Scrooge": 3696.0071,
-        "Fezziwig": 141.6308,
-        "Fred": 771.1654,
-        "Hallo": 539.3752,
-        "Heaped": 539.3752,
-        "Hurrah": 288.2637,
-        "Jacob Marley": 662.4124,
-        "Kith": 539.3752,
-        "Martha": 519.5906,
-        "Norfolk Biffins": 539.3752,
-        "Old Marley": 662.4124,
-        "Orson": 141.6308,
-        "Parks": 357.0298,
-        "Peter Cratchit": 1982.0868,
-        "Scrooge Scrooge": 3696.0071,
-        "Tiny Tim": 1600.3857,
-        "Topper": 539.3752,
-        "Uncle Scrooge": 3202.9768,
-        "Whereat Scrooge": 3631.9136
+        "Ali Baba": 0.0,
+        "Baleful": 0.24982152283651002,
+        "Belinda Cratchit": 0.4489541526596383,
+        "Bob Cratchit": 0.5809306122145818,
+        "Dick Wilkins": 0.0,
+        "Ebenezer Scrooge": 1.0,
+        "Fezziwig": 0.0,
+        "Fred": 0.1771153493230303,
+        "Hallo": 0.11190272678781926,
+        "Heaped": 0.11190272678781926,
+        "Hurrah": 0.041254185720290784,
+        "Jacob Marley": 0.14651842012338426,
+        "Kith": 0.11190272678781926,
+        "Martha": 0.10633646189909604,
+        "Norfolk Biffins": 0.11190272678781926,
+        "Old Marley": 0.14651842012338426,
+        "Orson": 0.0,
+        "Parks": 0.06060106804110753,
+        "Peter Cratchit": 0.517799986456133,
+        "Scrooge Scrooge": 1.0,
+        "Tiny Tim": 0.4104109348242054,
+        "Topper": 0.11190272678781926,
+        "Uncle Scrooge": 0.8612892225282957,
+        "Whereat Scrooge": 0.9819677224383924
       },
       "betweenness_centrality": {
         "Ali Baba": 0.0,
@@ -426,56 +426,59 @@
     }
   }],
   "first_interactions_between_characters": {
-    "Scrooge Scrooge": {
-      "Ebenezer Scrooge": "And Scrooge's name was good upon 'Change for anything he chose to put his hand to.",
+    "Ebenezer Scrooge": {
+      "Scrooge Scrooge": "And Scrooge's name was good upon 'Change for anything he chose to put his hand to.",
+      "Old Marley": "Scrooge knew he was dead?",
       "Jacob Marley": "There it stood, years afterwards, above the warehouse door: Scrooge and Marley.",
-      "Old Marley": "There it stood, years afterwards, above the warehouse door: Scrooge and Marley.",
       "Orson": "And Valentine,\" said Scrooge, \"and his wild brother, Orson; there they go!",
-      "Ali Baba": "Then she began to drag him, in her childish eagerness, towards the door; and he, nothing loath to go, accompanied her.  ",
-      "Dick Wilkins": "He was very much attached to me, was Dick.",
-      "Fezziwig": "He was about to speak; but, with her head turned from him, she resumed.  ",
+      "Ali Baba": "\"So she had,\" cried Scrooge.",
+      "Norfolk Biffins": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch.",
       "Bob Cratchit": "And perhaps it was the pleasure the good Spirit had in showing off this power of his, or else it was his own kind, generous, hearty nature, and his sympathy with all poor men, that led him straight to Scrooge's clerk's; for there he went, and took Scrooge with him, holding to his robe; and, on the threshold of the door, the Spirit smiled, and stopped to bless Bob Cratchit's dwelling with the sprinklings of his torch.",
       "Baleful": "After it had passed away they were ten times merrier than before, from the mere relief of Scrooge the Baleful being done with.",
       "Tiny Tim": "But they were happy, grateful, pleased with one another, and contented with the time; and when they faded, and looked happier yet in the bright sprinklings of the Spirit's torch at parting, Scrooge had his eye upon them, and especially on Tiny Tim, until the last.  ",
+      "Whereat Scrooge": "\"Do go on, Fred,\" said Scrooge's niece, clapping her hands.",
       "Uncle Scrooge": "\"A merry Christmas, Bob!\" said Scrooge with an earnestness that could not be mistaken, as he clapped him on the back."
     },
-    "Old Marley": {
-      "Ebenezer Scrooge": "Scrooge knew he was dead?",
-      "Scrooge Scrooge": "Scrooge knew he was dead?",
-      "Jacob Marley": "Sometimes people new to the business called Scrooge Scrooge, and sometimes Marley, but he answered to both names.",
-      "Uncle Scrooge": "He had not gone far when, coming on towards him, he beheld the portly gentleman who had walked into his counting-house the day before, and said, \"Scrooge and Marley's, I believe?\"",
-      "Whereat Scrooge": "He had not gone far when, coming on towards him, he beheld the portly gentleman who had walked into his counting-house the day before, and said, \"Scrooge and Marley's, I believe?\""
-    },
-    "Ebenezer Scrooge": {
+    "Scrooge Scrooge": {
+      "Old Marley": "Scrooge knew he was dead?",
       "Jacob Marley": "There it stood, years afterwards, above the warehouse door: Scrooge and Marley.",
-      "Old Marley": "There it stood, years afterwards, above the warehouse door: Scrooge and Marley.",
+      "Ebenezer Scrooge": "It was a habit with Scrooge, whenever he became thoughtful, to put his hands in his breeches pockets.",
       "Orson": "And Valentine,\" said Scrooge, \"and his wild brother, Orson; there they go!",
+      "Ali Baba": "\"So she had,\" cried Scrooge.",
+      "Norfolk Biffins": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch.",
       "Bob Cratchit": "And perhaps it was the pleasure the good Spirit had in showing off this power of his, or else it was his own kind, generous, hearty nature, and his sympathy with all poor men, that led him straight to Scrooge's clerk's; for there he went, and took Scrooge with him, holding to his robe; and, on the threshold of the door, the Spirit smiled, and stopped to bless Bob Cratchit's dwelling with the sprinklings of his torch.",
       "Baleful": "After it had passed away they were ten times merrier than before, from the mere relief of Scrooge the Baleful being done with.",
       "Tiny Tim": "But they were happy, grateful, pleased with one another, and contented with the time; and when they faded, and looked happier yet in the bright sprinklings of the Spirit's torch at parting, Scrooge had his eye upon them, and especially on Tiny Tim, until the last.  ",
+      "Whereat Scrooge": "\"Do go on, Fred,\" said Scrooge's niece, clapping her hands.",
       "Uncle Scrooge": "\"A merry Christmas, Bob!\" said Scrooge with an earnestness that could not be mistaken, as he clapped him on the back."
     },
     "Jacob Marley": {
+      "Old Marley": "Sometimes people new to the business called Scrooge Scrooge, and sometimes Marley, but he answered to both names.",
+      "Scrooge Scrooge": "Sometimes people new to the business called Scrooge Scrooge, and sometimes Marley, but he answered to both names.",
       "Ebenezer Scrooge": "And then let any man explain to me, if he can, how it happened that Scrooge, having his key in the lock of the door, saw in the knocker, without its undergoing any intermediate process of change--not a knocker, but Marley's face.  ",
-      "Scrooge Scrooge": "And then let any man explain to me, if he can, how it happened that Scrooge, having his key in the lock of the door, saw in the knocker, without its undergoing any intermediate process of change--not a knocker, but Marley's face.  ",
       "Uncle Scrooge": "Without venturing for Scrooge quite as hardily as this, I don't mind calling on you to believe that he was ready for a good broad field of strange appearances, and that nothing between a baby and a rhinoceros would have astonished him very much.  ",
       "Whereat Scrooge": "Without venturing for Scrooge quite as hardily as this, I don't mind calling on you to believe that he was ready for a good broad field of strange appearances, and that nothing between a baby and a rhinoceros would have astonished him very much.  "
+    },
+    "Old Marley": {
+      "Scrooge Scrooge": "Sometimes people new to the business called Scrooge Scrooge, and sometimes Marley, but he answered to both names.",
+      "Ebenezer Scrooge": "And then let any man explain to me, if he can, how it happened that Scrooge, having his key in the lock of the door, saw in the knocker, without its undergoing any intermediate process of change--not a knocker, but Marley's face.  ",
+      "Uncle Scrooge": "He had not gone far when, coming on towards him, he beheld the portly gentleman who had walked into his counting-house the day before, and said, \"Scrooge and Marley's, I believe?\"",
+      "Whereat Scrooge": "He had not gone far when, coming on towards him, he beheld the portly gentleman who had walked into his counting-house the day before, and said, \"Scrooge and Marley's, I believe?\""
     },
     "Orson": {
       "Ebenezer Scrooge": "What business had _he_ to be married to the Princess?\"  To hear Scrooge expending all the earnestness of his nature on such subjects, in a most extraordinary voice between laughing and crying; and to see his heightened and excited face; would have been a surprise to his business friends in the City, indeed.  ",
       "Scrooge Scrooge": "What business had _he_ to be married to the Princess?\"  To hear Scrooge expending all the earnestness of his nature on such subjects, in a most extraordinary voice between laughing and crying; and to see his heightened and excited face; would have been a surprise to his business friends in the City, indeed.  "
     },
     "Ali Baba": {
-      "Scrooge Scrooge": "It opened; and a little girl, much younger than the boy, came darting in, and, putting her arms about his neck, and often kissing him, addressed him as her \"dear, dear brother.\"  ",
-      "Ebenezer Scrooge": "\"So she had,\" cried Scrooge."
+      "Scrooge Scrooge": "It opened; and a little girl, much younger than the boy, came darting in, and, putting her arms about his neck, and often kissing him, addressed him as her \"dear, dear brother.\"  "
     },
     "Dick Wilkins": {
       "Ebenezer Scrooge": "\"Dick Wilkins, to be sure!\" said Scrooge to the Ghost.",
       "Scrooge Scrooge": "\"Dick Wilkins, to be sure!\" said Scrooge to the Ghost."
     },
     "Fezziwig": {
-      "Ebenezer Scrooge": "Near to the winter fire sat a beautiful young girl, so like that last that Scrooge believed it was the same, until he saw _her_, now a comely matron, sitting opposite her daughter.",
-      "Scrooge Scrooge": "Near to the winter fire sat a beautiful young girl, so like that last that Scrooge believed it was the same, until he saw _her_, now a comely matron, sitting opposite her daughter."
+      "Scrooge Scrooge": "He was about to speak; but, with her head turned from him, she resumed.  ",
+      "Ebenezer Scrooge": "Near to the winter fire sat a beautiful young girl, so like that last that Scrooge believed it was the same, until he saw _her_, now a comely matron, sitting opposite her daughter."
     },
     "Uncle Scrooge": {
       "Jacob Marley": "He felt that he was restored to consciousness in the right nick of time, for the especial purpose of holding a conference with the second messenger dispatched to him through Jacob Marley's intervention.",
@@ -483,23 +486,19 @@
       "Scrooge Scrooge": "The moment Scrooge's hand was on the lock, a strange voice called him by his name, and bade him enter.",
       "Whereat Scrooge": "The moment Scrooge's hand was on the lock, a strange voice called him by his name, and bade him enter.",
       "Old Marley": "The crisp leaves of holly, mistletoe, and ivy reflected back the light, as if so many little mirrors had been scattered there; and such a mighty blaze went roaring up the chimney as that dull petrifaction of a hearth had never known in Scrooge's time, or Marley's, or for many and many a winter season gone.",
+      "Norfolk Biffins": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch.",
       "Bob Cratchit": "And perhaps it was the pleasure the good Spirit had in showing off this power of his, or else it was his own kind, generous, hearty nature, and his sympathy with all poor men, that led him straight to Scrooge's clerk's; for there he went, and took Scrooge with him, holding to his robe; and, on the threshold of the door, the Spirit smiled, and stopped to bless Bob Cratchit's dwelling with the sprinklings of his torch.",
       "Baleful": "After it had passed away they were ten times merrier than before, from the mere relief of Scrooge the Baleful being done with.",
-      "Tiny Tim": "But they were happy, grateful, pleased with one another, and contented with the time; and when they faded, and looked happier yet in the bright sprinklings of the Spirit's torch at parting, Scrooge had his eye upon them, and especially on Tiny Tim, until the last.  ",
-      "Fred": "\"More shame for him, Fred!\" said Scrooge's niece indignantly."
+      "Tiny Tim": "But they were happy, grateful, pleased with one another, and contented with the time; and when they faded, and looked happier yet in the bright sprinklings of the Spirit's torch at parting, Scrooge had his eye upon them, and especially on Tiny Tim, until the last.  "
     },
     "Whereat Scrooge": {
       "Jacob Marley": "The crisp leaves of holly, mistletoe, and ivy reflected back the light, as if so many little mirrors had been scattered there; and such a mighty blaze went roaring up the chimney as that dull petrifaction of a hearth had never known in Scrooge's time, or Marley's, or for many and many a winter season gone.",
       "Old Marley": "The crisp leaves of holly, mistletoe, and ivy reflected back the light, as if so many little mirrors had been scattered there; and such a mighty blaze went roaring up the chimney as that dull petrifaction of a hearth had never known in Scrooge's time, or Marley's, or for many and many a winter season gone.",
+      "Norfolk Biffins": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch.",
       "Bob Cratchit": "And perhaps it was the pleasure the good Spirit had in showing off this power of his, or else it was his own kind, generous, hearty nature, and his sympathy with all poor men, that led him straight to Scrooge's clerk's; for there he went, and took Scrooge with him, holding to his robe; and, on the threshold of the door, the Spirit smiled, and stopped to bless Bob Cratchit's dwelling with the sprinklings of his torch.",
-      "Peter Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
       "Baleful": "After it had passed away they were ten times merrier than before, from the mere relief of Scrooge the Baleful being done with.",
-      "Martha": "Martha, who was a poor apprentice at a milliner's, then told them what kind of work she had to do, and how many hours she worked at a stretch, and how she meant to lie abed to-morrow morning for a good long rest; to-morrow being a holiday she passed at home.",
       "Tiny Tim": "But they were happy, grateful, pleased with one another, and contented with the time; and when they faded, and looked happier yet in the bright sprinklings of the Spirit's torch at parting, Scrooge had his eye upon them, and especially on Tiny Tim, until the last.  ",
-      "Fred": "\"Do go on, Fred,\" said Scrooge's niece, clapping her hands.",
-      "Ebenezer Scrooge": "\"Do go on, Fred,\" said Scrooge's niece, clapping her hands.",
-      "Scrooge Scrooge": "\"Do go on, Fred,\" said Scrooge's niece, clapping her hands.",
-      "Uncle Scrooge": "\"Do go on, Fred,\" said Scrooge's niece, clapping her hands."
+      "Uncle Scrooge": "\"A merry Christmas, Bob!\" said Scrooge with an earnestness that could not be mistaken, as he clapped him on the back."
     },
     "Heaped": {
       "Ebenezer Scrooge": "In easy state upon this couch there sat a jolly Giant, glorious to see; who bore a glowing torch, in shape not unlike Plenty's horn, and held it up, high up, to shed its light on Scrooge as he came peeping round the door.  ",
@@ -507,62 +506,55 @@
       "Uncle Scrooge": "In easy state upon this couch there sat a jolly Giant, glorious to see; who bore a glowing torch, in shape not unlike Plenty's horn, and held it up, high up, to shed its light on Scrooge as he came peeping round the door.  ",
       "Whereat Scrooge": "In easy state upon this couch there sat a jolly Giant, glorious to see; who bore a glowing torch, in shape not unlike Plenty's horn, and held it up, high up, to shed its light on Scrooge as he came peeping round the door.  "
     },
-    "Norfolk Biffins": {
-      "Ebenezer Scrooge": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch.",
-      "Scrooge Scrooge": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch.",
-      "Uncle Scrooge": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch.",
-      "Whereat Scrooge": "The sight of these poor revellers appeared to interest the Spirit very much, for he stood with Scrooge beside him in a baker's doorway, and, taking off the covers as their bearers passed, sprinkled incense on their dinners from his torch."
-    },
     "Kith": {
       "Ebenezer Scrooge": "Scrooge promised that he would; and they went on, invisible, as they had been before, into the suburbs of the town.",
       "Scrooge Scrooge": "Scrooge promised that he would; and they went on, invisible, as they had been before, into the suburbs of the town.",
       "Uncle Scrooge": "Scrooge promised that he would; and they went on, invisible, as they had been before, into the suburbs of the town.",
       "Whereat Scrooge": "Scrooge promised that he would; and they went on, invisible, as they had been before, into the suburbs of the town."
     },
-    "Belinda Cratchit": {
-      "Bob Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Peter Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Parks": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Whereat Scrooge": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Martha": "\"Why, bless your heart alive, my dear, how late you are!\" said Mrs. Cratchit, kissing her a dozen times, and taking off her shawl and bonnet for her with officious zeal.  ",
-      "Tiny Tim": "Mrs. Cratchit made the gravy (ready beforehand in a little saucepan) hissing hot; Master Peter mashed the potatoes with incredible vigour; Miss Belinda sweetened up the apple sauce; Martha dusted the hot plates; Bob took Tiny Tim beside him in a tiny corner at the table; the two young Cratchits set chairs for everybody, not forgetting themselves, and, mounting guard upon their posts, crammed spoons into their mouths, lest they should shriek for goose before their turn came to be helped.",
-      "Hurrah": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  ",
-      "Ebenezer Scrooge": "\"It should be Christmas-day, I am sure,\" said she, \"on which one drinks the health of such an odious, stingy, hard, unfeeling man as Mr. Scrooge.",
-      "Scrooge Scrooge": "\"It should be Christmas-day, I am sure,\" said she, \"on which one drinks the health of such an odious, stingy, hard, unfeeling man as Mr. Scrooge.",
-      "Uncle Scrooge": "\"It should be Christmas-day, I am sure,\" said she, \"on which one drinks the health of such an odious, stingy, hard, unfeeling man as Mr. Scrooge."
-    },
-    "Bob Cratchit": {
-      "Parks": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Whereat Scrooge": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Peter Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Martha": "\"Why, bless your heart alive, my dear, how late you are!\" said Mrs. Cratchit, kissing her a dozen times, and taking off her shawl and bonnet for her with officious zeal.  ",
-      "Belinda Cratchit": "\"And how did little Tim behave?\" asked Mrs. Cratchit when she had rallied Bob on his credulity, and Bob had hugged his daughter to his heart's content.  ",
-      "Tiny Tim": "Mrs. Cratchit made the gravy (ready beforehand in a little saucepan) hissing hot; Master Peter mashed the potatoes with incredible vigour; Miss Belinda sweetened up the apple sauce; Martha dusted the hot plates; Bob took Tiny Tim beside him in a tiny corner at the table; the two young Cratchits set chairs for everybody, not forgetting themselves, and, mounting guard upon their posts, crammed spoons into their mouths, lest they should shriek for goose before their turn came to be helped.",
-      "Hurrah": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  ",
-      "Ebenezer Scrooge": "\"I'll send it to Bob Cratchit's,\" whispered Scrooge, rubbing his hands, and splitting with a laugh.",
-      "Scrooge Scrooge": "\"I'll send it to Bob Cratchit's,\" whispered Scrooge, rubbing his hands, and splitting with a laugh.",
-      "Uncle Scrooge": "\"I'll send it to Bob Cratchit's,\" whispered Scrooge, rubbing his hands, and splitting with a laugh."
-    },
     "Peter Cratchit": {
-      "Parks": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Belinda Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
       "Bob Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Parks": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
       "Whereat Scrooge": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
       "Martha": "\"Why, bless your heart alive, my dear, how late you are!\" said Mrs. Cratchit, kissing her a dozen times, and taking off her shawl and bonnet for her with officious zeal.  ",
       "Tiny Tim": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder.",
-      "Belinda Cratchit": "Mrs. Cratchit made the gravy (ready beforehand in a little saucepan) hissing hot; Master Peter mashed the potatoes with incredible vigour; Miss Belinda sweetened up the apple sauce; Martha dusted the hot plates; Bob took Tiny Tim beside him in a tiny corner at the table; the two young Cratchits set chairs for everybody, not forgetting themselves, and, mounting guard upon their posts, crammed spoons into their mouths, lest they should shriek for goose before their turn came to be helped.",
       "Hurrah": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  ",
       "Ebenezer Scrooge": "\"'And he took a child, and set him in the midst of them.'\"  Where had Scrooge heard those words?",
       "Scrooge Scrooge": "\"'And he took a child, and set him in the midst of them.'\"  Where had Scrooge heard those words?",
       "Uncle Scrooge": "\"'And he took a child, and set him in the midst of them.'\"  Where had Scrooge heard those words?"
     },
-    "Parks": {
+    "Bob Cratchit": {
+      "Belinda Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Parks": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Whereat Scrooge": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Martha": "\"Why, bless your heart alive, my dear, how late you are!\" said Mrs. Cratchit, kissing her a dozen times, and taking off her shawl and bonnet for her with officious zeal.  ",
+      "Tiny Tim": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder.",
+      "Peter Cratchit": "\"Not coming!\" said Bob with a sudden declension in his high spirits; for he had been Tim's blood horse all the way from church, and had come home rampant.",
+      "Hurrah": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  ",
+      "Ebenezer Scrooge": "Bob told them of the extraordinary kindness of Mr. Scrooge's nephew, whom he had scarcely seen but once, and who, meeting him in the street that day, and seeing that he looked a little--\"just a little down, you know,\" said Bob, inquired what had happened to distress him.",
+      "Scrooge Scrooge": "Bob told them of the extraordinary kindness of Mr. Scrooge's nephew, whom he had scarcely seen but once, and who, meeting him in the street that day, and seeing that he looked a little--\"just a little down, you know,\" said Bob, inquired what had happened to distress him.",
+      "Uncle Scrooge": "Bob told them of the extraordinary kindness of Mr. Scrooge's nephew, whom he had scarcely seen but once, and who, meeting him in the street that day, and seeing that he looked a little--\"just a little down, you know,\" said Bob, inquired what had happened to distress him."
+    },
+    "Belinda Cratchit": {
+      "Parks": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
       "Bob Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
       "Whereat Scrooge": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
-      "Peter Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
+      "Martha": "\"Why, bless your heart alive, my dear, how late you are!\" said Mrs. Cratchit, kissing her a dozen times, and taking off her shawl and bonnet for her with officious zeal.  ",
+      "Tiny Tim": "\"And how did little Tim behave?\" asked Mrs. Cratchit when she had rallied Bob on his credulity, and Bob had hugged his daughter to his heart's content.  ",
+      "Peter Cratchit": "Mrs. Cratchit made the gravy (ready beforehand in a little saucepan) hissing hot; Master Peter mashed the potatoes with incredible vigour; Miss Belinda sweetened up the apple sauce; Martha dusted the hot plates; Bob took Tiny Tim beside him in a tiny corner at the table; the two young Cratchits set chairs for everybody, not forgetting themselves, and, mounting guard upon their posts, crammed spoons into their mouths, lest they should shriek for goose before their turn came to be helped.",
+      "Hurrah": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  ",
+      "Ebenezer Scrooge": "\"It should be Christmas-day, I am sure,\" said she, \"on which one drinks the health of such an odious, stingy, hard, unfeeling man as Mr. Scrooge.",
+      "Scrooge Scrooge": "\"It should be Christmas-day, I am sure,\" said she, \"on which one drinks the health of such an odious, stingy, hard, unfeeling man as Mr. Scrooge.",
+      "Uncle Scrooge": "\"It should be Christmas-day, I am sure,\" said she, \"on which one drinks the health of such an odious, stingy, hard, unfeeling man as Mr. Scrooge."
+    },
+    "Parks": {
+      "Bob Cratchit": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks.",
+      "Whereat Scrooge": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
     },
     "Tiny Tim": {
-      "Bob Cratchit": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder.",
       "Martha": "So Martha hid herself, and in came little Bob, the father, with at least three feet of comforter, exclusive of the fringe, hanging down before him; and his threadbare clothes darned up and brushed to look seasonable; and Tiny Tim upon his shoulder.",
+      "Bob Cratchit": "Alas for Tiny Tim, he bore a little crutch, and had his limbs supported by an iron frame!  ",
       "Belinda Cratchit": "\"And how did little Tim behave?\" asked Mrs. Cratchit when she had rallied Bob on his credulity, and Bob had hugged his daughter to his heart's content.  ",
       "Peter Cratchit": "\"And how did little Tim behave?\" asked Mrs. Cratchit when she had rallied Bob on his credulity, and Bob had hugged his daughter to his heart's content.  ",
       "Hurrah": "It was succeeded by a breathless pause, as Mrs. Cratchit, looking slowly all along the carving-knife, prepared to plunge it in the breast; but when she did, and when the long-expected gush of stuffing issued forth, one murmur of delight arose all round the board, and even Tiny Tim, excited by the two young Cratchits, beat on the table with the handle of his knife, and feebly cried Hurrah!  ",
@@ -572,16 +564,20 @@
       "Whereat Scrooge": "\"Spirit,\" said Scrooge with an interest he had never felt before, \"tell me if Tiny Tim will live.\"  "
     },
     "Martha": {
-      "Bob Cratchit": "\"Why, where's our Martha?\" cried Bob Cratchit, looking round.  "
+      "Bob Cratchit": "\"Why, where's our Martha?\" cried Bob Cratchit, looking round.  ",
+      "Peter Cratchit": "Mrs. Cratchit made the gravy (ready beforehand in a little saucepan) hissing hot; Master Peter mashed the potatoes with incredible vigour; Miss Belinda sweetened up the apple sauce; Martha dusted the hot plates; Bob took Tiny Tim beside him in a tiny corner at the table; the two young Cratchits set chairs for everybody, not forgetting themselves, and, mounting guard upon their posts, crammed spoons into their mouths, lest they should shriek for goose before their turn came to be helped.",
+      "Belinda Cratchit": "Mrs. Cratchit made the gravy (ready beforehand in a little saucepan) hissing hot; Master Peter mashed the potatoes with incredible vigour; Miss Belinda sweetened up the apple sauce; Martha dusted the hot plates; Bob took Tiny Tim beside him in a tiny corner at the table; the two young Cratchits set chairs for everybody, not forgetting themselves, and, mounting guard upon their posts, crammed spoons into their mouths, lest they should shriek for goose before their turn came to be helped.",
+      "Tiny Tim": "Mrs. Cratchit made the gravy (ready beforehand in a little saucepan) hissing hot; Master Peter mashed the potatoes with incredible vigour; Miss Belinda sweetened up the apple sauce; Martha dusted the hot plates; Bob took Tiny Tim beside him in a tiny corner at the table; the two young Cratchits set chairs for everybody, not forgetting themselves, and, mounting guard upon their posts, crammed spoons into their mouths, lest they should shriek for goose before their turn came to be helped.",
+      "Whereat Scrooge": "Martha, who was a poor apprentice at a milliner's, then told them what kind of work she had to do, and how many hours she worked at a stretch, and how she meant to lie abed to-morrow morning for a good long rest; to-morrow being a holiday she passed at home."
     },
     "Baleful": {
       "Peter Cratchit": "Bob Cratchit told them how he had a situation in his eye for Master Peter, which would bring in, if obtained, full five-and-sixpence weekly.",
       "Bob Cratchit": "Bob Cratchit told them how he had a situation in his eye for Master Peter, which would bring in, if obtained, full five-and-sixpence weekly."
     },
     "Fred": {
+      "Uncle Scrooge": "\"More shame for him, Fred!\" said Scrooge's niece indignantly.",
       "Ebenezer Scrooge": "\"More shame for him, Fred!\" said Scrooge's niece indignantly.",
       "Scrooge Scrooge": "\"More shame for him, Fred!\" said Scrooge's niece indignantly.",
-      "Uncle Scrooge": "\"More shame for him, Fred!\" said Scrooge's niece indignantly.",
       "Whereat Scrooge": "\"More shame for him, Fred!\" said Scrooge's niece indignantly.",
       "Bob Cratchit": "If he could only be there first, and catch Bob Cratchit coming late!"
     },
@@ -602,12 +598,12 @@
     }
   },
   "first_interactions_overall": {
-    "Scrooge Scrooge": {
-      "with": "Ebenezer Scrooge",
-      "context": "And Scrooge's name was good upon 'Change for anything he chose to put his hand to."
-    },
     "Ebenezer Scrooge": {
       "with": "Scrooge Scrooge",
+      "context": "And Scrooge's name was good upon 'Change for anything he chose to put his hand to."
+    },
+    "Scrooge Scrooge": {
+      "with": "Ebenezer Scrooge",
       "context": "And Scrooge's name was good upon 'Change for anything he chose to put his hand to."
     },
     "Old Marley": {
@@ -635,7 +631,7 @@
       "context": "\"Yo ho, my boys!\" said Fezziwig."
     },
     "Uncle Scrooge": {
-      "with": "Jacob Marley",
+      "with": "Nick",
       "context": "He felt that he was restored to consciousness in the right nick of time, for the especial purpose of holding a conference with the second messenger dispatched to him through Jacob Marley's intervention."
     },
     "Whereat Scrooge": {
@@ -658,16 +654,16 @@
       "with": "Uncle Scrooge",
       "context": "And perhaps it was the pleasure the good Spirit had in showing off this power of his, or else it was his own kind, generous, hearty nature, and his sympathy with all poor men, that led him straight to Scrooge's clerk's; for there he went, and took Scrooge with him, holding to his robe; and, on the threshold of the door, the Spirit smiled, and stopped to bless Bob Cratchit's dwelling with the sprinklings of his torch."
     },
-    "Belinda Cratchit": {
-      "with": "Bob Cratchit",
-      "context": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
-    },
     "Peter Cratchit": {
       "with": "Belinda Cratchit",
       "context": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
     },
+    "Belinda Cratchit": {
+      "with": "Peter Cratchit",
+      "context": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
+    },
     "Parks": {
-      "with": "Belinda Cratchit",
+      "with": "Peter Cratchit",
       "context": "Then up rose Mrs. Cratchit, Cratchit's wife, dressed out but poorly in a twice-turned gown, but brave in ribbons, which are cheap, and make a goodly show for sixpence; and she laid the cloth, assisted by Belinda Cratchit, second of her daughters, also brave in ribbons; while Master Peter Cratchit plunged a fork into the saucepan of potatoes, and, getting the corners of his monstrous shirt collar (Bob's private property, conferred upon his son and heir in honour of the day) into his mouth, rejoiced to find himself so gallantly attired, and yearned to show his linen in the fashionable Parks."
     },
     "Martha": {

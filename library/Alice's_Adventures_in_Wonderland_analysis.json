@@ -1,0 +1,926 @@
+{
+  "book": "Alice's Adventures In Wonderland",
+  "author": "Lewis Carroll",
+  "num_sections": 12,
+  "sections": [{
+    "names": ["Alice"],
+    "matrix": [
+      [0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0,
+      "no_of_cliques": 0,
+      "most_important_character": "Alice",
+      "degree_of_mic": 0,
+      "degree_centrality_mic": 1,
+      "avg_degree_centrality": 1.0,
+      "subgraph_centrality": {
+        "Alice": 0.0
+      },
+      "betweenness_centrality": {
+        "Alice": 0.0
+      },
+      "degree_centrality": {
+        "Alice": 1
+      }
+    }
+  }, {
+    "names": ["Alice", "Ada", "Mabel", "Mouse", "William The Conqueror"],
+    "matrix": [
+      [0.0, 0.09091, 0.18182, 0.54545, 0.18182],
+      [0.5, 0.0, 0.5, 0.0, 0.0],
+      [0.66667, 0.33333, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.2096,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 4,
+      "degree_centrality_mic": 1.0,
+      "avg_degree_centrality": 0.5,
+      "subgraph_centrality": {
+        "Ada": 0.42884902840059785,
+        "Alice": 1.0,
+        "Mabel": 0.42884902840059785,
+        "Mouse": 0.0,
+        "William The Conqueror": 0.0
+      },
+      "betweenness_centrality": {
+        "Ada": 0.0,
+        "Alice": 0.8333,
+        "Mabel": 0.0,
+        "Mouse": 0.0,
+        "William The Conqueror": 0.0
+      },
+      "degree_centrality": {
+        "Ada": 0.5,
+        "Alice": 1.0,
+        "Mabel": 0.5,
+        "Mouse": 0.25,
+        "William The Conqueror": 0.25
+      }
+    }
+  }, {
+    "names": ["Alice", "Mouse", "William The Conqueror", "Ada", "Edgar Atheling", "Mabel", "Shakespeare"],
+    "matrix": [
+      [0.0, 0.66667, 0.11111, 0.05556, 0.0, 0.11111, 0.05556],
+      [0.8, 0.0, 0.06667, 0.0, 0.06667, 0.0, 0.06667],
+      [0.5, 0.25, 0.0, 0.0, 0.25, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0],
+      [0.0, 0.5, 0.5, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.0, 0.0, 0.33333, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.3542,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 5,
+      "degree_centrality_mic": 0.8333,
+      "avg_degree_centrality": 0.4762,
+      "subgraph_centrality": {
+        "Ada": 0.0,
+        "Alice": 1.0,
+        "Edgar Atheling": 0.03703620317002879,
+        "Mabel": 0.0,
+        "Mouse": 0.754637968299712,
+        "Shakespeare": 0.08008375360230552,
+        "William The Conqueror": 0.41827269452449567
+      },
+      "betweenness_centrality": {
+        "Ada": 0.0,
+        "Alice": 0.5333,
+        "Edgar Atheling": 0.0,
+        "Mabel": 0.0,
+        "Mouse": 0.1333,
+        "Shakespeare": 0.0,
+        "William The Conqueror": 0.4
+      },
+      "degree_centrality": {
+        "Ada": 0.3333,
+        "Alice": 0.8333,
+        "Edgar Atheling": 0.3333,
+        "Mabel": 0.3333,
+        "Mouse": 0.6667,
+        "Shakespeare": 0.3333,
+        "William The Conqueror": 0.5
+      }
+    }
+  }, {
+    "names": ["Alice", "Mouse", "William The Conqueror", "Ada", "Bill", "Edgar Atheling", "Mabel", "Mary Ann", "Shakespeare", "W. Rabbit", "Along--\"Catch Him"],
+    "matrix": [
+      [0.0, 0.46429, 0.07143, 0.03571, 0.17857, 0.0, 0.07143, 0.10714, 0.03571, 0.03571, 0.0],
+      [0.8125, 0.0, 0.0625, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0625, 0.0, 0.0],
+      [0.5, 0.25, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0],
+      [0.83333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.16667],
+      [0.0, 0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.0, 0.0, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.3416,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 8,
+      "degree_centrality_mic": 0.8,
+      "avg_degree_centrality": 0.2727,
+      "subgraph_centrality": {
+        "Ada": 0.1561346496882782,
+        "Alice": 1.0,
+        "Along--\"Catch Him": 0.0,
+        "Bill": 0.09980395966160964,
+        "Edgar Atheling": 0.1445046890729588,
+        "Mabel": 0.1561346496882782,
+        "Mary Ann": 0.1561346496882782,
+        "Mouse": 0.46703519895445156,
+        "Shakespeare": 0.1894615072146377,
+        "W. Rabbit": 0.1561346496882782,
+        "William The Conqueror": 0.32532099397749953
+      },
+      "betweenness_centrality": {
+        "Ada": 0.0,
+        "Alice": 0.8,
+        "Along--\"Catch Him": 0.0,
+        "Bill": 0.2,
+        "Edgar Atheling": 0.0,
+        "Mabel": 0.0,
+        "Mary Ann": 0.0,
+        "Mouse": 0.0444,
+        "Shakespeare": 0.0,
+        "W. Rabbit": 0.0,
+        "William The Conqueror": 0.3111
+      },
+      "degree_centrality": {
+        "Ada": 0.2,
+        "Alice": 0.8,
+        "Along--\"Catch Him": 0.1,
+        "Bill": 0.2,
+        "Edgar Atheling": 0.2,
+        "Mabel": 0.2,
+        "Mary Ann": 0.2,
+        "Mouse": 0.4,
+        "Shakespeare": 0.2,
+        "W. Rabbit": 0.2,
+        "William The Conqueror": 0.3
+      }
+    }
+  }, {
+    "names": ["Alice", "Mouse", "William The Conqueror", "Ada", "Bill", "Edgar Atheling", "Mabel", "Mary Ann", "Shakespeare", "W. Rabbit", "Along--\"Catch Him"],
+    "matrix": [
+      [0.0, 0.43333, 0.13333, 0.03333, 0.16667, 0.0, 0.06667, 0.1, 0.03333, 0.03333, 0.0],
+      [0.8125, 0.0, 0.0625, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0625, 0.0, 0.0],
+      [0.66667, 0.16667, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0],
+      [0.83333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.16667],
+      [0.0, 0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.0, 0.0, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.3413,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 8,
+      "degree_centrality_mic": 0.8,
+      "avg_degree_centrality": 0.2727,
+      "subgraph_centrality": {
+        "Ada": 0.1561346496882782,
+        "Alice": 1.0,
+        "Along--\"Catch Him": 0.0,
+        "Bill": 0.09980395966160964,
+        "Edgar Atheling": 0.1445046890729588,
+        "Mabel": 0.1561346496882782,
+        "Mary Ann": 0.1561346496882782,
+        "Mouse": 0.46703519895445156,
+        "Shakespeare": 0.1894615072146377,
+        "W. Rabbit": 0.1561346496882782,
+        "William The Conqueror": 0.32532099397749953
+      },
+      "betweenness_centrality": {
+        "Ada": 0.0,
+        "Alice": 0.8,
+        "Along--\"Catch Him": 0.0,
+        "Bill": 0.2,
+        "Edgar Atheling": 0.0,
+        "Mabel": 0.0,
+        "Mary Ann": 0.0,
+        "Mouse": 0.0444,
+        "Shakespeare": 0.0,
+        "W. Rabbit": 0.0,
+        "William The Conqueror": 0.3111
+      },
+      "degree_centrality": {
+        "Ada": 0.2,
+        "Alice": 0.8,
+        "Along--\"Catch Him": 0.1,
+        "Bill": 0.2,
+        "Edgar Atheling": 0.2,
+        "Mabel": 0.2,
+        "Mary Ann": 0.2,
+        "Mouse": 0.4,
+        "Shakespeare": 0.2,
+        "W. Rabbit": 0.2,
+        "William The Conqueror": 0.3
+      }
+    }
+  }, {
+    "names": ["Alice", "Mouse", "William The Conqueror", "Ada", "Bill", "Edgar Atheling", "Mabel", "Mary Ann", "Shakespeare", "W. Rabbit", "Along--\"Catch Him", "Queen", "Hatter"],
+    "matrix": [
+      [0.0, 0.37143, 0.11429, 0.02857, 0.14286, 0.0, 0.05714, 0.08571, 0.02857, 0.02857, 0.0, 0.14286, 0.0],
+      [0.8125, 0.0, 0.0625, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.16667, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.83333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0],
+      [0.0, 0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.0, 0.0, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.3244,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 9,
+      "degree_centrality_mic": 0.75,
+      "avg_degree_centrality": 0.2051,
+      "subgraph_centrality": {
+        "Ada": 0.17938895434143098,
+        "Alice": 1.0,
+        "Along--\"Catch Him": 0.043764862344871445,
+        "Bill": 0.13117894082528028,
+        "Edgar Atheling": 0.16280817907815515,
+        "Hatter": 0.0,
+        "Mabel": 0.17938895434143098,
+        "Mary Ann": 0.17938895434143098,
+        "Mouse": 0.43782209276271566,
+        "Queen": 0.08302675041379658,
+        "Shakespeare": 0.2071729561339472,
+        "W. Rabbit": 0.17938895434143098,
+        "William The Conqueror": 0.3192269050906016
+      },
+      "betweenness_centrality": {
+        "Ada": 0.0,
+        "Alice": 0.697,
+        "Along--\"Catch Him": 0.0,
+        "Bill": 0.1515,
+        "Edgar Atheling": 0.0,
+        "Hatter": 0.0,
+        "Mabel": 0.0,
+        "Mary Ann": 0.0,
+        "Mouse": 0.0303,
+        "Queen": 0.0,
+        "Shakespeare": 0.0,
+        "W. Rabbit": 0.0,
+        "William The Conqueror": 0.2424
+      },
+      "degree_centrality": {
+        "Ada": 0.1667,
+        "Alice": 0.75,
+        "Along--\"Catch Him": 0.0833,
+        "Bill": 0.1667,
+        "Edgar Atheling": 0.1667,
+        "Hatter": 0.0,
+        "Mabel": 0.1667,
+        "Mary Ann": 0.1667,
+        "Mouse": 0.3333,
+        "Queen": 0.0833,
+        "Shakespeare": 0.1667,
+        "W. Rabbit": 0.1667,
+        "William The Conqueror": 0.25
+      }
+    }
+  }, {
+    "names": ["Alice", "Mouse", "Hatter", "William The Conqueror", "Ada", "Bill", "Edgar Atheling", "Mabel", "Mary Ann", "Queen", "Shakespeare", "W. Rabbit", "Along--\"Catch Him", "Dormouse"],
+    "matrix": [
+      [0.0, 0.30233, 0.18605, 0.09302, 0.02326, 0.11628, 0.0, 0.04651, 0.06977, 0.11628, 0.02326, 0.02326, 0.0, 0.0],
+      [0.8125, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0],
+      [0.72727, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.18182, 0.0, 0.0, 0.0, 0.09091],
+      [0.66667, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.83333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0],
+      [0.0, 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.0, 0.0, 0.0, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0],
+      [0.71429, 0.0, 0.28571, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.3367,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 10,
+      "degree_centrality_mic": 0.7692,
+      "avg_degree_centrality": 0.2088,
+      "subgraph_centrality": {
+        "Ada": 0.12285312965318508,
+        "Alice": 1.0,
+        "Along--\"Catch Him": 0.0,
+        "Bill": 0.08013575997251042,
+        "Dormouse": 0.004545427143554711,
+        "Edgar Atheling": 0.10013805077133607,
+        "Hatter": 0.17268403252934333,
+        "Mabel": 0.12285312965318508,
+        "Mary Ann": 0.12285312965318508,
+        "Mouse": 0.34298081154562604,
+        "Queen": 0.12753721040987212,
+        "Shakespeare": 0.1465870111706585,
+        "W. Rabbit": 0.12285312965318508,
+        "William The Conqueror": 0.2409980648778341
+      },
+      "betweenness_centrality": {
+        "Ada": 0.0,
+        "Alice": 0.8462,
+        "Along--\"Catch Him": 0.0,
+        "Bill": 0.1538,
+        "Dormouse": 0.0,
+        "Edgar Atheling": 0.0,
+        "Hatter": 0.1538,
+        "Mabel": 0.0,
+        "Mary Ann": 0.0,
+        "Mouse": 0.0256,
+        "Queen": 0.0,
+        "Shakespeare": 0.0,
+        "W. Rabbit": 0.0,
+        "William The Conqueror": 0.2564
+      },
+      "degree_centrality": {
+        "Ada": 0.1538,
+        "Alice": 0.7692,
+        "Along--\"Catch Him": 0.0769,
+        "Bill": 0.1538,
+        "Dormouse": 0.0769,
+        "Edgar Atheling": 0.1538,
+        "Hatter": 0.2308,
+        "Mabel": 0.1538,
+        "Mary Ann": 0.1538,
+        "Mouse": 0.3077,
+        "Queen": 0.1538,
+        "Shakespeare": 0.1538,
+        "W. Rabbit": 0.1538,
+        "William The Conqueror": 0.2308
+      }
+    }
+  }, {
+    "names": ["Alice", "Mouse", "Hatter", "William The Conqueror", "Ada", "Bill", "Edgar Atheling", "Mabel", "Mary Ann", "Queen", "Shakespeare", "W. Rabbit", "Along--\"Catch Him", "Dormouse"],
+    "matrix": [
+      [0.0, 0.25, 0.15385, 0.07692, 0.01923, 0.09615, 0.0, 0.03846, 0.05769, 0.26923, 0.01923, 0.01923, 0.0, 0.0],
+      [0.8125, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0],
+      [0.72727, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.18182, 0.0, 0.0, 0.0, 0.09091],
+      [0.66667, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.83333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0],
+      [0.0, 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.0, 0.0, 0.0, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0],
+      [0.875, 0.0, 0.125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.3316,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 10,
+      "degree_centrality_mic": 0.7692,
+      "avg_degree_centrality": 0.2088,
+      "subgraph_centrality": {
+        "Ada": 0.12285312965318508,
+        "Alice": 1.0,
+        "Along--\"Catch Him": 0.0,
+        "Bill": 0.08013575997251042,
+        "Dormouse": 0.004545427143554711,
+        "Edgar Atheling": 0.10013805077133607,
+        "Hatter": 0.17268403252934333,
+        "Mabel": 0.12285312965318508,
+        "Mary Ann": 0.12285312965318508,
+        "Mouse": 0.34298081154562604,
+        "Queen": 0.12753721040987212,
+        "Shakespeare": 0.1465870111706585,
+        "W. Rabbit": 0.12285312965318508,
+        "William The Conqueror": 0.2409980648778341
+      },
+      "betweenness_centrality": {
+        "Ada": 0.0,
+        "Alice": 0.8462,
+        "Along--\"Catch Him": 0.0,
+        "Bill": 0.1538,
+        "Dormouse": 0.0,
+        "Edgar Atheling": 0.0,
+        "Hatter": 0.1538,
+        "Mabel": 0.0,
+        "Mary Ann": 0.0,
+        "Mouse": 0.0256,
+        "Queen": 0.0,
+        "Shakespeare": 0.0,
+        "W. Rabbit": 0.0,
+        "William The Conqueror": 0.2564
+      },
+      "degree_centrality": {
+        "Ada": 0.1538,
+        "Alice": 0.7692,
+        "Along--\"Catch Him": 0.0769,
+        "Bill": 0.1538,
+        "Dormouse": 0.0769,
+        "Edgar Atheling": 0.1538,
+        "Hatter": 0.2308,
+        "Mabel": 0.1538,
+        "Mary Ann": 0.1538,
+        "Mouse": 0.3077,
+        "Queen": 0.1538,
+        "Shakespeare": 0.1538,
+        "W. Rabbit": 0.1538,
+        "William The Conqueror": 0.2308
+      }
+    }
+  }, {
+    "names": ["Alice", "Mouse", "Hatter", "William The Conqueror", "Ada", "Bill", "Edgar Atheling", "Mabel", "Mary Ann", "Queen", "Shakespeare", "W. Rabbit", "Along--\"Catch Him", "Dormouse"],
+    "matrix": [
+      [0.0, 0.21667, 0.13333, 0.06667, 0.01667, 0.08333, 0.0, 0.03333, 0.05, 0.36667, 0.01667, 0.01667, 0.0, 0.0],
+      [0.8125, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0],
+      [0.72727, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.18182, 0.0, 0.0, 0.0, 0.09091],
+      [0.66667, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.83333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0],
+      [0.0, 0.5, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.0, 0.0, 0.0, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0],
+      [0.91667, 0.0, 0.08333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.299,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 10,
+      "degree_centrality_mic": 0.7692,
+      "avg_degree_centrality": 0.2088,
+      "subgraph_centrality": {
+        "Ada": 0.12285312965318508,
+        "Alice": 1.0,
+        "Along--\"Catch Him": 0.0,
+        "Bill": 0.08013575997251042,
+        "Dormouse": 0.004545427143554711,
+        "Edgar Atheling": 0.10013805077133607,
+        "Hatter": 0.17268403252934333,
+        "Mabel": 0.12285312965318508,
+        "Mary Ann": 0.12285312965318508,
+        "Mouse": 0.34298081154562604,
+        "Queen": 0.12753721040987212,
+        "Shakespeare": 0.1465870111706585,
+        "W. Rabbit": 0.12285312965318508,
+        "William The Conqueror": 0.2409980648778341
+      },
+      "betweenness_centrality": {
+        "Ada": 0.0,
+        "Alice": 0.8462,
+        "Along--\"Catch Him": 0.0,
+        "Bill": 0.1538,
+        "Dormouse": 0.0,
+        "Edgar Atheling": 0.0,
+        "Hatter": 0.2949,
+        "Mabel": 0.0,
+        "Mary Ann": 0.0,
+        "Mouse": 0.0256,
+        "Queen": 0.0,
+        "Shakespeare": 0.0,
+        "W. Rabbit": 0.0,
+        "William The Conqueror": 0.2564
+      },
+      "degree_centrality": {
+        "Ada": 0.1538,
+        "Alice": 0.7692,
+        "Along--\"Catch Him": 0.0769,
+        "Bill": 0.1538,
+        "Dormouse": 0.0769,
+        "Edgar Atheling": 0.1538,
+        "Hatter": 0.2308,
+        "Mabel": 0.1538,
+        "Mary Ann": 0.1538,
+        "Mouse": 0.3077,
+        "Queen": 0.1538,
+        "Shakespeare": 0.1538,
+        "W. Rabbit": 0.1538,
+        "William The Conqueror": 0.2308
+      }
+    }
+  }, {
+    "names": ["Alice", "Mouse", "William The Conqueror", "Hatter", "Shakespeare", "Queen", "Mary Ann", "Mabel", "A Lobster Quadrille", "Dinn", "Bill", "Ada", "W. Rabbit", "Edgar Atheling", "Dormouse", "Along--\"Catch Him", "Beau"],
+    "matrix": [
+      [0.0, 0.2, 0.06154, 0.12308, 0.01538, 0.33846, 0.04615, 0.03077, 0.01538, 0.06154, 0.07692, 0.01538, 0.01538, 0.0, 0.0, 0.0, 0.0],
+      [0.8125, 0.0, 0.0625, 0.0, 0.0625, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0],
+      [0.66667, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.0],
+      [0.72727, 0.0, 0.0, 0.0, 0.0, 0.18182, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.09091, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.91667, 0.0, 0.0, 0.08333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.83333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.3332,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 12,
+      "degree_centrality_mic": 0.75,
+      "avg_degree_centrality": 0.1618,
+      "subgraph_centrality": {
+        "A Lobster Quadrille": 0.1248984083982391,
+        "Ada": 0.1248984083982391,
+        "Alice": 1.0,
+        "Along--\"Catch Him": 0.025960887233322044,
+        "Beau": 0.0,
+        "Bill": 0.09165678970538435,
+        "Dinn": 0.1248984083982391,
+        "Dormouse": 0.02922028445648493,
+        "Edgar Atheling": 0.097388249238063,
+        "Hatter": 0.16045123603115474,
+        "Mabel": 0.1248984083982391,
+        "Mary Ann": 0.1248984083982391,
+        "Mouse": 0.28542160514730786,
+        "Queen": 0.1282593972231629,
+        "Shakespeare": 0.14229597019979684,
+        "W. Rabbit": 0.1248984083982391,
+        "William The Conqueror": 0.2098332204537758
+      },
+      "betweenness_centrality": {
+        "A Lobster Quadrille": 0.0,
+        "Ada": 0.0,
+        "Alice": 0.7667,
+        "Along--\"Catch Him": 0.0,
+        "Beau": 0.0,
+        "Bill": 0.1167,
+        "Dinn": 0.0,
+        "Dormouse": 0.0,
+        "Edgar Atheling": 0.0,
+        "Hatter": 0.225,
+        "Mabel": 0.0,
+        "Mary Ann": 0.0,
+        "Mouse": 0.0167,
+        "Queen": 0.0,
+        "Shakespeare": 0.0,
+        "W. Rabbit": 0.0,
+        "William The Conqueror": 0.2
+      },
+      "degree_centrality": {
+        "A Lobster Quadrille": 0.125,
+        "Ada": 0.125,
+        "Alice": 0.75,
+        "Along--\"Catch Him": 0.0625,
+        "Beau": 0.0,
+        "Bill": 0.125,
+        "Dinn": 0.125,
+        "Dormouse": 0.0625,
+        "Edgar Atheling": 0.125,
+        "Hatter": 0.1875,
+        "Mabel": 0.125,
+        "Mary Ann": 0.125,
+        "Mouse": 0.25,
+        "Queen": 0.125,
+        "Shakespeare": 0.125,
+        "W. Rabbit": 0.125,
+        "William The Conqueror": 0.1875
+      }
+    }
+  }, {
+    "names": ["Alice", "Mouse", "William The Conqueror", "Bill", "Hatter", "Shakespeare", "Queen", "Mary Ann", "Mabel", "A Lobster Quadrille", "Dinn", "Beau", "Ada", "W. Rabbit", "Edgar Atheling", "Dormouse", "Pinch", "Along--\"Catch Him"],
+    "matrix": [
+      [0.0, 0.17568, 0.05405, 0.09459, 0.13514, 0.01351, 0.31081, 0.04054, 0.02703, 0.01351, 0.05405, 0.04054, 0.01351, 0.01351, 0.0, 0.0, 0.01351, 0.0],
+      [0.8125, 0.0, 0.0625, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0625, 0.0, 0.0, 0.0],
+      [0.66667, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.0],
+      [0.77778, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.11111, 0.0, 0.0, 0.0, 0.0, 0.0, 0.11111],
+      [0.66667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.13333, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.88462, 0.0, 0.0, 0.0, 0.11538, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.3493,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 14,
+      "degree_centrality_mic": 0.8235,
+      "avg_degree_centrality": 0.1634,
+      "subgraph_centrality": {
+        "A Lobster Quadrille": 0.0840243353591214,
+        "Ada": 0.0840243353591214,
+        "Alice": 1.0,
+        "Along--\"Catch Him": 0.0,
+        "Beau": 0.08665019702056978,
+        "Bill": 0.111684922503084,
+        "Dinn": 0.0840243353591214,
+        "Dormouse": 0.0,
+        "Edgar Atheling": 0.05299966650585557,
+        "Hatter": 0.111684922503084,
+        "Mabel": 0.0840243353591214,
+        "Mary Ann": 0.0840243353591214,
+        "Mouse": 0.21175583048136482,
+        "Pinch": 0.033446548659385913,
+        "Queen": 0.08665019702056978,
+        "Shakespeare": 0.09793395520817481,
+        "W. Rabbit": 0.0840243353591214,
+        "William The Conqueror": 0.15060984099128705
+      },
+      "betweenness_centrality": {
+        "A Lobster Quadrille": 0.0,
+        "Ada": 0.0,
+        "Alice": 0.8897,
+        "Along--\"Catch Him": 0.0,
+        "Beau": 0.0,
+        "Bill": 0.1176,
+        "Dinn": 0.0,
+        "Dormouse": 0.0,
+        "Edgar Atheling": 0.0,
+        "Hatter": 0.2279,
+        "Mabel": 0.0,
+        "Mary Ann": 0.0,
+        "Mouse": 0.0147,
+        "Pinch": 0.0,
+        "Queen": 0.0,
+        "Shakespeare": 0.0,
+        "W. Rabbit": 0.0,
+        "William The Conqueror": 0.2059
+      },
+      "degree_centrality": {
+        "A Lobster Quadrille": 0.1176,
+        "Ada": 0.1176,
+        "Alice": 0.8235,
+        "Along--\"Catch Him": 0.0588,
+        "Beau": 0.1176,
+        "Bill": 0.1765,
+        "Dinn": 0.1176,
+        "Dormouse": 0.0588,
+        "Edgar Atheling": 0.1176,
+        "Hatter": 0.1765,
+        "Mabel": 0.1176,
+        "Mary Ann": 0.1176,
+        "Mouse": 0.2353,
+        "Pinch": 0.0588,
+        "Queen": 0.1176,
+        "Shakespeare": 0.1176,
+        "W. Rabbit": 0.1176,
+        "William The Conqueror": 0.1765
+      }
+    }
+  }, {
+    "names": ["Alice", "Mouse", "Queen", "Bill", "William The Conqueror", "Hatter", "Shakespeare", "Mary Ann", "Mabel", "A Lobster Quadrille", "Dinn", "Beau", "Ada", "W. Rabbit", "Edgar Atheling", "Dormouse", "Pinch", "Along--\"Catch Him"],
+    "matrix": [
+      [0.0, 0.1573, 0.30337, 0.07865, 0.04494, 0.11236, 0.01124, 0.03371, 0.02247, 0.01124, 0.04494, 0.03371, 0.01124, 0.01124, 0.0, 0.0, 0.1236, 0.0],
+      [0.77778, 0.0, 0.05556, 0.0, 0.05556, 0.0, 0.05556, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05556, 0.0, 0.0, 0.0],
+      [0.84375, 0.03125, 0.0, 0.03125, 0.0, 0.09375, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.7, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1],
+      [0.66667, 0.16667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.16667, 0.0, 0.0, 0.0],
+      [0.66667, 0.0, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.13333, 0.0, 0.0],
+      [0.5, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0],
+      [0.66667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.33333, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.75, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.5, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ],
+    "graph_attributes": {
+      "average_clustering": 0.3357,
+      "no_of_cliques": 1,
+      "most_important_character": "Alice",
+      "degree_of_mic": 14,
+      "degree_centrality_mic": 0.8235,
+      "avg_degree_centrality": 0.1764,
+      "subgraph_centrality": {
+        "A Lobster Quadrille": 0.07495263419401688,
+        "Ada": 0.07495263419401688,
+        "Alice": 1.0,
+        "Along--\"Catch Him": 0.002459745889958451,
+        "Beau": 0.08741516470196396,
+        "Bill": 0.18006377321197495,
+        "Dinn": 0.07495263419401688,
+        "Dormouse": 0.0,
+        "Edgar Atheling": 0.05046710601750488,
+        "Hatter": 0.11865202649209114,
+        "Mabel": 0.07495263419401688,
+        "Mary Ann": 0.07495263419401688,
+        "Mouse": 0.2842439762160863,
+        "Pinch": 0.031193181507952545,
+        "Queen": 0.23859808134360547,
+        "Shakespeare": 0.09768822106590809,
+        "W. Rabbit": 0.07495263419401688,
+        "William The Conqueror": 0.14525877837170828
+      },
+      "betweenness_centrality": {
+        "A Lobster Quadrille": 0.0,
+        "Ada": 0.0,
+        "Alice": 0.6471,
+        "Along--\"Catch Him": 0.0,
+        "Beau": 0.0,
+        "Bill": 0.2279,
+        "Dinn": 0.0,
+        "Dormouse": 0.0,
+        "Edgar Atheling": 0.0,
+        "Hatter": 0.1176,
+        "Mabel": 0.0,
+        "Mary Ann": 0.0,
+        "Mouse": 0.1471,
+        "Pinch": 0.0,
+        "Queen": 0.1912,
+        "Shakespeare": 0.0,
+        "W. Rabbit": 0.0,
+        "William The Conqueror": 0.1176
+      },
+      "degree_centrality": {
+        "A Lobster Quadrille": 0.1176,
+        "Ada": 0.1176,
+        "Alice": 0.8235,
+        "Along--\"Catch Him": 0.0588,
+        "Beau": 0.1176,
+        "Bill": 0.2353,
+        "Dinn": 0.1176,
+        "Dormouse": 0.0588,
+        "Edgar Atheling": 0.1176,
+        "Hatter": 0.1765,
+        "Mabel": 0.1176,
+        "Mary Ann": 0.1176,
+        "Mouse": 0.2941,
+        "Pinch": 0.0588,
+        "Queen": 0.2353,
+        "Shakespeare": 0.1176,
+        "W. Rabbit": 0.1176,
+        "William The Conqueror": 0.1765
+      }
+    }
+  }],
+  "first_interactions_between_characters": {
+    "Ada": {
+      "Alice": "\"I'm sure I'm not Ada,\" she said, \"for her hair goes in such long ringlets, and mine doesn't go in ringlets at all; and I'm sure I can't be Mabel, for I know all sorts of things, and she,",
+      "Mabel": "\"I'm sure I'm not Ada,\" she said, \"for her hair goes in such long ringlets, and mine doesn't go in ringlets at all; and I'm sure I can't be Mabel, for I know all sorts of things, and she,"
+    },
+    "Alice": {
+      "Mabel": "\"I'm sure I'm not Ada,\" she said, \"for her hair goes in such long ringlets, and mine doesn't go in ringlets at all; and I'm sure I can't be Mabel, for I know all sorts of things, and she,",
+      "Mouse": "The Mouse looked at her rather inquisitively, and seemed to her to wink with one of its little eyes, but it said nothing.  ",
+      "William The Conqueror": "\"Perhaps it doesn't understand English,\" thought Alice; \"I daresay it's a French mouse, come over with William the Conqueror.\"",
+      "Shakespeare": "\"Why, _she_, of course,\" said the Dodo, pointing to Alice with one finger; and the whole party at once crowded round her, calling out in a confused way, \"Prizes!",
+      "Mary Ann": "Very soon the Rabbit noticed Alice, as she went hunting about, and called out to her in an angry tone, \"Why, Mary Ann, what _are_",
+      "W. Rabbit": "As she said this, she came upon a neat little house, on the door of which was a bright brass plate with the name \"W. RABBIT,\" engraved upon it.",
+      "Queen": "He was looking up into the sky all the time he was speaking, and this Alice thought decidedly uncivil.",
+      "Hatter": "He had been looking at Alice for some time with great curiosity, and this was his first speech.  ",
+      "A Lobster Quadrille": "Alice)--\"and perhaps you were never even introduced to a lobster--\" (Alice began to say \"I once tasted--\" but checked herself hastily, and said \"No, never\") \"--so you can have no idea what a delightful thing a Lobster Quadrille is!\"  \"No, indeed,\" said Alice.",
+      "Dinn": "their tails in their mouths; and the reason is--\" here the Mock Turtle yawned and shut his eyes.--\"Tell her about the reason and all that,\" he said to the Gryphon.  ",
+      "Pinch": "Alice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, \"--for they haven't got much evidence _yet_,\" she said to herself."
+    },
+    "Mouse": {
+      "Alice": "The Mouse did not answer, so Alice went on eagerly: \"There is such a nice little dog near our house I should like to show you!"
+    },
+    "Edgar Atheling": {
+      "William The Conqueror": "The Mouse did not notice this question, but hurriedly went on, \"'--found it advisable to go with Edgar Atheling to meet William and offer him the crown.",
+      "Mouse": "The Mouse did not notice this question, but hurriedly went on, \"'--found it advisable to go with Edgar Atheling to meet William and offer him the crown."
+    },
+    "William The Conqueror": {
+      "Mouse": "The Mouse did not notice this question, but hurriedly went on, \"'--found it advisable to go with Edgar Atheling to meet William and offer him the crown."
+    },
+    "Shakespeare": {
+      "Mouse": "This question the Dodo could not answer without a great deal of thought, and it sat for a long time with one finger pressed upon its forehead (the position in which you usually see Shakespeare, in the pictures of him), while the rest waited in silence."
+    },
+    "W. Rabbit": {
+      "Mary Ann": "She went in without knocking, and hurried upstairs, in great fear lest she should meet the real Mary Ann, and be turned out of the house before she had found the fan and gloves.  "
+    },
+    "Bill": {
+      "Alice": "She waited for some time without hearing anything more: at last came a rumbling of little cartwheels, and the sound of a good many voices all talking together: she made out the words: \"Where's the other ladder?--Why, I hadn't to bring but one; Bill's got the other--Bill! fetch it here, lad!--Here, put 'em up at this corner--No, tie 'em together first--they don't reach half high enough yet--",
+      "Along--\"Catch Him": "then the Rabbit's voice along--\"Catch him, you by the hedge!\"",
+      "Beau": "She did it so quickly that the poor little juror (it was Bill, the Lizard) could not make out at all what had become of it; so, after hunting all about for it, he was obliged to write with one finger for the rest of the day; and this was of very little use, as it left no mark on the slate.  ",
+      "Queen": "(The unfortunate little Bill had left off writing on his slate with one finger, as he found it made no mark; but he now hastily began again, using the ink, that was trickling down his face, as long as it lasted.)  "
+    },
+    "Hatter": {
+      "Dormouse": "A Mad Tea-Party   There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it: a Dormouse was sitting between them, fast asleep, and the other two were using it as a cushion, resting their elbows on it, and talking over its head.",
+      "Alice": "the Hatter said, turning to Alice again.  ",
+      "Queen": "\"Well, I'd hardly finished the first verse,\" said the Hatter, \"when the Queen jumped up and bawled out, 'He's murdering the time!"
+    },
+    "Dinn": {
+      "A Lobster Quadrille": "indeed:--  \"'Tis the voice of the Lobster; I heard him declare, \"You have baked me too brown, I must sugar my hair.\""
+    },
+    "Beau": {
+      "Alice": "on their slates, and she could even make out that one of them didn't know how to spell \"stupid,\" and that he had to ask his neighbour to tell him."
+    },
+    "Dormouse": {
+      "Hatter": "\"Well, at any rate, the Dormouse said--\" the Hatter went on, looking anxiously round to see if he would deny it too: but the Dormouse denied nothing, being fast asleep.  "
+    },
+    "Queen": {
+      "Mouse": "The long grass rustled at her feet as the White Rabbit hurried by--the frightened Mouse splashed his way through the neighbouring pool--she could hear the rattle of the teacups as the March Hare and his friends shared their never-ending meal, and the shrill voice of the Queen ordering off her unfortunate guests to execution--once more the pig-baby was sneezing on the Duchess's knee, while plates and dishes crashed around it--once more the shriek of the Gryphon, the squeaking of the Lizard's slate-pencil, and the choking of the suppressed guinea-pigs, filled the air, mixed up with the distant sobs of the miserable Mock Turtle.  "
+    }
+  },
+  "first_interactions_overall": {
+    "Alice": {
+      "with": "Down",
+      "context": "Alice felt so desperate that she was ready to ask help of any one; so, when the Rabbit came near her, she began, in a low, timid voice, \"If you please, sir--\" The Rabbit started violently, dropped the white kid gloves and the fan, and skurried away into the darkness as hard as he could go.  "
+    },
+    "Ada": {
+      "with": "Alice",
+      "context": "\"I'm sure I'm not Ada,\" she said, \"for her hair goes in such long ringlets, and mine doesn't go in ringlets at all; and I'm sure I can't be Mabel, for I know all sorts of things, and she,"
+    },
+    "Mabel": {
+      "with": "Ada",
+      "context": "\"I'm sure I'm not Ada,\" she said, \"for her hair goes in such long ringlets, and mine doesn't go in ringlets at all; and I'm sure I can't be Mabel, for I know all sorts of things, and she,"
+    },
+    "Mouse": {
+      "with": "Alice",
+      "context": "The Mouse looked at her rather inquisitively, and seemed to her to wink with one of its little eyes, but it said nothing.  "
+    },
+    "William The Conqueror": {
+      "with": "Alice",
+      "context": "\"Perhaps it doesn't understand English,\" thought Alice; \"I daresay it's a French mouse, come over with William the Conqueror.\""
+    },
+    "Edgar Atheling": {
+      "with": "William The Conqueror",
+      "context": "The Mouse did not notice this question, but hurriedly went on, \"'--found it advisable to go with Edgar Atheling to meet William and offer him the crown."
+    },
+    "Shakespeare": {
+      "with": "Mouse",
+      "context": "This question the Dodo could not answer without a great deal of thought, and it sat for a long time with one finger pressed upon its forehead (the position in which you usually see Shakespeare, in the pictures of him), while the rest waited in silence."
+    },
+    "Mary Ann": {
+      "with": "Alice",
+      "context": "Very soon the Rabbit noticed Alice, as she went hunting about, and called out to her in an angry tone, \"Why, Mary Ann, what _are_"
+    },
+    "W. Rabbit": {
+      "with": "Alice",
+      "context": "As she said this, she came upon a neat little house, on the door of which was a bright brass plate with the name \"W. RABBIT,\" engraved upon it."
+    },
+    "Bill": {
+      "with": "Alice",
+      "context": "She waited for some time without hearing anything more: at last came a rumbling of little cartwheels, and the sound of a good many voices all talking together: she made out the words: \"Where's the other ladder?--Why, I hadn't to bring but one; Bill's got the other--Bill! fetch it here, lad!--Here, put 'em up at this corner--No, tie 'em together first--they don't reach half high enough yet--"
+    },
+    "Along--\"Catch Him": {
+      "with": "Bill",
+      "context": "then the Rabbit's voice along--\"Catch him, you by the hedge!\""
+    },
+    "Queen": {
+      "with": "Alice",
+      "context": "He was looking up into the sky all the time he was speaking, and this Alice thought decidedly uncivil."
+    },
+    "Hatter": {
+      "with": "Dormouse",
+      "context": "A Mad Tea-Party   There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it: a Dormouse was sitting between them, fast asleep, and the other two were using it as a cushion, resting their elbows on it, and talking over its head."
+    },
+    "Dormouse": {
+      "with": "Hatter",
+      "context": "A Mad Tea-Party   There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it: a Dormouse was sitting between them, fast asleep, and the other two were using it as a cushion, resting their elbows on it, and talking over its head."
+    },
+    "A Lobster Quadrille": {
+      "with": "Alice",
+      "context": "Alice)--\"and perhaps you were never even introduced to a lobster--\" (Alice began to say \"I once tasted--\" but checked herself hastily, and said \"No, never\") \"--so you can have no idea what a delightful thing a Lobster Quadrille is!\"  \"No, indeed,\" said Alice."
+    },
+    "Dinn": {
+      "with": "Alice",
+      "context": "their tails in their mouths; and the reason is--\" here the Mock Turtle yawned and shut his eyes.--\"Tell her about the reason and all that,\" he said to the Gryphon.  "
+    },
+    "Beau": {
+      "with": "Alice",
+      "context": "on their slates, and she could even make out that one of them didn't know how to spell \"stupid,\" and that he had to ask his neighbour to tell him."
+    },
+    "Pinch": {
+      "with": "Behead",
+      "context": "Pinch him!"
+    }
+  }
+}
