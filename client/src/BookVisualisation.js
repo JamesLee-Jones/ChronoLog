@@ -18,6 +18,7 @@ import { Tooltip } from "@mui/material";
 function convertData(data) {
   return {
     book: data["book"],
+    author: data["author"],
     num_sections: data["num_sections"],
     sections: data["sections"],
     first_interactions_between_characters:
@@ -29,6 +30,7 @@ function convertData(data) {
 function BookVisualisation() {
   const [data, setData] = useState({
     book: "",
+    author: "",
     num_sections: 0,
     sections: [],
     first_interactions_between_characters: {},
@@ -67,6 +69,7 @@ function BookVisualisation() {
       <div className="bookViz">
         <Container fluid={"true"}>
           <h1>{data.book}</h1>
+          <h3 style={{ textAlign: "center" }}> By {data.author}</h3>
         </Container>
 
         <div className="App">

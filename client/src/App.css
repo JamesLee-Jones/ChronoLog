@@ -45,6 +45,7 @@ h3 {
 
 .bookViz h1 {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  padding-bottom: 0%;
   font-size: 40pt;
 }
