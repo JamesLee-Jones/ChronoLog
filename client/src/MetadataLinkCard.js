@@ -136,9 +136,9 @@ function MetadataLinkCard({
             gutterBottom
           >
             {interaction_strength
-              ? "Strength of Interaction : " +
+              ? "Strength of Interaction: " +
                 Math.round(interaction_strength * 100) / 100
-              : "Stength of Interaction : - "}
+              : "Stength of Interaction: - "}
           </Typography>
           <Typography sx={{ fontSize: 14, fontStyle: "italic" }}></Typography>
         </CardContent>
